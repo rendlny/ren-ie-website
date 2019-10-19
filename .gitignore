@@ -1,0 +1,7 @@
+web/assets/php/*.ini
+*.env
+phinx.yml
+node_modules
+
+/vendor/
+config.ini

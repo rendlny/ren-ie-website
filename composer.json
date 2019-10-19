@@ -1,0 +1,21 @@
+{
+  "name": "spoopy-floofer-website",
+  "type": "project",
+  "require": {
+      "illuminate/database": "^5.8",
+      "illuminate/events": "^5.8",
+      "phpmailer/phpmailer": "~5.2",
+      "slim/slim": "^4.2",
+      "slim/psr7": "^0.5.0",
+      "tinymce/tinymce": "^5.0"
+  },
+  "require-dev": {
+    "robmorgan/phinx": "^0.11.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Controllers\\": "web/Controllers/",
+      "Models\\": "web/Models/"
+    }
+  }
+}
