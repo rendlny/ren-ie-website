@@ -1,5 +1,5 @@
 {
-  "name": "spoopy-floofer-website",
+  "name": "rendlny/spoopy-floofer-website",
   "type": "project",
   "require": {
       "illuminate/database": "^5.8",
