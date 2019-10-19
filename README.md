@@ -9,6 +9,11 @@ This project requires Nodejs to be installed in order to get some dependencies.
 npm install
 ```
 
+#### Install packages
+```
+composer install
+```
+
 #### Config
 Create a `config.ini` file in the php directory containing your database connection variables.
 ```
