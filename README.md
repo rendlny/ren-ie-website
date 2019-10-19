@@ -23,6 +23,11 @@ db_user     = <user>
 db_password = <password>
 db_name     = <database name>
 ```
+#### Install Gulp
+```
+npm install -g gulp-cli
+```
+
 ## Running the dev server
 The project is setup with a default gulp task that will run a local php server and reload the page when any resource is updated. The server is using [php's built in web server](https://www.php.net/manual/en/features.commandline.webserver.php).
 
