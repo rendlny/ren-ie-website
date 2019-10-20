@@ -43,8 +43,37 @@ BROWSER_SYNC_PROXY=cropreport.local
 ```
 Running the `gulp` command now will cause it to skip starting the basic php server and instead proxy the browser-sync requests to the domain specified.
 
-## Styling
-This project uses [Sass](https://sass-lang.com/) for its stylesheets. Sass files are located in the `/scss` directory and are outputted to the `/css` directory when compiled. When running the dev server any changes made to a .scss file will cause a recompile and the changes will be injected into webpage (no reload needed).
-
 #### Gulp Task
 To just compile the Sass files to css run `gulp css`.
+
+#### Website Data
+Create a `website_data.ini` file in the php directory containing your website data.
+```
+[header]
+header_icon_img_link = '';
+header_title = '';
+
+[navbar]
+nav_1_txt = ''
+nav_1_link = ''
+nav_2_txt = ''
+nav_2_link = ''
+nav_3_txt = ''
+nav_3_link = ''
+
+[sidebar]
+
+[footer]
+twitter_link = ''
+instagram_link = ''
+telegram_link = ''
+github_link = ''
+copyright_txt = ''
+
+[home page]
+home_title = ''
+home_txt_1 = '';
+home_txt_2 = ''
+home_txt_3 = ''
+
+```
