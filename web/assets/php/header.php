@@ -3,8 +3,8 @@
   <div class="container container-full">
     <div class="ms-title">
       <a href="index.html">
-        <img class="ms-logo animated zoomInDown animation-delay-5" src="<?=$web_data["header_icon_img_link"]?>" alt="Website Icon">
-        <h1 class="animated fadeInRight animation-delay-6"><?=$web_data["header_title"]?></h1>
+        <img class="ms-logo animated zoomInDown animation-delay-5" src="<?=$web_data["header"]["header_icon_img_link"]?>" alt="Website Icon">
+        <h1 class="animated fadeInRight animation-delay-6"><?=$web_data["header"]["header_title"]?></h1>
       </a>
     </div>
     <div class="header-right">

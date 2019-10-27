@@ -13,6 +13,7 @@ RewriteCond %{SCRIPT_FILENAME} !-d
 RewriteCond %{SCRIPT_FILENAME} !-f
 
 ## WEB ##
+RewriteRule ^home/? ./web/modules/page_layout.php
 #RewriteRule ^login/? ./web/modules/system_login.php
 #RewriteRule ^logout/? ./web/modules/system_logout.php
 #RewriteRule ^activate/?([A-Za-z0-9]+)?/?$  ./web/modules/system_activate.php?tcode=$1

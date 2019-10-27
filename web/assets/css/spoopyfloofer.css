@@ -44,3 +44,31 @@
   border: 15px solid;
   max-height: 400px;
 }
+
+.ms-slidebar{
+  background-color: #131313;
+}
+
+.ms-slidebar .ms-slidebar-menu>li>a.link{
+  background-color: #131313;
+}
+
+.ms-slidebar .ms-slidebar-menu>li>a.link{
+  color: #f8f8f8;
+}
+
+.ms-slidebar .ms-slidebar-header{
+  background-image:url(../img/back_mountain_small.jpg);
+}
+
+#slidebar-header-overlay{
+  display:block;
+  content:"";
+  position:absolute;
+  z-index:0;
+  left:0;right:0;
+  top:0;
+  bottom:0;
+  width:100%;
+  background: linear-gradient(0deg, rgba(34,195,142,0.8) 0%, rgba(78,1,103,0.8) 77%);
+}

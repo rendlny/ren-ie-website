@@ -1,5 +1,5 @@
 <?php
-$web_data = parse_ini_file($_SERVER['DOCUMENT_ROOT'].'/website_data.ini');
+$web_data = parse_ini_file($_SERVER['DOCUMENT_ROOT'].'/website_data.ini', true);
 $current_page = 'home.php';
 
 ?>
