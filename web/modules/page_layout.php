@@ -1,4 +1,8 @@
 <?php
+ini_set('display_errors',1);
+ini_set('display_startup_errors',1);
+error_reporting(E_ALL);
+
 $web_data = parse_ini_file($_SERVER['DOCUMENT_ROOT'].'/website_data.ini', true);
 $current_page = 'home.php';
 
@@ -24,7 +28,7 @@ $current_page = 'home.php';
       ?>
     </div> <!-- ms-site-container -->
     <?php include '../assets/php/sidebar.php'; ?>
-    <script src="../assets/js/plugins.min.js"></script>
-    <script src="../assets/js/app.min.js"></script>
+    <script src="/web/assets/js/plugins.min.js"></script>
+    <script src="/web/assets/js/app.min.js"></script>
   </body>
 </html>

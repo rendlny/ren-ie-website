@@ -1,3 +1,3 @@
-<?php
-  header('Location: /web/modules/page_layout.php');
+<?php 
+ header('Location: /home/');
 ?>
