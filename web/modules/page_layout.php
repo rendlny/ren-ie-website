@@ -12,7 +12,7 @@ if(isset($_GET['page'])){
       $current_page = 'home.php';
       break;
 
-    case '':
+    case 'pins':
       $current_page = 'pin_trading.php';
       break;
   }
