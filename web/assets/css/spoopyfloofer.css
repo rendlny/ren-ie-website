@@ -3,6 +3,11 @@
   background: linear-gradient(0deg, rgba(34,195,142,0.8) 0%, rgba(78,1,103,0.8) 77%);
 }
 
+.ms-hero-bg-info:after {
+  background-color: rgba(68, 1, 103, 0.8);
+  background: linear-gradient(0deg, rgba(34,195,142,0.8) 0%, rgba(78,1,103,0.8) 77%);
+}
+
 .ms-header.ms-header-dark {
   background-color: #131313;
 }

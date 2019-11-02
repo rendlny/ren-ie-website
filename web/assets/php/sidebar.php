@@ -19,15 +19,8 @@ for($i = 1; $i <= sizeof($web_data["social_links"]); $i++){
   <div class="sb-slidebar-container">
     <header class="ms-slidebar-header">
       <div id="slidebar-header-overlay">
-        <div class="ms-slidebar-login">
-          <a href="javascript:void(0)" class="withripple"><i class="zmdi zmdi-account"></i> Login</a>
-          <a href="javascript:void(0)" class="withripple"><i class="zmdi zmdi-account-add"></i> Register</a>
-        </div>
+
         <div class="ms-slidebar-title">
-          <form class="search-form">
-            <input id="search-box-slidebar" type="text" class="search-input" placeholder="Search..." name="q" />
-            <label for="search-box-slidebar"><i class="zmdi zmdi-search"></i></label>
-          </form>
           <div class="ms-slidebar-t">
             <img class="ms-logo ms-logo-sm" src="<?=$web_data["header"]["header_icon_img_link"]?>" alt="Website Icon">
             <h3><?=$web_data["site"]["name"]?></h3>
@@ -39,7 +32,7 @@ for($i = 1; $i <= sizeof($web_data["social_links"]); $i++){
       <?=$sidebar?>
     </ul>
     <div class="ms-slidebar-social ms-slidebar-block">
-      <h4 class="ms-slidebar-block-title">Social Links</h4>
+      <h4 class="ms-slidebar-block-title"><?=$web_data["sidebar"]["social_links_title"]?></h4>
       <div class="ms-slidebar-social">
         <?=$sidebar_socials?>
       </div>

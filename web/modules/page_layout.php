@@ -1,10 +1,11 @@
 <?php
+include $_SERVER['DOCUMENT_ROOT'].'/web/start.php';
 ini_set('display_errors',1);
 ini_set('display_startup_errors',1);
 error_reporting(E_ALL);
 
 $web_data = parse_ini_file($_SERVER['DOCUMENT_ROOT'].'/website_data.ini', true);
-$current_page = 'home.php';
+$current_page = 'pin_trading.php';
 
 ?>
 <!DOCTYPE html>
@@ -30,5 +31,6 @@ $current_page = 'home.php';
     <?php include '../assets/php/sidebar.php'; ?>
     <script src="/web/assets/js/plugins.min.js"></script>
     <script src="/web/assets/js/app.min.js"></script>
+    <script src="/web/assets/js/ecommerce.js"></script>
   </body>
 </html>

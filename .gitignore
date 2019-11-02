@@ -1,7 +1,9 @@
 web/assets/php/*.ini
 *.env
 phinx.yml
+package-lock.json
 node_modules
+notes.txt
 
 /vendor/
 config.ini
