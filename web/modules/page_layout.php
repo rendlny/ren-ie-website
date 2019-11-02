@@ -4,8 +4,21 @@ ini_set('display_errors',1);
 ini_set('display_startup_errors',1);
 error_reporting(E_ALL);
 
+$current_page = 'home.php';
+
+if(isset($_GET['page'])){
+  switch($_GET['page']){
+    case 'home':
+      $current_page = 'home.php';
+      break;
+
+    case '':
+      $current_page = 'pin_trading.php';
+      break;
+  }
+}
+
 $web_data = parse_ini_file($_SERVER['DOCUMENT_ROOT'].'/website_data.ini', true);
-$current_page = 'pin_trading.php';
 
 ?>
 <!DOCTYPE html>
