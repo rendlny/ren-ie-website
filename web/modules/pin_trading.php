@@ -38,7 +38,6 @@ if($items != NULL){
           <div class="card-body overflow-hidden text-center">
             <a style="display:block;" data-mh="itemCardImage" href="/pins/'.$item->code.'/"><img src="'.$item->image.'" alt="" class="img-fluid center-block"></a>
             <h4 class="text-normal text-center">'.$item->title.'</h4>
-            <p>'.$item->description.'</p>
             <div class="mt-2">
               '.$itemLabels.'
             </div>
