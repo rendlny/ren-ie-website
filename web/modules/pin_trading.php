@@ -66,7 +66,6 @@ if($items != NULL){
         </div>
         <div class="card-body">
           <form class="form-horizontal" id="Filters">
-            <h4 class="mb-1 no-mt">Devices</h4>
             <fieldset>
               <div class="form-group no-mt">
                 <div class="checkbox">
