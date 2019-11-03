@@ -8,22 +8,41 @@ $items = ItemController::getActiveItems();
 
 if($items != NULL){
   foreach ($items as $item) {
-    $tagSale = ($item->trade == 1) ? ' sale' : NULL;
+    $tagSale = ($item->sale == 1) ? ' sale' : NULL;
     $tagTrade = ($item->trade == 1) ? ' trade' : NULL;
     $tagPreorder = ($item->preorder == 1) ? ' preorder' : NULL;
-    $itemTags = $tagSale.$tagTrade.$tagPreorder;
+    $tagBid = ($item->bid == 1) ? ' bid' : NULL;
+    $itemTags = $tagSale.$tagTrade.$tagPreorder.$tagBid;
+
+    if($item->quantity > 0){
+      $labelSale = ($item->sale == 1) ? ' <span class="ms-tag ms-tag-success">€'.number_format(($item->price/100),2).'</span>' : NULL;
+      $labelTrade = ($item->trade == 1) ? ' <span class="ms-tag ms-tag-royal">Trade</span>' : NULL;
+      $labelPreorder = ($item->preorder == 1) ? ' <span class="ms-tag ms-tag-info">Preorder</span>' : NULL;
+      $labelBid = ($item->bid == 1) ? ' <span class="ms-tag ms-tag-danger">Bid</span>' : NULL;
+
+      $itemLabels = $labelSale.$labelTrade.$labelPreorder.$labelBid;
+
+      $btnCart = '<a href="javascript:void(0)" class="btn btn-primary btn-sm btn-block btn-raised mt-2 no-mb"><i class="zmdi zmdi-shopping-cart-plus"></i> Add to Cart</a>';
+
+    }else{
+      $itemLabels = '<span class="ms-tag ms-tag-secondary">Sold Out</span>';
+      $btnCart = '<a class="btn btn-primary btn-sm btn-block btn-raised mt-2 no-mb"><i class="zmdi zmdi-search"></i> View Item</a>';
+    }
+
+
+    $formattedDate = date_format($item->created, 'YmdHi');
 
     $itemCards .= '
-      <div class="col-xl-4 col-md-6 mix '.$itemTags.'" data-price="'.number_format(($item->price/100),2).'" data-date="20160705">
+      <div class="col-xl-4 col-md-6 mix '.$itemTags.'" data-price="'.number_format(($item->price/100),2).'" data-date="'.$formattedDate.'">
         <div class="card ms-feature">
           <div class="card-body overflow-hidden text-center">
-            <a href="ecommerce-item.html"><img src="'.$item->image.'" alt="" class="img-fluid center-block"></a>
+            <a style="display:block;" data-mh="itemCardImage" href="/pins/'.$item->code.'/"><img src="'.$item->image.'" alt="" class="img-fluid center-block"></a>
             <h4 class="text-normal text-center">'.$item->title.'</h4>
             <p>'.$item->description.'</p>
             <div class="mt-2">
-              <span class="ms-tag ms-tag-success">€'.number_format(($item->price/100),2).'</span>
+              '.$itemLabels.'
             </div>
-            <a href="javascript:void(0)" class="btn btn-primary btn-sm btn-block btn-raised mt-2 no-mb"><i class="zmdi zmdi-shopping-cart-plus"></i> Add to Cart</a>
+            '.$btnCart.'
           </div>
         </div>
       </div>';
@@ -32,7 +51,7 @@ if($items != NULL){
 
 ?>
 
-<div class="ms-hero-page ms-hero-img-mountain ms-hero-bg-info mb-6">
+<div class="ms-hero-page ms-hero-img-forest ms-hero-bg-info mb-6">
   <div class="text-center color-white mt-6 mb-6 index-1">
     <h1>Pin Trading</h1>
     <p class="lead lead-lg">Welcome to my Pin Trading page.</p>
@@ -61,6 +80,10 @@ if($items != NULL){
                 <div class="checkbox">
                   <label>
                     <input type="checkbox" value=".preorder"> Preorders </label>
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" value=".bid"> Bids </label>
                 </div>
               </div>
             </fieldset>

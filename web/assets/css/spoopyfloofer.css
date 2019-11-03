@@ -1,11 +1,21 @@
+:root {
+  --main-colour: rgba(34,195,142);
+  --main-colour-dark: rgb(35,99,82);
+}
+
+.wrap.wrap-mountain{
+  background-image: url(../images/countryside.jpg);
+  animation-duration: 19s;
+}
+
 .wrap.wrap-mountain:after {
   background-color: rgba(68, 1, 103, 0.8);
-  background: linear-gradient(0deg, rgba(34,195,142,0.8) 0%, rgba(78,1,103,0.8) 77%);
+  background: linear-gradient(0deg, rgba(34,195,142,0.8) 0%, rgba(64,1,103,0.8) 77%);
 }
 
 .ms-hero-bg-info:after {
   background-color: rgba(68, 1, 103, 0.8);
-  background: linear-gradient(0deg, rgba(34,195,142,0.8) 0%, rgba(78,1,103,0.8) 77%);
+  background: linear-gradient(0deg, rgba(34,195,142,0.8) 0%, rgba(64,1,103,0.8) 77%);
 }
 
 .ms-header.ms-header-dark {
@@ -66,6 +76,12 @@
   background-image:url(../img/back_mountain_small.jpg);
 }
 
+.ms-hero-img-forest {
+  background-image:url(../images/forest.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
 #slidebar-header-overlay{
   display:block;
   content:"";
@@ -76,4 +92,8 @@
   bottom:0;
   width:100%;
   background: linear-gradient(0deg, rgba(34,195,142,0.8) 0%, rgba(78,1,103,0.8) 77%);
+}
+
+.btn-circle.btn-circle-raised.btn-circle-primary:before {
+  background-color: var(--main-colour-dark);
 }

@@ -8,7 +8,7 @@ class Item extends Model {
   const UPDATED_AT = 'updated';
 
   protected $table = 'item';
-  protected $fillable = ['code', 'user_id', 'title', 'description', 'active', 'price', 'preorder', 'trade', 'weight', 'quantity', 'image'];
+  protected $fillable = ['code', 'user_id', 'title', 'description', 'active', 'price', 'preorder', 'trade', 'weight', 'quantity', 'image', 'sale', 'bid'];
 
   protected static function boot() {
   parent::boot();
