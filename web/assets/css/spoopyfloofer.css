@@ -73,7 +73,8 @@
 }
 
 .ms-slidebar .ms-slidebar-header{
-  background-image:url(../img/back_mountain_small.jpg);
+  background-image:url(../images/forest.jpg);
+  background-size: cover;
 }
 
 .ms-hero-img-forest {

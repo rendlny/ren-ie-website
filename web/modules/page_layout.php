@@ -15,6 +15,10 @@ if(isset($_GET['page'])){
     case 'pins':
       $current_page = 'pin_trading.php';
       break;
+
+    case 'links':
+      $current_page = 'links.php';
+      break;
   }
 }
 
