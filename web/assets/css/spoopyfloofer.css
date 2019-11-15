@@ -3,6 +3,18 @@
   --main-colour-dark: rgb(35,99,82);
 }
 
+.carousel-item {
+    max-width: 500px;
+}
+
+.itemImgPreview img{
+  max-width: 100px !important;
+}
+
+.ms-carousel .carousel-inner .carousel-item img{
+  max-width: 100%;
+}
+
 .wrap.wrap-mountain{
   background-image: url(../images/countryside.jpg);
   animation-duration: 19s;

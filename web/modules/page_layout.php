@@ -19,6 +19,10 @@ if(isset($_GET['page'])){
     case 'links':
       $current_page = 'links.php';
       break;
+
+    case 'view-item':
+      $current_page = 'item_view.php';
+      break;
   }
 }
 
