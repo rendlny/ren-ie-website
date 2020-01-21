@@ -14,6 +14,7 @@ RewriteCond %{SCRIPT_FILENAME} !-f
 
 ## WEB ##
 RewriteRule ^([A-Za-z0-9]+)/?([A-Za-z0-9]+)?/? ./web/modules/page_layout.php?page=$1&code=$2
+RewriteRule ^admin/login/? ./web/modules/login.php
 #RewriteRule ^login/? ./web/modules/system_login.php
 #RewriteRule ^logout/? ./web/modules/system_logout.php
 #RewriteRule ^activate/?([A-Za-z0-9]+)?/?$  ./web/modules/system_activate.php?tcode=$1
