@@ -13,7 +13,7 @@ if(isset($_GET['page'])){
       break;
 
     case 'pins':
-      $current_page = 'pin_trading.php';
+      $current_page = (isset($_GET['code']) && $_GET['code'] != NULL) ? 'item_view.php' : 'pin_trading.php';
       break;
 
     case 'links':
