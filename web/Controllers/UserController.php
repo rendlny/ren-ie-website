@@ -221,11 +221,11 @@ class UserController {
     $mail->Host = $config['smtp_host'];
     $mail->Username = $config['smtp_user'];
     $mail->Password = $config['smtp_pass'];
-    $mail->SMTPSecure = 'SSL';
-    $mail->Port = 587;
-    $mail->setFrom('system@inkermantech.com', 'The Teagasc Support Team');
+    $mail->SMTPSecure = $config['smtp_secure'];
+    $mail->Port = $config['smtp_port'];
+    $mail->setFrom($config['smtp_user'], $config['display_name']);
     $mail->addAddress($user->email);
-    $mail->addCC('support@inkermantech.com');
+    $mail->addCC($config['smtp_user']);
 
     $mail->isHTML(true);
     $mail->Subject = $email["subject"];
