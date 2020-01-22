@@ -36,7 +36,7 @@ if($items != NULL){
       <div class="col-xl-4 col-md-6 mix '.$itemTags.'" data-price="'.number_format(($item->price/100),2).'" data-date="'.$formattedDate.'">
         <div class="card ms-feature">
           <div class="card-body overflow-hidden text-center">
-            <a style="display:block;" data-mh="itemCardImage" href="/pins/'.$item->code.'/"><img src="'.$item->image.'" alt="" class="img-fluid center-block"></a>
+            <a style="display:block;" data-mh="itemCardImage" href="/pins/'.$item->code.'/"><img src="'.$item->image_1.'" alt="" class="img-fluid center-block"></a>
             <h4 data-mh="itemCardTitle" class="text-normal text-center">'.$item->title.'</h4>
             <div class="mt-2">
               '.$itemLabels.'
