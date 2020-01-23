@@ -13,7 +13,9 @@ RewriteCond %{SCRIPT_FILENAME} !-d
 RewriteCond %{SCRIPT_FILENAME} !-f
 
 ## ADMIN ##
-RewriteRule ^admin/login/ ./web/modules_admin/login.php
+RewriteRule ^admin/login/ ./web/modules_admin/system_login.php
+RewriteRule ^admin/activate/?([A-Za-z0-9]+)?/?$ ./web/modules_admin/system_activate.php?tcode=$1
+RewriteRule ^admin/?([A-Za-z0-9]+)?/?([A-Za-z0-9]+)?/?$ ./web/modules_admin/page_layout.php?page=$1&code=$2
 
 ## WEB ##
 RewriteRule ^/?([A-Za-z0-9]+)?/?([A-Za-z0-9]+)?/?$ ./web/modules/page_layout.php?page=$1&code=$2

@@ -3,7 +3,7 @@
   use Models\Database;
   //Initialize Illuminate Database Connection
   new Database();
-  session_start();
+  if(!isset($_SESSION)){ session_start(); }
 
   ini_set('display_errors',1);
   ini_set('display_startup_errors',1);
