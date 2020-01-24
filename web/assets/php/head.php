@@ -35,4 +35,5 @@
   <meta name="msapplication-TileImage" content="/web/assets/icons/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
 
+  <script src="https://kit.fontawesome.com/<?=$config["font_awesome_code"]?>.js" crossorigin="anonymous"></script>
 </head>

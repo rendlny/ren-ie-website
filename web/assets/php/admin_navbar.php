@@ -14,8 +14,8 @@ for($i = 1; $i <= sizeof($web_data["admin_navbar_links"]); $i++){
   <div class="container container-full">
     <div class="navbar-header">
       <a class="navbar-brand" href="/home">
-        <img class="ms-logo ms-logo-sm" src="<?=$web_data["header"]["header_icon_img_link"]?>" alt="Website Icon">
-        <span class="ms-title"><?=$web_data["header"]["header_title"]?></span>
+        <img class="ms-logo ms-logo-sm" src="<?=$web_data["admin_header"]["header_icon_img_link"]?>" alt="Website Icon">
+        <span class="ms-title"><?=$web_data["admin_header"]["header_title"]?></span>
       </a>
     </div>
     <div class="collapse navbar-collapse" id="ms-navbar">

@@ -44,6 +44,7 @@ class UserController {
     }
 
     $_SESSION['userCode'] = $user->usercode;
+    $_SESSION['userId'] = $user->id;
     $_SESSION['userLevel'] = $user->access;
   }
 

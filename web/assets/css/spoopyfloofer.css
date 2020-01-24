@@ -30,6 +30,10 @@
   background: linear-gradient(0deg, rgba(34,195,142,0.8) 0%, rgba(64,1,103,0.8) 77%);
 }
 
+.ms-hero-img-airplane {
+  background-image: url(../images/countryside.jpg) !important;
+}
+
 .ms-header.ms-header-dark {
   background-color: #131313;
 }

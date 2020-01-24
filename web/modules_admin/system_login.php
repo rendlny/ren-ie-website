@@ -77,7 +77,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     <div class="bg-full-page ms-hero-bg-light ms-hero-img-airplane back-fixed">
       <div class="mw-500 absolute-center">
         <div class="card color-dark shadow-6dp animated fadeIn animation-delay-7">
-          <div class="ms-hero-bg-primary ms-hero-img-mountain">
+          <div class="ms-hero-bg-info ms-hero-img-forest">
             <h2 class="text-center no-m pt-4 pb-4 color-white index-1"><?=$web_data["admin_site"]["title"]?> Login</h2>
           </div>
           <ul class="nav nav-tabs nav-tabs-full nav-tabs-3 nav-tabs-transparent indicator-primary" role="tablist">
