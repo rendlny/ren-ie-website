@@ -66,7 +66,7 @@ if(isset($_GET['code']) && $_GET['code'] != NULL){
             <li class="mb-2"><strong>Availability: </strong> <?=$stockLabel?></li>
             <li><strong>Shipping costs: </strong> <span class="color-warning">$5.25</span></li>
           </ul>
-          <a href="javascript:void(0)" class="btn btn-primary btn-block btn-raised mt-2 no-mb"><i class="zmdi zmdi-shopping-cart-plus"></i> Add to Cart</a>
+          <a href="/order/<?=$_GET['code']?>/" class="btn btn-primary btn-block btn-raised mt-2 no-mb"><i class="zmdi zmdi-shopping-cart-plus"></i> Order</a>
         </div>
       </div>
       <div class="card card-success animated fadeInUp animation-delay-10">

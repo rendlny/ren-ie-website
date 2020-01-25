@@ -62,7 +62,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
  }
 
 if(isset($_GET['code']) && $_GET['code'] != NULL){
-  $item = ItemController::getItemByCode($_GET['code']);
+  $item = ItemController::getItemByCodeAndUser($_GET['code']);
 
   $imageList .= ($item->image_1 != NULL) ? '<a href="'.$item->image_1.'" data-lightbox="image-1" data-title="My caption">Item Image 1</a>&nbsp;' : NULL;
   $imageList .= ($item->image_2 != NULL) ? '<a href="'.$item->image_2.'" data-lightbox="image-1" data-title="My caption">Item Image 2</a>&nbsp;' : NULL;

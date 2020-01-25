@@ -22,7 +22,7 @@ if($items != NULL){
 
       $itemLabels = $labelSale.$labelTrade.$labelPreorder.$labelBid;
 
-      $btnCart = '<a href="javascript:void(0)" class="btn btn-primary btn-sm btn-block btn-raised mt-2 no-mb"><i class="zmdi zmdi-shopping-cart-plus"></i> Add to Cart</a>';
+      $btnCart = '<a href="/order/'.$item->code.'/" class="btn btn-primary btn-sm btn-block btn-raised mt-2 no-mb"><i class="zmdi zmdi-shopping-cart-plus"></i> Order</a>';
 
     }else{
       $itemLabels = '<span class="ms-tag ms-tag-secondary">Sold Out</span>';

@@ -13,6 +13,14 @@ if(isset($_GET['page'])){
       $current_page = (isset($_GET['code']) && $_GET['code'] != NULL) ? 'item_view.php' : 'pin_trading.php';
       break;
 
+    case 'order':
+      $current_page = (isset($_GET['code']) && $_GET['code'] != NULL) ? 'item_order.php' : 'pin_trading.php';
+      break;
+
+    case 'ordersuccess':
+      $current_page = 'item_order_success.php';
+      break;
+
     case 'links':
       $current_page = 'links.php';
       break;
