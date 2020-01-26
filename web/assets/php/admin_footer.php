@@ -1,4 +1,4 @@
-<footer class="ms-footer">
+<footer class="ms-footer" id="footer">
   <div class="container">
     <p><?=$web_data["footer"]["copyright_txt"]?></p>
   </div>

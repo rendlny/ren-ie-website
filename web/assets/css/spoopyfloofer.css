@@ -3,6 +3,12 @@
   --main-colour-dark: rgb(35,99,82);
 }
 
+#footer {
+  width: 100%;
+  position: fixed;
+  bottom:0px;
+}
+
 .carousel-item {
     max-width: 500px;
 }

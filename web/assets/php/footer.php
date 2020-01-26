@@ -18,7 +18,7 @@ for($i = 1; $i <= sizeof($web_data["social_links"]); $i++){
     </div>
   </div>
 </aside>
-<footer class="ms-footer">
+<footer class="ms-footer" id="footer">
   <div class="container">
     <p><?=$web_data["footer"]["copyright_txt"]?></p>
   </div>

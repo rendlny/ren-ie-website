@@ -15,7 +15,7 @@ if(isset($_GET['page'])){
       break;
 
     case 'sales':
-      $current_page = 'sale_search.php';
+      $current_page = (isset($_GET['code']) && $_GET['code'] != NULL) ? 'sale_edit.php' : 'sale_search.php';
       break;
 
     case 'items':

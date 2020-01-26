@@ -18,6 +18,17 @@ class SaleController {
     return Sale::where('code', $code)->first();
   }
 
+  public static function getSaleByCodeAndUser($code) {
+    echo $code;
+    $sale = Sale::where('code', $code)->first();
+    $user = User::where('usercode', $_SESSION['userCode'])->first();
+    $item = Item::where('id', $sale->item_id)->first();
+
+    if($item->user_id == $user->id){
+      return $sale;
+    }
+  }
+
   static function updateSale($data){
     DB::beginTransaction();
     try{
@@ -41,15 +52,7 @@ class SaleController {
       DB::rollback();
       throw $e;
     }
-    return $item;
-  }
-
-  static function getActiveItems(){
-    return Item::where('active', 1)->get();
-  }
-
-  static function getUsersActiveItems(){
-    return Item::where('active', 1)->where('user_id', $_SESSION['userId'])->get();
+    return $sale;
   }
 
   public static function addSale($data){
@@ -66,6 +69,69 @@ class SaleController {
    }
 
    return $sale;
+ }
+
+ public static function getUserSales(){
+   $item = NULL;
+   $userSales = array();
+
+   $sales = Sale::where('cancelled', 0)->get();
+   $user = User::where('usercode', $_SESSION['userCode'])->first();
+
+   foreach ($sales as $sale) {
+     $item = Item::where('id', $sale->item_id)->first();
+     if($item->user_id == $user->id){
+       array_push($userSales, $sale);
+     }
+
+   }
+   return $userSales;
+ }
+
+ public static function getUsersSalesCount(){
+   $salesCount = 0;
+   $sales = Sale::where('cancelled', 0)->get();
+   $user = User::where('usercode', $_SESSION['userCode'])->first();
+
+   foreach ($sales as $sale) {
+     $item = Item::where('id', $sale->item_id)->first();
+     if($item->user_id == $user->id){
+       $salesCount = $salesCount + 1;
+     }
+
+   }
+   return $salesCount;
+ }
+
+ static function getUsersShippedSaleCount(){
+   $shippedSalesCount = 0;
+   $sales = Sale::where('cancelled', 0)->where('shipped', 1)->get();
+   $user = User::where('usercode', $_SESSION['userCode'])->first();
+   foreach ($sales as $sale) {
+     $item = Item::where('id', $sale->item_id)->first();
+     if($item->user_id == $user->id){
+       $shippedSalesCount = $shippedSalesCount + 1;
+     }
+   }
+
+   return $shippedSalesCount;
+ }
+
+ static function getUsersRecentSales(){
+   $item = NULL;
+   $userSales = array();
+
+   $sales = Sale::where('cancelled', 0)->limit(10)->get();
+   $user = User::where('usercode', $_SESSION['userCode'])->first();
+
+   foreach ($sales as $sale) {
+     $item = Item::where('id', $sale->item_id)->first();
+     if($item->user_id == $user->id){
+       array_push($userSales, $sale);
+     }
+
+   }
+   return $userSales;
  }
 
 }

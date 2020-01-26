@@ -58,6 +58,10 @@ class ItemController {
     return Item::where('active', 1)->where('user_id', $_SESSION['userId'])->get();
   }
 
+  static function getUsersItemCount(){
+    return Item::where('active', 1)->where('user_id', $_SESSION['userId'])->count();
+  }
+
 }
 
  ?>
