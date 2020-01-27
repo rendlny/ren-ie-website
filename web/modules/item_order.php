@@ -77,9 +77,9 @@ if($item->preorder){
           <div class="row">
             <div class="col-md-4">
               <div class="img-thumbnail" data-mh="top-cards">
-                <img src="<?=$item->image_1?>" alt="..." class="img-fluid">
+                <a href="/pins/<?=$item->code?>" target="_blank"><img src="<?=$item->image_1?>" alt="..." class="img-fluid"></a>
                 <div class="caption">
-                  <h3 class="color-success"><?=$item->title?></h3>
+                  <a href="/pins/<?=$item->code?>" target="_blank"><h3 class="color-success"><?=$item->title?></h3></a>
                   <h4>€<?=($item->price/100)?></h4>
                   <p><?=$item->description?></p>
                 </div>
