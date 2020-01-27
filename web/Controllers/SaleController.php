@@ -46,6 +46,8 @@ class SaleController {
       $sale->shipped = $data['shipped'];
       $sale->cancelled = $data['cancelled'];
       $sale->refunded = $data['refunded'];
+      $sale->contact_option = $data['contact_option'];
+      $sale->contact_username = $data['contact_username'];
       $sale->save();
       DB::commit();
     }catch(Exception $e) {

@@ -9,6 +9,29 @@
   bottom:0px;
 }
 
+
+#item-view-bg {
+  background-image: url(../images/countryside.jpg);
+  background-position: center center;
+  position: relative;
+  background-size: cover;
+  z-index: 1;
+}
+
+#item-view-bg:after {
+  display: block;
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(68, 1, 103, 0.8);
+  background: linear-gradient(0deg, rgba(34,195,142,0.8) 0%, rgba(64,1,103,0.8) 77%);
+}
+
 .carousel-item {
     max-width: 500px;
 }

@@ -7,11 +7,43 @@ $sales = SaleController::getUserSales();
 
 
 foreach ($sales as $sale) {
-  $editBtn = '<a class="btn btn-sm btn-primary btn-raised" href="/admin/sales/'.$sale->code.'"><i class="fa fa-pencil"></i></a>';
+  $editBtn = '<a title="Edit Sale" class="btn-circle btn-circle-raised btn-circle-primary" href="/admin/sales/'.$sale->code.'"><i class="fa fa-pencil"></i></a>&nbsp;';
+
+
+  $username = $sale->contact_username;
+  if($username[0] == '@'){
+    $username = substr($username, 1);
+  }
+
+  switch ($sale->contact_option) {
+    case "discord":
+        $btnColour = "vk";
+        $contactLink = $username;
+        break;
+
+    case "telegram":
+        $btnColour = "twitter";
+        $contactLink = 'https://t.me/'.$username;
+        break;
+
+    case "email":
+        $btnColour = "youtube";
+        $contactLink = "mailto: ".$username;
+        break;
+
+    case "twitter":
+        $btnColour = "twitter";
+        $contactLink = 'https://twitter.com/'.$username;
+        break;
+
+    default:
+        $btnColour = "github";
+  }
+  $contactBtn = '<a title="Contact Customer" class="btn-circle btn-circle-raised btn-'.$btnColour.'" href="'.$contactLink.'" target="_blank"><i class="fab fa-'.$sale->contact_option.'"></i></a>';
 
   $saleLines .= '
   <tr>
-    <td>'.$editBtn.'</td>
+    <td>'.$editBtn.$contactBtn.'</td>
     <td>'.$sale->customer_name.'</td>
     <td>'.$sale->shipping_address.'</td>
     <td><a href="mailto: '.$sale->paypal.'">'.$sale->paypal.'</a></td>

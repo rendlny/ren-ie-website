@@ -9,7 +9,7 @@ class Sale extends Model {
 
   public $timestamps = false;
   protected $table = 'sale';
-  protected $fillable = ['code', 'item_id', 'quantity', 'total_price', 'customer_name', 'paypal', 'shipping_address', 'trade_offer', 'comment', 'charged', 'tracking', 'shipped', 'cancelled', 'refunded'];
+  protected $fillable = ['code', 'item_id', 'quantity', 'total_price', 'customer_name', 'paypal', 'shipping_address', 'trade_offer', 'comment', 'charged', 'tracking', 'shipped', 'cancelled', 'refunded', 'contact_option', 'contact_username'];
 
   protected static function boot() {
     parent::boot();

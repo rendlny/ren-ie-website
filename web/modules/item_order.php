@@ -17,6 +17,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
       'paypal' => $_POST['email'],
       'trade_offer' => $_POST['trade'],
       'comment' => $_POST['comment'],
+      'contact_option' => $_POST['contactOption'],
+      'contact_username' => $_POST['contactName'],
     ];
 
     $sale = SaleController::addSale($data);
@@ -50,7 +52,7 @@ if($item->preorder){
   $preorderAgreement = '
     <div class="checkbox">
       <label>
-        <input name="active" required type="checkbox" <span class="ml-2">You understand that this is a pre-order and may take 3 to 4 months before I will have the pins ans ship them to you.</span>
+        <input name="active" required type="checkbox" <span class="ml-2">You understand that this is a pre-order and may take around 3 to 4 months before I will have the pins and ship them to you.</span>
       </label>
     </div>
   ';
@@ -91,7 +93,7 @@ if($item->preorder){
                     After you submit this form I will send you an invoice via PayPal using the email you have provided.<br>
                     For Pre-Orders, I won't send the invoice until I have the pins in-hand.<br>
                     For Trades, you can see my <a target="_blank" href="https://trello.com/b/4sPgYiti/rendlys-fursona-pins-collection-trading-eu">pin list here <i class="fa fa-link"></i><a>
-                    I will generally take any pins that I don't own
+                    I will generally take any Fursona or Persona pins that I don't own
                   </p>
                   <h3 class="color-success">Shipping</h3>
                   <p>
@@ -101,7 +103,7 @@ if($item->preorder){
                   <table class="table table-bordered table-striped">
                     <thead>
                       <tr>
-                        <th></th><th>Cost (no tracking)</th><th>With Tracking</th>
+                        <th></th><th>Standard</th><th>With Tracking</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -150,6 +152,52 @@ if($item->preorder){
           </div>
 
           <?=$tradeOffer?>
+
+          <div class="row form-group">
+            <label for="inputName" class="col-md-2 control-label">Contact Option</label>
+            <div class="col-md-9">
+
+              <div class="radio radio-primary">
+                <label>
+                  <input type="radio" name="contactOption" id="contactOption1" value="telegram">
+                  <span class="circle"></span><span class="check"></span>
+                  <i style="color: #179cde;" class="fab fa-telegram fa-2x"></i>&nbsp; Telegram
+                </label>
+              </div>
+
+              <div class="radio radio-primary">
+                <label>
+                  <input type="radio" name="contactOption" id="contactOption3" value="twitter">
+                  <span class="circle"></span><span class="check"></span>
+                  <i style="color: #179cde;" class="fab fa-twitter-square fa-2x"></i>&nbsp; Twitter
+                </label>
+              </div>
+
+              <div class="radio radio-primary">
+                <label>
+                  <input type="radio" name="contactOption" id="contactOption2" value="discord">
+                  <span class="circle"></span><span class="check"></span>
+                  <i style="color: #7289da;" class="fab fa-discord fa-2x"></i>&nbsp; Discord
+                </label>
+              </div>
+
+              <div class="radio radio-primary">
+                <label>
+                  <input type="radio" name="contactOption" id="contactOption3" value="email" checked>
+                  <span class="circle"></span><span class="check"></span>
+                  <i style="color: red;" class="fa fa-envelope fa-2x"></i>&nbsp; Email
+                </label>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="row form-group">
+            <label for="inputUser" class="col-md-2 control-label">Contact Username</label>
+            <div class="col-md-9">
+              <input required name="contactName" type="text" class="form-control" id="contactName" placeholder="Your Contact Username">
+            </div>
+          </div>
 
           <div class="row form-group">
             <label for="inputPassword2" class="col-md-2 control-label">Comments or Questions</label>

@@ -26,6 +26,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
       'shipped' => $shipped,
       'cancelled' => $sale->cancelled,
       'refunded' => $sale->refunded,
+      'contact_option' => $_POST['contactOption'],
+      'contact_username' => $_POST['contactName'],
     ];
     $sale = SaleController::updateSale($data);
   } catch (Exception $e) {
@@ -62,6 +64,11 @@ if(isset($_GET['code']) && $_GET['code'] != NULL){
 
   $saleCharged = ($sale->charged) ? 'checked="checked"' : NULL;
   $saleShipped = ($sale->shipped) ? 'checked="checked"' : NULL;
+
+  $contactTelegram = ($sale->contact_option == 'telegram') ? 'checked="checked"' : NULL;
+  $contactTwitter = ($sale->contact_option == 'twitter') ? 'checked="checked"' : NULL;
+  $contactDiscord = ($sale->contact_option == 'discord') ? 'checked="checked"' : NULL;
+  $contactEmail = ($sale->contact_option == 'email') ? 'checked="checked"' : NULL;
 
 }else{
   echo '<meta http-equiv="refresh" content="0;url=/admin/sales/">';
@@ -162,6 +169,52 @@ if($sale == NULL){
             <label for="inputUser" class="col-md-2 control-label">Tracking #</label>
             <div class="col-md-9">
               <input name="tracking" type="text" class="form-control" id="tracking" placeholder="Tracking Number" value="<?=$sale->tracking?>">
+            </div>
+          </div>
+
+          <div class="row form-group">
+            <label for="inputName" class="col-md-2 control-label">Contact Option</label>
+            <div class="col-md-9">
+
+              <div class="radio radio-primary">
+                <label>
+                  <input type="radio" name="contactOption" id="contactOption1" value="telegram" <?=$contactTelegram?>>
+                  <span class="circle"></span><span class="check"></span>
+                  <i style="color: #179cde;" class="fab fa-telegram fa-2x"></i>&nbsp; Telegram
+                </label>
+              </div>
+
+              <div class="radio radio-primary">
+                <label>
+                  <input type="radio" name="contactOption" id="contactOption3" value="twitter" <?=$contactTwitter?>>
+                  <span class="circle"></span><span class="check"></span>
+                  <i style="color: #179cde;" class="fab fa-twitter-square fa-2x"></i>&nbsp; Twitter
+                </label>
+              </div>
+
+              <div class="radio radio-primary">
+                <label>
+                  <input type="radio" name="contactOption" id="contactOption2" value="discord" <?=$contactDiscord?>>
+                  <span class="circle"></span><span class="check"></span>
+                  <i style="color: #7289da;" class="fab fa-discord fa-2x"></i>&nbsp; Discord
+                </label>
+              </div>
+
+              <div class="radio radio-primary">
+                <label>
+                  <input type="radio" name="contactOption" id="contactOption3" value="email" <?=$contactEmail?>>
+                  <span class="circle"></span><span class="check"></span>
+                  <i style="color: red;" class="fa fa-envelope fa-2x"></i>&nbsp; Email
+                </label>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="row form-group">
+            <label for="inputUser" class="col-md-2 control-label">Contact Username</label>
+            <div class="col-md-9">
+              <input required name="contactName" type="text" class="form-control" id="contactName" placeholder="Contact Username" value="<?=$sale->contact_username?>">
             </div>
           </div>
 

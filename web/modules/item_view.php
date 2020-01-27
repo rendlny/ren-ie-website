@@ -20,61 +20,68 @@ if(isset($_GET['code']) && $_GET['code'] != NULL){
 
 
   $stockLabel = ($item->quantity > 0) ? '<span class="ms-tag ms-tag-success">in stock</span>' : '<span class="ms-tag ms-tag-danger">out of stock</span>';
+  $stockLabel = ($item->preorder) ? '<span class="ms-tag ms-tag-warning">Awaiting Stock</span>' : $stockLabel;
+  $stockNumber = ($item->quantity > 0) ? '<span class="ms-tag ms-tag-success">'.$item->quantity.'</span>' : '<span class="ms-tag ms-tag-danger">0</span>';
 
+  $buttonTxt = ($item->preorder) ? 'Pre-Order' : 'Order';
 }else{
   header('Location: /pins');
 }
 ?>
-<div class="container">
-  <div class="row" style="padding-top: 50px;">
-    <div class="col-md-6">
-      <div id="carousel-product" class="ms-carousel ms-carousel-thumb carousel slide animated zoomInUp animation-delay-5" data-ride="carousel" data-interval="0">
-        <div class="card card-body">
-          <!-- Wrapper for slides -->
-          <div class="carousel-inner" role="listbox">
-            <?=$carouselImages?>
-          </div>
-        </div>
-        <!-- Indicators -->
-        <ol class="carousel-indicators carousel-indicators-tumbs carousel-indicators-tumbs-outside">
-          <?=$carouselThumbs?>
-        </ol>
+<div id="item-view-bg">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <a href="/pins" style="margin-top:15px;" class="btn btn-royal btn-raised btn-block"><i class="fa fa-arrow-left"></i> Back To All Pins</a>
       </div>
     </div>
-    <div class="col-md-6">
-      <div class="card animated zoomInDown animation-delay-5">
-        <div class="card-body">
-          <h2><?=$item->title?></h2>
-          <div class="mb-2 mt-4">
-            <div class="row">
-              <div class="col-sm-6">
-              </div>
-              <div class="col-sm-6 text-center">
-                <h2 class="color-success no-m text-normal">€ <?=number_format($item->price/100, 2)?></h2>
-              </div>
+
+    <div class="row" style="padding-top: 10px;">
+      <div class="col-md-6">
+        <div id="carousel-product" class="ms-carousel ms-carousel-thumb carousel slide animated zoomInUp animation-delay-5" data-ride="carousel" data-interval="0">
+          <div class="card card-body">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              <?=$carouselImages?>
             </div>
           </div>
-          <p class="lead"><?=$item->description?></p>
-          <ul class="list-unstyled">
-            <li><strong>Number of items: </strong>
-              <div class="form form-inline input-number">
-                <button class="btn-circle btn-circle-primary btn-circle-xs" type="button"><i class="fa fa-minus"></i></button>
-                <input type="text" class="form-control form-control-number" pattern="[0-9]*" value="1">
-                <button class="btn-circle btn-circle-primary btn-circle-xs" type="button"><i class="fa fa-plus"></i></button>
-              </div>
-            </li>
-            <li class="mb-2"><strong>Availability: </strong> <?=$stockLabel?></li>
-            <li><strong>Shipping costs: </strong> <span class="color-warning">$5.25</span></li>
-          </ul>
-          <a href="/order/<?=$_GET['code']?>/" class="btn btn-primary btn-block btn-raised mt-2 no-mb"><i class="zmdi zmdi-shopping-cart-plus"></i> Order</a>
+          <!-- Indicators -->
+          <ol class="carousel-indicators carousel-indicators-tumbs carousel-indicators-tumbs-outside">
+            <?=$carouselThumbs?>
+          </ol>
         </div>
       </div>
-      <div class="card card-success animated fadeInUp animation-delay-10">
-        <div class="card-body overflow-hidden text-center">
-          <i class="zmdi-hc-3x zmdi zmdi-paypal" aria-hidden="true"></i>
+      <div class="col-md-6">
+        <div class="card animated zoomInDown animation-delay-5">
+          <div class="card-body">
+            <h2><?=$item->title?></h2>
+            <div class="mb-2 mt-4">
+              <div class="row">
+                <div class="col-sm-6">
+                </div>
+                <div class="col-sm-6 text-center">
+                  <h2 class="color-success no-m text-normal">€ <?=number_format($item->price/100, 2)?></h2>
+                </div>
+              </div>
+            </div>
+            <p class="lead"><?=$item->description?></p>
+            <ul class="list-unstyled">
+              <li><strong>Stock: </strong> <?=$stockNumber?></li>
+              <li class="mb-2"><strong>Availability: </strong> <?=$stockLabel?></li>
+              <li><strong>Shipping costs: </strong> <span class="color-success">€3*</span></li>
+            </ul>
+            <a href="/order/<?=$_GET['code']?>/" class="btn btn-primary btn-block btn-raised mt-2 no-mb"><i class="zmdi zmdi-shopping-cart-plus"></i> <?=$buttonTxt?></a>
+          </div>
+        </div>
+        <div class="card card-success animated fadeInUp animation-delay-10">
+          <div class="card-body overflow-hidden text-center">
+            <i class="zmdi-hc-3x zmdi zmdi-paypal" aria-hidden="true"></i>
+            <br>
+              For purchases I only accept payment via PayPal
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-</div> <!-- container -->
+  </div> <!-- container -->
+</div>
