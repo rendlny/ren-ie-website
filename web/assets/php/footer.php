@@ -5,7 +5,7 @@ for($i = 1; $i <= sizeof($web_data["social_links"]); $i++){
   $footer_socials .= '<a href="'.$web_data["social_links"][$i].'" target="_blank" class="btn-circle '.$web_data["social_class_colors"][$i].'"><i class="'.$web_data["social_icons"][$i].'"></i></a>';
 }
 ?>
-  <br><br><br><br><br>
+
 <div id="footer" >
   <aside class="ms-footbar">
     <div class="container">

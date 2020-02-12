@@ -10,7 +10,7 @@
         <p class="wow fadeInLeft animation-delay-7"><?=$web_data["home"]["home_txt_2"]?></p>
         <p class="wow fadeInLeft animation-delay-8"><?=$web_data["home"]["home_txt_3"]?></p>
         <div class="text-center">
-          <a href="/pins" class="btn btn-primary btn-raised mr-1 wow flipInX animation-delay-14">
+          <a href="/store" class="btn btn-primary btn-raised mr-1 wow flipInX animation-delay-14">
             <?=$web_data["home"]["home_btn_1"]?>
           </a>
         </div>

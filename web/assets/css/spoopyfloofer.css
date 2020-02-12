@@ -4,11 +4,16 @@
 }
 
 #footer {
-  width: 100%;
-  position: fixed;
-  bottom:0px;
+
 }
 
+.itemCardTitle {
+  color: #737373;
+}
+
+.itemCardTitle:hover {
+  color: #272727;
+}
 
 #item-view-bg {
   background-image: url(../images/countryside.jpg);

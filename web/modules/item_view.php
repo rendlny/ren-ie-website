@@ -25,14 +25,14 @@ if(isset($_GET['code']) && $_GET['code'] != NULL){
 
   $buttonTxt = ($item->preorder) ? 'Pre-Order' : 'Order';
 }else{
-  header('Location: /pins');
+  header('Location: /store');
 }
 ?>
 <div id="item-view-bg">
   <div class="container">
     <div class="row">
       <div class="col-md-6">
-        <a href="/pins" style="margin-top:15px;" class="btn btn-royal btn-raised btn-block"><i class="fa fa-arrow-left"></i> Back To All Pins</a>
+        <a href="/store" style="margin-top:15px;" class="btn btn-royal btn-raised btn-block"><i class="fa fa-arrow-left"></i> Back To All Products</a>
       </div>
     </div>
 
