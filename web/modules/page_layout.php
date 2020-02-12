@@ -9,7 +9,7 @@ if(isset($_GET['page'])){
       $current_page = 'home.php';
       break;
 
-    case 'pins':
+    case 'store':
       $current_page = (isset($_GET['code']) && $_GET['code'] != NULL) ? 'item_view.php' : 'pin_trading.php';
       break;
 

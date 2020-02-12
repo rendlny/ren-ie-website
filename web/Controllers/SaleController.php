@@ -65,6 +65,10 @@ class SaleController {
      $sale = Sale::create($data);
 
      DB::commit();
+
+
+    // send notification email
+  //  static::sendNotificationEmail('orderPlaced');
    } catch(Exception $e) {
      DB::rollback();
      throw $e;
@@ -134,6 +138,40 @@ class SaleController {
 
    }
    return $userSales;
+ }
+
+ static function sendNotificationEmail($emailType){
+   $string = file_get_contents("../assets/locale/notificationEmails.json");
+   $activationEmails = json_decode($string, true);
+   $config = parse_ini_file('../assets/php/config.ini');
+
+   $email = $activationEmails[$emailType];
+
+   $link = (empty($_SERVER['HTTPS']) ? 'http' : 'https' ).'://'.$_SERVER['HTTP_HOST'].$email["link"];
+   $emailbody = '<p>Dear Admin,</p>';
+   $emailbody .= $email['body'];
+   $emailbody .= '<p>'.$link.'</p><p>Yours faithfully,</p><p>The MySite Support Team</p>';
+
+   $mail = new PHPMailer;
+   $mail->isSMTP();
+   $mail->SMTPAuth = true;
+   $mail->Host = $config['smtp_host'];
+   $mail->Username = $config['smtp_user'];
+   $mail->Password = $config['smtp_pass'];
+   $mail->SMTPSecure = $config['smtp_secure'];
+   $mail->Port = $config['smtp_port'];
+   $mail->setFrom($config['smtp_user'], $config['display_name']);
+   $mail->addAddress($config['admin_email']);
+   $mail->addCC($config['smtp_user']);
+
+   $mail->isHTML(true);
+   $mail->Subject = $email["subject"];
+   $mail->Body    = $emailbody;
+   $mail->AltBody = $emailbody;
+
+   if (!$mail->send()) {
+     throw new Exception('Email not sent! '.$mail->ErrorInfo);
+   }
  }
 
 }
