@@ -4,7 +4,7 @@ use Controllers\ItemController;
 
 $itemCards = NULL;
 
-$items = ItemController::getUsersActiveItems();
+$items = ItemController::getAllUsersItems();
 
 if($items != NULL){
   foreach ($items as $item) {
@@ -14,20 +14,15 @@ if($items != NULL){
     $tagBid = ($item->bid == 1) ? ' bid' : NULL;
     $itemTags = $tagSale.$tagTrade.$tagPreorder.$tagBid;
 
-    if($item->quantity > 0){
-      $labelSale = ($item->sale == 1) ? ' <span class="ms-tag ms-tag-success">€'.number_format(($item->price/100),2).'</span>' : NULL;
-      $labelTrade = ($item->trade == 1) ? ' <span class="ms-tag ms-tag-royal">Trade</span>' : NULL;
-      $labelPreorder = ($item->preorder == 1) ? ' <span class="ms-tag ms-tag-info">Preorder</span>' : NULL;
-      $labelBid = ($item->bid == 1) ? ' <span class="ms-tag ms-tag-danger">Bid</span>' : NULL;
 
-      $itemLabels = $labelSale.$labelTrade.$labelPreorder.$labelBid;
+    $labelSale = ($item->sale == 1) ? ' <span class="ms-tag ms-tag-success">€'.number_format(($item->price/100),2).'</span>' : NULL;
+    $labelTrade = ($item->trade == 1) ? ' <span class="ms-tag ms-tag-royal">Trade</span>' : NULL;
+    $labelPreorder = ($item->preorder == 1) ? ' <span class="ms-tag ms-tag-info">Preorder</span>' : NULL;
+    $labelBid = ($item->bid == 1) ? ' <span class="ms-tag ms-tag-danger">Bid</span>' : NULL;
 
-      $btnCart = '<a href="/admin/items/'.$item->code.'/" class="btn btn-primary btn-sm btn-block btn-raised mt-2 no-mb"><i class="zmdi zmdi-edit"></i> Edit</a>';
+    $itemLabels = $labelSale.$labelTrade.$labelPreorder.$labelBid;
 
-    }else{
-      $itemLabels = '<span class="ms-tag ms-tag-secondary">Sold Out</span>';
-      $btnCart = '<a class="btn btn-primary btn-sm btn-block btn-raised mt-2 no-mb"><i class="zmdi zmdi-search"></i> View Item</a>';
-    }
+    $btnCart = '<a href="/admin/items/'.$item->code.'/" class="btn btn-primary btn-sm btn-block btn-raised mt-2 no-mb"><i class="zmdi zmdi-edit"></i> Edit</a>';
 
 
     $formattedDate = date_format($item->created, 'YmdHi');
@@ -59,6 +54,7 @@ if($items != NULL){
 </div>
 <br>
 <div class="container">
+  <a href="/admin/items/add/" class="btn btn-royal btn-raised btn-block"><i class="fa fa-plus"></i>&nbsp; Add New Item</a><br>
   <div class="row">
     <div class="col-lg-3">
       <div class="card card-primary">

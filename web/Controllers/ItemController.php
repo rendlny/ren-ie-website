@@ -21,6 +21,21 @@ class ItemController {
     return Item::where('code', $code)->where('user_id', $_SESSION['userId'])->first();
   }
 
+  public static function addItem($data){
+    DB::beginTransaction();
+
+    try {
+      // create the new report
+      $item = Item::create($data);
+      DB::commit();
+    } catch(Exception $e) {
+      DB::rollback();
+      throw $e;
+    }
+
+    return $item;
+  }
+
   static function updateItem($data){
     DB::beginTransaction();
     try{
@@ -56,6 +71,10 @@ class ItemController {
 
   static function getUsersActiveItems(){
     return Item::where('active', 1)->where('user_id', $_SESSION['userId'])->get();
+  }
+
+  static function getAllUsersItems(){
+    return Item::where('user_id', $_SESSION['userId'])->get();
   }
 
   static function getUsersItemCount(){
