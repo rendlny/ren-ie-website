@@ -15,7 +15,7 @@ foreach ($recentSales as $sale) {
       <td>'.$sale->created.'</td>
       <td>'.$sale->customer_name.'</td>
       <td>'.$item->title.'</td>
-      <td>'.$item->quantity.'</td>
+      <td>'.$sale->quantity.'</td>
     </tr>';
 }
 ?>
@@ -30,8 +30,6 @@ foreach ($recentSales as $sale) {
 <div class="container">
   <br>
   <div class="row">
-
-
 
     <div class="col-sm-4">
       <a href="/admin/items/">

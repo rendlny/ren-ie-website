@@ -58,121 +58,120 @@ class SaleController {
   }
 
   public static function addSale($data){
-   DB::beginTransaction();
+    DB::beginTransaction();
 
-   try {
-     // create the new report
-     $sale = Sale::create($data);
+    try {
+      // create the new report
+      $sale = Sale::create($data);
 
-     DB::commit();
+      DB::commit();
 
 
     // send notification email
-  //  static::sendNotificationEmail('orderPlaced');
-   } catch(Exception $e) {
-     DB::rollback();
-     throw $e;
-   }
+    //  static::sendNotificationEmail('orderPlaced');
+    } catch(Exception $e) {
+      DB::rollback();
+      throw $e;
+    }
 
-   return $sale;
- }
+    return $sale;
+  }
 
- public static function getUserSales(){
-   $item = NULL;
-   $userSales = array();
+  public static function getUserSales(){
+    $item = NULL;
+    $userSales = array();
 
-   $sales = Sale::where('cancelled', 0)->get();
-   $user = User::where('usercode', $_SESSION['userCode'])->first();
+    $sales = Sale::where('cancelled', 0)->get();
+    $user = User::where('usercode', $_SESSION['userCode'])->first();
 
-   foreach ($sales as $sale) {
-     $item = Item::where('id', $sale->item_id)->first();
-     if($item->user_id == $user->id){
-       array_push($userSales, $sale);
-     }
+    foreach ($sales as $sale) {
+      $item = Item::where('id', $sale->item_id)->first();
+      if($item->user_id == $user->id){
+        array_push($userSales, $sale);
+      }
 
-   }
-   return $userSales;
- }
+    }
+    return $userSales;
+  }
 
- public static function getUsersSalesCount(){
-   $salesCount = 0;
-   $sales = Sale::where('cancelled', 0)->get();
-   $user = User::where('usercode', $_SESSION['userCode'])->first();
+  public static function getUsersSalesCount(){
+    $salesCount = 0;
+    $sales = Sale::where('cancelled', 0)->get();
+    $user = User::where('usercode', $_SESSION['userCode'])->first();
 
-   foreach ($sales as $sale) {
-     $item = Item::where('id', $sale->item_id)->first();
-     if($item->user_id == $user->id){
-       $salesCount = $salesCount + 1;
-     }
+    foreach ($sales as $sale) {
+      $item = Item::where('id', $sale->item_id)->first();
+      if($item->user_id == $user->id){
+        $salesCount = $salesCount + 1;
+      }
 
-   }
-   return $salesCount;
- }
+    }
+    return $salesCount;
+  }
 
- static function getUsersShippedSaleCount(){
-   $shippedSalesCount = 0;
-   $sales = Sale::where('cancelled', 0)->where('shipped', 1)->get();
-   $user = User::where('usercode', $_SESSION['userCode'])->first();
-   foreach ($sales as $sale) {
-     $item = Item::where('id', $sale->item_id)->first();
-     if($item->user_id == $user->id){
-       $shippedSalesCount = $shippedSalesCount + 1;
-     }
-   }
+  static function getUsersShippedSaleCount(){
+    $shippedSalesCount = 0;
+    $sales = Sale::where('cancelled', 0)->where('shipped', 1)->get();
+    $user = User::where('usercode', $_SESSION['userCode'])->first();
+    foreach ($sales as $sale) {
+      $item = Item::where('id', $sale->item_id)->first();
+      if($item->user_id == $user->id){
+        $shippedSalesCount = $shippedSalesCount + 1;
+      }
+    }
 
-   return $shippedSalesCount;
- }
+    return $shippedSalesCount;
+  }
 
- static function getUsersRecentSales(){
-   $item = NULL;
-   $userSales = array();
+  static function getUsersRecentSales(){
+    $item = NULL;
+    $userSales = array();
 
-   $sales = Sale::where('cancelled', 0)->limit(10)->get();
-   $user = User::where('usercode', $_SESSION['userCode'])->first();
+    $sales = Sale::where('cancelled', 0)->limit(10)->get();
+    $user = User::where('usercode', $_SESSION['userCode'])->first();
 
-   foreach ($sales as $sale) {
-     $item = Item::where('id', $sale->item_id)->first();
-     if($item->user_id == $user->id){
-       array_push($userSales, $sale);
-     }
+    foreach ($sales as $sale) {
+      $item = Item::where('id', $sale->item_id)->first();
+      if($item->user_id == $user->id){
+        array_push($userSales, $sale);
+      }
+    }
+    return $userSales;
+  }
 
-   }
-   return $userSales;
- }
+  static function sendNotificationEmail($emailType){
+    $string = file_get_contents("../assets/locale/notificationEmails.json");
+    $activationEmails = json_decode($string, true);
+    $config = parse_ini_file('../assets/php/config.ini');
 
- static function sendNotificationEmail($emailType){
-   $string = file_get_contents("../assets/locale/notificationEmails.json");
-   $activationEmails = json_decode($string, true);
-   $config = parse_ini_file('../assets/php/config.ini');
+    $email = $activationEmails[$emailType];
 
-   $email = $activationEmails[$emailType];
+    $link = (empty($_SERVER['HTTPS']) ? 'http' : 'https' ).'://'.$_SERVER['HTTP_HOST'].$email["link"];
+    $emailbody = '<p>Dear Admin,</p>';
+    $emailbody .= $email['body'];
+    $emailbody .= '<p>'.$link.'</p><p>Yours faithfully,</p><p>The MySite Support Team</p>';
 
-   $link = (empty($_SERVER['HTTPS']) ? 'http' : 'https' ).'://'.$_SERVER['HTTP_HOST'].$email["link"];
-   $emailbody = '<p>Dear Admin,</p>';
-   $emailbody .= $email['body'];
-   $emailbody .= '<p>'.$link.'</p><p>Yours faithfully,</p><p>The MySite Support Team</p>';
+    $mail = new PHPMailer;
+    $mail->isSMTP();
+    $mail->SMTPAuth = true;
+    $mail->Host = $config['smtp_host'];
+    $mail->Username = $config['smtp_user'];
+    $mail->Password = $config['smtp_pass'];
+    $mail->SMTPSecure = $config['smtp_secure'];
+    $mail->Port = $config['smtp_port'];
+    $mail->setFrom($config['smtp_user'], $config['display_name']);
+    $mail->addAddress($config['admin_email']);
+    $mail->addCC($config['smtp_user']);
 
-   $mail = new PHPMailer;
-   $mail->isSMTP();
-   $mail->SMTPAuth = true;
-   $mail->Host = $config['smtp_host'];
-   $mail->Username = $config['smtp_user'];
-   $mail->Password = $config['smtp_pass'];
-   $mail->SMTPSecure = $config['smtp_secure'];
-   $mail->Port = $config['smtp_port'];
-   $mail->setFrom($config['smtp_user'], $config['display_name']);
-   $mail->addAddress($config['admin_email']);
-   $mail->addCC($config['smtp_user']);
+    $mail->isHTML(true);
+    $mail->Subject = $email["subject"];
+    $mail->Body    = $emailbody;
+    $mail->AltBody = $emailbody;
 
-   $mail->isHTML(true);
-   $mail->Subject = $email["subject"];
-   $mail->Body    = $emailbody;
-   $mail->AltBody = $emailbody;
-
-   if (!$mail->send()) {
+    if (!$mail->send()) {
      throw new Exception('Email not sent! '.$mail->ErrorInfo);
-   }
- }
+    }
+  }
 
 }
 

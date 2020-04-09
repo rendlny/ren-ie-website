@@ -7,8 +7,9 @@ $sales = SaleController::getUserSales();
 
 
 foreach ($sales as $sale) {
-  $editBtn = '<a title="Edit Sale" class="btn-circle btn-circle-raised btn-circle-primary" href="/admin/sales/'.$sale->code.'"><i class="fa fa-pencil"></i></a>&nbsp;';
+  $item = ItemController::getItemById($sale->item_id);
 
+  $editBtn = '<a title="Edit Sale" class="btn-circle btn-circle-raised btn-circle-primary" href="/admin/sales/'.$sale->code.'"><i class="fa fa-pencil"></i></a>&nbsp;';
 
   $username = $sale->contact_username;
   if($username[0] == '@'){
@@ -17,33 +18,35 @@ foreach ($sales as $sale) {
 
   switch ($sale->contact_option) {
     case "discord":
-        $btnColour = "vk";
-        $contactLink = $username;
-        break;
+      $btnColour = "vk";
+      $contactLink = $username;
+      break;
 
     case "telegram":
-        $btnColour = "twitter";
-        $contactLink = 'https://t.me/'.$username;
-        break;
+      $btnColour = "twitter";
+      $contactLink = 'https://t.me/'.$username;
+      break;
 
     case "email":
-        $btnColour = "youtube";
-        $contactLink = "mailto: ".$username;
-        break;
+      $btnColour = "youtube";
+      $contactLink = "mailto: ".$username;
+      break;
 
     case "twitter":
-        $btnColour = "twitter";
-        $contactLink = 'https://twitter.com/'.$username;
-        break;
+      $btnColour = "twitter";
+      $contactLink = 'https://twitter.com/'.$username;
+      break;
 
     default:
-        $btnColour = "github";
+      $btnColour = "github";
   }
-  $contactBtn = '<a title="Contact Customer" class="btn-circle btn-circle-raised btn-'.$btnColour.'" href="'.$contactLink.'" target="_blank"><i class="fab fa-'.$sale->contact_option.'"></i></a>';
+  $contactBtn = '<a title="Contact Customer" class="btn-circle btn-circle-raised btn-'.$btnColour.'" href="'.$contactLink.'" target="_blank"><i class="'.($sale->contact_option == 'email' ? 'fa fa-envelope' : 'fab fa-'.$sale->contact_option).'"></i></a>';
 
   $saleLines .= '
   <tr>
     <td>'.$editBtn.$contactBtn.'</td>
+    <td>'.$item->title.'</td>
+    <td class="text-center">'.$sale->quantity.'</td>
     <td>'.$sale->customer_name.'</td>
     <td>'.$sale->shipping_address.'</td>
     <td><a href="mailto: '.$sale->paypal.'">'.$sale->paypal.'</a></td>
@@ -77,6 +80,8 @@ function binaryCheck($value){
         <thead>
           <tr>
             <th>Action</th>
+            <th>Item</th>
+            <th>Quantity</th>
             <th>Name</th>
             <th>Address</th>
             <th>PayPal</th>
