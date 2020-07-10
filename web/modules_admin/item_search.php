@@ -22,21 +22,26 @@ if($items != NULL){
 
     $itemLabels = $labelSale.$labelTrade.$labelPreorder.$labelBid;
 
-    $btnCart = '<a href="/admin/items/'.$item->code.'/" class="btn btn-primary btn-sm btn-block btn-raised mt-2 no-mb"><i class="zmdi zmdi-edit"></i> Edit</a>';
+    $itemBtns = '
+      <a href="/admin/items/'.$item->code.'/" class="btn btn-primary btn-xs btn-block btn-raised no-mb"><i class="zmdi zmdi-edit"></i> Edit</a>
+      <a href="/admin/items/delete/'.$item->code.'/" class="btn btn-danger btn-xs btn-block btn-raised no-mb"><i class="zmdi zmdi-delete"></i> Delete</a>
+    ';
 
 
     $formattedDate = date_format($item->created, 'YmdHi');
 
+    $itemNotActive = (!$item->active)? 'bg-secondary text-dark' : NULL;
+
     $itemCards .= '
       <div class="col-xl-3 col-md-4 col-sm-6 mix '.$itemTags.'" data-price="'.number_format(($item->price/100),2).'" data-date="'.$formattedDate.'">
-        <div class="card ms-feature">
+        <div class="card ms-feature '.$itemNotActive.'">
           <div class="card-body overflow-hidden text-center">
             <a style="display:block;" data-mh="itemCardImage" href="/admin/items/'.$item->code.'/"><img src="'.$item->image_1.'" alt="" class="img-fluid center-block"></a>
             <h4 data-mh="itemCardTitle" class="text-normal text-center">'.$item->title.'</h4>
             <div class="mt-2">
               '.$itemLabels.'
             </div>
-            '.$btnCart.'
+            '.$itemBtns.'
           </div>
         </div>
       </div>';
