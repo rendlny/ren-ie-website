@@ -32,7 +32,7 @@ class ItemSoftDelete extends AbstractMigration
   public function change(){
     $item = $this->table('item');
     $item
-      ->addColumn('deleted_at', 'boolean', ['null' => true, 'signed' => false, 'default' => 0])
+      ->addColumn('deleted_at', 'timestamp', ['null' => true, 'signed' => false, 'default' => NULL])
       ->save();
   }
 }

@@ -86,7 +86,7 @@ class SaleController {
 
     foreach ($sales as $sale) {
       $item = Item::where('id', $sale->item_id)->first();
-      if($item->user_id == $user->id){
+      if(isset($item->user_id) && $item->user_id == $user->id){
         array_push($userSales, $sale);
       }
 
@@ -101,7 +101,7 @@ class SaleController {
 
     foreach ($sales as $sale) {
       $item = Item::where('id', $sale->item_id)->first();
-      if($item->user_id == $user->id){
+      if(isset($item->user_id) && $item->user_id == $user->id){
         $salesCount = $salesCount + 1;
       }
 
@@ -132,7 +132,7 @@ class SaleController {
 
     foreach ($sales as $sale) {
       $item = Item::where('id', $sale->item_id)->first();
-      if($item->user_id == $user->id){
+      if(isset($item->user_id) && $item->user_id == $user->id){
         array_push($userSales, $sale);
       }
     }
