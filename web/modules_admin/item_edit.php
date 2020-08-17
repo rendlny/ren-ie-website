@@ -28,7 +28,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
       'preorder' => $preorder,
       'sale' => $sale,
       'bid' => $bid,
-      'weight' => $_POST['weight'],
+      'weight' => ($_POST['weight'] != NULL) ? $_POST['weight'] : 0,
       'quantity' => $_POST['quantity'],
       'image_1' => $_POST['image_1'],
       'image_2' => $_POST['image_2'],
@@ -129,7 +129,7 @@ if(isset($_GET['code']) && $_GET['code'] != NULL){
           <div class="row form-group">
             <label for="inputUser" class="col-md-2 control-label">Name</label>
             <div class="col-md-9">
-              <input name="title" type="text" class="form-control" id="title" placeholder="Item Name" value="<?=$itemTitle?>">
+              <input required name="title" type="text" class="form-control" id="title" placeholder="Item Name" value="<?=$itemTitle?>">
             </div>
           </div>
           <div class="row form-group">

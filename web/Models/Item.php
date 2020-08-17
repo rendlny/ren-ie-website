@@ -2,13 +2,20 @@
 
 namespace Models;
 use \Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Item extends Model {
+  use SoftDeletes;
   const CREATED_AT = 'created';
   const UPDATED_AT = 'updated';
 
   protected $table = 'item';
-  protected $fillable = ['code', 'user_id', 'title', 'description', 'active', 'price', 'preorder', 'trade', 'weight', 'quantity', 'image_1', 'image_2', 'image_3', 'image_4', 'image_5', 'sale', 'bid'];
+  protected $fillable = [
+    'code', 'user_id', 'title', 'description', 'active',
+    'price', 'preorder', 'trade', 'weight', 'quantity',
+    'image_1', 'image_2', 'image_3', 'image_4', 'image_5',
+    'sale', 'bid'
+  ];
 
   protected static function boot() {
   parent::boot();

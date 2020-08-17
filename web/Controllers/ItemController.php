@@ -81,6 +81,10 @@ class ItemController {
     return Item::where('active', 1)->where('user_id', $_SESSION['userId'])->count();
   }
 
+  public function delete(Item $item){
+    $item->delete();
+  }
+
 }
 
  ?>
