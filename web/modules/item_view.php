@@ -24,6 +24,11 @@ if(isset($_GET['code']) && $_GET['code'] != NULL){
   $stockNumber = ($item->quantity > 0) ? '<span class="ms-tag ms-tag-success">'.$item->quantity.'</span>' : '<span class="ms-tag ms-tag-danger">0</span>';
 
   $buttonTxt = ($item->preorder) ? 'Pre-Order' : 'Order';
+
+  $orderBtn = ($item->quantity > 0) ? '
+    <a href="/order/'.$_GET['code'].'/" class="btn btn-primary btn-block btn-raised mt-2 no-mb">
+      <i class="zmdi zmdi-shopping-cart-plus"></i> '.$buttonTxt.'
+    </a>' : '<a class="btn btn-danger btn-block btn-raised mt-2 no-mb">Sold Out</a>';
 }else{
   header('Location: /store');
 }
@@ -68,9 +73,9 @@ if(isset($_GET['code']) && $_GET['code'] != NULL){
             <ul class="list-unstyled">
               <li><strong>Stock: </strong> <?=$stockNumber?></li>
               <li class="mb-2"><strong>Availability: </strong> <?=$stockLabel?></li>
-              <li><strong>Shipping costs: </strong> <span class="color-success">€3*</span></li>
+              <li><strong>Shipping costs: </strong> <span class="color-success">€2*</span></li>
             </ul>
-            <a href="/order/<?=$_GET['code']?>/" class="btn btn-primary btn-block btn-raised mt-2 no-mb"><i class="zmdi zmdi-shopping-cart-plus"></i> <?=$buttonTxt?></a>
+            <?=$orderBtn?>
           </div>
         </div>
         <div class="card card-success animated fadeInUp animation-delay-10">

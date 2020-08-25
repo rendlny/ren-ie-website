@@ -6,9 +6,12 @@ $warning = $itemTrade = $preorderAgreement = NULL;
 
 $item = ItemController::getItemByCode($_GET['code']);
 
+if(!$item->quantity > 0){
+  echo '<meta http-equiv="refresh" content="0;url=/store/'.$_GET['code'].'">';
+}
+
 if($_SERVER["REQUEST_METHOD"] == "POST") {
   try{
-
     $data = [
       'item_id' => $item->id,
       'quantity' => $_POST['quantity'],
@@ -23,7 +26,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $sale = SaleController::addSale($data);
   } catch (Exception $e) {
-     $error = $e->getMessage();
+    $error = $e->getMessage();
   }
 
   if ($error != NULL){
@@ -77,9 +80,9 @@ if($item->preorder){
           <div class="row">
             <div class="col-md-4">
               <div class="img-thumbnail" data-mh="top-cards">
-                <a href="/pins/<?=$item->code?>" target="_blank"><img src="<?=$item->image_1?>" alt="..." class="img-fluid"></a>
+                <a href="/store/<?=$item->code?>" target="_blank"><img src="<?=$item->image_1?>" alt="..." class="img-fluid"></a>
                 <div class="caption">
-                  <a href="/pins/<?=$item->code?>" target="_blank"><h3 class="color-success"><?=$item->title?></h3></a>
+                  <a href="/store/<?=$item->code?>" target="_blank"><h3 class="color-success"><?=$item->title?></h3></a>
                   <h4>€<?=($item->price/100)?></h4>
                   <p><?=$item->description?></p>
                 </div>

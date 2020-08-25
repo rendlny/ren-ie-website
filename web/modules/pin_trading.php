@@ -26,7 +26,7 @@ if($items != NULL){
 
     }else{
       $itemLabels = '<span class="ms-tag ms-tag-secondary">Sold Out</span>';
-      $btnCart = '<a class="btn btn-primary btn-sm btn-block btn-raised mt-2 no-mb"><i class="zmdi zmdi-search"></i> View Item</a>';
+      $btnCart = '<a href="/store/'.$item->code.'/" class="btn btn-primary btn-sm btn-block btn-raised mt-2 no-mb"><i class="zmdi zmdi-search"></i> View Item</a>';
     }
 
 
