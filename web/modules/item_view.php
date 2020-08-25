@@ -73,11 +73,19 @@ if(isset($_GET['code']) && $_GET['code'] != NULL){
             <ul class="list-unstyled">
               <li><strong>Stock: </strong> <?=$stockNumber?></li>
               <li class="mb-2"><strong>Availability: </strong> <?=$stockLabel?></li>
-              <li><strong>Shipping costs: </strong> <span class="color-success">€2*</span></li>
+              <li><strong>Shipping costs: </strong> <span class="color-success">€2* See table below</span></li>
             </ul>
             <?=$orderBtn?>
           </div>
         </div>
+
+        <div class="card card-success animated fadeInUp animation-delay-10">
+          <div class="card-body overflow-hidden text-center">
+            <h3 style="color:#21c28e; font-weight: 700; margin: 1rem;">Shipping Prices</h3>
+            <?php include $_SERVER['DOCUMENT_ROOT'].'/web/includes/shipping_table.php'; ?>
+          </div>
+        </div>
+
         <div class="card card-success animated fadeInUp animation-delay-10">
           <div class="card-body overflow-hidden text-center">
             <i class="zmdi-hc-3x zmdi zmdi-paypal" aria-hidden="true"></i>

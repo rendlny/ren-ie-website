@@ -103,25 +103,7 @@ if($item->preorder){
                     Pins will be sent in a bubble mailer. Shipping costs are listed below.
                     If you would like to pay the higher price for tracking then just let me know in the comments box.
                   </p>
-                  <table class="table table-bordered table-striped">
-                    <thead>
-                      <tr>
-                        <th></th><th>Standard</th><th>With Tracking</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Ireland</td><td>€2</td><td>€9</td>
-                      </tr>
-                      <tr>
-                        <td>Europe</td><td>€3</td><td>€10</td>
-                      </tr>
-                      <tr>
-                        <td>USA</td><td>€3</td><td>€10</td>
-                      </tr>
-                    </tbody>
-                  </table><br>
-                  <p>*For elsewhere I will contact you with the shipping cost.</p>
+                  <?php include $_SERVER['DOCUMENT_ROOT'].'/web/includes/shipping_table.php'; ?>
                 </div>
               </div>
             </div>
