@@ -35,7 +35,7 @@ SaleController::sendNotificationEmail('New Order on KalciumCove', 'A new order h
       <div class="row mt-2">
         <div class="col-lg-8 offset-lg-2">
           <a href="/home" class="btn btn-raised btn-primary btn-block">Return to Home-page</a>
-          <a href="/pins" class="btn btn-raised btn-royal btn-block">View More Pins</a><br>
+          <a href="/store" class="btn btn-raised btn-royal btn-block">View More Pins</a><br>
         </div>
       </div>
     </div>
