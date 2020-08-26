@@ -1,0 +1,17 @@
+[database]
+db_host     = 'localhost'
+db_user     = 'root'
+db_password = ''
+db_name     = 
+
+[mail]
+smtp_host =
+smtp_user =
+smtp_pass =
+smtp_port = 587
+smtp_secure = 'TLS'
+display_name =
+admin_email =
+
+[other]
+font_awesome_code =

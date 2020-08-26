@@ -1,5 +1,6 @@
 <?php
-
+use Controllers\SaleController;
+SaleController::sendNotificationEmail('New Order on KalciumCove', 'A new order has been placed on KalciumCove.ie');
 
 ?>
 <div class="ms-hero-page-override ms-hero-img-forest ms-hero-bg-info" style="padding: 30px 0 55px;">
