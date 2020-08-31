@@ -1,12 +1,23 @@
 <head>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=<?=$web_data["analytics"]["id"]?>"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', '<?=$web_data["analytics"]["id"]?>');
+  </script>
+
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta name="theme-color" content="#333">
 
-  <title><?=$web_data["site"]["title"]?> <?=isset($page_title)? ' | '.$page_title : NULL?></title>
-  <meta name="description" content="Kalcium Cove offers a selection of collectible enamel pins, including Fursona Pins, for sale shipping from Ireland <?=isset($meta_desc)? ' | '.$meta_desc : NULL?>">
+  <title><?=$web_data["site"]["title"]?><?=isset($page_title)? ' | '.$page_title : NULL?></title>
+  <meta name="description" content="<?=$web_data["site"]["meta_description"]?> <?=isset($meta_desc)? ' | '.$meta_desc : NULL?>">
+  <meta name="keywords" content="<?=$web_data["site"]["meta_keywords"]?>">
   <?php
     if(isset($item)){
       include $_SERVER['DOCUMENT_ROOT'].'/web/includes/item_meta_data.php';
