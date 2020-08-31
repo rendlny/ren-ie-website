@@ -18,7 +18,6 @@ if(isset($_GET['code']) && $_GET['code'] != NULL){
   $carouselThumbs .= ($item->image_4 != NULL) ? '<li data-target="#carousel-product" data-slide-to="3" class="itemImgPreview"><img src="'.$item->image_4.'" alt="Product Image 4"></li>' : NULL;
   $carouselThumbs .= ($item->image_5 != NULL) ? '<li data-target="#carousel-product" data-slide-to="4" class="itemImgPreview"><img src="'.$item->image_5.'" alt="Product Image 5"></li>' : NULL;
 
-
   $stockLabel = ($item->quantity > 0) ? '<span class="ms-tag ms-tag-success">in stock</span>' : '<span class="ms-tag ms-tag-danger">out of stock</span>';
   $stockLabel = ($item->preorder) ? '<span class="ms-tag ms-tag-warning">Awaiting Stock</span>' : $stockLabel;
   $stockNumber = ($item->quantity > 0) ? '<span class="ms-tag ms-tag-success">'.$item->quantity.'</span>' : '<span class="ms-tag ms-tag-danger">0</span>';

@@ -1,5 +1,6 @@
 <?php
 include $_SERVER['DOCUMENT_ROOT'].'/web/start.php';
+use Controllers\ItemController;
 
 $current_page = 'home.php';
 
@@ -7,30 +8,41 @@ if(isset($_GET['page'])){
   switch($_GET['page']){
     case 'home':
       $current_page = 'home.php';
+      $page_title = 'Home';
+      $meta_desc = '';
       break;
 
     case 'about':
       $current_page = 'about.php';
+      $page_title = 'About';
       break;
 
     case 'store':
       $current_page = (isset($_GET['code']) && $_GET['code'] != NULL) ? 'item_view.php' : 'pin_trading.php';
+      $item = (isset($_GET['code']) && $_GET['code'] != NULL) ? ItemController::getItemByCode($_GET['code']) : NULL;
+      $page_title = (isset($_GET['code']) && $_GET['code'] != NULL) ? 'Store | '.$item->title : 'Store';
       break;
 
     case 'order':
       $current_page = (isset($_GET['code']) && $_GET['code'] != NULL) ? 'item_order.php' : 'pin_trading.php';
+      $page_title = 'Order Form';
+      $meta_desc = 'Order Item';
       break;
 
     case 'ordersuccess':
       $current_page = 'item_order_success.php';
+      $page_title = 'Order Success';
+      $meta_desc = 'Order Success';
       break;
 
     case 'links':
       $current_page = 'links.php';
+      $page_title = 'Links';
       break;
 
     case 'view-item':
       $current_page = 'item_view.php';
+      $page_title = 'View Item';
       break;
   }
 }

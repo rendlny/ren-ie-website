@@ -4,8 +4,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta name="theme-color" content="#333">
-  <title><?=$web_data["site"]["title"]?></title>
-  <meta name="description" content="">
+
+  <title><?=$web_data["site"]["title"]?> <?=isset($page_title)? ' | '.$page_title : NULL?></title>
+  <meta name="description" content="Kalcium Cove offers a selection of collectible enamel pins, including Fursona Pins, for sale shipping from Ireland <?=isset($meta_desc)? ' | '.$meta_desc : NULL?>">
+  <?php
+    if(isset($item)){
+      include $_SERVER['DOCUMENT_ROOT'].'/web/includes/item_meta_data.php';
+    }
+  ?>
+
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="/web/assets/css/preload.min.css">
   <link rel="stylesheet" href="/web/assets/css/plugins.min.css">
@@ -13,8 +20,8 @@
   <link rel="stylesheet" href="/web/assets/css/spoopyfloofer.css">
   <link href="/web/assets/css/all.min.css" rel="stylesheet">
   <!--[if lt IE 9]>
-      <script src="/web/assets/js/html5shiv.min.js"></script>
-      <script src="/web/assets/js/respond.min.js"></script>
+    <script src="/web/assets/js/html5shiv.min.js"></script>
+    <script src="/web/assets/js/respond.min.js"></script>
   <![endif]-->
 
   <link rel="apple-touch-icon" sizes="57x57" href="/web/assets/icons/apple-icon-57x57.png">

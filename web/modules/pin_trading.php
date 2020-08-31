@@ -1,7 +1,6 @@
 <?php
 
 use Controllers\ItemController;
-
 $itemCards = NULL;
 
 $items = ItemController::getActiveItems();
