@@ -11,10 +11,31 @@
     <div class="col-md-12">
       <div class="card card-primary bg-dark">
         <div class="card-header">
+          <h3 class="card-title">Intro</h3>
+        </div>
+        <div class="card-body">
+          <p class="text-center">
+            Howdy my name is Ren, I am a Software Engineer from Ireland with too many hobbies.
+            I enjoy coding, drawing, making music, reading epic fantasies (Brandon Sanderson's books are a fav), video games & I am currently obsessed with board games.
+            Then after all that, I am also working on a novel.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-12">
+      <div class="card card-primary bg-dark">
+        <div class="card-header">
           <h3 class="card-title">Music</h3>
         </div>
         <div class="card-body">
-          <p></p>
+          <p class="text-center">
+            In my freetime I like to mess around with my synth setup ( a Keystep
+            hooked up to a Volca Keys with some effects pedals ) and try to make some
+            music, below is some the tracks that I've created. My music is
+            inspired by Para One's Naissance Des Pieuvres album & scntfc's work in Oxenfree.
+            I'm also a big fan of the Stranger Things Synthy soundtrack & other ambient movie scores.
+          </p>
           <?php include '../widgets/soundcloud.php'; ?>
         </div>
       </div>
@@ -26,7 +47,7 @@
           <h3 class="card-title">Boardgaming</h3>
         </div>
         <div class="card-body">
-          <script language="javascript" src="https://boardgamegeek.com/jswidget.php?username=RendlyTheFriendly&numitems=6&header=1&text=title&images=medium&show=recentplays&imagesonly=1&imagepos=left&addstyles=1&showplaydate=1&domains%5B%5D=boardgame"></script>
+          <?php include '../widgets/bgg.php'; ?>
         </div>
       </div>
     </div>
