@@ -104,6 +104,7 @@ if(isset($_GET['code']) && $_GET['code'] != NULL){
     $tradeCheck = ($item->trade) ? 'checked="checked"' : NULL;
   }else{
     $pageTitle = 'Add Item';
+    $itemActive = 'checked="checked"';
   }
 
 }
