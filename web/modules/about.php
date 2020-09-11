@@ -28,7 +28,7 @@
 
       <div class="card card-primary bg-dark">
         <div class="card-header">
-          <h3 class="card-title">Intro</h3>
+          <h3 class="card-title"><i class="fa fa-user"></i>&nbsp; Intro</h3>
         </div>
         <div class="card-body">
           <p class="text-center">
@@ -44,7 +44,7 @@
 
       <div class="card card-primary bg-dark">
         <div class="card-header">
-          <h3 class="card-title">Books</h3>
+          <h3 class="card-title"><i class="fa fa-book"></i>&nbsp; Books</h3>
         </div>
         <div class="card-body">
           <p class="text-center">
@@ -71,7 +71,7 @@
     <div class="col-md-12 col-lg-7">
       <div class="card card-primary bg-dark">
         <div class="card-header">
-          <h3 class="card-title">Music</h3>
+          <h3 class="card-title"><i class="fa fa-music"></i>&nbsp; Music</h3>
         </div>
         <div class="card-body">
           <p class="text-center">
@@ -87,7 +87,7 @@
 
       <div class="card card-primary bg-dark">
         <div class="card-header">
-          <h3 class="card-title">Boardgaming</h3>
+          <h3 class="card-title"><i class="fa fa-chess"></i>&nbsp; Boardgaming</h3>
         </div>
         <div class="card-body">
           <p class="text-center">

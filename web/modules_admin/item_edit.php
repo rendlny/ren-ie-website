@@ -95,6 +95,7 @@ if(isset($_GET['code']) && $_GET['code'] != NULL){
     $image5 = $item->image_5;
     $itemTitle = $item->title;
     $itemDesc = $item->description;
+    $quantity = $item->quantity;
 
     $itemPrice = $item->price;
     $itemActive = ($item->active) ? 'checked="checked"' : NULL;
@@ -107,6 +108,7 @@ if(isset($_GET['code']) && $_GET['code'] != NULL){
     $itemActive = 'checked="checked"';
     $saleCheck = 'checked';
     $tradeCheck = 'checked="checked"';
+    $quantity = 1;
   }
 
 }
@@ -150,7 +152,7 @@ if(isset($_GET['code']) && $_GET['code'] != NULL){
           <div class="row form-group">
             <label for="inputPassword2" class="col-md-2 control-label">Quantity</label>
             <div class="col-md-9">
-              <input name="quantity" type="number" class="form-control" id="inputPassword2" placeholder="Quantity" value="<?=$item->quantity?>">
+              <input name="quantity" type="number" class="form-control" id="inputPassword2" placeholder="Quantity" value="<?=$quantity?>">
             </div>
           </div>
           <div class="row form-group">
