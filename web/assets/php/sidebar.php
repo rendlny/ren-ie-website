@@ -8,11 +8,14 @@ for($i = 1; $i <= sizeof($web_data["navbar_links"]); $i++){
     </li>';
 }
 
-for($i = 1; $i <= sizeof($web_data["social_links"]); $i++){
-  $sidebar_socials .= '
-  <a href="'.$web_data["social_links"][$i].'" class="btn-circle btn-circle-raised '.$web_data["social_class_colors"][$i].'"><i class="'.$web_data["social_icons"][$i].'"></i>
-    <div class="ripple-container"></div>
-  </a>';
+if($links != NULL){
+  foreach ($links as $link) {
+    $sidebar_socials .= '
+      <a href="'.$link["url"].'" class="btn-circle btn-circle-raised btn-royal"><i class="'.$link["icon"].'"></i>
+        <div class="ripple-container"></div>
+      </a>
+    ';
+  }
 }
 ?>
 <div class="ms-slidebar sb-slidebar sb-left sb-style-overlay" id="ms-slidebar">

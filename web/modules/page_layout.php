@@ -1,6 +1,9 @@
 <?php
 include $_SERVER['DOCUMENT_ROOT'].'/web/start.php';
 use Controllers\ItemController;
+use Controllers\LinkController;
+
+$links = LinkController::getActiveLinks();
 
 $current_page = 'home.php';
 

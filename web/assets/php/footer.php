@@ -1,6 +1,4 @@
 <?php
-use Controllers\LinkController;
-
 $footerLinks = NULL;
 
 if($links != NULL){

@@ -1,8 +1,6 @@
 <?php
-use Controllers\LinkController;
 
 $linkList = NULL;
-$links = LinkController::getActiveLinks();
 
 if($links != NULL){
   foreach ($links as $link) {
