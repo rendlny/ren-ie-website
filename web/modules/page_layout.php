@@ -54,14 +54,14 @@ $web_data = parse_ini_file($_SERVER['DOCUMENT_ROOT'].'/website_data.ini', true);
 <html lang="en">
   <?php include '../assets/php/head.php'; ?>
   <body>
-    <div id="ms-preload" class="ms-preload">
-      <div id="status">
-        <div class="spinner">
-          <div class="dot1"></div>
-          <div class="dot2"></div>
-        </div>
+
+    <div id="status">
+      <div class="spinner">
+        <div class="dot1"></div>
+        <div class="dot2"></div>
       </div>
     </div>
+
     <div class="ms-site-container">
       <?php
         include '../assets/php/header.php';
