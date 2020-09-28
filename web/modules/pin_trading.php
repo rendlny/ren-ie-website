@@ -15,32 +15,32 @@ if($items != NULL){
 
     if($item->quantity > 0){
       $labelSale = ($item->sale == 1) ? ' <span class="ms-tag ms-tag-success">€'.number_format(($item->price/100),2).'</span>' : NULL;
-      $labelTrade = ($item->trade == 1) ? ' <span class="ms-tag ms-tag-royal">Trade</span>' : NULL;
       $labelPreorder = ($item->preorder == 1) ? ' <span class="ms-tag ms-tag-info">Preorder</span>' : NULL;
       $labelBid = ($item->bid == 1) ? ' <span class="ms-tag ms-tag-danger">Bid</span>' : NULL;
 
-      $itemLabels = $labelSale.$labelTrade.$labelPreorder.$labelBid;
-
-      $btnCart = '<a href="/order/'.$item->code.'/" class="btn btn-primary btn-sm btn-block btn-raised mt-2 no-mb"><i class="zmdi zmdi-shopping-cart-plus"></i> Order</a>';
+      $itemLabels = $labelSale.$labelPreorder.$labelBid;
+      $viewBtn = '<a href="/store/'.$item->code.'/" class="btn btn-royal btn-sm btn-block btn-raised mt-1 no-mb"><i class="zmdi zmdi-search"></i> View Item</a>';
+      $btnCart = '<a href="/store/add-to-cart/'.$item->code.'/" class="btn btn-primary btn-sm btn-block btn-raised mt-1 no-mb"><i class="zmdi zmdi-shopping-cart-plus"></i> Add To Cart</a>';
 
     }else{
       $itemLabels = '<span class="ms-tag ms-tag-secondary">Sold Out</span>';
-      $btnCart = '<a href="/store/'.$item->code.'/" class="btn btn-primary btn-sm btn-block btn-raised mt-2 no-mb"><i class="zmdi zmdi-search"></i> View Item</a>';
+      $viewBtn = '<a href="/store/'.$item->code.'/" class="btn btn-primary btn-sm btn-block btn-raised mt-1 no-mb"><i class="zmdi zmdi-search"></i> View Item</a>';
+      $btnCart = '<br>';
     }
 
 
     $formattedDate = date_format($item->created, 'YmdHi');
 
     $itemCards .= '
-      <div class="col-xl-4 col-md-6 mix '.$itemTags.'" data-price="'.number_format(($item->price/100),2).'" data-date="'.$formattedDate.'">
+      <div class="col-xl-4 col-md-4 col-sm-6 mix '.$itemTags.'" data-price="'.number_format(($item->price/100),2).'" data-date="'.$formattedDate.'">
         <div class="card ms-feature">
           <div class="card-body overflow-hidden text-center">
             <a style="display:block;" data-mh="itemCardImage" href="/store/'.$item->code.'/"><img src="'.$item->image_1.'" alt="" class="img-fluid center-block">
             <h4 data-mh="itemCardTitle" class="text-normal text-center itemCardTitle">'.$item->title.'</h4></a>
-            <div class="mt-2">
+            <div class="mt-1">
               '.$itemLabels.'
             </div>
-            '.$btnCart.'
+            '.$viewBtn.$btnCart.'
           </div>
         </div>
       </div>';
@@ -58,6 +58,9 @@ if($items != NULL){
 <div class="container">
   <div class="row">
     <div class="col-lg-3">
+
+      <a class="btn btn-block btn-primary btn-raised" href="/store/view-cart/"><i class="fa fa-shopping-cart"></i>&nbsp; View Cart</a>
+
       <div class="card card-primary">
         <div class="card-header">
           <h3 class="card-title">Filters</h3>
