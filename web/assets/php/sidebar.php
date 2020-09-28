@@ -32,7 +32,7 @@ for($i = 1; $i <= sizeof($web_data["social_links"]); $i++){
       <?=$sidebar?>
     </ul>
     <div class="ms-slidebar-social ms-slidebar-block">
-      <h4 class="ms-slidebar-block-title"><?=$web_data["sidebar"]["social_links_title"]?></h4>
+      <h4 class="ms-slidebar-block-title"><?=$web_data["sidebar"]["links_title"]?></h4>
       <div class="ms-slidebar-social">
         <?=$sidebar_socials?>
       </div>

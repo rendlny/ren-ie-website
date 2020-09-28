@@ -1,6 +1,8 @@
 :root {
   --main-colour: rgba(34,195,142);
   --main-colour-dark: rgb(35,99,82);
+  --royal-color: rgb(121, 50, 156);
+  --royal-colour-dark: rgb(87, 33, 113);
 }
 
 #footer {
@@ -153,4 +155,29 @@
   #home-txt {
     text-align: center;
   }
+}
+
+.btn-circle:before {
+  transition: none;
+  border-radius: none;
+  position: absolute;
+  display: none;
+  background-color: none;none
+}
+
+.btn-circle:hover:before, .btn-circle:focus:before {
+  height: none;
+  width: none;
+  top: none;
+  left: none;
+}
+
+.btn-circle.btn-success:hover {
+  background: var(--main-colour);
+  border-color: var(--main-colour-dark);
+}
+
+.btn-circle.btn-royal:hover {
+  background: var(--royal-color);
+  border-color: var(--royal-colour-dark);
 }

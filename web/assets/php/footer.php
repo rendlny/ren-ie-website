@@ -1,8 +1,17 @@
 <?php
-$footer_socials = NULL;
+use Controllers\LinkController;
 
-for($i = 1; $i <= sizeof($web_data["social_links"]); $i++){
-  $footer_socials .= '<a href="'.$web_data["social_links"][$i].'" target="_blank" class="btn-circle '.$web_data["social_class_colors"][$i].'"><i class="'.$web_data["social_icons"][$i].'"></i></a>';
+$footerLinks = NULL;
+
+if($links != NULL){
+  foreach ($links as $link) {
+    $footerLinks .= '
+      <a href="'.$link["url"].'" target="_blank" class="btn-circle btn-royal"
+      >
+        <i class="'.$link["icon"].'"></i>
+      </a>
+    ';
+  }
 }
 ?>
 
@@ -13,7 +22,7 @@ for($i = 1; $i <= sizeof($web_data["social_links"]); $i++){
         <div class="col-lg-12 col-md-12 ms-footer-col ms-footer-text-right">
           <div class="ms-footbar-block">
             <div class="ms-footbar-social">
-              <?=$footer_socials?>
+              <?=$footerLinks?>
             </div>
           </div>
         </div>

@@ -31,34 +31,10 @@ header_title = 'Kalcium&nbsp;Cove';
 4 = 'zmdi zmdi-link'
 
 [sidebar]
-social_links_title = 'Social Links'
+links_title = 'Links'
 
 [footer]
 copyright_txt = 'Copyright &copy; 2019 Ren Delaney '
-
-[social_links]
-1 = 'https://twitter.com/'
-2 = 'https://www.instagram.com/'
-3 = 'https://t.me/'
-4 = 'https://github.com/'
-
-[social_link_titles]
-1 = 'Twitter'
-2 = 'Instagram'
-3 = 'Telegram'
-4 = 'GitHub'
-
-[social_icons]
-1 = 'zmdi zmdi-twitter'
-2 = 'zmdi zmdi-instagram'
-3 = 'fab fa-telegram-plane'
-4 = 'zmdi zmdi-github'
-
-[social_class_colors]
-1 = 'btn-twitter'
-2 = 'btn-instagram'
-3 = 'btn-twitter'
-4 = 'btn-github'
 
 [home]
 home_title = 'Welcome to my Website'
