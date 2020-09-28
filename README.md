@@ -1,5 +1,5 @@
-# spoopy-floofer-website
-My personal website that will display my enamel pins for sale / trade and allows people to fill in a form to request a trade or purchase. Possible features: Implementation of a Telegram bot that will notify me of trade request and use my answer to upate the item.  
+# ren.ie
+My personal website that will display my personal projects, coding abilities & more. It will also list my enamel pins for sale / trade and allows people to fill in a form to request a trade or purchase.
 
 ## Setup
 This project requires Nodejs to be installed in order to get some dependencies.
@@ -15,7 +15,7 @@ composer install
 ```
 
 #### Config
-Create a `config.ini` file in the php directory containing your database connection variables.
+Duplicate the `config.ini.example` file and name it `config.ini`. Fill in your database connection data.
 ```
 [database]
 db_host     = <host>
@@ -47,33 +47,4 @@ Running the `gulp` command now will cause it to skip starting the basic php serv
 To just compile the Sass files to css run `gulp css`.
 
 #### Website Data
-Create a `website_data.ini` file in the php directory containing your website data.
-```
-[header]
-header_icon_img_link = '';
-header_title = '';
-
-[navbar]
-nav_1_txt = ''
-nav_1_link = ''
-nav_2_txt = ''
-nav_2_link = ''
-nav_3_txt = ''
-nav_3_link = ''
-
-[sidebar]
-
-[footer]
-twitter_link = ''
-instagram_link = ''
-telegram_link = ''
-github_link = ''
-copyright_txt = ''
-
-[home page]
-home_title = ''
-home_txt_1 = '';
-home_txt_2 = ''
-home_txt_3 = ''
-
-```
+Duplicate the `website_data.ini.example` file and name it `website_data.ini` and fill in your data.
