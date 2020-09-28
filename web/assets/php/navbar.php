@@ -5,7 +5,7 @@ for($i = 1; $i <= sizeof($web_data["navbar_links"]); $i++){
   $navActive = ($web_data["navbar"][$i] == $current_page) ? 'active' : NULL;
   $navbar .= '
     <li class="nav-item dropdown '.$navActive.'">
-      <a href="'.$web_data["navbar_links"][$i].'" class="nav-link dropdown-toggle animated fadeIn animation-delay-7" role="button" aria-haspopup="true" aria-expanded="false" data-name="home">'.$web_data["navbar"][$i].'</a>
+      <a href="'.$web_data["navbar_links"][$i].'" class="nav-link dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false" data-name="home">'.$web_data["navbar"][$i].'</a>
     </i>';
 }
 ?>
