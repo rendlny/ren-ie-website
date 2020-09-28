@@ -16,7 +16,7 @@ for($i = 1; $i <= sizeof($web_data["admin_navbar_links"]); $i++){
         <div class="ms-slidebar-title">
           <div class="ms-slidebar-t">
             <img class="ms-logo ms-logo-sm" src="<?=$web_data["admin_header"]["header_icon_img_link"]?>" alt="Website Icon">
-            <h3><?=$web_data["admin_site"]["title"]?></h3>
+            <h3><?=$web_data["admin_site"]["name"]?></h3>
           </div>
         </div>
       </div>

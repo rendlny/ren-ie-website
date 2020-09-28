@@ -23,7 +23,7 @@ foreach ($recentSales as $sale) {
   <div class="container">
     <div class="text-center">
       <br>
-      <h1 class="no-m ms-site-title color-white center-block ms-site-title-lg mt-2 animated zoomInDown animation-delay-5">Dashboard</h1>
+      <h1 class="no-m ms-site-title color-white center-block ms-site-title-lg mt-2">Dashboard</h1>
     </div>
   </div>
 </div>

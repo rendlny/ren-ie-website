@@ -1,9 +1,20 @@
 <?php
-$links_socials = NULL;
-for($i = 1; $i <= sizeof($web_data["social_links"]); $i++){
-  $links_socials .= '<a href="'.$web_data["social_links"][$i].'" target="_blank" class="btn btn-xlg btn-block btn-primary btn-raised">
-    <i class="'.$web_data["social_icons"][$i].'"></i> '.$web_data["social_link_titles"][$i].'
-  </a><br>';
+use Controllers\LinkController;
+
+$linkList = NULL;
+$links = LinkController::getActiveLinks();
+
+if($links != NULL){
+  foreach ($links as $link) {
+    $linkList .= '
+      <a href="'.$link["url"].'" target="_blank"
+        class="btn btn-xlg btn-block btn-primary btn-raised"
+        style="background: '.$link["colour"].';"
+      >
+        <i class="'.$link["icon"].'"></i> '.$link["name"].'
+      </a><br>
+    ';
+  }
 }
 ?>
 <div class="ms-hero-page ms-hero-img-forest ms-hero-bg-info mb-6" style="margin-bottom:0px !important;">
@@ -11,7 +22,7 @@ for($i = 1; $i <= sizeof($web_data["social_links"]); $i++){
     <h1>Links</h1>
     <br>
     <div class="col-md-4 offset-md-4">
-      <?=$links_socials?>
+      <?=$linkList?>
     </div>
     <br><br><br>
   </div>
