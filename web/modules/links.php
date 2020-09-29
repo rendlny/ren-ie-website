@@ -22,6 +22,5 @@ if($links != NULL){
     <div class="col-md-4 offset-md-4">
       <?=$linkList?>
     </div>
-    <br><br><br>
   </div>
 </div>
