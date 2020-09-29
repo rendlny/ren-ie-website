@@ -1,5 +1,5 @@
 <?php
-$footerLinks = NULL;
+$footerLinks = $footerEmail = NULL;
 
 if($links != NULL){
   foreach ($links as $link) {
@@ -11,13 +11,30 @@ if($links != NULL){
     ';
   }
 }
+
+if($web_data["site"]["email"] != NULL){
+  $footerEmail = '
+    <div class="ms-footbar-block">
+      <div class="ms-footbar-social">
+        <a href="mailto: '.$web_data["site"]["email"].'" style="background: none;">
+          <i class="fa fa-envelope"></i>&nbsp; '.$web_data["site"]["email"].'
+        </a>
+      </div>
+    </div>
+  ';
+}
 ?>
 
 <div id="footer" >
   <aside class="ms-footbar">
     <div class="container">
       <div class="row">
-        <div class="col-lg-12 col-md-12 ms-footer-col ms-footer-text-right">
+
+        <div class="col-lg-3 col-md-3 ms-footer-col">
+          <?=$footerEmail?>
+        </div>
+
+        <div class="col-lg-9 col-md-9 ms-footer-col ms-footer-text-right">
           <div class="ms-footbar-block">
             <div class="ms-footbar-social">
               <?=$footerLinks?>
