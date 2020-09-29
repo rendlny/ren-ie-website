@@ -38,6 +38,18 @@ if(isset($_GET['page'])){
       $meta_desc = 'Order Success';
       break;
 
+    case 'coding':
+      $current_page = 'coding.php';
+      $page_title = 'Coding';
+      $meta_desc = 'Coding';
+      break;
+
+    case 'music':
+      $current_page = 'music.php';
+      $page_title = 'Music';
+      $meta_desc = 'Music';
+      break;
+
     case 'links':
       $current_page = 'links.php';
       $page_title = 'Links';

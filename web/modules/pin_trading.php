@@ -52,7 +52,6 @@ if($items != NULL){
 <div class="ms-hero-page ms-hero-img-forest ms-hero-bg-info mb-6">
   <div class="text-center color-white mt-6 mb-6 index-1">
     <h1>Store</h1>
-    <p class="lead lead-lg">Welcome to my Store, I am open to trades on the majority of the items listed here.</p>
   </div>
 </div>
 <div class="container">

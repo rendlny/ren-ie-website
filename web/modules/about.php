@@ -82,6 +82,11 @@
             I'm also a big fan of synthy & ambient movie scores and video game soundtracks.
           </p>
           <?php include '../widgets/soundcloud.php'; ?>
+
+          <p class="text-center">
+            Hear more of my tracks on the Music page<br>
+            <a href="/music" class="btn btn-royal btn-raised btn-block">Music</a>
+          </p>
         </div>
       </div>
 
