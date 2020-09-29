@@ -10,11 +10,13 @@ for($i = 1; $i <= sizeof($web_data["navbar_links"]); $i++){
 
 if($links != NULL){
   foreach ($links as $link) {
-    $sidebar_socials .= '
-      <a href="'.$link["url"].'" class="btn-circle btn-circle-raised btn-royal"><i class="'.$link["icon"].'"></i>
-        <div class="ripple-container"></div>
-      </a>
-    ';
+    if($link->footer){
+      $sidebar_socials .= '
+        <a href="'.$link["url"].'" class="btn-circle btn-circle-raised btn-royal"><i class="'.$link["icon"].'"></i>
+          <div class="ripple-container"></div>
+        </a>
+      ';
+    }
   }
 }
 ?>

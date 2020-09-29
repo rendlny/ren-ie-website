@@ -4,13 +4,14 @@ use Controllers\LinkController;
 
 $error = $warning = NULL;
 $active = NULL;
-$linkName = $linkUrl = $linkIcon = $linkColour = $linkPosition = $linkActive = NULL;
+$linkName = $linkUrl = $linkIcon = $linkColour = $linkPosition = $linkActive = $linkFooter = NULL;
 $userId = $_SESSION['userId'];
 
 if($_SERVER["REQUEST_METHOD"] == "POST") {
 
   try{
     $active = (isset($_POST['active'])) ? 1 : 0;
+    $footer = (isset($_POST['footer'])) ? 1 : 0;
 
     $data = [
       'id' => $_GET['code'],
@@ -19,7 +20,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
       'icon' => $_POST['icon'],
       'colour' => $_POST['colour'],
       'position' => $_POST['position'],
-      'active' => $active
+      'active' => $active,
+      'footer' => $footer
     ];
     if($_GET['code'] == 'add'){ //Add
       $data['code'] = NULL;
@@ -74,11 +76,13 @@ if(isset($_GET['code']) && $_GET['code'] != NULL){
     $linkColour = $link->colour;
     $linkPosition = $link->position;
     $linkActive = ($link->active) ? 'checked="checked"' : NULL;
+    $linkFooter = ($link->footer) ? 'checked="checked"' : NULL;
 
   }
   else{
     $pageTitle = 'Add';
     $linkActive = 'checked="checked"';
+    $linkFooter = 'checked="checked"';
     $linkIcon = 'fa fa-';
   }
 }
@@ -137,6 +141,14 @@ if(isset($_GET['code']) && $_GET['code'] != NULL){
           </div>
 
           <div class="row mt-2">
+            <div class="offset-lg-2 col-lg-6">
+              <div class="checkbox">
+                <label>
+                  <input name="footer" type="checkbox" <?=$linkFooter?>> <span class="ml-2">Display in footer?</span>
+                </label>
+              </div>
+            </div>
+
             <div class="offset-lg-2 col-lg-6">
               <div class="checkbox">
                 <label>

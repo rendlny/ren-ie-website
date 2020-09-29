@@ -3,12 +3,14 @@ $footerLinks = $footerEmail = NULL;
 
 if($links != NULL){
   foreach ($links as $link) {
-    $footerLinks .= '
-      <a href="'.$link["url"].'" target="_blank" class="btn-circle btn-royal"
-      >
-        <i class="'.$link["icon"].'"></i>
-      </a>
-    ';
+    if($link->footer){
+      $footerLinks .= '
+        <a href="'.$link["url"].'" target="_blank" class="btn-circle btn-royal"
+        >
+          <i class="'.$link["icon"].'"></i>
+        </a>
+      ';
+    }
   }
 }
 

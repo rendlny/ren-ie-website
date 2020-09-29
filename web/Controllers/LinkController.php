@@ -24,6 +24,7 @@ class LinkController {
       $link->colour = $data['colour'];
       $link->position = $data['position'];
       $link->active = $data['active'];
+      $link->footer = $data['footer'];
       $link->save();
       DB::commit();
     }catch(Exception $e) {
@@ -51,6 +52,11 @@ class LinkController {
 
   static function getActiveLinks(){
     $links = Link::where('active', 1)->orderBy('position')->get();
+    return $links;
+  }
+
+  static function getActiveFooterLinks(){
+    $links = Link::where('active', 1)->where('footer', 1)->orderBy('position')->get();
     return $links;
   }
 
