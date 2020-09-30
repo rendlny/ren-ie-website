@@ -16,7 +16,7 @@
   }
 </style>
 
-<div class="ms-hero-page ms-hero-img-forest ms-hero-bg-info mb-6">
+<div class="ms-hero-page ms-hero-img-flowers ms-hero-bg-info mb-6">
   <div class="text-center color-white mt-6 mb-6 index-1">
     <h1>About</h1>
   </div>
@@ -32,6 +32,8 @@
         </div>
         <div class="card-body">
           <p class="text-center">
+            <div>
+<img src="http://chart.apis.google.com/chart?cht=t&chs=900x220&chco=ffffff,6500fd,6500fd&chf=bg,s,2eff9d&chtm=world&chld=IEPLROESGB&chd=s:00000"></div>
             Howdy my name is Ren, I am a Software Engineer from Ireland with
             too many hobbies.
             I enjoy coding, drawing, making music, reading epic fantasies
@@ -77,10 +79,11 @@
           <p class="text-center">
             In my freetime I like to mess around with my synth setup ( a Keystep
             hooked up to a Volca Keys with some effects pedals ) and try to make some
-            music, below is some the tracks that I've created. My music is
+            music, below is one of the tracks that I've created. My music is
             inspired by Para One's Naissance Des Pieuvres album & scntfc's work in Oxenfree.
             I'm also a big fan of synthy & ambient movie scores and video game soundtracks.
           </p>
+
           <?php include '../widgets/soundcloud.php'; ?>
 
           <p class="text-center">

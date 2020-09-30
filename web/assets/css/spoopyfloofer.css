@@ -52,7 +52,7 @@
 }
 
 .wrap.wrap-mountain{
-  background-image: url(../images/countryside.jpg);
+  background-image: url(../images/keyboard.jpg);
   animation-duration: 19s;
 }
 
@@ -131,6 +131,24 @@
 
 .ms-hero-img-forest {
   background-image:url(../images/forest.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.ms-hero-img-keyboard {
+  background-image:url(../images/keyboard.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.ms-hero-img-flowers {
+  background-image:url(../images/flowers.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.ms-hero-img-music {
+  background-image:url(../images/music.jpg);
   background-size: cover;
   background-position: center center;
 }
