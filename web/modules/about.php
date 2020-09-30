@@ -32,8 +32,6 @@
         </div>
         <div class="card-body">
           <p class="text-center">
-            <div>
-<img src="http://chart.apis.google.com/chart?cht=t&chs=900x220&chco=ffffff,6500fd,6500fd&chf=bg,s,2eff9d&chtm=world&chld=IEPLROESGB&chd=s:00000"></div>
             Howdy my name is Ren, I am a Software Engineer from Ireland with
             too many hobbies.
             I enjoy coding, drawing, making music, reading epic fantasies
