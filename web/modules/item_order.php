@@ -139,7 +139,7 @@ if($item->preorder){
           <?=$tradeOffer?>
 
           <div class="row form-group">
-            <label for="inputName" class="col-md-2 control-label">Contact Option</label>
+            <label for="contactOption" class="col-md-2 control-label">Contact Option</label>
             <div class="col-md-9">
 
               <div class="radio radio-primary">
@@ -174,13 +174,21 @@ if($item->preorder){
                 </label>
               </div>
 
+              <div class="radio radio-primary">
+                <label>
+                  <input type="radio" name="contactOption" id="contactOption4" value="paypal">
+                  <span class="circle"></span><span class="check"></span>
+                  <i style="color: #0070ba;" class="fab fa-cc-paypal fa-2x"></i>&nbsp; Same as PayPal Email
+                </label>
+              </div>
+
             </div>
           </div>
 
-          <div class="row form-group">
-            <label for="inputUser" class="col-md-2 control-label">Contact Username</label>
+          <div class="row form-group" id="username-row">
+            <label for="inputUser" class="col-md-2 control-label">Contact Email</label>
             <div class="col-md-9">
-              <input required name="contactName" type="text" class="form-control" id="contactName" placeholder="Your Contact Username">
+              <input name="contactName" type="text" class="form-control" id="contactName" placeholder="Your Contact Email">
             </div>
           </div>
 
@@ -206,3 +214,20 @@ if($item->preorder){
 </div> <!-- container -->
 <script src="/web/assets/js/jquery.min.js"></script>
 <script src="/web/assets/js/jquery.matchHeight.js"></script>
+<script>
+  $('input[type=radio][name=contactOption]').on('change', function(){
+    let option = $(this).val();
+    if(option == 'paypal'){
+      $('#username-row').css('display', 'none');
+    }else{
+      $('#username-row').css('display', 'flex');
+      if(option == 'email'){
+        $('#username-row label').html('Contact Email');
+        $('#username-row input').attr('placeholder','Your Contact Email');
+      }else{
+        $('#username-row label').html('Contact Username');
+        $('#username-row input').attr('placeholder','Your Contact Username');
+      }
+    }
+  });
+</script>

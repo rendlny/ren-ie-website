@@ -33,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
         'lastname' => $_POST['inputLast'],
         'email' => $_POST['inputEmail'],
       ];
-      $newUser = UserController::registerUser($data);
+      //$newUser = UserController::registerUser($data);
     } catch (Exception $e) {
       $error = $e->getMessage();
     }
@@ -82,7 +82,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
           </div>
           <ul class="nav nav-tabs nav-tabs-full nav-tabs-3 nav-tabs-transparent indicator-primary" role="tablist">
             <li class="nav-item" role="presentation"><a href="#ms-login-tab" aria-controls="ms-login-tab" role="tab" data-toggle="tab" class="nav-link withoutripple active"><i class="zmdi zmdi-account"></i> Login</a></li>
-            <li class="nav-item" role="presentation"><a href="#ms-register-tab" aria-controls="ms-register-tab" role="tab" data-toggle="tab" class="nav-link withoutripple"><i class="zmdi zmdi-account-add"></i> Register</a></li>
+            <!--<li class="nav-item" role="presentation"><a href="#ms-register-tab" aria-controls="ms-register-tab" role="tab" data-toggle="tab" class="nav-link withoutripple"><i class="zmdi zmdi-account-add"></i> Register</a></li>-->
             <li class="nav-item" role="presentation"><a href="#ms-recovery-tab" aria-controls="ms-recovery-tab" role="tab" data-toggle="tab" class="nav-link withoutripple"><i class="zmdi zmdi-key"></i> Recovery</a></li>
           </ul>
           <div class="card-body">
@@ -109,6 +109,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
                   </fieldset>
                 </form>
               </div>
+              <!--
               <div role="tabpanel" class="tab-pane fade" id="ms-register-tab">
                 <form name="register" method="post">
                   <fieldset>
@@ -139,6 +140,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
                   </fieldset>
                 </form>
               </div>
+            -->
               <div role="tabpanel" class="tab-pane fade" id="ms-recovery-tab">
                 <form name="recovery" method="post">
                 <fieldset>

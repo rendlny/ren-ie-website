@@ -108,6 +108,9 @@
             most excited for are
             <a href="https://boardgamegeek.com/boardgame/251661/oathsworn-deepwood" target="_blank">Oathsworn</a> and
             <a href="https://boardgamegeek.com/boardgame/285036/shadow-kingdoms-valeria" target="_blank">Shadow Kingdoms of Valeria</a>
+
+            <iframe style="width:100%; height:500px;" src="https://playback.geekgroup.app/rendlythefriendly" title="My Monthly Board Game Plays"></iframe>
+
           </p>
           <?php include '../widgets/bgg.php'; ?>
         </div>
