@@ -6,6 +6,7 @@ use Controllers\LinkController;
 $links = LinkController::getActiveLinks();
 
 $current_page = 'home.php';
+$noticeAlert = NULL;
 
 if(isset($_GET['page'])){
   switch($_GET['page']){
@@ -64,6 +65,20 @@ if(isset($_GET['page'])){
 
 $web_data = parse_ini_file($_SERVER['DOCUMENT_ROOT'].'/website_data.ini', true);
 
+if(!isset($_SESSION['notice-read']) || $_SESSION['notice-read'] != 'yes'){
+  $noticeAlert = '
+    <div class="alert alert-royal alert-dismissible" role="alert" style="margin-bottom:0px;">
+      <button id="noticeBtn" type="button" class="close" data-dismiss="alert" aria-label="Close"><i class="zmdi zmdi-close"></i></button>
+      <p>
+        <i class="fa fa-exclamation-circle"></i>&nbsp;
+        KalciumCove.ie is changing to <a href="https://www.ren.ie"><strong>ren.ie</strong></a>
+        In November KalciumCove.ie will no longer work and you will need to use <a href="https://www.ren.ie"><strong>ren.ie</strong></a> to access this site.
+      </p>
+    </div>
+  ';
+  $_SESSION['notice-read'] = 'no';
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -81,14 +96,24 @@ $web_data = parse_ini_file($_SERVER['DOCUMENT_ROOT'].'/website_data.ini', true);
       <?php
         include '../assets/php/header.php';
         include '../assets/php/navbar.php';
+      ?>
+
+      <?=$noticeAlert?>
+
+      <?php
         include $current_page;
         include '../assets/php/footer.php';
       ?>
     </div> <!-- ms-site-container -->
     <?php include '../assets/php/sidebar.php'; ?>
+    <script src="/web/assets/js/jquery.min.js"></script>
     <script src="/web/assets/js/plugins.min.js"></script>
     <script src="/web/assets/js/app.min.js"></script>
     <script src="/web/assets/js/ecommerce.js"></script>
-    <script src="/web/assets/js/jquery.matchHeight.js" type="text/javascript"></script>
+    <script>
+      $('#noticeBtn').on('click', function(){
+        $("#noticeBtn").load('web/assets/php/set_session.php');
+      });
+    </script>
   </body>
 </html>
