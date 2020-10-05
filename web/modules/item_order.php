@@ -12,30 +12,39 @@ if(!$item->quantity > 0){
 
 if($_SERVER["REQUEST_METHOD"] == "POST") {
   try{
-    $data = [
-      'item_id' => $item->id,
-      'quantity' => $_POST['quantity'],
-      'customer_name' => $_POST['name'],
-      'shipping_address' => $_POST['address'],
-      'paypal' => $_POST['email'],
-      'trade_offer' => $_POST['trade'],
-      'comment' => $_POST['comment'],
-      'contact_option' => $_POST['contactOption'],
-      'contact_username' => $_POST['contactName'],
-    ];
+    $recaptchaPassed = SaleController::recaptcha($_POST['g-recaptcha-response']);
 
-    $sale = SaleController::addSale($data);
+    if(!$recaptchaPassed){
+      $error = 'Recaptcha failed';
+    }else{
+      $data = [
+        'item_id' => $item->id,
+        'quantity' => $_POST['quantity'],
+        'customer_name' => $_POST['name'],
+        'shipping_address' => $_POST['address'],
+        'paypal' => $_POST['email'],
+        'trade_offer' => $_POST['trade'],
+        'comment' => $_POST['comment'],
+        'contact_option' => $_POST['contactOption'],
+        'contact_username' => $_POST['contactName'],
+      ];
+
+      $sale = SaleController::addSale($data);
+    }
+
   } catch (Exception $e) {
     $error = $e->getMessage();
   }
 
   if ($error != NULL){
-    $_SESSION['form-alert'] = '
+    $warning = '
       <div class="alert alert-danger">
         <i class="fa fa-exclamation-circle"></i><strong> System Error! </strong>
-        We are sorry but there was a system error, please try again. If this issue persists let me know and I will look into it.
+        We are sorry but there was a system error, please try again. If this issue persists let me know and I will look into it.<br>
+      [ '.$error.' ]
       </div>
     ';
+      print_r($recaptchaPassed);
   } else {
     echo '<meta http-equiv="refresh" content="0;url=/ordersuccess/">';
   }
@@ -74,7 +83,7 @@ if($item->preorder){
   <div class="card card-primary card-hero animated fadeInUp animation-delay-7">
     <div class="card-body">
       <?=$warning?>
-      <form class="form-horizontal" name="editItem" method="post">
+      <form class="form-horizontal" name="item-order-form" id="item-order-form" method="post">
         <fieldset>
 
           <div class="row">
@@ -204,7 +213,13 @@ if($item->preorder){
               <?=$preorderAgreement?>
             </div>
             <div class="col-lg-5">
-              <button class="btn btn-raised btn-primary btn-block">Submit</button>
+              <button class="btn btn-raised btn-primary btn-block g-recaptcha"
+                data-sitekey="<?=$web_data["recaptcha"]["site_key"]?>"
+                data-callback='onSubmit'
+                data-action='submit'
+              >
+                Submit
+              </button>
             </div>
           </div>
         </fieldset>
@@ -213,7 +228,14 @@ if($item->preorder){
   </div>
 </div> <!-- container -->
 <script src="/web/assets/js/jquery.min.js"></script>
+<script src="https://www.google.com/recaptcha/api.js?render=<?=$web_data["recaptcha"]["site_key"]?>"></script>
 <script src="/web/assets/js/jquery.matchHeight.js"></script>
+<script src="https://www.google.com/recaptcha/api.js"></script>
+<script>
+  function onSubmit(token) {
+    $("#item-order-form").submit();
+  }
+</script>
 <script>
   $('input[type=radio][name=contactOption]').on('change', function(){
     let option = $(this).val();

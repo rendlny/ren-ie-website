@@ -32,12 +32,10 @@
         </div>
         <div class="card-body">
           <p class="text-center">
-            Howdy my name is Ren, I am a Software Engineer from Ireland with
-            too many hobbies.
+            Howdy, my name is Ren and I am a Software Engineer from Ireland.
             I enjoy coding, drawing, making music, reading epic fantasies
-            (Brandon Sanderson's books are a fav), video games, I am currently
-            obsessed with board games
-            and after all that, I am also working on a novel.
+            (Brandon Sanderson's books are a fav), video games, board games
+            and I am also working on a novel.
           </p>
         </div>
       </div>

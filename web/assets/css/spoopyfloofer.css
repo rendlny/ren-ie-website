@@ -199,3 +199,7 @@
   background: var(--royal-color);
   border-color: var(--royal-colour-dark);
 }
+
+.ms-logo {
+  background-color: rgb(255 255 255 / 0%) !important;
+}
