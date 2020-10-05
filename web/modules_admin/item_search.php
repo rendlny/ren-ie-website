@@ -8,6 +8,10 @@ $items = ItemController::getAllUsersItems();
 
 if($items != NULL){
   foreach ($items as $item) {
+    //temp code to set all item slugs
+    $item->weight = 0;
+    ItemController::updateItem($item);
+
     $tagSale = ($item->sale == 1) ? ' sale' : NULL;
     $tagTrade = ($item->trade == 1) ? ' trade' : NULL;
     $tagPreorder = ($item->preorder == 1) ? ' preorder' : NULL;
