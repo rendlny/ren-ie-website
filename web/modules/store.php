@@ -21,11 +21,11 @@ if($items != NULL){
 
       $itemLabels = $labelSale.$labelTrade.$labelPreorder.$labelBid;
 
-      $btnCart = '<a href="/order/'.$item->code.'/" class="btn btn-primary btn-sm btn-block btn-raised mt-2 no-mb"><i class="zmdi zmdi-shopping-cart-plus"></i> Order</a>';
+      $btnCart = '<a href="/order/'.$item->slug.'/" class="btn btn-primary btn-sm btn-block btn-raised mt-2 no-mb"><i class="zmdi zmdi-shopping-cart-plus"></i> Order</a>';
 
     }else{
       $itemLabels = '<span class="ms-tag ms-tag-secondary">Sold Out</span>';
-      $btnCart = '<a href="/store/'.$item->code.'/" class="btn btn-primary btn-sm btn-block btn-raised mt-2 no-mb"><i class="zmdi zmdi-search"></i> View Item</a>';
+      $btnCart = '<a href="/store/'.$item->slug.'/" class="btn btn-primary btn-sm btn-block btn-raised mt-2 no-mb"><i class="zmdi zmdi-search"></i> View Item</a>';
     }
 
 
@@ -35,7 +35,7 @@ if($items != NULL){
       <div class="col-xl-4 col-md-6 mix '.$itemTags.'" data-price="'.number_format(($item->price/100),2).'" data-date="'.$formattedDate.'">
         <div class="card ms-feature">
           <div class="card-body overflow-hidden text-center">
-            <a style="display:block;" data-mh="itemCardImage" href="/store/'.$item->code.'/"><img src="'.$item->image_1.'" alt="" class="img-fluid center-block">
+            <a style="display:block;" data-mh="itemCardImage" href="/store/'.$item->slug.'/"><img src="'.$item->image_1.'" alt="" class="img-fluid center-block">
             <h4 data-mh="itemCardTitle" class="text-normal text-center itemCardTitle">'.$item->title.'</h4></a>
             <div class="mt-2">
               '.$itemLabels.'

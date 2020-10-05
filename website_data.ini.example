@@ -69,3 +69,7 @@ header_title = 'Kalcium&nbsp;Cove&nbsp;Control&nbsp;Panel';
 2 = 'fa fa-boxes'
 3 = 'fa fa-euro'
 4 = 'fa fa-sign-out'
+
+[recaptcha]
+site_key =
+secret_key = 

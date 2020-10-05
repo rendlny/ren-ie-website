@@ -22,13 +22,13 @@ if(isset($_GET['page'])){
       break;
 
     case 'store':
-      $current_page = (isset($_GET['code']) && $_GET['code'] != NULL) ? 'item_view.php' : 'pin_trading.php';
-      $item = (isset($_GET['code']) && $_GET['code'] != NULL) ? ItemController::getItemByCode($_GET['code']) : NULL;
+      $current_page = (isset($_GET['code']) && $_GET['code'] != NULL) ? 'item_view.php' : 'store.php';
+      $item = (isset($_GET['code']) && $_GET['code'] != NULL) ? ItemController::getItemBySlug($_GET['code']) : NULL;
       $page_title = (isset($_GET['code']) && $_GET['code'] != NULL) ? 'Store | '.$item->title : 'Store';
       break;
 
     case 'order':
-      $current_page = (isset($_GET['code']) && $_GET['code'] != NULL) ? 'item_order.php' : 'pin_trading.php';
+      $current_page = (isset($_GET['code']) && $_GET['code'] != NULL) ? 'item_order.php' : 'store.php';
       $page_title = 'Order Form';
       $meta_desc = 'Order Item';
       break;

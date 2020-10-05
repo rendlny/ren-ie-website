@@ -17,6 +17,10 @@ class ItemController {
     return Item::where('code', $code)->first();
   }
 
+  public static function getItemBySlug($slug) {
+    return Item::where('slug', $slug)->first();
+  }
+
   public static function getItemByCodeAndUser($code) {
     return Item::where('code', $code)->where('user_id', $_SESSION['userId'])->first();
   }

@@ -4,7 +4,7 @@ use Controllers\SaleController;
 
 $warning = $itemTrade = $preorderAgreement = NULL;
 
-$item = ItemController::getItemByCode($_GET['code']);
+$item = ItemController::getItemBySlug($_GET['code']);
 
 if(!$item->quantity > 0){
   echo '<meta http-equiv="refresh" content="0;url=/store/'.$_GET['code'].'">';
@@ -94,9 +94,9 @@ if($item->preorder){
           <div class="row">
             <div class="col-md-4">
               <div class="img-thumbnail" data-mh="top-cards">
-                <a href="/store/<?=$item->code?>" target="_blank"><img src="<?=$item->image_1?>" alt="..." class="img-fluid"></a>
+                <a href="/store/<?=$item->slug?>" target="_blank"><img src="<?=$item->image_1?>" alt="..." class="img-fluid"></a>
                 <div class="caption">
-                  <a href="/store/<?=$item->code?>" target="_blank"><h3 class="color-success"><?=$item->title?></h3></a>
+                  <a href="/store/<?=$item->slug?>" target="_blank"><h3 class="color-success"><?=$item->title?></h3></a>
                   <h4>€<?=($item->price/100)?></h4>
                   <p><?=$item->description?></p>
                 </div>

@@ -11,7 +11,7 @@ class Item extends Model {
 
   protected $table = 'item';
   protected $fillable = [
-    'code', 'user_id', 'title', 'description', 'active',
+    'code', 'user_id', 'title', 'description', 'slug', 'active',
     'price', 'preorder', 'trade', 'weight', 'quantity',
     'image_1', 'image_2', 'image_3', 'image_4', 'image_5',
     'sale', 'bid'
@@ -23,6 +23,12 @@ class Item extends Model {
     // must generate code when creating new report
     static::creating(function ($query) {
       $query->code = static::generateItemCode();
+      $query->slug = static::generateItemSlug($query->title);
+    });
+
+    //must update the slug to match the name
+    static::updating(function ($query) {
+      $query->slug = static::generateItemSlug($query->title);
     });
   }
 
@@ -34,6 +40,16 @@ class Item extends Model {
       $key .= $keys[mt_rand(0, count($keys) - 1)];
     }
     return $key;
+  }
+
+  static function generateItemSlug($title){
+    $slug = preg_replace('~[^\pL\d]+~u', '-', $title);
+    $slug = iconv('utf-8', 'us-ascii//TRANSLIT', $slug);
+    $slug = preg_replace('~[^-\w]+~', '', $slug);
+    $slug = trim($slug, '-');
+    $slug = preg_replace('~-+~', '-', $slug);
+    $slug = strtolower($slug);
+    return $slug;
   }
 }
 

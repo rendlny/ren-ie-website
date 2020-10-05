@@ -4,7 +4,7 @@ use Controllers\ItemController;
 $carouselImages = $carouselThumbs = NULL;
 
 if(isset($_GET['code']) && $_GET['code'] != NULL){
-  $item = ItemController::getItemByCode($_GET['code']);
+  $item = ItemController::getItemBySlug($_GET['code']);
 
   $carouselImages .= ($item->image_1 != NULL) ? '<div class="carousel-item active"><img src="'.$item->image_1.'" alt="Product Image 1"></div>' : NULL;
   $carouselImages .= ($item->image_2 != NULL) ? '<div class="carousel-item"><img src="'.$item->image_2.'" alt="Product Image 2"></div>' : NULL;
