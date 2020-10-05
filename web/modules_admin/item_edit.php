@@ -128,8 +128,11 @@ if(isset($_GET['code']) && $_GET['code'] != NULL){
   <div class="card card-primary card-hero animated fadeInUp animation-delay-7">
     <div class="card-body">
       <a href="/admin/items/" class="btn btn-royal btn-raised btn-block"><i class="fa fa-arrow-left"></i>&nbsp; Cancel</a>
-      <?=$warning?>
+
       <form class="form-horizontal" name="editItem" method="post">
+        <button class="btn btn-raised btn-primary btn-block">Save Changes</button>
+        <?=$warning?>
+
         <fieldset>
           <div class="row form-group">
             <label for="inputUser" class="col-md-2 control-label">Name</label>
