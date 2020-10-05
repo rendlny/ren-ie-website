@@ -35,7 +35,7 @@
             Howdy, my name is Ren and I am a Software Engineer from Ireland.
             I enjoy coding, drawing, making music, reading epic fantasies
             (Brandon Sanderson's books are a fav), video games, board games
-            and I am also working on a novel.
+            and I am also working on my own novel in my freetime.
           </p>
         </div>
       </div>
@@ -50,7 +50,7 @@
             Stormlight Archive series. I post chapter reactions to my
             <a href="https://twitter.com/chasmfriend" target="_blank">Cosmere
             twitter account <i class="fa fa-external-link"></i></a>
-            I am throughly enjoying The Stormlight Archive and am looking forward
+            I am thoroughly enjoying The Stormlight Archive and am looking forward
             to reading the fourth book, Rhytmn of War. I am also in the middle
             of reading The Promised Neverland (up to vol 6 so far) and Land of
             The Lustrous as new chapters
@@ -77,13 +77,13 @@
             hooked up to a Volca Keys with some effects pedals ) and try to make some
             music, below is one of the tracks that I've created. My music is
             inspired by Para One's Naissance Des Pieuvres album & scntfc's work in Oxenfree.
-            I'm also a big fan of synthy & ambient movie scores and video game soundtracks.
+            I'm a big fan of synthy & ambient movie scores and video game soundtracks.
           </p>
 
           <?php include '../widgets/soundcloud.php'; ?>
 
           <p class="text-center">
-            Hear more of my tracks on the Music page<br>
+            You can hear more of my tracks on the Music page<br>
             <a href="/music" class="btn btn-royal btn-raised btn-block">Music</a>
           </p>
         </div>
@@ -102,10 +102,10 @@
             when I discovered <a href="https://boardgamegeek.com/" target="_blank">BGG</a>
             and realised the huge amount of board games that exist.
             I started with Ticket To Ride then moved on to Terraforming Mars! Now I have backed a bunch of
-            Kickstarter board games that I am excited to play! The top two I am
+            Kickstarter board games that I am excited to play! The two that I am
             most excited for are
             <a href="https://boardgamegeek.com/boardgame/251661/oathsworn-deepwood" target="_blank">Oathsworn</a> and
-            <a href="https://boardgamegeek.com/boardgame/285036/shadow-kingdoms-valeria" target="_blank">Shadow Kingdoms of Valeria</a>
+            <a href="https://boardgamegeek.com/boardgame/285036/shadow-kingdoms-valeria" target="_blank">Shadow Kingdoms of Valeria</a>.
 
             <iframe style="width:100%; height:500px;" src="https://playback.geekgroup.app/rendlythefriendly" title="My Monthly Board Game Plays"></iframe>
 

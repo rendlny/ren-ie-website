@@ -29,6 +29,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         'contact_username' => $_POST['contactName'],
       ];
 
+      if($_POST['contactOption'] == 'paypal'){
+        $data['contact_username'] = $_POST['email'];
+        $data['contact_option'] = 'email';
+      }
+
       $sale = SaleController::addSale($data);
     }
 
