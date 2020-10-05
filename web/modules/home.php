@@ -17,14 +17,13 @@
             <i class="fa fa-terminal"></i>&nbsp; Coding
           </a>
         </div>
+        <br>
         <p class="wow fadeInLeft animation-delay-2"><?=$web_data["home"]["home_txt_2"]?></p>
         <div class="text-center">
           <a href="/store" class="btn btn-primary btn-raised btn-block mr-1 wow flipInX animation-delay-5">
             <?=$web_data["home"]["home_btn_1"]?>
           </a>
         </div>
-
-        <p class="wow fadeInLeft animation-delay-3"><?=$web_data["home"]["home_txt_3"]?></p>
       </div>
     </div>
   </div>

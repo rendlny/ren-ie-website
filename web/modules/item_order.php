@@ -2,7 +2,7 @@
 use Controllers\ItemController;
 use Controllers\SaleController;
 
-$warning = $itemTrade = $preorderAgreement = NULL;
+$warning = $itemTrade = $preorderAgreement = $error = NULL;
 
 $item = ItemController::getItemBySlug($_GET['code']);
 
@@ -49,7 +49,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
       [ '.$error.' ]
       </div>
     ';
-      print_r($recaptchaPassed);
   } else {
     echo '<meta http-equiv="refresh" content="0;url=/ordersuccess/">';
   }
@@ -75,7 +74,7 @@ if($item->preorder){
   ';
 }
 ?>
-<div class="ms-hero-page-override ms-hero-img-forest ms-hero-bg-info" style="padding: 30px 0 55px;">
+<div class="ms-hero-page ms-hero-img-forest ms-hero-bg-info" style="padding: 30px 0 55px;">
   <div class="container">
     <div class="text-center">
       <br>

@@ -67,7 +67,7 @@ $web_data = parse_ini_file($_SERVER['DOCUMENT_ROOT'].'/website_data.ini', true);
 
 if(!isset($_SESSION['notice-read']) || $_SESSION['notice-read'] != 'yes'){
   $noticeAlert = '
-    <div class="alert alert-royal alert-dismissible" role="alert" style="margin-bottom:0px;">
+    <div class="alert text-center alert-royal alert-dismissible" role="alert" style="margin-bottom:0px;">
       <button id="noticeBtn" type="button" class="close" data-dismiss="alert" aria-label="Close"><i class="zmdi zmdi-close"></i></button>
       <p>
         <i class="fa fa-exclamation-circle"></i>&nbsp;
