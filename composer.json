@@ -2,7 +2,7 @@
   "name": "rendlny/spoopy-floofer-website",
   "type": "project",
   "require": {
-      "phpmailer/phpmailer": "~5.2",
+      "phpmailer/phpmailer": "~6.1",
       "slim/slim": "^4.2",
       "slim/psr7": "^0.5.0",
       "tinymce/tinymce": "^5.0",
