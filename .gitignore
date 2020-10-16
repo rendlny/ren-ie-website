@@ -1,11 +1,8 @@
-web/assets/php/*.ini
+/node_modules
+/vendor
+/web/assets/images/*
+
+config.ini
 *.env
 phinx.yml
-package-lock.json
-node_modules
-notes.txt
-
-/vendor/
-config.ini
 website_data.ini
-web/assets/images
