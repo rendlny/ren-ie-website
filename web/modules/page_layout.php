@@ -19,30 +19,35 @@ if(isset($_GET['page'])){
     case 'about':
       $current_page = 'about.php';
       $page_title = 'About';
+      $page_cover_img = 'flowers';
       break;
 
     case 'store':
       $current_page = (isset($_GET['code']) && $_GET['code'] != NULL) ? 'item_view.php' : 'store.php';
       $item = (isset($_GET['code']) && $_GET['code'] != NULL) ? ItemController::getItemBySlug($_GET['code']) : NULL;
       $page_title = (isset($_GET['code']) && $_GET['code'] != NULL) ? 'Store | '.$item->title : 'Store';
+      $page_cover_img = (isset($_GET['code']) && $_GET['code'] != NULL) ? NULL : 'forest';
       break;
 
     case 'order':
       $current_page = (isset($_GET['code']) && $_GET['code'] != NULL) ? 'item_order.php' : 'store.php';
       $page_title = 'Order Form';
       $meta_desc = 'Order Item';
+      $page_cover_img = 'forest';
       break;
 
     case 'ordersuccess':
       $current_page = 'item_order_success.php';
       $page_title = 'Order Success';
       $meta_desc = 'Order Success';
+      $page_cover_img = 'forest';
       break;
 
     case 'coding':
       $current_page = 'coding.php';
       $page_title = 'Coding';
       $meta_desc = 'Coding';
+      $page_cover_img = 'keyboard';
       break;
 
     case 'music':
@@ -99,6 +104,8 @@ if(!isset($_SESSION['notice-read']) || $_SESSION['notice-read'] != 'yes'){
       ?>
 
       <?=$noticeAlert?>
+
+      <?php include '../assets/php/page_title_tile.php'; ?>
 
       <?php
         include $current_page;

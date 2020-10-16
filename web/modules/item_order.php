@@ -74,16 +74,7 @@ if($item->preorder){
   ';
 }
 ?>
-<div class="ms-hero-page ms-hero-img-forest ms-hero-bg-info" style="padding: 30px 0 55px;">
-  <div class="container">
-    <div class="text-center">
-      <br>
-      <h1 class="no-m ms-site-title color-white center-block ms-site-title-lg mt-2 animated zoomInDown animation-delay-5">Order Form</h1>
-    </div>
-  </div>
-</div>
-<br><br><br>
-<div class="container">
+<div class="container pt-6">
   <div class="card card-primary card-hero animated fadeInUp animation-delay-7">
     <div class="card-body">
       <?=$warning?>

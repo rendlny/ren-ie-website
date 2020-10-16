@@ -16,12 +16,7 @@
   }
 </style>
 
-<div class="ms-hero-page ms-hero-img-flowers ms-hero-bg-info mb-6">
-  <div class="text-center color-white mt-6 mb-6 index-1">
-    <h1>About</h1>
-  </div>
-</div>
-<div class="container">
+<div class="container pt-6">
   <div class="row">
 
     <div class="col-md-12 col-lg-5">

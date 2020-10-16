@@ -1,5 +1,5 @@
 <?php
-$sidebar = $sidebar_socials = NULL;
+$sidebar = $sidebar_socials = $linkBarTitle = NULL;
 for($i = 1; $i <= sizeof($web_data["navbar_links"]); $i++){
   $navActive = ($web_data["navbar"][$i] == $current_page) ? 'active' : NULL;
   $sidebar .= '
@@ -19,6 +19,10 @@ if($links != NULL){
     }
   }
 }
+
+if($sidebar_socials != NULL){
+  $linkBarTitle = '<h4 class="ms-slidebar-block-title">'.$web_data["sidebar"]["links_title"].'</h4>';
+}
 ?>
 <div class="ms-slidebar sb-slidebar sb-left sb-style-overlay" id="ms-slidebar">
   <div class="sb-slidebar-container">
@@ -37,7 +41,7 @@ if($links != NULL){
       <?=$sidebar?>
     </ul>
     <div class="ms-slidebar-social ms-slidebar-block">
-      <h4 class="ms-slidebar-block-title"><?=$web_data["sidebar"]["links_title"]?></h4>
+      <?=$linkBarTitle?>
       <div class="ms-slidebar-social">
         <?=$sidebar_socials?>
       </div>
