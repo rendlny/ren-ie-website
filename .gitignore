@@ -1,6 +1,7 @@
 /node_modules
 /vendor
 /web/assets/images/*
+/web/assets/thumbs/*
 
 config.ini
 *.env

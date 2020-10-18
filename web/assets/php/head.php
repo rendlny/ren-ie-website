@@ -1,12 +1,12 @@
 <head>
   <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=<?=$web_data["analytics"]["id"]?>"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=<?=$config['analytics_id']?>"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
-    gtag('config', '<?=$web_data["analytics"]["id"]?>');
+    gtag('config', '<?=$config["analytics_id"]?>');
   </script>
 
   <meta charset="utf-8">
@@ -34,6 +34,13 @@
     <script src="/web/assets/js/html5shiv.min.js"></script>
     <script src="/web/assets/js/respond.min.js"></script>
   <![endif]-->
+
+  <script src="/vendor/tinymce/tinymce/tinymce.min.js"></script>
+  <script>
+    tinymce.init({
+      selector: '.tinymce'
+    });
+  </script>
 
   <link rel="apple-touch-icon" sizes="57x57" href="/web/assets/icons/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/web/assets/icons/apple-icon-60x60.png">

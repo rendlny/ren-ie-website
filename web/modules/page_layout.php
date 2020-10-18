@@ -2,6 +2,7 @@
 include $_SERVER['DOCUMENT_ROOT'].'/web/start.php';
 use Controllers\ItemController;
 use Controllers\LinkController;
+use Controllers\ProjectController;
 
 $links = LinkController::getActiveLinks();
 
@@ -54,6 +55,15 @@ if(isset($_GET['page'])){
       $current_page = 'music.php';
       $page_title = 'Music';
       $meta_desc = 'Music';
+      break;
+
+    case 'projects':
+      $current_page = (isset($_GET['code']) && $_GET['code'] != NULL) ? 'project_view.php' : 'projects.php';
+      $project = (isset($_GET['code']) && $_GET['code'] != NULL) ? ProjectController::getProjectBySlug($_GET['code']) : NULL;
+      $page_title = (isset($_GET['code']) && $_GET['code'] != NULL) ? $project->title : 'Projects';
+      $meta_desc = (isset($_GET['code']) && $_GET['code'] != NULL) ? 'Projects | '.$project->title.' | '.$project->description : 'My projects';
+      $projects = (isset($_GET['code']) && $_GET['code'] != NULL) ? NULL : ProjectController::getAllActiveProjects();
+      $page_cover_img = 'keyboard';
       break;
 
     case 'links':
