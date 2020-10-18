@@ -176,8 +176,8 @@ body .ms-site-container {
 @media only screen and (max-width: 990px) {
   #home-txt {
     text-align: center;
-    padding-right: 0px !important;
-    padding-left: 0px !important;
+    padding-right: 15px !important;
+    padding-left: 15px !important;
   }
 }
 

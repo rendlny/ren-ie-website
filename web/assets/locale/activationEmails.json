@@ -1,0 +1,7 @@
+{
+  "activateAccount": {
+    "subject":"Activate your account on ren.ie",
+    "body": "<p>Please use the link below to activate your account by setting a password.</p>",
+    "link": "/admin/activate/"
+  }
+}

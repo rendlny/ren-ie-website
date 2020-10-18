@@ -6,8 +6,8 @@ class Item extends AbstractMigration {
 
     public function change() {
       // user table
-      $user = $this->table('item');
-      $user
+      $table = $this->table('item');
+      $table
         ->addColumn('code', 'string', ['limit' => 16, 'null' => true])
         ->addColumn('user_id', 'string', ['limit' => 16, 'null' => true])
         ->addColumn('title', 'string', ['limit' => 100, 'null' => true])

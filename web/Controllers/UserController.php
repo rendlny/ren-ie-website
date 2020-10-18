@@ -7,7 +7,7 @@ use Models\Token;
 use Models\UserActivity;
 use Exception;
 use Illuminate\Database\Capsule\Manager as DB;
-use PHPMailer;
+use PHPMailer\PHPMailer\PHPMailer;
 
 
 define('ACC_LVL_1', 1);
@@ -39,41 +39,27 @@ class UserController {
 
     $pass = $user->password()->first();
 
-    if(!$pass->checkPassword($password)) {
+    if(!isset($pass) || $pass['focal'] == NULL) {
+      //user hasn't set a password yet, send out email to setup password
+      if($pass == NULL){
+        $password = new UserFocal(['focal'=>'']);
+        $user->password()->save($password);
+      }
+
+      $token = $user->token()->save(new Token(['requestingIP' => $_SERVER['REMOTE_ADDR']]));
+      static::sendAccountEmail($user, 'activateAccount', $token->token);
+
+      throw new Exception('You have not setup a password for your account yet.
+        Please check your email to set your password.'
+      );
+    }
+    elseif(!$pass->checkPassword($password)){
       throw new Exception('Login failed, email or password is incorrect');
     }
 
     $_SESSION['userCode'] = $user->usercode;
     $_SESSION['userId'] = $user->id;
     $_SESSION['userLevel'] = $user->access;
-  }
-
-  public static function adminLogin($email, $password){
-    $user = User::where('email', $email)->first();
-    if(!$user) {
-      throw new Exception('Login failed, email or password is incorrect');
-    }
-
-    if (!$user->active) {
-      throw new Exception('Account has not been activated');
-    }
-
-    if(!$user->level > 1){
-      throw new Exception('This Account is not setup for the admin system');
-    }
-
-    $pass = $user->password()->first();
-
-    if(!$pass->checkPassword($password)) {
-      throw new Exception('Login failed, email or password is incorrect');
-    }
-
-    $user->status = 'Online';
-    $user->save();
-
-    $_SESSION['adminCode'] = $user->usercode;
-    $_SESSION['adminLevel'] = $user->level;
-    return $user;
   }
 
   public static function registerUser($data){
@@ -160,7 +146,7 @@ class UserController {
     }
     $user = $token->user()->first();
 
-    if($token->active || $user->active) {
+    if($token->active) {
       return false;
     }
 
@@ -205,36 +191,43 @@ class UserController {
   }
 
   static function sendAccountEmail($user, $emailType, $token){
-    $string = file_get_contents("../assets/locale/activationEmails.json");
-    $activationEmails = json_decode($string, true);
     $config = parse_ini_file('../assets/php/config.ini');
 
+    //retrieve email parts
+    $emailsString = file_get_contents("../assets/locale/activationEmails.json");
+    $activationEmails = json_decode($emailsString, true);
     $email = $activationEmails[$emailType];
 
     $link = (empty($_SERVER['HTTPS']) ? 'http' : 'https' ).'://'.$_SERVER['HTTP_HOST'].$email["link"].$token;
-    $emailbody = '<p>Dear '.$user->firstname.' '.$user->lastname.',</p>';
-    $emailbody .= $email['body'];
-    $emailbody .= '<p>'.$link.'</p><p>Yours faithfully,</p><p>The Teagasc Support Team</p>';
+    $emailbody = '
+      <p>Hello '.$user->firstname.',</p>
+      '.$email['body'].'
+      <a href="'.$link.'">Activate Account</a>
+    ';
 
-    $mail = new PHPMailer;
-    $mail->isSMTP();
-    $mail->SMTPAuth = true;
-    $mail->Host = $config['smtp_host'];
-    $mail->Username = $config['smtp_user'];
-    $mail->Password = $config['smtp_pass'];
-    $mail->SMTPSecure = $config['smtp_secure'];
-    $mail->Port = $config['smtp_port'];
-    $mail->setFrom($config['smtp_user'], $config['display_name']);
-    $mail->addAddress($user->email);
-    $mail->addCC($config['smtp_user']);
+    try{
+      $mail = new PHPMailer;
+      $mail->isSMTP();
+      $mail->SMTPAuth = true;
+      $mail->Host = $config['smtp_host'];
+      $mail->Username = $config['smtp_user'];
+      $mail->Password = $config['smtp_pass'];
+      $mail->SMTPSecure = $config['smtp_secure'];
+      $mail->Port = $config['smtp_port'];
+      $mail->setFrom($config['smtp_user'], $config['display_name']);
+      $mail->addAddress($user->email);
+      $mail->addCC($config['smtp_user']);
 
-    $mail->isHTML(true);
-    $mail->Subject = $email["subject"];
-    $mail->Body    = $emailbody;
-    $mail->AltBody = $emailbody;
+      $mail->isHTML(true);
+      $mail->Subject = $email["subject"];
+      $mail->Body    = $emailbody;
+      $mail->AltBody = $emailbody;
 
-    if (!$mail->send()) {
-      throw new Exception('Email not sent! '.$mail->ErrorInfo);
+      if (!$mail->send()) {
+        throw new Exception('Email not sent! '.$mail->ErrorInfo);
+      }
+    }catch(Exception $e){
+      return $e->getMessage();
     }
   }
 

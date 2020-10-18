@@ -12,15 +12,25 @@ use Controllers\UserController;
 $checkToken = $_GET['tcode'];
 $message = NULL;
 
-
+//token is missing from link
 if ($checkToken == NULL){
-	$message = '<div class="alert alert-warning text-center">It appears that you are trying to activate your account without an activation key. Please check your email for details of your key.</div>';
+	$message = '<div class="alert alert-warning text-center">
+			It appears that you are trying to activate your account without an
+			activation key. Please check your email for details of your key.
+		</div>
+	';
 
-} else {
+}
+else {
+	//token is not correct
   if(!UserController::checkUserToken($checkToken)) {
-    $message = '<div class="alert alert-warning">Unable to activate an account. The token may be invalid or the account may have already been activated</div>';
-  } else {
-
+    $message = '<div class="alert alert-warning">
+			Unable to activate an account. The token may be invalid or the account may
+			have already been activated
+			</div>
+		';
+  }
+	else {
     #FORM STRUCTURE#################################################################
     $form[0]['label'] = 'Password';
     $form[0]['input'] = '<input type="password" class="form-control" id="password" name="password">';
@@ -44,14 +54,17 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     try {
 		  $user = UserController::activateAccount($checkToken, $_POST['password']);
 		  $form = [];
-		  // TODO: Setup user activity
-		  // updateactivity($usercode,5,0,$connection);
 
 			$_SESSION['userId'] = $user->id;
 		  $_SESSION['userCode'] = $user->usercode;
 		  $_SESSION['userLevel'] = $user->level;
 
-		  $message = '<div class="alert alert-success text-center">Your have successfully activated your account!</div> <a class="btn btn-primary btn-block" href="/profile">Go to my account</a>';
+		  $message = '
+				<div class="alert alert-success text-center">
+					Your have successfully activated your account!
+				</div>
+				<a class="btn btn-primary btn-block" href="/admin/home">Admin Dashboard</a>
+			';
     } catch (Exception $e) {
       $message =  '<div class="alert alert-danger text-center">Your account could not be activated. Please try again. If the problem persists, please contact the System Administrator.</div>';
     }

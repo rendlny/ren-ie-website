@@ -6,8 +6,8 @@ use Models\Item;
 use Models\User;
 use Exception;
 use Illuminate\Database\Capsule\Manager as DB;
-use PHPMailer;
-
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
 
 class SaleController {
   public static function getSaleById($id) {
@@ -64,7 +64,6 @@ class SaleController {
       $sale = Sale::create($data);
 
       DB::commit();
-
 
     // send notification email
     //  static::sendNotificationEmail('orderPlaced');

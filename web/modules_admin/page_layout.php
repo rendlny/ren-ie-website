@@ -22,6 +22,10 @@ if(isset($_GET['page'])){
       $current_page = (isset($_GET['code']) && $_GET['code'] != NULL) ? 'item_edit.php' : 'item_search.php';
       break;
 
+    case 'projects':
+      $current_page = (isset($_GET['code']) && $_GET['code'] != NULL) ? 'project_edit.php' : 'project_search.php';
+      break;
+
     case 'links':
       $current_page = (isset($_GET['code']) && $_GET['code'] != NULL) ? 'links_edit.php' : 'links_index.php';
       break;

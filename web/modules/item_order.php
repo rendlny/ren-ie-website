@@ -2,7 +2,7 @@
 use Controllers\ItemController;
 use Controllers\SaleController;
 
-$warning = $itemTrade = $preorderAgreement = $error = NULL;
+$warning = $itemTrade = $preorderAgreement = $error = $tradeOffer = NULL;
 
 $item = ItemController::getItemBySlug($_GET['code']);
 
