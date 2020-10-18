@@ -209,7 +209,7 @@ if($item->preorder){
             </div>
             <div class="col-lg-5">
               <button class="btn btn-raised btn-primary btn-block g-recaptcha"
-                data-sitekey="<?=$web_data["recaptcha"]["site_key"]?>"
+                data-sitekey="<?=$config['recaptcha_site_key']?>"
                 data-callback='onSubmit'
                 data-action='submit'
               >
@@ -223,7 +223,7 @@ if($item->preorder){
   </div>
 </div> <!-- container -->
 <script src="/web/assets/js/jquery.min.js"></script>
-<script src="https://www.google.com/recaptcha/api.js?render=<?=$web_data["recaptcha"]["site_key"]?>"></script>
+<script src="https://www.google.com/recaptcha/api.js?render=<?=$config['recaptcha_site_key']?>"></script>
 <script src="/web/assets/js/jquery.matchHeight.js"></script>
 <script src="https://www.google.com/recaptcha/api.js"></script>
 <script>

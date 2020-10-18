@@ -57,10 +57,9 @@ if(isset($_GET['page'])){
         include '../assets/php/admin_footer.php';
       ?>
     </div> <!-- ms-site-container -->
-    <?php include '../assets/php/admin_sidebar.php'; ?>
-    <script src="/web/assets/js/plugins.min.js"></script>
-    <script src="/web/assets/js/app.min.js"></script>
-    <script src="/web/assets/js/ecommerce.js"></script>
-    <script src="/web/assets/js/jquery.matchHeight.js"></script>
+    <?php
+      include '../assets/php/admin_sidebar.php';
+      include '../assets/php/admin_scripts.php';
+    ?>
   </body>
 </html>
