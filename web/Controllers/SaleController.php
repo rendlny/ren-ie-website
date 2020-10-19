@@ -168,7 +168,7 @@ class SaleController {
   }
 
   static function recaptcha($recaptchaResponse){
-    $web_data = parse_ini_file($_SERVER['DOCUMENT_ROOT'].'/website_data.ini', true);
+    $config = parse_ini_file('../assets/php/config.ini');
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL,"https://www.google.com/recaptcha/api/siteverify");
     curl_setopt($ch, CURLOPT_POST, 1);
