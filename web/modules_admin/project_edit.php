@@ -133,14 +133,14 @@ if(isset($_GET['code']) && $_GET['code'] != NULL){
           <div class="row form-group">
             <label for="description" class="col-md-2 control-label">Description</label>
             <div class="col-md-9">
-              <textarea rows="3" name="description" class="form-control tinymce" id="description"><?=$projectDescription?></textarea>
+              <textarea rows="3" name="description" class="form-control" id="description"><?=$projectDescription?></textarea>
             </div>
           </div>
 
           <div class="row form-group">
             <label for="content" class="col-md-2 control-label">Content</label>
             <div class="col-md-9">
-              <textarea rows="10" name="content" class="tinymce" id="content">
+              <textarea rows="30" name="content" class="tinymce" id="content">
                 <?=$projectContent?>
               </textarea>
             </div>
