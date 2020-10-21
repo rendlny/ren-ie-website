@@ -15,7 +15,7 @@ if($projects != NULL){
             <div class="row">
               <div class="col-lg-6 col-md-4">
                 <div class="mt-05">
-                  <a href="javascript:void(0)" class="ms-tag ms-tag-info">Design</a>
+                  '.$project->displayTags.'
                 </div>
               </div>
               <div class="col-lg-6 col-md-8">

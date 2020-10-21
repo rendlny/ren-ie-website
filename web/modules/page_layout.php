@@ -66,6 +66,15 @@ if(isset($_GET['page'])){
       $page_cover_img = 'keyboard';
       break;
 
+    case 'projects-search':
+      $current_page = 'projects.php';
+      $tag = (isset($_GET['code']) && $_GET['code'] != NULL) ? $_GET['code'] : NULL;
+      $projects = ProjectController::getProjectsByTag($tag);
+      $page_title = ucfirst($tag).' Projects';
+      $meta_desc = 'Projects | '.ucfirst($tag).' Projects';
+      $page_cover_img = 'keyboard';
+      break;
+
     case 'links':
       $current_page = 'links.php';
       $page_title = 'Links';

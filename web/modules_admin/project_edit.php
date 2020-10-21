@@ -4,7 +4,7 @@ use Controllers\ProjectController;
 
 $error = $warning = NULL;
 $active = NULL;
-$projectTitle = $projectSlug = $projectContent = $projectDescription = $projectActive = $projectImage = NULL;
+$projectTitle = $projectSlug = $projectContent = $projectDescription = $projectActive = $projectImage = $projectTags = NULL;
 $userId = $_SESSION['userId'];
 
 if($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -19,6 +19,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
       'slug' => $_POST['url'],
       'description' => $_POST['description'],
       'content' => $_POST['content'],
+      'tags' => str_replace(' ', '', $_POST['tags']),
       'active' => $active
     ];
     if($_GET['code'] == 'add'){ //Add
@@ -73,10 +74,9 @@ if(isset($_GET['code']) && $_GET['code'] != NULL){
     $projectImage = $project->image;
     $projectDescription = $project->description;
     $projectContent = $project->content;
+    $projectTags = $project->tags;
     $projectActive = ($project->active) ? 'checked="checked"' : NULL;
-
     $imageDisplay = ($projectImage != NULL) ? '<div class="col-md-5 offset-md-3"><img class="img-fluid" src="/web/assets/images/'.$projectImage.'" /></div>' : NULL;
-
   }
   else{
     $pageTitle = 'Add';
@@ -143,6 +143,13 @@ if(isset($_GET['code']) && $_GET['code'] != NULL){
               <textarea rows="30" name="content" class="tinymce" id="content">
                 <?=$projectContent?>
               </textarea>
+            </div>
+          </div>
+
+          <div class="row form-group">
+            <label for="tags" class="col-md-2 control-label">Tags</label>
+            <div class="col-md-9">
+              <textarea rows="3" name="tags" class="form-control" id="tags"><?=$projectTags?></textarea>
             </div>
           </div>
 

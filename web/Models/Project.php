@@ -12,7 +12,7 @@ class Project extends Model {
   public $timestamps = false;
   protected $table = 'project';
   protected $fillable = [
-    'title', 'image', 'slug', 'description', 'content', 'active'
+    'title', 'image', 'slug', 'description', 'content', 'active', 'tags'
   ];
 
   protected static function boot() {
@@ -27,6 +27,11 @@ class Project extends Model {
     static::updating(function ($query) {
       $query->slug = static::generateProjectSlug($query->title);
     });
+
+    //build tag display
+    static::retrieved(function ($model) {
+      $model->displayTags = static::getTags($model->tags);
+    });
   }
 
   static function generateProjectSlug($title){
@@ -37,6 +42,21 @@ class Project extends Model {
     $slug = preg_replace('~-+~', '-', $slug);
     $slug = strtolower($slug);
     return $slug;
+  }
+
+  static function getTags($tags){
+    $tagsDisplay = NULL;
+
+    if($tags != NULL){
+      $tags = explode(',', $tags);
+      foreach ($tags as $tag) {
+        $tagsDisplay .= '
+          <a href="/projects-search/'.$tag.'/" class="ms-tag ms-tag-info">'.$tag.'</a>
+        ';
+      }
+    }
+
+    return $tagsDisplay;
   }
 }
 

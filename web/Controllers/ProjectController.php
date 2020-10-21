@@ -15,6 +15,10 @@ class ProjectController {
     return Project::where('slug', $slug)->first();
   }
 
+  public static function getProjectsByTag($tag) {
+    return Project::where('tags', 'LIKE', '%'.$tag.'%')->get();
+  }
+
   static function updateProject($data){
     DB::beginTransaction();
     try{
@@ -23,7 +27,9 @@ class ProjectController {
       $project->image = $data['image'];
       $project->description = $data['description'];
       $project->content = $data['content'];
+      $project->tags = $data['tags'];
       $project->active = $data['active'];
+      unset($project->displayTags);
       $project->save();
       DB::commit();
     }catch(Exception $e) {

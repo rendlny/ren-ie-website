@@ -1,9 +1,3 @@
-##RewriteCond %{HTTPS} !on
-##RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
-
-##RewriteCond %{HTTP_HOST} ^www.(.)$ [NC]
-##RewriteRule ^(.)$ https://%1/$1 [R=301,L]
-
 RewriteEngine On
 RewriteCond %{HTTPS} off [OR]
 RewriteCond %{HTTP_HOST} ^www\. [NC]
@@ -24,7 +18,7 @@ RewriteRule ^admin/activate/?([A-Za-z0-9]+)?/?$ ./web/modules_admin/system_activ
 RewriteRule ^admin/?([A-Za-z0-9]+)?/?([A-Za-z0-9]+)?/?$ ./web/modules_admin/page_layout.php?page=$1&code=$2
 
 ## WEB ##
-RewriteRule ^/?([A-Za-z0-9]+)?/?([A-Za-z0-9-]+)?/?$ ./web/modules/page_layout.php?page=$1&code=$2
+RewriteRule ^/?([A-Za-z0-9-]+)?/?([A-Za-z0-9-]+)?/?$ ./web/modules/page_layout.php?page=$1&code=$2
 #RewriteRule ^login/? ./web/modules/system_login.php
 #RewriteRule ^logout/? ./web/modules/system_logout.php
 #RewriteRule ^activate/?([A-Za-z0-9]+)?/?$  ./web/modules/system_activate.php?tcode=$1
