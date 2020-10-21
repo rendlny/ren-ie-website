@@ -51,7 +51,7 @@ class ProjectController {
       throw $e;
     }
 
-    return $sale;
+    return $project;
   }
 
   public static function getAllProjects(){
