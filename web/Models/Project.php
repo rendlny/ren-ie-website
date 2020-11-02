@@ -23,9 +23,10 @@ class Project extends Model {
       $query->slug = static::generateProjectSlug($query->title);
     });
 
-    //must update the slug to match the name
+    //must update the slug to match the name and set timestamp updated at
     static::updating(function ($query) {
       $query->slug = static::generateProjectSlug($query->title);
+      $query->updated = now();
     });
 
     //build tag display

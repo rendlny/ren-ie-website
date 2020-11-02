@@ -18,6 +18,10 @@ class Sale extends Model {
     static::creating(function ($query) {
       $query->code = static::generateSaleCode();
     });
+
+    static::updating(function ($query) {
+      $query->updated = now();
+    });
   }
 
   static function generateSaleCode() {

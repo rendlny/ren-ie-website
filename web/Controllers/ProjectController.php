@@ -55,12 +55,12 @@ class ProjectController {
   }
 
   public static function getAllProjects(){
-    $projects = Project::all();
+    $projects = Project::orderBy('updated', 'DESC')->get();
     return $projects;
   }
 
   public static function getAllActiveProjects(){
-    $projects = Project::where('active', 1)->get();
+    $projects = Project::where('active', 1)->orderBy('updated', 'DESC')->get();
     return $projects;
   }
 

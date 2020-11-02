@@ -29,6 +29,7 @@ class Item extends Model {
     //must update the slug to match the name
     static::updating(function ($query) {
       $query->slug = static::generateItemSlug($query->title);
+      $query->updated = now();
     });
   }
 
