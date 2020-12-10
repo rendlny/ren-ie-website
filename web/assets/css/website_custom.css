@@ -209,3 +209,40 @@ body .ms-site-container {
 .ms-logo {
   background-color: rgb(255 255 255 / 0%) !important;
 }
+
+.card .card-sub-header {
+  padding: 15px 20px;
+  padding: 1.5rem 2rem;
+  background-color: #eee;
+  border: 0
+}
+
+.card.card-primary .card-sub-header {
+  background-color: #1e6950;
+}
+
+.card .card-sub-header h1, .card .card-sub-header h2, .card .card-sub-header h3,
+.card .card-sub-header h4, .card .card-sub-header h5, .card .card-sub-header h6 {
+  margin: 0;
+  font-weight: 400
+}
+
+.card .card-sub-header h1{
+  font-size:20px;
+  font-size:2rem
+}
+
+.card .card-sub-header h2{
+  font-size:18px;
+  font-size:1.8rem
+}
+
+.card .card-sub-header h3{
+  font-size:16px;
+  font-size:1.6rem
+}
+
+.card .card-sub-header h4{
+  font-size:13px;
+  font-size:1.3rem
+}
