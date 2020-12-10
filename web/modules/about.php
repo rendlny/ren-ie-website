@@ -37,19 +37,13 @@
 
       <div class="card card-primary bg-dark">
         <div class="card-header">
-          <h3 class="card-title"><i class="fa fa-book"></i>&nbsp; Books</h3>
+          <h3 class="card-title"><i class="fa fa-book"></i>&nbsp; Reading</h3>
         </div>
         <div class="card-body">
           <p class="text-center">
-            I am currently reading through Oathbringer, the third book in The
-            Stormlight Archive series. I post chapter reactions to my
-            <a href="https://twitter.com/chasmfriend" target="_blank">Cosmere
-            twitter account <i class="fa fa-external-link"></i></a>
-            I am thoroughly enjoying The Stormlight Archive and am looking forward
-            to reading the fourth book, Rhytmn of War. I am also in the middle
-            of reading The Promised Neverland (up to vol 6 so far) and Land of
-            The Lustrous as new chapters
-            release.
+            I enjoy reading fiction and epic fantasy books with the Stormlight
+            Archive series being my current favourite. I'm also reading through some manga - I'm in the middle of reading
+            The Promised Neverland and Land of The Lustrous as new chapters release.
           </p>
           <div class="row">
             <div class="p-3" style="margin: 0px auto;"><?php include '../widgets/goodreads_reading.php'; ?></div>
@@ -70,8 +64,8 @@
           <p class="text-center">
             In my freetime I like to mess around with my synth setup ( a Keystep
             hooked up to a Volca Keys with some effects pedals ) and try to make some
-            music, below is one of the tracks that I've created. My music is
-            inspired by Para One's Naissance Des Pieuvres album & scntfc's work in Oxenfree.
+            music, below is one of the tracks that I've created. I am inpired by music from
+            Para One's Naissance Des Pieuvres album,  scntfc's work in Oxenfree & Hainbach.
             I'm a big fan of synthy & ambient movie scores and video game soundtracks.
           </p>
 
@@ -86,7 +80,7 @@
 
       <div class="card card-primary bg-dark">
         <div class="card-header">
-          <h3 class="card-title"><i class="fa fa-chess"></i>&nbsp; Boardgaming</h3>
+          <h3 class="card-title"><i class="fa fa-chess"></i>&nbsp; Board-Gaming</h3>
         </div>
         <div class="card-body">
           <p class="text-center">
@@ -105,6 +99,12 @@
             <iframe style="width:100%; height:500px;" src="https://playback.geekgroup.app/rendlythefriendly" title="My Monthly Board Game Plays"></iframe>
 
           </p>
+
+          <!--<hr>
+          <h2 style="color: #22c38e">Lastest Board Games Played</h2>
+          <p class="text-center"><img src="https://geekgroup.app/share/ugkitn" /><p>-->
+          <hr>
+
           <?php include '../widgets/bgg.php'; ?>
         </div>
       </div>
