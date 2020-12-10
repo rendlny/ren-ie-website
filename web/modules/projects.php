@@ -7,7 +7,7 @@ if($projects != NULL){
       <div class="col-md-4 masonry-item">
         <article class="card card-royal mb-4">
           <figure class="ms-thumbnail ms-thumbnail-center ms-thumbnail-light">
-            <img src="/web/assets/images/'.$project->image.'" alt="'.$project->title.' cover image" class="img-fluid">
+            <a href="/projects/'.$project->slug.'"><img src="/web/assets/images/'.$project->image.'" alt="'.$project->title.' cover image" class="img-fluid"></a>
           </figure>
           <div class="card-body">
             <h2><a href="/projects/'.$project->slug.'">'.$project->title.'</a></h2>
