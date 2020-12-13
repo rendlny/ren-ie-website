@@ -246,3 +246,7 @@ body .ms-site-container {
   font-size:13px;
   font-size:1.3rem
 }
+
+.ms-logo {
+  border-radius: 0% !important;
+}
