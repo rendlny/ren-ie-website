@@ -252,3 +252,8 @@ body .ms-site-container {
   height: 65px;
   border-radius: 0% !important;
 }
+
+.ms-logo.ms-logo-sm {
+  width: 45px;
+  height: 45px;
+}
