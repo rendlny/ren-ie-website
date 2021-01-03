@@ -10,3 +10,5 @@
     </div>
   </div>
 </div>
+
+<script src="/web/assets/js/twitter/widgets.js"></script>
