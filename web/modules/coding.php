@@ -56,7 +56,13 @@
             with their price data already set. Everytime they set a price,
             the bot will update the link with their new pricing.
             <br><br>
-            <img style="max-width:100%; border: 2px solid white;" src="https://ren.ie/web/assets/images/github/rapuli-bot/rapuli-bot-example.png" />
+            <div class="card wow zoomIn">
+              <div class="card-body p-05 ">
+                <div class="withripple">
+                  <a href="https://ren.ie/web/assets/images/github/rapuli-bot/rapuli-bot-example.png" data-lightbox="gallery" data-title="Image of Rapuli-Bot in action, returning custom links to two users" c><img src="https://ren.ie/web/assets/images/github/rapuli-bot/rapuli-bot-example.png" alt="" class="img-fluid"></a>
+                </div>
+              </div>
+            </div>
             <br><small>Image of Rapuli-Bot in action, returning custom links to two users</small>
           </p>
         </div>
@@ -70,7 +76,24 @@
           <h4 class="card-title">Used throughout my 4 years at college</h4>
         </div>
         <div class="card-body">
-
+          <p class="text-center">
+            Java was my main programming language throughout my 4 years in college at DKIT.
+            One of the last Java projects I worked on was
+            <a href="https://github.com/rendlny/PokeTools-TCG" target="_blank">PokeTools-TCG</a>
+            PokeTools-TCG is a Android application that uses a Firebase database which
+            is kept up to data via Python web-scraper located on a Linux Cloud server
+            and is configured to run every 12 hours as a cron job. The app displays
+            the latest cards in the Pokemon Trading Card Game and provides users
+            with tools to help them play.
+            <br><br>
+            <div class="card wow zoomIn">
+              <div class="card-body p-05 ">
+                <div class="withripple">
+                  <a href="https://ren.ie/web/assets/images/github/PokeTools-TCG/poster-cc4-2018-ren-delaney.jpg" data-lightbox="gallery" data-title="PokeTools-TCG Project Poster" c><img src="https://ren.ie/web/assets/images/github/PokeTools-TCG/poster-cc4-2018-ren-delaney.jpg" alt="" class="img-fluid"></a>
+                </div>
+              </div>
+            </div>
+          </p>
         </div>
       </div>
 
