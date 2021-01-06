@@ -29,6 +29,15 @@ body .ms-site-container {
   z-index: 1;
 }
 
+.content-center {
+  margin: 0 auto;
+}
+
+.yt-iframe {
+  max-width: 800px;
+  min-width: 200px;
+}
+
 #item-view-bg:after {
   display: block;
   content: "";

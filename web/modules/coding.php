@@ -24,6 +24,76 @@
             2 years of working at Inkerman Technologies, I grew more confident
             in my coding abilities and increased my skill set a great deal.
           </p>
+
+          <hr>
+          <h2 class="text-center">Websites & Systems I've Worked On:</h2>
+          <div class="row">
+
+            <div class="col-md-3">
+              <a href="https://tickets.celticnights.com/" target="_blank" class="img-thumbnail withripple">
+                <div class="thumbnail-container">
+                  <img src="/web/assets/images/businesses/celtic-nights.jpg" alt="Celtic Nights Ticketing System" class="img-fluid"/>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-md-3">
+              <a href="https://sixtechsoftware.com/" target="_blank" class="img-thumbnail withripple">
+                <div class="thumbnail-container">
+                  <img src="/web/assets/images/businesses/sixtech-software.png" alt="Sixtech Software" class="img-fluid">
+                </div>
+              </a>
+            </div>
+
+            <div class="col-md-3">
+              <a href="https://listokedistillery.ie/" target="_blank" class="img-thumbnail withripple">
+                <div class="thumbnail-container">
+                  <img src="/web/assets/images/businesses/listoke-distillery.jpg" alt="Listoke Distillery" class="img-fluid">
+                </div>
+              </a>
+            </div>
+
+            <div class="col-md-3">
+              <a href="https://dha.ie/" target="_blank" class="img-thumbnail withripple">
+                <div class="thumbnail-container">
+                  <img src="/web/assets/images/businesses/dha.png" alt="Drogheda Homeless Aid" class="img-fluid">
+                </div>
+              </a>
+            </div>
+
+            <div class="col-md-3">
+              <a href="https://rbdaly.com/" target="_blank" class="img-thumbnail withripple">
+                <div class="thumbnail-container">
+                  <img src="/web/assets/images/businesses/robt-b-daly.png" alt="Robt. B Daly Auctioneers" class="img-fluid">
+                </div>
+              </a>
+            </div>
+
+            <div class="col-md-3">
+              <a href="https://listoke.com/" target="_blank" class="img-thumbnail withripple">
+                <div class="thumbnail-container">
+                  <img src="/web/assets/images/businesses/listoke.png" alt="Listoke House" class="img-fluid">
+                </div>
+              </a>
+            </div>
+
+            <div class="col-md-3">
+              <a href="https://www.teagasccropreport.ie/" target="_blank" class="img-thumbnail withripple">
+                <div class="thumbnail-container">
+                  <img src="/web/assets/images/businesses/teagasc.png" alt="Teagasc Crop Report" class="img-fluid">
+                </div>
+              </a>
+            </div>
+
+            <div class="col-md-3">
+              <a href="https://droghedalife.com/" target="_blank" class="img-thumbnail withripple">
+                <div class="thumbnail-container">
+                  <img src="/web/assets/images/businesses/drogheda-life.png" alt="Drogheda Life" class="img-fluid">
+                </div>
+              </a>
+            </div>
+
+          </div>
         </div>
       </div>
 
@@ -61,9 +131,9 @@
                 <div class="withripple">
                   <a href="https://ren.ie/web/assets/images/github/rapuli-bot/rapuli-bot-example.png" data-lightbox="gallery" data-title="Image of Rapuli-Bot in action, returning custom links to two users" c><img src="https://ren.ie/web/assets/images/github/rapuli-bot/rapuli-bot-example.png" alt="" class="img-fluid"></a>
                 </div>
+                <small class="color-dark">Image of Rapuli-Bot in action, returning custom links to two users</small>
               </div>
             </div>
-            <br><small>Image of Rapuli-Bot in action, returning custom links to two users</small>
           </p>
         </div>
       </div>
@@ -91,8 +161,19 @@
                 <div class="withripple">
                   <a href="https://ren.ie/web/assets/images/github/PokeTools-TCG/poster-cc4-2018-ren-delaney.jpg" data-lightbox="gallery" data-title="PokeTools-TCG Project Poster" c><img src="https://ren.ie/web/assets/images/github/PokeTools-TCG/poster-cc4-2018-ren-delaney.jpg" alt="" class="img-fluid"></a>
                 </div>
+                <small class="color-dark">PokeTools-TCG Project Poster</small>
               </div>
             </div>
+
+            <div class="card wow zoomIn">
+              <div class="card-body p-05 ">
+                <div class="withripple">
+                  <iframe class="content-center yt-iframe" width="650" height="405" src="https://www.youtube.com/embed/o2_NAiDsNbA?start=685" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <small class="color-dark">Footage of PokeTools-TCG app functioning</small>
+              </div>
+            </div>
+
           </p>
         </div>
       </div>
