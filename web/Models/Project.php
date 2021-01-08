@@ -31,7 +31,10 @@ class Project extends Model {
 
     //build tag display
     static::retrieved(function ($model) {
-      $model->displayTags = static::getTags($model->tags);
+      $tagsDisplay = static::getTags($model->tags);
+      if($tagsDisplay != NULL){
+        $model->displayTags = $tagsDisplay;
+      }
     });
   }
 

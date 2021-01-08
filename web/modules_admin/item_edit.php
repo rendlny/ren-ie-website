@@ -36,7 +36,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
       'image_4' => $_POST['image_4'],
       'image_5' => $_POST['image_5'],
     ];
-    if($_GET['code'] == 'add'){ //Add
+    if($_GET['action'] == 'add'){ //Add
       $data['code'] = NULL;
       $item = ItemController::addItem($data);
       $successMsg = '<strong> Item Added! </strong>
@@ -103,16 +103,15 @@ if(isset($_GET['code']) && $_GET['code'] != NULL){
     $preorderCheck = ($item->preorder) ? 'checked' : NULL;
     $bidCheck = ($item->bid) ? 'checked' : NULL;
     $tradeCheck = ($item->trade) ? 'checked="checked"' : NULL;
-  }else{
-    $pageTitle = 'Add Item';
-    $itemActive = 'checked="checked"';
-    $saleCheck = 'checked';
-    $tradeCheck = 'checked="checked"';
-    $quantity = 1;
   }
 
+}else{
+  $pageTitle = 'Add Item';
+  $itemActive = 'checked="checked"';
+  $saleCheck = 'checked';
+  $tradeCheck = 'checked="checked"';
+  $quantity = 1;
 }
-
 
 ?>
 <div class="ms-hero-page-override ms-hero-img-forest ms-hero-bg-info" style="padding: 30px 0 55px;">

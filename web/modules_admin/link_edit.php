@@ -23,7 +23,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
       'active' => $active,
       'footer' => $footer
     ];
-    if($_GET['code'] == 'add'){ //Add
+    if($_GET['action'] == 'add'){ //Add
       $data['code'] = NULL;
       $link = LinkController::addLink($data);
       $successMsg = '<strong> Link Added! </strong>
@@ -79,12 +79,12 @@ if(isset($_GET['code']) && $_GET['code'] != NULL){
     $linkFooter = ($link->footer) ? 'checked="checked"' : NULL;
 
   }
-  else{
-    $pageTitle = 'Add';
-    $linkActive = 'checked="checked"';
-    $linkFooter = 'checked="checked"';
-    $linkIcon = 'fa fa-';
-  }
+}
+else{
+  $pageTitle = 'Add';
+  $linkActive = 'checked="checked"';
+  $linkFooter = 'checked="checked"';
+  $linkIcon = 'fa fa-';
 }
 
 ?>

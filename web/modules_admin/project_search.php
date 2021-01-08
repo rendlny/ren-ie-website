@@ -10,7 +10,7 @@ if($projects != NULL){
     $btns = '
       <div class="row">
         <div class="col-md-6">
-          <a href="/admin/projects/'.$project->id.'/" class="btn btn-primary btn-sm btn-block btn-raised no-mb">
+          <a href="/admin/projects/edit/'.$project->id.'/" class="btn btn-primary btn-sm btn-block btn-raised no-mb">
             <i class="zmdi zmdi-edit"></i> Edit
           </a>
         </div>

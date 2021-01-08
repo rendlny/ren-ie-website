@@ -9,7 +9,7 @@ $sales = SaleController::getUserSales();
 foreach ($sales as $sale) {
   $item = ItemController::getItemById($sale->item_id);
 
-  $editBtn = '<a title="Edit Sale" class="btn-circle btn-circle-raised btn-circle-primary" href="/admin/sales/'.$sale->code.'"><i class="fa fa-pencil"></i></a>&nbsp;';
+  $editBtn = '<a title="Edit Sale" class="btn-circle btn-circle-raised btn-circle-primary" href="/admin/sales/edit/'.$sale->code.'"><i class="fa fa-pencil"></i></a>&nbsp;';
 
   $username = $sale->contact_username;
   if($username[0] == '@'){

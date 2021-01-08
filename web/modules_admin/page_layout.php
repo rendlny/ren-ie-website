@@ -7,39 +7,51 @@ if(!isset($_SESSION['userCode']) || $_SESSION['userCode'] == NULL){
 }
 
 $current_page = 'admin_dashboard.php';
+$current_page = pageDirect($_GET['page'], $_GET['action'], $_GET['code']);
 
 if(isset($_GET['page'])){
   switch($_GET['page']){
-    case 'dashboard':
+    case 'home':
       $current_page = 'admin_dashboard.php';
-      break;
-
-    case 'sales':
-      $current_page = (isset($_GET['code']) && $_GET['code'] != NULL) ? 'sale_edit.php' : 'sale_search.php';
-      break;
-
-    case 'items':
-      $current_page = (isset($_GET['code']) && $_GET['code'] != NULL) ? 'item_edit.php' : 'item_search.php';
-      break;
-
-    case 'projects':
-      $current_page = (isset($_GET['code']) && $_GET['code'] != NULL) ? 'project_edit.php' : 'project_search.php';
-      break;
-
-    case 'links':
-      $current_page = (isset($_GET['code']) && $_GET['code'] != NULL) ? 'links_edit.php' : 'links_index.php';
       break;
 
     case 'logout':
       $current_page = 'system_logout.php';
       break;
+
+    default:
+      $current_page = pageDirect($_GET['page'], $_GET['action'], $_GET['code']);
+      break;
   }
+}
+
+function pageDirect($page, $action, $code){
+  $current_page = NULL;
+  $page_link = substr($page, 0, -1);
+  switch($action){
+    case 'delete':
+      $current_page = $page_link.'_delete.php';
+      break;
+
+    case 'edit':
+      $current_page = $page_link.'_edit.php';
+      break;
+
+    case 'add':
+      $current_page = $page_link.'_edit.php';
+      break;
+
+    case NULL:
+      $current_page = $page_link.'_search.php';
+      break;
+  }
+  return $current_page;
 }
 
 ?>
 <!DOCTYPE html>
 <html lang="en">
-  <?php include '../assets/php/head.php'; ?>
+  <?php include '../assets/php/admin_head.php'; ?>
   <body>
     <div id="ms-preload" class="ms-preload">
       <div id="status">

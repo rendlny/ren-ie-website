@@ -22,7 +22,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
       'tags' => str_replace(' ', '', $_POST['tags']),
       'active' => $active
     ];
-    if($_GET['code'] == 'add'){ //Add
+    if($_GET['action'] == 'add'){ //Add
       $data['id'] = NULL;
       $project = ProjectController::addProject($data);
       $successMsg = '<strong> Project Added! </strong>
@@ -78,11 +78,11 @@ if(isset($_GET['code']) && $_GET['code'] != NULL){
     $projectActive = ($project->active) ? 'checked="checked"' : NULL;
     $imageDisplay = ($projectImage != NULL) ? '<div class="col-md-5 offset-md-3"><img class="img-fluid" src="/web/assets/images/'.$projectImage.'" /></div>' : NULL;
   }
-  else{
-    $pageTitle = 'Add';
-    $projectActive = 'checked="checked"';
-    $imageDisplay = NULL;
-  }
+}
+else{
+  $pageTitle = 'Add';
+  $projectActive = 'checked="checked"';
+  $imageDisplay = NULL;
 }
 
 ?>
