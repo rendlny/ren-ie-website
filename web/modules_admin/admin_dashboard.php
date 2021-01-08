@@ -3,8 +3,9 @@ use Controllers\SaleController;
 use Controllers\ItemController;
 
 $saleCount = SaleController::getUsersSalesCount();
-$itemCount = ItemController::getUsersItemCount();
+$itemCount = ItemController::getUsersItemStockCount();
 $shippedItemCount = SaleController::getUsersShippedSaleCount();
+$userTotalProfits = SaleController::getUsersTotalProfits();
 $recentSales = SaleController::getUsersRecentSales();
 $recentSaleRow = NULL;
 
@@ -36,17 +37,7 @@ foreach ($recentSales as $sale) {
         <div class="card card-info card-body overflow-hidden text-center wow zoomInUp animation-delay-2" style="visibility: visible; animation-name: zoomInUp;">
           <h2 class="counter color-info"><?=$itemCount?></h2>
           <i class="fa fa-4x fa-boxes color-info"></i>
-          <p class="mt-2 no-mb lead small-caps color-info">Items</p>
-        </div>
-      </a>
-    </div>
-
-    <div class="col-sm-4">
-      <a href="/admin/sales/">
-        <div class="card card-success card-body overflow-hidden text-center wow zoomInUp animation-delay-2" style="visibility: visible; animation-name: zoomInUp;">
-          <h2 class="counter color-success"><?=$saleCount?></h2>
-          <i class="fa fa-4x fa-euro color-success"></i>
-          <p class="mt-2 no-mb lead small-caps color-success">sales</p>
+          <p class="mt-2 no-mb lead small-caps color-info">Item Stock</p>
         </div>
       </a>
     </div>
@@ -54,9 +45,19 @@ foreach ($recentSales as $sale) {
     <div class="col-sm-4">
       <a href="/admin/sales/">
         <div class="card card-royal card-body overflow-hidden text-center wow zoomInUp animation-delay-2" style="visibility: visible; animation-name: zoomInUp;">
-          <h2 class="counter color-royal"><?=$shippedItemCount?></h2>
+          <h2 class="counter color-royal"><?=$saleCount?></h2>
           <i class="fa fa-4x fa-shipping-fast color-royal"></i>
-          <p class="mt-2 no-mb lead small-caps color-royal">Shipped sales</p>
+          <p class="mt-2 no-mb lead small-caps color-royal">Items Sold</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-sm-4">
+      <a href="/admin/sales/">
+        <div class="card card-success card-body overflow-hidden text-center wow zoomInUp animation-delay-2" style="visibility: visible; animation-name: zoomInUp;">
+          <h2 class="counter color-success"><?=number_format($userTotalProfits/100, 2)?></h2>
+          <i class="fa fa-4x fa-euro color-success"></i>
+          <p class="mt-2 no-mb lead small-caps color-success">Total Profits</p>
         </div>
       </a>
     </div>

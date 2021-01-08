@@ -100,7 +100,7 @@ class SaleController {
     foreach ($sales as $sale) {
       $item = Item::where('id', $sale->item_id)->first();
       if(isset($item->user_id) && $item->user_id == $user->id){
-        $salesCount = $salesCount + 1;
+        $salesCount = $salesCount + $sale->quantity;
       }
 
     }
@@ -186,6 +186,19 @@ class SaleController {
     return $arrResponse["success"] == '1'
       && $arrResponse["action"] == 'submit'
       && $arrResponse["score"] >= 0.5;
+  }
+
+  static function getUsersTotalProfits(){
+    $profits = 0;
+    $user = User::where('usercode', $_SESSION['userCode'])->first();
+    $sales = Sale::where('cancelled', 0)->get();
+    foreach ($sales as $sale) {
+      $item = Item::where('id', $sale->item_id)->first();
+      $salePrice = $item->price * $sale->quantity;
+      $paypalFee = (($salePrice / 100) * 3.4) + 35;
+      $profits = $profits + ($salePrice - $paypalFee);
+    }
+    return $profits;
   }
 
 }
