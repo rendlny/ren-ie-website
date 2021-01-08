@@ -4,7 +4,7 @@ use Controllers\ItemController;
 
 $saleCount = SaleController::getUsersSalesCount();
 $itemCount = ItemController::getUsersItemStockCount();
-$shippedItemCount = SaleController::getUsersShippedSaleCount();
+//$shippedItemCount = SaleController::getUsersShippedSaleCount();
 $userTotalProfits = SaleController::getUsersTotalProfits();
 $recentSales = SaleController::getUsersRecentSales();
 $recentSaleRow = NULL;

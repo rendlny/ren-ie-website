@@ -112,7 +112,7 @@ class SaleController {
     $sales = Sale::where('cancelled', 0)->where('shipped', 1)->get();
     $user = User::where('usercode', $_SESSION['userCode'])->first();
     foreach ($sales as $sale) {
-      $item = Item::where('id', $sale->item_id)->first();
+      $item = Item::withTrashed()->where('id', $sale->item_id)->first();
       if($item->user_id == $user->id){
         $shippedSalesCount = $shippedSalesCount + 1;
       }
