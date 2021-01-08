@@ -7,7 +7,7 @@ $sales = SaleController::getUserSales();
 
 
 foreach ($sales as $sale) {
-  $item = ItemController::getItemById($sale->item_id);
+  $item = ItemController::getItemByIdIncludingDeleted($sale->item_id);
 
   $editBtn = '<a title="Edit Sale" class="btn-circle btn-circle-raised btn-circle-primary" href="/admin/sales/edit/'.$sale->code.'"><i class="fa fa-pencil"></i></a>&nbsp;';
 
