@@ -20,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 
       // redirect on success
       if(!$message) {
-        header('Location: /admin/dashboard/');
+        header('Location: /admin/home/');
       }
   	}
   }
