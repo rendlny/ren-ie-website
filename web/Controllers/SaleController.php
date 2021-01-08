@@ -129,7 +129,7 @@ class SaleController {
     $user = User::where('usercode', $_SESSION['userCode'])->first();
 
     foreach ($sales as $sale) {
-      $item = Item::where('id', $sale->item_id)->first();
+      $item = Item::where('id', $sale->item_id)->withTrashed()->first();
       if(isset($item->user_id) && $item->user_id == $user->id){
         array_push($userSales, $sale);
       }
@@ -193,7 +193,7 @@ class SaleController {
     $user = User::where('usercode', $_SESSION['userCode'])->first();
     $sales = Sale::where('cancelled', 0)->get();
     foreach ($sales as $sale) {
-      $item = Item::where('id', $sale->item_id)->first();
+      $item = Item::where('id', $sale->item_id)->withTrashed()->first();
       $salePrice = $item->price * $sale->quantity;
       $paypalFee = (($salePrice / 100) * 3.4) + 35;
       $profits = $profits + ($salePrice - $paypalFee);

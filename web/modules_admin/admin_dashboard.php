@@ -10,7 +10,7 @@ $recentSales = SaleController::getUsersRecentSales();
 $recentSaleRow = NULL;
 
 foreach ($recentSales as $sale) {
-  $item = ItemController::getItemById($sale->item_id);
+  $item = ItemController::getItemByIdIncludingDeleted($sale->item_id);
   $recentSaleRow .= '
     <tr>
       <td>'.$sale->created.'</td>

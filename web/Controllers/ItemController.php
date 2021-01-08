@@ -13,6 +13,10 @@ class ItemController {
     return Item::find($id);
   }
 
+  public static function getItemByIdIncludingDeleted($id) {
+    return Item::withTrashed()->find($id);
+  }
+
   public static function getItemByCode($code) {
     return Item::where('code', $code)->first();
   }
