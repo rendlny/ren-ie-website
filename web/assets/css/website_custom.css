@@ -17,6 +17,17 @@ body .ms-site-container {
   color: #737373;
 }
 
+.table {
+  background-color: white !important;
+  margin-bottom: 30px;
+  border: #e0e0e0 3px solid;
+}
+
+.icon-btn.btn-md{
+  max-width: 50px;
+  padding: 8px 20px;
+}
+
 .itemCardTitle:hover {
   color: #272727;
 }

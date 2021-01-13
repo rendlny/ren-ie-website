@@ -64,4 +64,5 @@
   <meta name="theme-color" content="#ffffff">
 
   <script src="https://kit.fontawesome.com/<?=$config["font_awesome_code"]?>.js" crossorigin="anonymous"></script>
+  <script src="/web/assets/js/jquery.min.js"></script>
 </head>
