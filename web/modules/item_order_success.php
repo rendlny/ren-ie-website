@@ -1,8 +1,15 @@
 <?php
 use Controllers\SaleController;
-//change this to check session if sale success, send email then clear session
-SaleController::sendNotificationEmail('New Order on KalciumCove', 'A new order has been placed on KalciumCove.ie');
 
+if($_SESSION['order-status'] == 'success'){
+  SaleController::sendNotificationEmail('New Order on ren.ie', 'A new order has been placed on ren.ie<br>
+  ITEM: '.$_SESSION['order-item'].' x'.$_SESSION['order-quantity'].'<br>
+  COMMENT: '.$_SESSION['order-comment']);
+}
+else{
+  echo '<meta http-equiv="refresh" content="0;url=/ordererror/">';
+}
+session_destroy();
 ?>
 <div class="container pt-6">
   <div class="card card-primary card-hero animated fadeInUp animation-delay-7">

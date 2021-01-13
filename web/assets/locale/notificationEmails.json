@@ -1,6 +1,7 @@
 {
   "orderPlaced": {
-    "subject":"A order has been placed on KalciumCove.ie",
+    "subject":"A order has been placed on ren.ie",
     "body": "<p>A user has been placed an order on your website, login using the link below to see the details.</p>",
-    "link": "/admin/login/"},
+    "link": "/admin/login/"
+  },
 }

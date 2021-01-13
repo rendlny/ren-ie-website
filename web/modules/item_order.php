@@ -50,6 +50,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
       </div>
     ';
   } else {
+    $_SESSION['order-status'] = 'success';
+    $_SESSION['order-item'] = $item->title;
+    $_SESSION['order-quantity'] = $data['quantity'];
+    $_SESSION['order-comment'] = $data['comment'];
     echo '<meta http-equiv="refresh" content="0;url=/ordersuccess/">';
   }
 }
