@@ -2,9 +2,41 @@
 use Controllers\SaleController;
 
 if($_SESSION['order-status'] == 'success'){
-  SaleController::sendNotificationEmail('New Order on ren.ie', 'A new order has been placed on ren.ie<br>
+  $emailContent = '
+  A new order has been placed on ren.ie<br>
   ITEM: '.$_SESSION['order-item'].' x'.$_SESSION['order-quantity'].'<br>
-  COMMENT: '.$_SESSION['order-comment']);
+  COMMENT: '.$_SESSION['order-comment'];
+
+  $customerEmailContent = '
+  Hello '.$_SESSION['order-customer'].',<br>
+  Your order has been placed. You will receive an invoice for your order within the next 24 hours and once paid your order will be shipped asap.
+  If you have any questions regarding your order, you can reply directly to this email.<br><br>
+
+  Here is your order details:<br>
+  <table cellspacing="0" cellpadding="0" border="1">
+    <tr>
+      <td width="50"><b>Item</b></td>
+      <td width="350">'.$_SESSION['order-item'].'</td>
+    </tr>
+    <tr>
+      <td width="50"><b>Quantity</b></td>
+      <td width="350">'.$_SESSION['order-quantity'].'</td>
+    </tr>
+    <tr>
+      <td width="50"><b>Comment</b></td>
+      <td width="350">'.$_SESSION['order-comment'].'</td>
+    </tr>
+    <tr>
+      <td width="50"><b>Address</b></td>
+      <td width="350">'.$_SESSION['order-address'].'</td>
+    </tr>
+  </table>
+  <br>
+  Thanks for your order,<br>
+  Ren<br>
+  <a href="https://ren.ie/" target="_blank">www.ren.ie</a>';
+  SaleController::sendNotificationEmail($config['admin_email'], 'New Order on ren.ie', $emailContent);
+  SaleController::sendNotificationEmail($_SESSION['order-email'], 'Your ren.ie Order Details', $customerEmailContent);
 }
 else{
   echo '<meta http-equiv="refresh" content="0;url=/ordererror/">';

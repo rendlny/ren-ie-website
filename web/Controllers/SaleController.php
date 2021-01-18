@@ -137,7 +137,7 @@ class SaleController {
     return $userSales;
   }
 
-  static function sendNotificationEmail($subject, $body){
+  static function sendNotificationEmail($email, $subject, $body){
     require $_SERVER['DOCUMENT_ROOT'].'/vendor/autoload.php';
     $config = parse_ini_file('../assets/php/config.ini');
 
@@ -151,7 +151,7 @@ class SaleController {
       $mail->SMTPSecure = $config['smtp_secure'];
       $mail->Port = $config['smtp_port'];
       $mail->setFrom($config['smtp_user'], $config['display_name']);
-      $mail->addAddress($config['admin_email']);
+      $mail->addAddress($email);
       $mail->addCC($config['smtp_user']);
 
       $mail->isHTML(true);

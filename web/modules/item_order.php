@@ -51,6 +51,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     ';
   } else {
     $_SESSION['order-status'] = 'success';
+    $_SESSION['order-email'] = $data['paypal'];
+    $_SESSION['order-address'] = $data['shipping_address'];
+    $_SESSION['order-customer'] = $data['customer_name'];
     $_SESSION['order-item'] = $item->title;
     $_SESSION['order-quantity'] = $data['quantity'];
     $_SESSION['order-comment'] = $data['comment'];
