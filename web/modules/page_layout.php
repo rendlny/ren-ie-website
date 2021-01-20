@@ -86,6 +86,12 @@ if(isset($_GET['page'])){
       $page_cover_img = 'keyboard';
       break;
 
+    case 'gallery':
+      $current_page = 'gallery.php';
+      $page_title = 'Gallery';
+      $galleryFolders = (isset($_GET['code']) && $_GET['code'] != NULL) ? NULL : ProjectController::getAllActiveProjectGalleryFolders();
+      break;
+
     case 'links':
       $current_page = 'links.php';
       $page_title = 'Links';

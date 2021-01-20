@@ -60,7 +60,12 @@ class ProjectController {
   }
 
   public static function getAllActiveProjects(){
-    $projects = Project::where('active', 1)->orderBy('updated', 'DESC')->get();
+    $projects = Project::where('active', 1)->where('gallery_folder', 0)->orderBy('updated', 'DESC')->get();
+    return $projects;
+  }
+
+  public static function getAllActiveProjectGalleryFolders(){
+    $projects = Project::where('active', 1)->where('gallery_folder', 1)->orderBy('updated', 'DESC')->get();
     return $projects;
   }
 

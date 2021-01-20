@@ -9,6 +9,14 @@
 
 }
 
+.ms-thumbnail .ms-thumbnail-caption {
+  background-color: rgba(34,195,142,0.8) !important;
+}
+
+.ms-thumbnail .ms-thumbnail-caption:before {
+  background-color: rgba(68, 1, 103, 0.63) !important;
+}
+
 body .ms-site-container {
   background: #d2d2d2 !important;
 }
