@@ -10,57 +10,6 @@ if(!$item->quantity > 0){
   echo '<meta http-equiv="refresh" content="0;url=/store/'.$_GET['code'].'">';
 }
 
-if($_SERVER["REQUEST_METHOD"] == "POST") {
-  try{
-    $recaptchaPassed = SaleController::recaptcha($_POST['g-recaptcha-response']);
-
-    if(!$recaptchaPassed){
-      $error = 'Recaptcha failed';
-    }else{
-      $data = [
-        'item_id' => $item->id,
-        'quantity' => $_POST['quantity'],
-        'customer_name' => $_POST['name'],
-        'shipping_address' => $_POST['address'],
-        'paypal' => $_POST['email'],
-        'trade_offer' => $_POST['trade'],
-        'comment' => $_POST['comment'],
-        'contact_option' => $_POST['contactOption'],
-        'contact_username' => $_POST['contactName'],
-      ];
-
-      if($_POST['contactOption'] == 'paypal'){
-        $data['contact_username'] = $_POST['email'];
-        $data['contact_option'] = 'email';
-      }
-
-      $sale = SaleController::addSale($data);
-    }
-
-  } catch (Exception $e) {
-    $error = $e->getMessage();
-  }
-
-  if ($error != NULL){
-    $warning = '
-      <div class="alert alert-danger">
-        <i class="fa fa-exclamation-circle"></i><strong> System Error! </strong>
-        We are sorry but there was a system error, please try again. If this issue persists let me know and I will look into it.<br>
-      [ '.$error.' ]
-      </div>
-    ';
-  } else {
-    $_SESSION['order-status'] = 'success';
-    $_SESSION['order-email'] = $data['paypal'];
-    $_SESSION['order-address'] = $data['shipping_address'];
-    $_SESSION['order-customer'] = $data['customer_name'];
-    $_SESSION['order-item'] = $item->title;
-    $_SESSION['order-quantity'] = $data['quantity'];
-    $_SESSION['order-comment'] = $data['comment'];
-    echo '<meta http-equiv="refresh" content="0;url=/ordersuccess/">';
-  }
-}
-
 if($item->trade){
   $tradeOffer = '
   <div class="row form-group">
@@ -85,7 +34,7 @@ if($item->preorder){
   <div class="card card-primary card-hero animated fadeInUp animation-delay-7">
     <div class="card-body">
       <?=$warning?>
-      <form class="form-horizontal" name="item-order-form" id="item-order-form" method="post">
+      <form class="form-horizontal" name="item-order-form" id="item-order-form" method="post" action="/order-processing/">
         <fieldset>
 
           <div class="row">
@@ -120,6 +69,7 @@ if($item->preorder){
             </div>
           </div>
 
+          <input name="itemCode" type="hidden" class="form-control" id="itemCode" value="<?=$item->code?>">
 
           <div class="row form-group">
             <label for="inputName" class="col-md-2 control-label">Quantity</label>

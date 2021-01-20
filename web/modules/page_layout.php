@@ -36,10 +36,22 @@ if(isset($_GET['page'])){
       $page_cover_img = 'forest';
       break;
 
-    case 'ordersuccess':
-      $current_page = 'item_order_success.php';
-      $page_title = 'Order Success';
-      $meta_desc = 'Order Success';
+    case 'order-processing':
+      $current_page = 'item_order_processing.php';
+      $page_title = 'Processing Your Order';
+      $meta_desc = 'Processing your item order';
+      $page_cover_img = 'forest';
+      break;
+
+    case 'order-result':
+      $current_page = 'item_order_check.php';
+      if(isset($_SESSION['order-status']) && $_SESSION['order-status'] == 'success'){
+        $page_title = 'Order Success';
+        $meta_desc = 'Order Success';
+      }else{
+        $page_title = 'Order Error';
+        $meta_desc = 'Order Error';
+      }
       $page_cover_img = 'forest';
       break;
 
