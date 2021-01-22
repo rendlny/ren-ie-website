@@ -87,7 +87,7 @@ if(isset($_GET['page'])){
       break;
 
     case 'gallery':
-      $current_page = 'gallery.php';
+      $current_page = (isset($_GET['code']) && $_GET['code'] != NULL) ? 'gallery_folder.php' : 'gallery.php';
       $page_title = 'Gallery';
       $galleryFolders = (isset($_GET['code']) && $_GET['code'] != NULL) ? NULL : ProjectController::getAllActiveProjectGalleryFolders();
       break;

@@ -4,15 +4,15 @@ namespace Models;
 use \Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Project extends Model {
+class ProjectSection extends Model {
   use SoftDeletes;
   const CREATED_AT = 'created';
   const UPDATED_AT = 'updated';
 
   public $timestamps = false;
-  protected $table = 'project';
+  protected $table = 'project_section';
   protected $fillable = [
-    'title', 'image', 'slug', 'description', 'content', 'active', 'tags', 'gallery_folder'
+    'project_id', 'title', 'image', 'slug', 'description', 'content', 'active', 'tags'
   ];
 
   protected static function boot() {

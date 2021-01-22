@@ -4,13 +4,14 @@ use Controllers\ProjectController;
 
 $error = $warning = NULL;
 $active = NULL;
-$projectTitle = $projectSlug = $projectContent = $projectDescription = $projectActive = $projectImage = $projectTags = NULL;
+$projectTitle = $projectSlug = $projectContent = $projectDescription = $projectActive = $projectGalleryFolder = $projectImage = $projectTags = NULL;
 $userId = $_SESSION['userId'];
 
 if($_SERVER["REQUEST_METHOD"] == "POST") {
 
   try{
     $active = (isset($_POST['active'])) ? 1 : 0;
+    $gallery = (isset($_POST['gallery_folder'])) ? 1 : 0;
 
     $data = [
       'id' => $_GET['code'],
@@ -20,7 +21,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
       'description' => $_POST['description'],
       'content' => $_POST['content'],
       'tags' => str_replace(' ', '', $_POST['tags']),
-      'active' => $active
+      'active' => $active,
+      'gallery_folder' => $gallery
     ];
     if($_GET['action'] == 'add'){ //Add
       $data['id'] = NULL;
@@ -76,6 +78,7 @@ if(isset($_GET['code']) && $_GET['code'] != NULL){
     $projectContent = $project->content;
     $projectTags = $project->tags;
     $projectActive = ($project->active) ? 'checked="checked"' : NULL;
+    $projectGalleryFolder  = ($project->gallery_folder) ? 'checked="checked"' : NULL;
     $imageDisplay = ($projectImage != NULL) ? '<div class="col-md-5 offset-md-3"><img class="img-fluid" src="/web/assets/images/'.$projectImage.'" /></div>' : NULL;
   }
 }
@@ -158,6 +161,13 @@ else{
               <div class="checkbox">
                 <label>
                   <input name="active" type="checkbox" <?=$projectActive?>> <span class="ml-2">Active on website?</span>
+                </label>
+              </div>
+            </div>
+            <div class="offset-lg-2 col-lg-6">
+              <div class="checkbox">
+                <label>
+                  <input name="gallery_folder" type="checkbox" <?=$projectGalleryFolder?>> <span class="ml-2">Display as a Gallery Folder?</span>
                 </label>
               </div>
             </div>

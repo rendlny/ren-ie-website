@@ -29,6 +29,7 @@ class ProjectController {
       $project->content = $data['content'];
       $project->tags = $data['tags'];
       $project->active = $data['active'];
+      $project->gallery_folder = $data['gallery_folder'];
       unset($project->displayTags);
       $project->save();
       DB::commit();
