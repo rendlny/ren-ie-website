@@ -23,20 +23,6 @@
 
       <div class="card card-primary bg-dark">
         <div class="card-header">
-          <h3 class="card-title"><i class="fa fa-user"></i>&nbsp; Intro</h3>
-        </div>
-        <div class="card-body">
-          <p class="text-center">
-            Howdy, my name is Ren and I am a Software Engineer from Ireland.
-            I enjoy coding, drawing, making music, reading epic fantasies
-            (Brandon Sanderson's books are a fav), video games, board games
-            and I am also working on my own novel in my freetime.
-          </p>
-        </div>
-      </div>
-
-      <div class="card card-primary bg-dark">
-        <div class="card-header">
           <h3 class="card-title"><i class="fa fa-book"></i>&nbsp; Reading</h3>
         </div>
         <div class="card-body">

@@ -17,9 +17,9 @@ if(isset($_GET['page'])){
       $meta_desc = '';
       break;
 
-    case 'about':
-      $current_page = 'about.php';
-      $page_title = 'About';
+    case 'hobbies':
+      $current_page = 'hobbies.php';
+      $page_title = 'Hobbies';
       $page_cover_img = 'flowers';
       break;
 
