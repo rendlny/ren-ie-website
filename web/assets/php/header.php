@@ -3,7 +3,7 @@
   <div class="container container-full">
     <div class="ms-title">
       <a href="/home">
-        <img class="ms-logo animated zoomInDown animation-delay-1" src="<?=$web_data["header"]["header_icon_img_link"]?>" alt="Website Icon">
+        <img class="ms-logo" src="<?=$web_data["header"]["header_icon_img_link"]?>" alt="Website Icon">
         <h1><?=$web_data["header"]["header_title"]?></h1>
       </a>
     </div>
