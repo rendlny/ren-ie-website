@@ -12,19 +12,6 @@
         <p class="wow fadeInLeft animation-delay-1">
           <?=$web_data["home"]["home_txt_1"]?>
         </p>
-        <br>
-        <div class="text-center">
-          <a href="/coding" class="btn btn-primary btn-raised btn-block mr-1 wow flipInX animation-delay-5">
-            <i class="fa fa-terminal"></i>&nbsp; Coding
-          </a>
-        </div>
-        <br>
-        <div class="text-center">
-          <a href="/projects" class="btn btn-primary btn-raised btn-block mr-1 wow flipInX animation-delay-5">
-            <i class="fa fa-tasks"></i>&nbsp; Projects
-          </a>
-        </div>
-
       </div>
     </div>
   </div>

@@ -70,9 +70,9 @@
         </div>
         <div class="card-body">
           <p class="text-center">
-            I've just gotten into boardgaming this year, it all started
+            I got into boardgaming in the summer of 2020, it all started
             when I purchased Call to Adventure: The Stormlight Adventure.
-            As a Stormlight fan I had bought it for the beautiful artwork
+            As a Stormlight fan I'd bought it for the beautiful artwork
             on every card but I was soon pulled into the world of boardgaming
             when I discovered <a href="https://boardgamegeek.com/" target="_blank">BGG</a>
             and realised the huge amount of board games that exist.
