@@ -20,7 +20,7 @@ if(isset($_GET['page'])){
     case 'hobbies':
       $current_page = 'hobbies.php';
       $page_title = 'Hobbies';
-      $page_cover_img = 'flowers';
+      $page_cover_img = 'hobbies';
       break;
 
     case 'store':

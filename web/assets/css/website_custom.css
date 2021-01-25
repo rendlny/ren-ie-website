@@ -173,6 +173,12 @@ body .ms-site-container {
   background-position: center center;
 }
 
+.ms-hero-img-hobbies {
+  background-image:url(../images/IMG_3099.JPG);
+  background-size: cover;
+  background-position: center center;
+}
+
 .ms-hero-img-flowers {
   background-image:url(../images/flowers.jpg);
   background-size: cover;
