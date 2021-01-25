@@ -77,9 +77,9 @@ if(isset($_GET['code']) && $_GET['code'] != NULL){
         $sectionActive = ($section->active) ? 'checked="checked"' : NULL;
         $imageDisplay = ($section->image != NULL) ? '<div class="col-md-5 offset-md-3"><img class="img-fluid" src="/web/assets/images/'.$section->image.'" /></div>' : NULL;
 
-        $sectionsNav .= '<li class="nav-item"><a class="nav-link withoutripple" href="#'.$section->slug.'" aria-controls="profile" role="tab" data-toggle="tab"><i class="fa fa-pencil"></i> <span class="d-none d-sm-inline">'.$section->title.'</span></a></li>';
+        $sectionsNav .= '<li class="nav-item"><a class="nav-link withoutripple" href="#section-'.$section->id.'" aria-controls="profile" role="tab" data-toggle="tab"><i class="fa fa-pencil"></i> <span class="d-none d-sm-inline">'.$section->title.'</span></a></li>';
         $sectionTabs .= '
-        <div role="tabpanel" class="tab-pane fade" id="'.$section->slug.'">
+        <div role="tabpanel" class="tab-pane fade" id="section-'.$section->id.'">
           <form class="form-horizontal" name="editItem" method="post">
             <fieldset>
               <input type="hidden" name="action" value="edit">
