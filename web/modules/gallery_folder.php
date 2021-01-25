@@ -23,7 +23,7 @@ if($galleryFolders != NULL){
   </a>
 </div>
 
-<div class="container pt-6">
+<div class="container pt-3">
   <div class="row masonry-container">
     <div class="col-md-12">
       <?=$galleryList?>
