@@ -79,7 +79,7 @@ if(isset($_GET['code']) && $_GET['code'] != NULL){
 
         $sectionsNav .= '<li class="nav-item"><a class="nav-link withoutripple" href="#'.$section->slug.'" aria-controls="profile" role="tab" data-toggle="tab"><i class="fa fa-pencil"></i> <span class="d-none d-sm-inline">'.$section->title.'</span></a></li>';
         $sectionTabs .= '
-        <div role="tabpanel" class="tab-pane fade active show" id="'.$section->slug.'">
+        <div role="tabpanel" class="tab-pane fade" id="'.$section->slug.'">
           <form class="form-horizontal" name="editItem" method="post">
             <fieldset>
               <input type="hidden" name="action" value="edit">
