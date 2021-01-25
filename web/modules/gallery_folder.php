@@ -4,7 +4,7 @@ $galleryList = NULL;
 if($galleryFolders != NULL){
   foreach ($galleryFolders as $gSection) {
     $galleryList .= '
-    <div class="col-lg-4 col-md-6 masonry-item wow fadeInUp animation-delay-2">
+    <div class="col-lg-4 col-md-6 masonry-item wow">
       <div class="card">
         <figure class="ms-thumbnail ms-thumbnail-horizontal">
           <a href="/web/assets/images/'.$gSection->image.'" data-lightbox="gallery" data-title="'.$gSection->title.'">
