@@ -27,7 +27,8 @@ if(isset($_GET['page'])){
 
 function pageDirect($page, $action, $code){
   $current_page = NULL;
-  $page_link = substr($page, 0, -1);
+  $page_link = str_replace('-', '_', $page); //convert dashes to underscores
+  $page_link = substr($page_link, 0, -1);
   switch($action){
     case 'delete':
       $current_page = $page_link.'_delete.php';
@@ -39,6 +40,10 @@ function pageDirect($page, $action, $code){
 
     case 'add':
       $current_page = $page_link.'_edit.php';
+      break;
+
+    case 'sections':
+      $current_page = $page_link.'_sections.php';
       break;
 
     case NULL:

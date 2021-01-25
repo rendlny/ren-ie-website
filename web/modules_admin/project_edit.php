@@ -102,6 +102,7 @@ else{
   <div class="card card-primary card-hero animated fadeInUp animation-delay-7">
     <div class="card-body">
       <a href="/admin/projects/" class="btn btn-royal btn-raised btn-block"><i class="fa fa-arrow-left"></i>&nbsp; Cancel</a>
+      <a href="/admin/projects/sections/<?=$_GET['code']?>" class="btn btn-info btn-raised btn-block"><i class="fa fa-pencil"></i>&nbsp; Edit Project Sections</a>
       <?=$warning?>
       <form class="form-horizontal" name="editItem" method="post">
         <fieldset>

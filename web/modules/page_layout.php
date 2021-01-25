@@ -3,6 +3,7 @@ include $_SERVER['DOCUMENT_ROOT'].'/web/start.php';
 use Controllers\ItemController;
 use Controllers\LinkController;
 use Controllers\ProjectController;
+use Controllers\ProjectSectionController;
 
 $links = LinkController::getActiveLinks();
 
@@ -88,8 +89,10 @@ if(isset($_GET['page'])){
 
     case 'gallery':
       $current_page = (isset($_GET['code']) && $_GET['code'] != NULL) ? 'gallery_folder.php' : 'gallery.php';
-      $page_title = 'Gallery';
-      $galleryFolders = (isset($_GET['code']) && $_GET['code'] != NULL) ? NULL : ProjectController::getAllActiveProjectGalleryFolders();
+      $galleryFolders = (isset($_GET['code']) && $_GET['code'] != NULL) ? ProjectSectionController::getActiveSectionsByProjectSlug($_GET['code']) : ProjectController::getAllActiveProjectGalleryFolders();
+      $project = (isset($_GET['code']) && $_GET['code'] != NULL) ? ProjectController::getProjectBySlug($_GET['code']) : NULL;
+      $page_title = (isset($_GET['code']) && $_GET['code'] != NULL) ? $project->title : 'Gallery';
+      $custom_cover_img = ($project != NULL)? $project->image : NULL;
       break;
 
     case 'links':
@@ -125,7 +128,10 @@ $web_data = parse_ini_file($_SERVER['DOCUMENT_ROOT'].'/website_data.ini', true);
         include '../assets/php/navbar.php';
       ?>
 
-      <?php include '../assets/php/page_title_tile.php'; ?>
+      <?php
+        include '../assets/php/page_title_tile.php';
+        include '../assets/php/page_title_tile_custom.php';
+      ?>
 
       <?php
         include $current_page;

@@ -9,14 +9,19 @@ if($projects != NULL){
   foreach ($projects as $project) {
     $btns = '
       <div class="row">
-        <div class="col-md-6">
-          <a href="/admin/projects/edit/'.$project->id.'/" class="btn btn-primary btn-sm btn-block btn-raised no-mb">
-            <i class="zmdi zmdi-edit"></i> Edit
+        <div class="col-md-3">
+          <a href="/admin/projects/edit/'.$project->id.'/" class="btn btn-primary icon-btn btn-md btn-block btn-raised">
+            <i class="zmdi zmdi-edit"></i>
           </a>
         </div>
         <div class="col-md-6">
-          <a href="/admin/projects/delete/'.$project->id.'/" class="btn btn-danger btn-sm btn-block btn-raised no-mb">
-            <i class="zmdi zmdi-delete"></i> Delete
+          <a href="/admin/projects/sections/'.$project->id.'/" class="btn btn-royal btn-md btn-block btn-raised">
+            <i class="fa fa-plus"></i> Section
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="/admin/projects/delete/'.$project->id.'/" class="btn btn-md btn-raised icon-btn btn-danger">
+            <i class="zmdi zmdi-delete"></i>
           </a>
         </div>
       </div>
