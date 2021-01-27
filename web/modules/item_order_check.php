@@ -4,8 +4,28 @@ use Controllers\SaleController;
 if(isset($_SESSION['order-status']) && $_SESSION['order-status'] == 'success'){
   $emailContent = '
   A new order has been placed on ren.ie<br>
-  ITEM: '.$_SESSION['order-item'].' x'.$_SESSION['order-quantity'].'<br>
-  COMMENT: '.$_SESSION['order-comment'];
+  <table cellspacing="0" cellpadding="0" border="1">
+    <tr>
+      <td width="100" style="padding: 10px;"><b>Item</b></td>
+      <td width="500" style="padding: 10px;">'.$_SESSION['order-item'].'</td>
+    </tr>
+    <tr>
+      <td width="100" style="padding: 10px;"><b>Quantity</b></td>
+      <td width="500" style="padding: 10px;">'.$_SESSION['order-quantity'].'</td>
+    </tr>
+    <tr>
+      <td width="100" style="padding: 10px;"><b>Comment</b></td>
+      <td width="500" style="padding: 10px;">'.$_SESSION['order-comment'].'</td>
+    </tr>
+    <tr>
+      <td width="100" style="padding: 10px;"><b>Address</b></td>
+      <td width="500" style="padding: 10px;">'.$_SESSION['order-address'].'</td>
+    </tr>
+    <tr>
+      <td width="100" style="padding: 10px;"><b>Shipping Option</b></td>
+      <td width="500" style="padding: 10px;">'.$_SESSION['order-shipping'].'</td>
+    </tr>
+  </table>';
 
   $customerEmailContent = '
   Hello '.$_SESSION['order-customer'].',<br>
@@ -15,20 +35,24 @@ if(isset($_SESSION['order-status']) && $_SESSION['order-status'] == 'success'){
   Here is your order details:<br>
   <table cellspacing="0" cellpadding="0" border="1">
     <tr>
-      <td width="50"><b>Item</b></td>
-      <td width="350">'.$_SESSION['order-item'].'</td>
+      <td width="100" style="padding: 10px;"><b>Item</b></td>
+      <td width="500" style="padding: 10px;">'.$_SESSION['order-item'].'</td>
     </tr>
     <tr>
-      <td width="50"><b>Quantity</b></td>
-      <td width="350">'.$_SESSION['order-quantity'].'</td>
+      <td width="100" style="padding: 10px;"><b>Quantity</b></td>
+      <td width="500" style="padding: 10px;">'.$_SESSION['order-quantity'].'</td>
     </tr>
     <tr>
-      <td width="50"><b>Comment</b></td>
-      <td width="350">'.$_SESSION['order-comment'].'</td>
+      <td width="100" style="padding: 10px;"><b>Comment</b></td>
+      <td width="500" style="padding: 10px;">'.$_SESSION['order-comment'].'</td>
     </tr>
     <tr>
-      <td width="50"><b>Address</b></td>
-      <td width="350">'.$_SESSION['order-address'].'</td>
+      <td width="100" style="padding: 10px;"><b>Address</b></td>
+      <td width="500" style="padding: 10px;">'.$_SESSION['order-address'].'</td>
+    </tr>
+    <tr>
+      <td width="100" style="padding: 10px;"><b>Shipping Option</b></td>
+      <td width="500" style="padding: 10px;">'.$_SESSION['order-shipping'].'</td>
     </tr>
   </table>
   <br>

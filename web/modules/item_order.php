@@ -154,6 +154,29 @@ if($item->preorder){
           </div>
 
           <div class="row form-group">
+            <label for="shippingOption" class="col-md-2 control-label">Shipping Option</label>
+            <div class="col-md-9">
+
+              <div class="radio radio-primary">
+                <label>
+                  <input type="radio" name="shippingOption" id="shippingOption1" value="standard" checked>
+                  <span class="circle"></span><span class="check"></span>
+                  <i style="color: #179cde;" class="fa fa-box fa-2x"></i>&nbsp; Standard (no tracking)
+                </label>
+              </div>
+
+              <div class="radio radio-primary">
+                <label>
+                  <input type="radio" name="shippingOption" id="shippingOption2" value="tracked">
+                  <span class="circle"></span><span class="check"></span>
+                  <i style="color: #179cde;" class="fa fa-map-marker-alt fa-2x"></i>&nbsp; Tracked
+                </label>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="row form-group">
             <label for="inputPassword2" class="col-md-2 control-label">Comments or Questions</label>
             <div class="col-md-9">
               <textarea class="form-control" rows="3" id="comment" name="comment"></textarea>

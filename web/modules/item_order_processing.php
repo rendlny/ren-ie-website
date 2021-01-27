@@ -23,6 +23,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         'comment' => $_POST['comment'],
         'contact_option' => $_POST['contactOption'],
         'contact_username' => $_POST['contactName'],
+        'shipping_option' => $_POST['shippingOption'],
       ];
 
       if($_POST['contactOption'] == 'paypal'){
@@ -54,6 +55,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     $_SESSION['order-item'] = $item->title;
     $_SESSION['order-quantity'] = $data['quantity'];
     $_SESSION['order-comment'] = $data['comment'];
+    $_SESSION['order-shipping'] = $data['shipping_option'];
     echo '<meta http-equiv="refresh" content="0;url=/order-result/">';
   }
 }else{
