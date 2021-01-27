@@ -4,7 +4,7 @@ use Controllers\ProjectController;
 
 $error = $warning = NULL;
 $active = NULL;
-$projectTitle = $projectSlug = $projectContent = $projectDescription = $projectActive = $projectGalleryFolder = $projectImage = $projectTags = NULL;
+$projectTitle = $projectSlug = $projectContent = $projectDescription = $projectActive = $projectGalleryFolder = $projectExtLink = $projectCodeType = $projectImage = $projectTags = NULL;
 $userId = $_SESSION['userId'];
 
 if($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -12,6 +12,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
   try{
     $active = (isset($_POST['active'])) ? 1 : 0;
     $gallery = (isset($_POST['gallery_folder'])) ? 1 : 0;
+    $codingProject = (isset($_POST['coding_project'])) ? 1 : 0;
 
     $data = [
       'id' => $_GET['code'],
@@ -19,10 +20,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
       'image' => $_POST['image'],
       'slug' => $_POST['url'],
       'description' => $_POST['description'],
+      'external_link' => $_POST['external_link'],
       'content' => $_POST['content'],
       'tags' => str_replace(' ', '', $_POST['tags']),
       'active' => $active,
-      'gallery_folder' => $gallery
+      'gallery_folder' => $gallery,
+      'coding_project' => $codingProject,
     ];
     if($_GET['action'] == 'add'){ //Add
       $data['id'] = NULL;
@@ -79,7 +82,9 @@ if(isset($_GET['code']) && $_GET['code'] != NULL){
     $projectTags = $project->tags;
     $projectActive = ($project->active) ? 'checked="checked"' : NULL;
     $projectGalleryFolder  = ($project->gallery_folder) ? 'checked="checked"' : NULL;
+    $projectCodeType = ($project->coding_project) ? 'checked="checked"' : NULL;
     $imageDisplay = ($projectImage != NULL) ? '<div class="col-md-5 offset-md-3"><img class="img-fluid" src="/web/assets/images/'.$projectImage.'" /></div>' : NULL;
+    $projectExtLink = $project->external_link;
   }
 }
 else{
@@ -142,6 +147,13 @@ else{
           </div>
 
           <div class="row form-group">
+            <label for="name" class="col-md-2 control-label">External Link</label>
+            <div class="col-md-9">
+              <input name="external_link" type="text" class="form-control" id="external_link" placeholder="External Link" value="<?=$projectExtLink?>">
+            </div>
+          </div>
+
+          <div class="row form-group">
             <label for="content" class="col-md-2 control-label">Content</label>
             <div class="col-md-9">
               <textarea rows="30" name="content" class="tinymce" id="content">
@@ -169,6 +181,13 @@ else{
               <div class="checkbox">
                 <label>
                   <input name="gallery_folder" type="checkbox" <?=$projectGalleryFolder?>> <span class="ml-2">Display as a Gallery Folder?</span>
+                </label>
+              </div>
+            </div>
+            <div class="offset-lg-2 col-lg-6">
+              <div class="checkbox">
+                <label>
+                  <input name="coding_project" type="checkbox" <?=$projectCodeType?>> <span class="ml-2">Code Project?</span>
                 </label>
               </div>
             </div>

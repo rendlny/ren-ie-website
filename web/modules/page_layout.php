@@ -57,10 +57,12 @@ if(isset($_GET['page'])){
       break;
 
     case 'coding':
-      $current_page = 'coding.php';
-      $page_title = 'Coding';
-      $meta_desc = 'Coding';
-      $page_cover_img = 'keyboard';
+      $current_page = (isset($_GET['code']) && $_GET['code'] != NULL) ? 'coding_view.php' : 'coding.php';
+      $projects = (isset($_GET['code']) && $_GET['code'] != NULL)? NULL : ProjectController::getAllActiveCodeProjects();
+      $project = (isset($_GET['code']) && $_GET['code'] != NULL)? ProjectController::getProjectBySlug($_GET['code']) : NULL;
+      $page_title = (isset($_GET['code']) && $_GET['code'] != NULL)? NULL : 'Coding';
+      $meta_desc = (isset($_GET['code']) && $_GET['code'] != NULL)? $project->title : 'Coding';
+      $page_cover_img = (isset($_GET['code']) && $_GET['code'] != NULL)? NULL : 'keyboard';
       break;
 
     case 'music':

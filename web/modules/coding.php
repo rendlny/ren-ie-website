@@ -1,3 +1,16 @@
+<?php
+  $projectGrid = NULL;
+  foreach($projects as $project){
+    $projectGrid .= '
+    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3">
+      <a href="/coding/'.$project->slug.'" class="img-thumbnail withripple">
+        <div class="thumbnail-container">
+          <img src="/web/assets/images/'.$project->image.'" alt="'.$project->title.'" class="img-fluid"/>
+        </div>
+      </a>
+    </div>';
+  }
+ ?>
 <div class="container pt-6">
   <div class="row">
     <div class="col-md-12">
@@ -29,69 +42,7 @@
           <h2 class="text-center">Websites & Systems I've Worked On:</h2>
           <div class="row">
 
-            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3">
-              <a href="https://tickets.celticnights.com/" target="_blank" class="img-thumbnail withripple">
-                <div class="thumbnail-container">
-                  <img src="/web/assets/images/businesses/celtic-nights.jpg" alt="Celtic Nights Ticketing System" class="img-fluid"/>
-                </div>
-              </a>
-            </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3">
-              <a href="https://sixtechsoftware.com/" target="_blank" class="img-thumbnail withripple">
-                <div class="thumbnail-container">
-                  <img src="/web/assets/images/businesses/sixtech-software.png" alt="Sixtech Software" class="img-fluid">
-                </div>
-              </a>
-            </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3">
-              <a href="https://listokedistillery.ie/" target="_blank" class="img-thumbnail withripple">
-                <div class="thumbnail-container">
-                  <img src="/web/assets/images/businesses/listoke-distillery.jpg" alt="Listoke Distillery" class="img-fluid">
-                </div>
-              </a>
-            </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3">
-              <a href="https://dha.ie/" target="_blank" class="img-thumbnail withripple">
-                <div class="thumbnail-container">
-                  <img src="/web/assets/images/businesses/dha.png" alt="Drogheda Homeless Aid" class="img-fluid">
-                </div>
-              </a>
-            </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3">
-              <a href="https://rbdaly.com/" target="_blank" class="img-thumbnail withripple">
-                <div class="thumbnail-container">
-                  <img src="/web/assets/images/businesses/robt-b-daly.png" alt="Robt. B Daly Auctioneers" class="img-fluid">
-                </div>
-              </a>
-            </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3">
-              <a href="https://listoke.com/" target="_blank" class="img-thumbnail withripple">
-                <div class="thumbnail-container">
-                  <img src="/web/assets/images/businesses/listoke.png" alt="Listoke House" class="img-fluid">
-                </div>
-              </a>
-            </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3">
-              <a href="https://www.teagasccropreport.ie/" target="_blank" class="img-thumbnail withripple">
-                <div class="thumbnail-container">
-                  <img src="/web/assets/images/businesses/teagasc.png" alt="Teagasc Crop Report" class="img-fluid">
-                </div>
-              </a>
-            </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3">
-              <a href="https://droghedalife.com/" target="_blank" class="img-thumbnail withripple">
-                <div class="thumbnail-container">
-                  <img src="/web/assets/images/businesses/drogheda-life.png" alt="Drogheda Life" class="img-fluid">
-                </div>
-              </a>
-            </div>
+            <?=$projectGrid?>
 
           </div>
         </div>

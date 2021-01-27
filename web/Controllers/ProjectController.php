@@ -26,10 +26,13 @@ class ProjectController {
       $project->title = $data['title'];
       $project->image = $data['image'];
       $project->description = $data['description'];
+      $project->external_link = $data['external_link'];
       $project->content = $data['content'];
       $project->tags = $data['tags'];
       $project->active = $data['active'];
       $project->gallery_folder = $data['gallery_folder'];
+      $project->coding_project = $data['coding_project'];
+
       unset($project->displayTags);
       $project->save();
       DB::commit();
@@ -61,7 +64,7 @@ class ProjectController {
   }
 
   public static function getAllActiveProjects(){
-    $projects = Project::where('active', 1)->where('gallery_folder', 0)->orderBy('updated', 'DESC')->get();
+    $projects = Project::where('active', 1)->where('coding_project', 0)->where('gallery_folder', 0)->orderBy('updated', 'DESC')->get();
     return $projects;
   }
 
@@ -70,6 +73,15 @@ class ProjectController {
     return $projects;
   }
 
+  public static function getAllActiveCodeProjects(){
+    $projects = Project::where('active', 1)->where('coding_project', 1)->orderBy('updated', 'DESC')->get();
+    return $projects;
+  }
+
+  public static function getRelatedCodingProjects($num, $project){
+    $projects = Project::where('active', 1)->where('coding_project', 1)->where('id', '!=', $project->id)->limit($num)->get();
+    return $projects;
+  }
 }
 
 ?>

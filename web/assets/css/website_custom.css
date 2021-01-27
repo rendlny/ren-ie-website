@@ -25,6 +25,11 @@ body .ms-site-container {
   color: #737373;
 }
 
+.right-line:after {
+  border-left: #585858 !important;
+  background-color: #585858 !important;
+}
+
 .table {
   background-color: white !important;
   margin-bottom: 30px;
