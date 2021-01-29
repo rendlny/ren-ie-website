@@ -17,9 +17,15 @@ if(isset($_GET['page'])){
       $meta_desc = '';
       break;
 
-    case 'hobbies':
-      $current_page = 'hobbies.php';
-      $page_title = 'Hobbies';
+    case 'boardgames':
+      $current_page = 'boardgames.php';
+      $page_title = 'Board Games';
+      $page_cover_img = 'hobbies';
+      break;
+
+    case 'reading':
+      $current_page = 'reading.php';
+      $page_title = 'Reading';
       $page_cover_img = 'hobbies';
       break;
 
