@@ -44,4 +44,4 @@
     <noscript><br/>Share <a rel="nofollow" href="/">book reviews</a> and ratings with Ren, and even join a <a rel="nofollow" href="/group">book club</a> on Goodreads.</noscript>
   </div>
 </div>
-<script src="https://www.goodreads.com/review/grid_widget/96492908.Latest%20Read%20Books?cover_size=medium&hide_link=&hide_title=&num_books=20&order=d&shelf=read&sort=date_read&widget_id=1607618901" type="text/javascript" charset="utf-8"></script>
+<script src="https://www.goodreads.com/review/grid_widget/96492908.Latest%20Read%20Books?cover_size=medium&hide_link=&hide_title=&num_books=30&order=d&shelf=read&sort=date_read&widget_id=1607618901" type="text/javascript" charset="utf-8"></script>
