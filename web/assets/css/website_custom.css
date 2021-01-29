@@ -149,17 +149,39 @@ body .ms-site-container {
   max-height: 400px;
 }
 
+
 .ms-slidebar{
   background-color: #131313;
 }
 
-.ms-slidebar .ms-slidebar-menu>li>a.link{
+.ms-slidebar .ms-slidebar-menu>li>a.link, .ms-slidebar .ms-slidebar-menu>li>a.collapsed{
   background-color: #131313;
-}
-
-.ms-slidebar .ms-slidebar-menu>li>a.link{
   color: #f8f8f8;
 }
+
+.ms-slidebar .ms-slidebar-menu>li>a {
+  background-color: #272727;
+}
+
+.ms-slidebar .ms-slidebar-menu>li>a:hover {
+  background-color: #272727;
+}
+
+.ms-slidebar .ms-slidebar-menu>li>ul li>a {
+  background-color: #191919;
+  color: #f8f8f8;
+}
+
+.ms-slidebar .ms-slidebar-menu>li>ul li:last-child {
+  border-bottom: solid 1px var(--main-colour);
+}
+
+/* hovering over siderbar sub-menu */
+.ms-slidebar .ms-slidebar-menu>li>ul li>a:hover {
+  background-color: #272727;
+}
+
+
 
 .ms-slidebar .ms-slidebar-header{
   background-image:url(../images/keyboard.jpg);

@@ -1,11 +1,28 @@
 <?php
 $sidebar = $sidebar_socials = $linkBarTitle = NULL;
 for($i = 1; $i <= sizeof($web_data["navbar_links"]); $i++){
-  $navActive = ($web_data["navbar"][$i] == $current_page) ? 'active' : NULL;
-  $sidebar .= '
-    <li>
-      <a class="link" href="'.$web_data["navbar_links"][$i].'"><i class="'.$web_data["navbar_icons"][$i].'"></i> '.$web_data["navbar"][$i].'</a>
+  $activePage = ucwords(str_replace(".php", "", $current_page)); //changing home.php to Home and seeing if it matches
+  $navActive = ($web_data["navbar"][$i] == $activePage) ? 'active' : NULL;
+
+  if ($web_data["navbar"][$i] == 'Hobbies') {
+    $sidebar .= '
+    <li class="card" role="tab">
+      <a class="collapsed" role="button" data-toggle="collapse" href="#hobbies" aria-expanded="true" aria-controls="hobbies">
+        <i class="fa fa-chess"></i> Hobbies
+      </a>
+      <ul id="hobbies" class="card-collapse collapse" role="tabpanel" aria-labelledby="sch5" data-parent="#slidebar-menu" style="">
+        <li><a href="/music"><i class="fa fa-music"></i> Music</a></li>
+        <li><a href="/boardgames"><i class="fa fa-chess"></i> Board Games</a></li>
+        <li><a href="/reading"><i class="fa fa-book"></i> Reading</a></li>
+      </ul>
     </li>';
+  }
+  else{
+    $sidebar .= '
+      <li>
+        <a class="link" href="'.$web_data["navbar_links"][$i].'"><i class="'.$web_data["navbar_icons"][$i].' '.$navActive.'"></i> '.$web_data["navbar"][$i].'</a>
+      </li>';
+  }
 }
 
 if($links != NULL){
