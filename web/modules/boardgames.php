@@ -16,7 +16,7 @@
   }
 </style>
 
-<div class="container pt-6">
+<div class="container pt-4">
   <div class="row">
 
     <div class="col-md-12 col-lg-12">
