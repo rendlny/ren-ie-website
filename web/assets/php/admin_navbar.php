@@ -1,9 +1,9 @@
 <?php
-$navbar = NULL;
+$adminmNavbar = NULL;
 
 for($i = 1; $i <= sizeof($web_data["admin_navbar_links"]); $i++){
   $navActive = ($web_data["admin_navbar"][$i] == $current_page) ? 'active' : NULL;
-  $navbar .= '
+  $adminmNavbar .= '
     <li class="nav-item dropdown '.$navActive.'">
       <a href="'.$web_data["admin_navbar_links"][$i].'" class="nav-link dropdown-toggle role="button" aria-haspopup="true" aria-expanded="false" data-name="home">'.$web_data["admin_navbar"][$i].'</a>
     </li>';
@@ -20,7 +20,7 @@ for($i = 1; $i <= sizeof($web_data["admin_navbar_links"]); $i++){
     </div>
     <div class="collapse navbar-collapse" id="ms-navbar">
       <ul class="navbar-nav">
-        <?=$navbar?>
+        <?=$adminmNavbar?>
       </ul>
     </div>
     <a href="javascript:void(0)" class="ms-toggle-left btn-navbar-menu"><i class="zmdi zmdi-menu"></i></a>

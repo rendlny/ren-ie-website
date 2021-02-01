@@ -1,8 +1,8 @@
 <?php
-$sidebar = $sidebar_socials = $linkBarTitle = NULL;
+$sidebar = $sidebar_socials = $linkBarTitle = $sideNavActive = NULL;
 for($i = 1; $i <= sizeof($web_data["navbar_links"]); $i++){
   $activePage = ucwords(str_replace(".php", "", $current_page)); //changing home.php to Home and seeing if it matches
-  $navActive = ($web_data["navbar"][$i] == $activePage) ? 'active' : NULL;
+  $sideNavActive = ($web_data["navbar"][$i] == $activePage) ? 'active' : NULL;
 
   if ($web_data["navbar"][$i] == 'Hobbies') {
     $sidebar .= '
@@ -20,7 +20,7 @@ for($i = 1; $i <= sizeof($web_data["navbar_links"]); $i++){
   else{
     $sidebar .= '
       <li>
-        <a class="link" href="'.$web_data["navbar_links"][$i].'"><i class="'.$web_data["navbar_icons"][$i].' '.$navActive.'"></i> '.$web_data["navbar"][$i].'</a>
+        <a class="link" href="'.$web_data["navbar_links"][$i].'"><i class="'.$web_data["navbar_icons"][$i].' '.$sideNavActive.'"></i> '.$web_data["navbar"][$i].'</a>
       </li>';
   }
 }

@@ -16,7 +16,7 @@ if(isset($_GET['page'])){
       $page_title = 'Home';
       $meta_desc = '';
       break;
-      
+
     case 'home':
       $current_page = 'home.php';
       $page_title = 'Home';
@@ -86,7 +86,7 @@ if(isset($_GET['page'])){
     case 'projects':
       $current_page = (isset($_GET['code']) && $_GET['code'] != NULL) ? 'project_view.php' : 'projects.php';
       $project = (isset($_GET['code']) && $_GET['code'] != NULL) ? ProjectController::getProjectBySlug($_GET['code']) : NULL;
-      $page_title = (isset($_GET['code']) && $_GET['code'] != NULL) ? $project->title : 'Projects';
+      $page_title = (isset($_GET['code']) && $_GET['code'] != NULL) ? 'Projects | '.$project->title : 'Projects';
       $meta_desc = (isset($_GET['code']) && $_GET['code'] != NULL) ? 'Projects | '.$project->title.' | '.$project->description : 'My projects';
       $projects = (isset($_GET['code']) && $_GET['code'] != NULL) ? NULL : ProjectController::getAllActiveProjects();
       $page_cover_img = 'keyboard';
