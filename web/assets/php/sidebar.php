@@ -10,7 +10,7 @@ for($i = 1; $i <= sizeof($web_data["navbar_links"]); $i++){
       <a class="collapsed" role="button" data-toggle="collapse" href="#hobbies" aria-expanded="true" aria-controls="hobbies">
         <i class="fa fa-chess"></i> Hobbies
       </a>
-      <ul id="hobbies" class="card-collapse collapse" role="tabpanel" aria-labelledby="sch5" data-parent="#slidebar-menu" style="">
+      <ul id="hobbies" class="card-collapse collapse" role="tabpanel" data-parent="#slidebar-menu" style="">
         <li><a href="/music"><i class="fa fa-music"></i> Music</a></li>
         <li><a href="/boardgames"><i class="fa fa-chess"></i> Board Games</a></li>
         <li><a href="/reading"><i class="fa fa-book"></i> Reading</a></li>

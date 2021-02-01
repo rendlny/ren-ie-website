@@ -155,5 +155,6 @@ $web_data = parse_ini_file($_SERVER['DOCUMENT_ROOT'].'/website_data.ini', true);
     <script src="/web/assets/js/plugins.min.js"></script>
     <script src="/web/assets/js/app.min.js"></script>
     <script src="/web/assets/js/ecommerce.js"></script>
+    <script src="/web/assets/js/configurator.min.js"></script>
   </body>
 </html>

@@ -18,7 +18,7 @@ if($web_data["site"]["email"] != NULL){
   $footerEmail = '
     <div class="ms-footbar-block">
       <div class="ms-footbar-social">
-        <a href="mailto: '.$web_data["site"]["email"].'" style="background: none;">
+        <a href="mailto:'.$web_data["site"]["email"].'" style="background: none;">
           <i class="fa fa-envelope"></i>&nbsp; '.$web_data["site"]["email"].'
         </a>
       </div>

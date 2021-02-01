@@ -6,11 +6,11 @@ $carouselImages = $carouselThumbs = NULL;
 if(isset($_GET['code']) && $_GET['code'] != NULL){
   $item = ItemController::getItemBySlug($_GET['code']);
 
-  $carouselImages .= ($item->image_1 != NULL) ? '<div class="carousel-item active"><img src="'.$item->image_1.'" alt="Product Image 1"></div>' : NULL;
-  $carouselImages .= ($item->image_2 != NULL) ? '<div class="carousel-item"><img src="'.$item->image_2.'" alt="Product Image 2"></div>' : NULL;
-  $carouselImages .= ($item->image_3 != NULL) ? '<div class="carousel-item"><img src="'.$item->image_3.'" alt="Product Image 3"></div>' : NULL;
-  $carouselImages .= ($item->image_4 != NULL) ? '<div class="carousel-item"><img src="'.$item->image_4.'" alt="Product Image 4"></div>' : NULL;
-  $carouselImages .= ($item->image_5 != NULL) ? '<div class="carousel-item"><img src="'.$item->image_5.'" alt="Product Image 5"></div>' : NULL;
+  $carouselImages .= ($item->image_1 != NULL) ? '<div class="carousel-item active"><img class="img-fluid" src="'.$item->image_1.'" alt="Product Image 1"></div>' : NULL;
+  $carouselImages .= ($item->image_2 != NULL) ? '<div class="carousel-item"><img class="img-fluid" src="'.$item->image_2.'" alt="Product Image 2"></div>' : NULL;
+  $carouselImages .= ($item->image_3 != NULL) ? '<div class="carousel-item"><img class="img-fluid" src="'.$item->image_3.'" alt="Product Image 3"></div>' : NULL;
+  $carouselImages .= ($item->image_4 != NULL) ? '<div class="carousel-item"><img class="img-fluid" src="'.$item->image_4.'" alt="Product Image 4"></div>' : NULL;
+  $carouselImages .= ($item->image_5 != NULL) ? '<div class="carousel-item"><img class="img-fluid" src="'.$item->image_5.'" alt="Product Image 5"></div>' : NULL;
 
   $carouselThumbs .= ($item->image_1 != NULL) ? '<li data-target="#carousel-product" data-slide-to="0" class="active itemImgPreview"><img src="'.$item->image_1.'" alt="Product Image 1"></li>' : NULL;
   $carouselThumbs .= ($item->image_2 != NULL) ? '<li data-target="#carousel-product" data-slide-to="1" class="itemImgPreview"><img src="'.$item->image_2.'" alt="Product Image 2"></li>' : NULL;

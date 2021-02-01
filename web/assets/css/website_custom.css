@@ -76,16 +76,8 @@ body .ms-site-container {
   background: linear-gradient(0deg, rgba(34,195,142,0.8) 0%, rgba(64,1,103,0.8) 77%);
 }
 
-.carousel-item {
-  max-width: 500px;
-}
-
 .itemImgPreview img{
   max-width: 100px !important;
-}
-
-.ms-carousel .carousel-inner .carousel-item img{
-  max-width: 100%;
 }
 
 .wrap.wrap-mountain{

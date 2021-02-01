@@ -29,7 +29,7 @@ foreach ($sales as $sale) {
 
     case "email":
       $btnColour = "youtube";
-      $contactLink = "mailto: ".$username;
+      $contactLink = "mailto:".$username;
       break;
 
     case "twitter":
@@ -50,7 +50,7 @@ foreach ($sales as $sale) {
     <td class="text-center">'.$sale->quantity.'</td>
     <td class="customer">'.$sale->customer_name.'</td>
     <td class="address d-none">'.$sale->shipping_address.'</td>
-    <td><a href="mailto: '.$sale->paypal.'">'.$sale->paypal.'</a></td>
+    <td><a href="mailto:'.$sale->paypal.'">'.$sale->paypal.'</a></td>
     <td>'.$sale->trade_offer.'</td>
     <td class="comment d-none">'.$sale->comment.'</td>
     <td class="text-center">'.binaryCheck($sale->charged).'</td>

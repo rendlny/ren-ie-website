@@ -10,8 +10,7 @@ $carouselCount = 0;
 foreach($images as $image){
   $ativeImage = ($carouselCount == 0) ? 'active' : NULL; //setting first image as the active image
   $carouselIndicators .= '<li data-target="#image-carousel" data-slide-to="'.$carouselCount.'" class="'.$ativeImage.'"></li>';
-  $imageCarousel .= '
-  <div class="carousel-item '.$ativeImage.'">
+  $imageCarousel .= '<div class="carousel-item '.$ativeImage.'">
     <img class="d-block img-fluid" src="/web/assets/images/'.$image->image.'" alt="'.$image->title.'">
     <div class="carousel-caption">
       <h3>'.$image->title.'</h3>
@@ -31,6 +30,7 @@ foreach($otherProjects as $otherProject){
       <div class="card-body">
         <h2><a href="/coding/'.$otherProject->slug.'">'.$otherProject->title.'</a></h2>
         <p>'.$otherProject->description.'</p>
+        <hr>
         <div class="row">
           <div class="col-md-12">
             <div class="mt-05">
@@ -45,12 +45,13 @@ foreach($otherProjects as $otherProject){
 
 $buttonToLiveSite = ($project->external_link != NULL) ? '<p class="text-center"><a href="'.$project->external_link.'" target="_blank" class="btn btn-raised btn-primary"><i class="fa fa-desktop"></i> Live Site</a></p>' : NULL;
 ?>
-<div class="col-md-6 offset-md-3">
+<div class="col-md-6 offset-md-3 pt-3">
   <a class="btn btn-md btn-raised btn-royal btn-block" href="/coding/"><i class="fa fa-arrow-left"></i> Coding</a>
 </div>
 
-<div class="container pt-5">
+<div class="container pt-3">
   <div class="row">
+
     <div class="col-lg-5">
       <div class="card">
         <div class="ms-hero-bg-dark ms-hero-img-mountain" style="background-image: url(/web/assets/images/<?=$project->image?>);">
@@ -58,16 +59,18 @@ $buttonToLiveSite = ($project->external_link != NULL) ? '<p class="text-center">
         </div>
         <div class="card-body">
           <h3 class="color-primary no-mt">Information</h3>
-          <p><?=$project->description?></p>
-          <ul class="list-unstyled">
-            <li><strong>Technologies:</strong> <?=$project->displayTags?></li>
-          </ul>
+          <p><?=$project->description?></p><hr>
           <h3 class="color-primary">Description</h3>
           <p><?=$project->content?></p>
           <?=$buttonToLiveSite?>
+          <hr>
+          <ul class="list-unstyled">
+            <li><strong>Technologies:</strong><br><?=$project->displayTags?></li>
+          </ul>
         </div>
       </div>
     </div>
+
 
     <div class="col-lg-7">
       <div class="card">
@@ -88,6 +91,8 @@ $buttonToLiveSite = ($project->external_link != NULL) ? '<p class="text-center">
     </div>
 
   </div>
+
+
   <h2 class="right-line mt-6">Other Works</h2>
   <div class="row masonry-container">
     <?=$otherCodeProjectsSection?>
