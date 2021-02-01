@@ -23,7 +23,7 @@ foreach($images as $image){
 
 foreach($otherProjects as $otherProject){
   $otherCodeProjectsSection .= '
-  <div class="col-md-3 masonry-item">
+  <div class="col-sm-6 col-md-4 col-lg-3 masonry-item">
     <article class="card card-royal mb-4">
       <figure class="ms-thumbnail ms-thumbnail-center ms-thumbnail-light">
         <a href="/coding/'.$otherProject->slug.'"><img src="/web/assets/images/'.$otherProject->image.'" alt="'.$otherProject->title.' cover image" class="img-fluid"></a>
@@ -54,7 +54,7 @@ $buttonToLiveSite = ($project->external_link != NULL) ? '<p class="text-center">
     <div class="col-lg-5">
       <div class="card">
         <div class="ms-hero-bg-dark ms-hero-img-mountain" style="background-image: url(/web/assets/images/<?=$project->image?>);">
-          <h2 class="text-center no-m pt-4 pb-4 color-white index-1"><?=$project->title?></h2>
+          <h2 class="text-center no-m pt-6 pb-6 color-white index-1"><?=$project->title?></h2>
         </div>
         <div class="card-body">
           <h3 class="color-primary no-mt">Information</h3>
@@ -89,7 +89,7 @@ $buttonToLiveSite = ($project->external_link != NULL) ? '<p class="text-center">
 
   </div>
   <h2 class="right-line mt-6">Other Works</h2>
-  <div class="row">
+  <div class="row masonry-container">
     <?=$otherCodeProjectsSection?>
   </div>
 </div> <!-- container -->

@@ -112,6 +112,10 @@ if(isset($_GET['page'])){
       $current_page = 'item_view.php';
       $page_title = 'View Item';
       break;
+
+    default:
+      $current_page = '404.php';
+      break;
   }
 }
 
