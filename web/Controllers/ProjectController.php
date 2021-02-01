@@ -82,6 +82,11 @@ class ProjectController {
     $projects = Project::where('active', 1)->where('coding_project', 1)->where('id', '!=', $project->id)->limit($num)->get();
     return $projects;
   }
+
+  public static function getAllOtherCodingProjects($project){
+    $projects = Project::where('active', 1)->where('coding_project', 1)->where('id', '!=', $project->id)->get();
+    return $projects;
+  }
 }
 
 ?>

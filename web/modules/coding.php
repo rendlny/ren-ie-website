@@ -2,7 +2,7 @@
   $projectGrid = NULL;
   foreach($projects as $project){
     $projectGrid .= '
-    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3">
+    <div class="col-sm-4 col-md-3 col-lg-2 col-xl-2">
       <a href="/coding/'.$project->slug.'" class="img-thumbnail withripple">
         <div class="thumbnail-container">
           <img src="/web/assets/images/'.$project->image.'" alt="'.$project->title.'" class="img-fluid"/>

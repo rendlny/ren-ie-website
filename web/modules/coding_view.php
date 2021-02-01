@@ -3,8 +3,8 @@ use Controllers\ProjectSectionController;
 use Controllers\ProjectController;
 
 $images = ProjectSectionController::getActiveSectionsByProjectSlug($project->slug);
-$relatedProjects = ProjectController::getRelatedCodingProjects(3, $project);
-$imageCarousel = $carouselIndicators = $relatedSection = NULL;
+$otherProjects = ProjectController::getAllOtherCodingProjects($project);
+$imageCarousel = $carouselIndicators = $otherCodeProjectsSection = NULL;
 
 $carouselCount = 0;
 foreach($images as $image){
@@ -21,20 +21,20 @@ foreach($images as $image){
   $carouselCount = $carouselCount + 1;
 }
 
-foreach($relatedProjects as $relatedProject){
-  $relatedSection .= '
-  <div class="col-md-4 masonry-item">
+foreach($otherProjects as $otherProject){
+  $otherCodeProjectsSection .= '
+  <div class="col-md-3 masonry-item">
     <article class="card card-royal mb-4">
       <figure class="ms-thumbnail ms-thumbnail-center ms-thumbnail-light">
-        <a href="/coding/'.$relatedProject->slug.'"><img src="/web/assets/images/'.$relatedProject->image.'" alt="'.$relatedProject->title.' cover image" class="img-fluid"></a>
+        <a href="/coding/'.$otherProject->slug.'"><img src="/web/assets/images/'.$otherProject->image.'" alt="'.$otherProject->title.' cover image" class="img-fluid"></a>
       </figure>
       <div class="card-body">
-        <h2><a href="/coding/'.$relatedProject->slug.'">'.$relatedProject->title.'</a></h2>
-        <p>'.$relatedProject->description.'</p>
+        <h2><a href="/coding/'.$otherProject->slug.'">'.$otherProject->title.'</a></h2>
+        <p>'.$otherProject->description.'</p>
         <div class="row">
           <div class="col-md-12">
             <div class="mt-05">
-              '.$relatedProject->displayTags.'
+              '.$otherProject->displayTags.'
             </div>
           </div>
         </div>
@@ -88,8 +88,8 @@ $buttonToLiveSite = ($project->external_link != NULL) ? '<p class="text-center">
     </div>
 
   </div>
-  <h2 class="right-line mt-6">Related Works</h2>
+  <h2 class="right-line mt-6">Other Works</h2>
   <div class="row">
-    <?=$relatedSection?>
+    <?=$otherCodeProjectsSection?>
   </div>
 </div> <!-- container -->
