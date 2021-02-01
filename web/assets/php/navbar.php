@@ -6,6 +6,7 @@ for($i = 1; $i <= sizeof($web_data["navbar_links"]); $i++){
   $navActive = ($web_data["navbar"][$i] == $activePage) ? 'active' : NULL;
   $navActive = ($web_data["navbar"][$i] == 'Projects' && $activePage == 'Project_view') ? 'active' : $navActive;
   $navActive = ($web_data["navbar"][$i] == 'Coding' && $activePage == 'Coding_view') ? 'active' : $navActive;
+  $navActive = ($web_data["navbar"][$i] == 'Store' && $activePage == 'Item_order') ? 'active' : $navActive;
 
   if ($web_data["navbar"][$i] == 'Hobbies') {
     $navActive = ('Music' == $activePage || 'Reading' == $activePage || 'Boardgames' == $activePage) ? 'active' : NULL;
