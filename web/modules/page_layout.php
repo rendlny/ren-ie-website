@@ -11,6 +11,12 @@ $current_page = 'home.php';
 
 if(isset($_GET['page'])){
   switch($_GET['page']){
+    case NULL:
+      $current_page = 'home.php';
+      $page_title = 'Home';
+      $meta_desc = '';
+      break;
+      
     case 'home':
       $current_page = 'home.php';
       $page_title = 'Home';
