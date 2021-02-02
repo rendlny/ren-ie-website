@@ -1,21 +1,3 @@
-<style>
-  @media (max-width: 1500px){
-    .container {
-      max-width: 100%;
-    }
-  }
-
-  @media (max-width: 1199px){
-    .BGGwrapper, .BGGitem {
-      max-width: 260px !important;
-    }
-
-    .BGGitem img {
-      max-width: 150px;
-    }
-  }
-</style>
-
 <div class="container pt-4">
   <div class="row">
 
