@@ -234,6 +234,12 @@ body .ms-site-container {
   }
 }
 
+@media only screen and (min-width: 770px) {
+  .mobile-only {
+    display: none;
+  }
+}
+
 .btn-circle:before {
   transition: none;
   border-radius: none;
