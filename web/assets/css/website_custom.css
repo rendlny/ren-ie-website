@@ -5,10 +5,6 @@
   --royal-colour-dark: rgb(87, 33, 113);
 }
 
-#footer {
-
-}
-
 .ms-thumbnail .ms-thumbnail-caption {
   background-color: rgba(34,195,142,0.8) !important;
 }
@@ -315,4 +311,12 @@ body .ms-site-container {
 .ms-logo.ms-logo-sm {
   width: 45px;
   height: 45px;
+}
+
+.lb-nav a.lb-next {
+  opacity: 1 !important;
+}
+
+.lb-nav a.lb-prev {
+  opacity: 1 !important;
 }
