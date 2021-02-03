@@ -36,14 +36,23 @@ if(isset($_GET['page'])){
       break;
 
     case 'store':
-      $current_page = (isset($_GET['code']) && $_GET['code'] != NULL) ? 'item_view.php' : 'store.php';
-      $item = (isset($_GET['code']) && $_GET['code'] != NULL) ? ItemController::getItemBySlug($_GET['code']) : NULL;
+      $current_page = ($_GET['code'] != NULL) ? 'item_view.php' : 'store.php';
+      $item = ($_GET['code'] != NULL) ? ItemController::getItemBySlug($_GET['code']) : NULL;
+      if($_GET['code'] != NULL && $item == NULL){
+        $current_page = '404.php'; //if item slug is set but item is not found in DB, redirect to 404
+        break;
+      }
       $page_title = (isset($_GET['code']) && $_GET['code'] != NULL) ? 'Store | '.$item->title : 'Store';
       $page_cover_img = (isset($_GET['code']) && $_GET['code'] != NULL) ? NULL : 'forest';
       break;
 
     case 'order':
-      $current_page = (isset($_GET['code']) && $_GET['code'] != NULL) ? 'item_order.php' : 'store.php';
+      $current_page = 'item_order.php';
+      $item = ItemController::getItemBySlug($_GET['code']);
+      if($_GET['code'] != NULL && $item == NULL){
+        $current_page = '404.php'; //if item slug is set but item is not found in DB, redirect to 404
+        break;
+      }
       $page_title = 'Order Form';
       $meta_desc = 'Order Item';
       $page_cover_img = 'forest';

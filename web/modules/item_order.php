@@ -4,8 +4,6 @@ use Controllers\SaleController;
 
 $warning = $itemTrade = $preorderAgreement = $error = $tradeOffer = NULL;
 
-$item = ItemController::getItemBySlug($_GET['code']);
-
 if(!$item->quantity > 0){
   echo '<meta http-equiv="refresh" content="0;url=/store/'.$_GET['code'].'">';
 }
