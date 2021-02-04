@@ -64,5 +64,14 @@
   <meta name="theme-color" content="#ffffff">
 
   <script src="https://kit.fontawesome.com/<?=$config["font_awesome_code"]?>.js" crossorigin="anonymous"></script>
-  <script src="/web/assets/js/jquery.min.js"></script>
+<!--  <script src="/web/assets/js/jquery.min.js"></script>-->
+<script src="/web/assets/js/plugins.min.js"></script>
+  <script src="/web/assets/js/jquery-ui.js"></script>
+
+  <script>
+    $( function() {
+      $( "#sortable" ).sortable();
+      $( "#sortable" ).disableSelection();
+    } );
+  </script>
 </head>

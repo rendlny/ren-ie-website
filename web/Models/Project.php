@@ -12,7 +12,8 @@ class Project extends Model {
   public $timestamps = false;
   protected $table = 'project';
   protected $fillable = [
-    'title', 'image', 'slug', 'description', 'content', 'active', 'tags', 'gallery_folder', 'coding_project', 'external_link'
+    'title', 'image', 'slug', 'description', 'content', 'active', 'tags',
+    'gallery_folder', 'coding_project', 'external_link', 'sorting'
   ];
 
   protected static function boot() {

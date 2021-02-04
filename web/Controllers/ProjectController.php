@@ -58,6 +58,20 @@ class ProjectController {
     return $project;
   }
 
+  static function updateProjectSorting($projectId, $sortingNo){
+    DB::beginTransaction();
+    try{
+      $project = Project::where('id',$projectId)->first();
+      $project->sorting = $sortingNo;
+      $project->save();
+      DB::commit();
+    }catch(Exception $e) {
+      DB::rollback();
+      throw $e;
+    }
+    return $project;
+  }
+
   public static function getAllProjects(){
     $projects = Project::orderBy('updated', 'DESC')->get();
     return $projects;
@@ -69,7 +83,12 @@ class ProjectController {
   }
 
   public static function getAllActiveProjectGalleryFolders(){
-    $projects = Project::where('active', 1)->where('gallery_folder', 1)->orderBy('updated', 'DESC')->get();
+    $projects = Project::where('active', 1)->where('gallery_folder', 1)->orderBy('sorting', 'ASC')->get();
+    return $projects;
+  }
+
+  public static function getAllProjectGalleryFolders(){
+    $projects = Project::where('gallery_folder', 1)->orderBy('sorting', 'ASC')->get();
     return $projects;
   }
 
