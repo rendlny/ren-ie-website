@@ -6,7 +6,7 @@ $tableRows = NULL;
 
 if($links != NULL){
   foreach ($links as $link) {
-    $editBtn = '<a title="Edit" class="btn-circle btn-circle-raised btn-circle-primary" href="/admin/links/'.$link->id.'"><i class="fa fa-pencil"></i></a>&nbsp;';
+    $editBtn = '<a title="Edit" class="btn-circle btn-circle-raised btn-circle-primary" href="/admin/links/edit/'.$link->id.'"><i class="fa fa-pencil"></i></a>&nbsp;';
 
     $btnPreview = '
       <a style="background:'.$link->colour.';" class="btn btn-raised text-white" href="'.$link->url.'" target="_blank">
