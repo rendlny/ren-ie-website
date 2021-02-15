@@ -128,6 +128,15 @@ body .ms-site-container {
   background-color: #121212;
 }
 
+.ms-footbar-social a {
+  margin: 0 0 0rem 1rem;
+}
+
+.ms-footbar-block-top-padding-only {
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+
 #home-body{
   padding: 7rem 0;
 }
