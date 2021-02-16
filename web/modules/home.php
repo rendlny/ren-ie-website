@@ -1,7 +1,8 @@
 <div id="home-body" class="wrap wrap-mountain mt-6">
   <div class="container">
 
-    <h2 class="text-center text-light mb-6"><strong><?=$web_data["home"]["home_title"]?></strong></h2>
+    <h1 class="text-center"><strong>Ren Delaney</strong></h1>
+    <h3 class="text-center">Software Engineer & Web Developer</h3>
     <hr>
 
     <div class="row">

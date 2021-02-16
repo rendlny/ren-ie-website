@@ -1,16 +1,19 @@
 :root {
   --main-colour: rgba(34,195,142);
   --main-colour-dark: rgb(35,99,82);
-  --royal-color: rgb(121, 50, 156);
+  --main-colour-translucent: rgba(34,195,142,0.8);
+  --royal-colour: rgb(121, 50, 156);
   --royal-colour-dark: rgb(87, 33, 113);
+  --royal-colour-translucent: rgba(68, 1, 103, 0.8);
+  --grey-colour-translucent:  rgb(69, 74, 90, 0.85);
 }
 
 .ms-thumbnail .ms-thumbnail-caption {
-  background-color: rgba(34,195,142,0.8) !important;
+  background-color: var(--main-colour-translucent) !important;
 }
 
 .ms-thumbnail .ms-thumbnail-caption:before {
-  background-color: rgba(68, 1, 103, 0.63) !important;
+  background-color: var(--royal-colour-translucent) !important;
 }
 
 body .ms-site-container {
@@ -68,8 +71,8 @@ body .ms-site-container {
   top: 0;
   bottom: 0;
   width: 100%;
-  background-color: rgba(68, 1, 103, 0.8);
-  background: linear-gradient(0deg, rgba(34,195,142,0.8) 0%, rgba(64,1,103,0.8) 77%);
+  background-color: var(--royal-colour-translucent);
+  background: linear-gradient(0deg, var(--main-colour-translucent) 0%, var(--royal-colour-translucent) 77%);
 }
 
 .itemImgPreview img{
@@ -82,13 +85,12 @@ body .ms-site-container {
 }
 
 .wrap.wrap-mountain:after {
-  background-color: rgba(68, 1, 103, 0.8);
-  background: linear-gradient(0deg, rgba(34,195,142,0.8) 0%, rgba(64,1,103,0.8) 77%);
+  background-color: var(--grey-colour-translucent);
 }
 
 .ms-hero-bg-info:after {
-  background-color: rgba(68, 1, 103, 0.8);
-  background: linear-gradient(0deg, rgba(34,195,142,0.8) 0%, rgba(64,1,103,0.8) 77%);
+  background-color: var(--royal-colour-translucent);
+  background: linear-gradient(0deg, var(--main-colour-translucent) 0%, var(--royal-colour-translucent) 77%);
 }
 
 .ms-hero-img-airplane {
@@ -224,7 +226,7 @@ body .ms-site-container {
   top:0;
   bottom:0;
   width:100%;
-  background: linear-gradient(0deg, rgba(34,195,142,0.8) 0%, rgba(78,1,103,0.8) 77%);
+  background: linear-gradient(0deg, var(--main-colour-translucent) 0%, rgba(78,1,103,0.8) 77%);
 }
 
 .btn-circle.btn-circle-raised.btn-circle-primary:before {
@@ -266,7 +268,7 @@ body .ms-site-container {
 }
 
 .btn-circle.btn-royal:hover {
-  background: var(--royal-color);
+  background: var(--royal-colour);
   border-color: var(--royal-colour-dark);
 }
 
