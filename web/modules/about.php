@@ -5,7 +5,7 @@
       <p class="lead text-center center-block mw-800">Hey, I'm Ren. I'm a Software Engineer based in Ireland.</p>
       <div class="row mt-4">
         <div class="col-lg-6 text-justify">
-          <img id="home-body-img" src="/web/assets/images/profile-small.png" class="img-fluid center-block wow zoomIn animation-delay-4 ">
+          <img id="home-body-img" src="/web/assets/images/about/profile-small.png" class="img-fluid center-block wow zoomIn animation-delay-4 ">
         </div>
         <div class="col-lg-6 mt-2">
           <p class="dropcaps">
