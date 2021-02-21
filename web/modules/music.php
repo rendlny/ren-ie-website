@@ -1,4 +1,4 @@
-<div class="ms-hero-page ms-hero-img-music ms-hero-bg-info mb-6" style="margin-bottom:0px !important;">
+<div class="ms-hero-page ms-hero-img-music ms-hero-bg-light mb-6" style="margin-bottom:0px !important;">
   <div class="text-center color-white mt-3 mb-6 index-1">
     <h1>Music</h1>
     <br>

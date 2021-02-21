@@ -3,7 +3,7 @@
   foreach($projects as $project){
     $projectGrid .= '
     <div class="col-sm-4 col-md-3 col-lg-2 col-xl-2">
-      <a href="/coding/'.$project->slug.'" class="img-thumbnail withripple">
+      <a href="/work/'.$project->slug.'" class="img-thumbnail withripple">
         <div class="thumbnail-container">
           <img src="/web/assets/images/'.$project->image.'" alt="'.$project->title.'" class="img-fluid"/>
         </div>
@@ -20,7 +20,7 @@
           <h1 class="card-title"><i class="zmdi zmdi-code"></i>&nbsp; PHP</h1>
         </div>
         <div class="card-sub-header">
-          <h4 class="card-title">2 Years Commercial Experience</h4>
+          <h4 class="card-title">2+ Years Industry Experience</h4>
         </div>
         <div class="card-body">
           <p class="text-center">

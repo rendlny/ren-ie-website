@@ -15,7 +15,7 @@ if($links != NULL){
   }
 }
 ?>
-<div class="ms-hero-page ms-hero-img-forest ms-hero-bg-info mb-6" style="margin-bottom:0px !important;">
+<div class="ms-hero-page ms-hero-img-forest ms-hero-bg-light mb-5" style="margin-bottom:0px !important;">
   <div class="text-center color-white mt-6 mb-6 index-1">
     <h1>Links</h1>
     <br>

@@ -25,10 +25,10 @@ foreach($otherProjects as $otherProject){
   <div class="col-sm-6 col-md-4 col-lg-3 masonry-item">
     <article class="card card-royal mb-4">
       <figure class="ms-thumbnail ms-thumbnail-center ms-thumbnail-light">
-        <a href="/coding/'.$otherProject->slug.'"><img src="/web/assets/images/'.$otherProject->image.'" alt="'.$otherProject->title.' cover image" class="img-fluid"></a>
+        <a href="/work/'.$otherProject->slug.'"><img src="/web/assets/images/'.$otherProject->image.'" alt="'.$otherProject->title.' cover image" class="img-fluid"></a>
       </figure>
       <div class="card-body">
-        <h2><a href="/coding/'.$otherProject->slug.'">'.$otherProject->title.'</a></h2>
+        <h2><a href="/work/'.$otherProject->slug.'">'.$otherProject->title.'</a></h2>
         <p>'.$otherProject->description.'</p>
         <hr>
         <div class="row">
@@ -46,7 +46,7 @@ foreach($otherProjects as $otherProject){
 $buttonToLiveSite = ($project->external_link != NULL) ? '<p class="text-center"><a href="'.$project->external_link.'" target="_blank" class="btn btn-raised btn-primary"><i class="fa fa-desktop"></i> Live Site</a></p>' : NULL;
 ?>
 <div class="col-md-6 offset-md-3 pt-3">
-  <a class="btn btn-md btn-raised btn-royal btn-block" href="/coding/"><i class="fa fa-arrow-left"></i> Coding</a>
+  <a class="btn btn-md btn-raised btn-royal btn-block" href="/work/"><i class="fa fa-arrow-left"></i> Coding</a>
 </div>
 
 <div class="container pt-3">

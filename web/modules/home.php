@@ -1,4 +1,4 @@
-<div id="home-body" class="wrap wrap-mountain mt-6">
+<div id="home-body" class="wrap wrap-mountain wrap-keyboard wrap-grey">
   <div class="container">
 
     <h1 class="text-center"><strong>Ren Delaney</strong></h1>

@@ -11,6 +11,8 @@ for($i = 1; $i <= sizeof($web_data["navbar_links"]); $i++){
         <i class="fa fa-chess"></i> Hobbies
       </a>
       <ul id="hobbies" class="card-collapse collapse" role="tabpanel" data-parent="#slidebar-menu" style="">
+        <li><a href="/gallery"><i class="fa fa-images"></i> Gallery</a></li>
+        <li><a href="/projects"><i class="fa fa-tasks"></i> Projects</a></li>
         <li><a href="/music"><i class="fa fa-music"></i> Music</a></li>
         <li><a href="/boardgames"><i class="fa fa-chess"></i> Board Games</a></li>
         <li><a href="/reading"><i class="fa fa-book"></i> Reading</a></li>

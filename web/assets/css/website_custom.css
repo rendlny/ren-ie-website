@@ -79,18 +79,22 @@ body .ms-site-container {
   max-width: 100px !important;
 }
 
-.wrap.wrap-mountain{
-  background-image: url(../images/keyboard.jpg);
+.wrap.wrap-keyboard{
+  background-image: url(../images/keyboard_1920x1080.png);
   animation-duration: 19s;
 }
 
-.wrap.wrap-mountain:after {
+.wrap.wrap-grey:after {
   background-color: var(--grey-colour-translucent);
 }
 
 .ms-hero-bg-info:after {
   background-color: var(--royal-colour-translucent);
   background: linear-gradient(0deg, var(--main-colour-translucent) 0%, var(--royal-colour-translucent) 77%);
+}
+
+.ms-hero-bg-light:after {
+  background-color: var(--grey-colour-translucent);
 }
 
 .ms-hero-img-airplane {
@@ -103,10 +107,6 @@ body .ms-site-container {
 
 .ms-navbar-dark {
   background-color: #131313;
-}
-
-.wrap.wrap-mountain {
-  margin: 0px !important;
 }
 
 .ms-navbar, .ms-lead-navbar {
@@ -183,7 +183,7 @@ body .ms-site-container {
 
 
 .ms-slidebar .ms-slidebar-header{
-  background-image:url(../images/keyboard.jpg);
+  background-image:url(../images/keyboard_1920x1080.png);
   background-size: cover;
 }
 
@@ -194,7 +194,7 @@ body .ms-site-container {
 }
 
 .ms-hero-img-keyboard {
-  background-image:url(../images/keyboard.jpg);
+  background-image:url(../images/keyboard_1920x1080.png);
   background-size: cover;
   background-position: center center;
 }
@@ -226,7 +226,7 @@ body .ms-site-container {
   top:0;
   bottom:0;
   width:100%;
-  background: linear-gradient(0deg, var(--main-colour-translucent) 0%, rgba(78,1,103,0.8) 77%);
+  background: var(--grey-colour-translucent);
 }
 
 .btn-circle.btn-circle-raised.btn-circle-primary:before {
