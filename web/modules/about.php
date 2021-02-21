@@ -55,20 +55,16 @@
            the systems onto them. I've also built Python web scrapers to collect
            data to be put onto new systems.
         </p>
-        <div class="row">
-          <div class="col-sm-4">
-            <img src="web/assets/images/about/inkerman.jpg" alt="Inkerman Team" class="img-fluid">
-          </div>
-          <div class="col-sm-8">
-            <p>
-              I worked on both the front and back-end of major projects with my team
-               by following Scrum and Agile methodologies using Jira Kanban boards
-               to deliver projects in a timely and efficient manner. In my 2 years
-               of working at Inkerman Technologies, I grew more confident in my
-               coding abilities and increased my skill set a great deal.
-            </p>
-          </div>
+        <div class="col-sm-6 offset-sm-3">
+          <img src="web/assets/images/about/inkerman.jpg" alt="Inkerman Team" class="img-fluid">
         </div>
+        <p class="pt-2">
+          I worked on both the front and back-end of major projects with my team
+           by following Scrum and Agile methodologies using Jira Kanban boards
+           to deliver projects in a timely and efficient manner. In my 2 years
+           of working at Inkerman Technologies, I grew more confident in my
+           coding abilities and increased my skill set a great deal.
+        </p>
 
       </li>
       <li class="ms-timeline-left-item wow fadeInUp" style="visibility: hidden; animation-name: none;">
