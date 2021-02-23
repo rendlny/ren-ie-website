@@ -79,7 +79,7 @@ class SaleController {
     $item = NULL;
     $userSales = array();
 
-    $sales = Sale::where('cancelled', 0)->get();
+    $sales = Sale::where('cancelled', 0)->orderBy('created', 'DESC')->get();
     $user = User::where('usercode', $_SESSION['userCode'])->first();
 
     foreach ($sales as $sale) {
@@ -125,7 +125,7 @@ class SaleController {
     $item = NULL;
     $userSales = array();
 
-    $sales = Sale::where('cancelled', 0)->limit(10)->get();
+    $sales = Sale::where('cancelled', 0)->orderBy('created', 'DESC')->limit(10)->get();
     $user = User::where('usercode', $_SESSION['userCode'])->first();
 
     foreach ($sales as $sale) {

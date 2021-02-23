@@ -46,12 +46,13 @@ foreach ($sales as $sale) {
   $saleLines .= '
   <tr id="sale-row-'.$sale->id.'" comment-data="'.$sale->comment.'">
     <td>'.$editBtn.$contactBtn.$detailsBtn.'</td>
+    <td>'.$sale->created.'</td>
     <td class="item">'.$item->title.'</td>
     <td class="text-center">'.$sale->quantity.'</td>
     <td class="customer">'.$sale->customer_name.'</td>
+    <td class="trade d-none">'.$sale->trade_offer.'</td>
     <td class="address d-none">'.$sale->shipping_address.'</td>
     <td><a href="mailto:'.$sale->paypal.'">'.$sale->paypal.'</a></td>
-    <td>'.$sale->trade_offer.'</td>
     <td class="comment d-none">'.$sale->comment.'</td>
     <td class="text-center">'.binaryCheck($sale->charged).'</td>
     <td class="text-center">'.binaryCheck($sale->shipped).'</td>
@@ -81,11 +82,11 @@ function binaryCheck($value){
         <thead>
           <tr>
             <th>Action</th>
+            <th>Date</th>
             <th>Item</th>
             <th>Quantity</th>
             <th>Name</th>
             <th>PayPal</th>
-            <th>Trade Offer</th>
             <th>Charged</th>
             <th>Shipped</th>
             <th>Tracking #</th>
@@ -115,6 +116,9 @@ function binaryCheck($value){
         <h3>Item</h3>
         <p id="sale-item"></p>
         <hr>
+        <h3>Trade Offer</h3>
+        <p id="sale-trade"></p>
+        <hr>
         <h3>Comment</h3>
         <p id="sale-comment"></p>
         <hr>
@@ -135,11 +139,13 @@ function binaryCheck($value){
       let saleId = $(this).attr('row-id');
       let customer = $('#sale-row-'+saleId+' .customer').html();
       let item = $('#sale-row-'+saleId+' .item').html();
+      let trade = $('#sale-row-'+saleId+' .trade').html();
       let comment = $('#sale-row-'+saleId+' .comment').html();
       let address = $('#sale-row-'+saleId+' .address').html();
       $('#saleDetailModal #sale-id').html('SALE #'+saleId);
       $('#saleDetailModal #sale-customer').html(customer);
       $('#saleDetailModal #sale-item').html(item);
+      $('#saleDetailModal #sale-trade').html(trade);
       $('#saleDetailModal #sale-comment').html(comment);
       $('#saleDetailModal #sale-address').html(address);
     });
