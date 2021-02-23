@@ -154,7 +154,7 @@ class SaleController {
       $mail->Port = $config['smtp_port'];
       $mail->setFrom($config['smtp_user'], $config['display_name']);
       $mail->addAddress($email);
-      $mail->addCC($config['smtp_user']);
+      $mail->addBCC($config['smtp_user']);
 
       $mail->isHTML(true);
       $mail->Subject = $subject;
