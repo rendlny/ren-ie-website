@@ -144,6 +144,8 @@ class SaleController {
     try{
       $mail = new PHPMailer;
       $mail->isSMTP();
+      //uncomment below to debug smtp issues
+      //$mail->SMTPDebug = SMTP::DEBUG_SERVER;
       $mail->SMTPAuth = true;
       $mail->Host = $config['smtp_host'];
       $mail->Username = $config['smtp_user'];
@@ -161,6 +163,8 @@ class SaleController {
 
       if (!$mail->send()) {
         throw new Exception('Email not sent! '.$mail->ErrorInfo);
+      }else{
+        return TRUE;
       }
     }catch(Exception $e){
       return $e->getMessage();
