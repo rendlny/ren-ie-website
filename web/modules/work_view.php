@@ -20,6 +20,13 @@ foreach($images as $image){
   $carouselCount = $carouselCount + 1;
 }
 
+if($imageCarousel == NULL){ //work project has no images attached, hide carousel
+  $carouselColDisplay = "d-none";
+  $projectDescColSize = "col-lg-12";
+}else{
+  $projectDescColSize = "col-lg-5";
+}
+
 foreach($otherProjects as $otherProject){
   $otherCodeProjectsSection .= '
   <div class="col-sm-6 col-md-4 col-lg-3 masonry-item">
@@ -52,7 +59,7 @@ $buttonToLiveSite = ($project->external_link != NULL) ? '<p class="text-center">
 <div class="container pt-3">
   <div class="row">
 
-    <div class="col-lg-5">
+    <div class="<?=$projectDescColSize?>">
       <div class="card">
         <div class="ms-hero-bg-dark ms-hero-img-mountain" style="background-image: url(/web/assets/images/<?=$project->image?>);">
           <h2 class="text-center no-m pt-6 pb-6 color-white index-1"><?=$project->title?></h2>
@@ -71,8 +78,7 @@ $buttonToLiveSite = ($project->external_link != NULL) ? '<p class="text-center">
       </div>
     </div>
 
-
-    <div class="col-lg-7">
+    <div class="col-lg-7 <?=$carouselColDisplay?>">
       <div class="card">
         <div id="image-carousel" class="ms-carousel carousel slide" data-ride="carousel">
           <!-- Indicators -->
