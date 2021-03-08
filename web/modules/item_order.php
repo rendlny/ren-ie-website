@@ -116,7 +116,7 @@ if($item->preorder){
                   <i style="color: #179cde;" class="fab fa-twitter-square fa-2x"></i>&nbsp; Twitter
                 </label>
               </div>
-
+<!--
               <div class="radio radio-primary">
                 <label>
                   <input type="radio" name="contactOption" id="contactOption2" value="discord">
@@ -124,7 +124,7 @@ if($item->preorder){
                   <i style="color: #7289da;" class="fab fa-discord fa-2x"></i>&nbsp; Discord
                 </label>
               </div>
-
+-->
               <div class="radio radio-primary">
                 <label>
                   <input type="radio" name="contactOption" id="contactOption3" value="email" checked>
