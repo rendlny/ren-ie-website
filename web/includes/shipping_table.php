@@ -8,11 +8,10 @@
     <tr>
       <td>Ireland</td><td>€2</td><td>€9</td>
     </tr>
-    <tr>
-      <td>Europe</td><td>€3</td><td>€10</td>
-    </tr>
-    <tr>
-      <td>USA</td><td>€3</td><td>€10</td>
+    <tr >
+      <td class="v-align-m">Europe <br> USA <br> Australia</td>
+      <td class="v-align-m">€3</td>
+      <td class="v-align-m">€10</td>
     </tr>
     <tr>
       <td>Elsewhere</td><td colspan="2">I will calculate & contact you with the shipping cost</td>
