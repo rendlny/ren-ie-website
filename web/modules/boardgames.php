@@ -20,9 +20,15 @@
             most excited for are
             <a href="https://boardgamegeek.com/boardgame/251661/oathsworn-deepwood" target="_blank">Oathsworn</a> and
             <a href="https://boardgamegeek.com/boardgame/285036/shadow-kingdoms-valeria" target="_blank">Shadow Kingdoms of Valeria</a>.
-
+            <br><br>
+            My favourite type of board games is cooperative games.
+            I love working together to solve the issue at hand whether it is
+            dealing with a horde of zombies heading towards us in
+            <a href="https://boardgamegeek.com/boardgame/176189/zombicide-black-plague" target="_blank">Zombicide</a>
+            or preventing outbreaks of diseases in
+            <a href="https://boardgamegeek.com/boardgame/30549/pandemic" target="_blank">Pandemic</a>.
+            <br><br>
             <iframe style="width:100%; height:500px;" src="https://playback.geekgroup.app/rendlythefriendly" title="My Monthly Board Game Plays"></iframe>
-
           </p>
 
           <!--<hr>
