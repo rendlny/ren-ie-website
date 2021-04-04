@@ -117,7 +117,7 @@
           During this course, the main programming language I learned was Java
           but I also learned some PHP and C#. I gained knowledge on many
           technologies such as design patterns, networks, security, SQL, Oracle,
-          JSP, SOAP & REST, Photoshop, Oracle, Powershell & CSS.
+          JSP, SOAP & REST, Photoshop, Powershell & CSS.
         </p>
       </li>
     </ul>
