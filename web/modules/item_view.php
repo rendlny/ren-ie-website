@@ -72,7 +72,7 @@ if(isset($_GET['code']) && $_GET['code'] != NULL){
             <ul class="list-unstyled">
               <li><strong>Stock: </strong> <?=$stockNumber?></li>
               <li class="mb-2"><strong>Availability: </strong> <?=$stockLabel?></li>
-              <li><strong>Shipping costs: </strong> <span class="color-success">€2* See table below</span></li>
+              <li><strong>Shipping costs: </strong> <span class="color-success">See shipping prices table below</span></li>
             </ul>
             <?=$orderBtn?>
           </div>
