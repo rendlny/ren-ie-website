@@ -1,12 +1,12 @@
-<table class="table table-bordered table-striped">
+<table id="shipping-table" class="table table-bordered table-striped">
   <thead>
-    <tr>
-      <th></th><th colspan="2">Standard</th><th colspan="2">Tracked</th>
+    <tr id="shipping-type-headers">
+      <th></th><th class="text-center" colspan="2">Standard</th><th class="text-center" colspan="2">Tracked</th>
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th></th><th>Ireland</th><th>Europe <br> USA <br> Australia <br> UK</th><th>Ireland Tracked</th><th>Europe <br> USA <br> Australia <br> UK Tracked</th>
+    <tr id="shipping-location-row">
+      <th></th><th>Ireland</th><th>Europe, UK, <br> Australia, USA</th><th>Ireland<br>(Tracked)</th><th>Europe, UK, <br> Australia, USA<br>(Tracked)</th>
     </tr>
     <tr>
       <th>1 - 4 pins (100g)</th>
@@ -31,3 +31,27 @@
     </tr>
   </tbody>
 </table>
+
+<style>
+  #shipping-table {
+    border-color: #61267d !important;
+  }
+  #shipping-type-headers {
+    background-color: rgb(121, 50, 156);
+    color: #f8f8f8;
+  }
+
+  #shipping-type-headers th {
+    border-color: #61267d !important;
+    font-size: large;
+  }
+
+  #shipping-location-row {
+    background-color: #22c38e;
+    color: #f8f8f8;
+  }
+
+  #shipping-location-row th {
+    border-color: #199b71 !important;
+  }
+</style>
