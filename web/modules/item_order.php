@@ -55,6 +55,11 @@ if($item->preorder){
                   <!--  For Pre-Orders, I won't send the invoice until I have the pins in-hand.<br>-->
                     For Trades, you can see my <a target="_blank" href="https://trello.com/b/4sPgYiti/rendlys-fursona-pins-collection-trading-eu">pin list here <i class="fa fa-link"></i><a>
                   </p>
+                  <h3 class="color-success">Multiple Pins</h3>
+                  <p>
+                    If you are looking to order multiple pins, you don't need to complete multiple forms. 
+                    Simply list the other pins in the comment section at the bottom of this form
+                  </p>
                   <h3 class="color-success">Shipping</h3>
                   <p>
                     Pins will be sent in a bubble mailer. Shipping costs are listed below.
