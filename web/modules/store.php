@@ -48,6 +48,8 @@ if($items != NULL){
 }
 
 ?>
+
+<?php include $_SERVER['DOCUMENT_ROOT'].'/web/includes/pin_deals_banner.php'; ?>
 <div class="container pt-6">
   <div class="row">
     <div class="col-lg-3">
@@ -92,7 +94,10 @@ if($items != NULL){
           </form>
         </div>
       </div>
+
+      <?php include $_SERVER['DOCUMENT_ROOT'].'/web/includes/pin_deals_table.php'; ?>
     </div>
+
     <div class="col-lg-9">
       <div class="row" id="Container">
 
