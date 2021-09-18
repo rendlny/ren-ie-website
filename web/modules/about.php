@@ -8,9 +8,13 @@
           <img id="home-body-img" src="/web/assets/images/about/profile-small.png" class="img-fluid center-block wow zoomIn animation-delay-4 ">
         </div>
         <div class="col-lg-6 mt-2">
-          <p class="dropcaps">
-            I am a Software Engineer with over 2 years of industry experience
-            and I am looking for a new opportunity.
+          <p>
+            I am a Software Engineer with over 3 years of industry experience.
+            I am currently working as a Junior Software Developer with Bynaric 
+            where I am using React JS, PHP and Laravel to create social 
+            housing management solutions.
+          </p>
+          <p>
             I had previously been working as a main Software Engineer at
             Inkerman Technologies where I had been using PHP with the Laravel
             framework, along with JavaScript, HTML, CSS, Ajax & jQuery to build
@@ -25,7 +29,7 @@
             I enjoy coding in Java and Python. I used Java all throughout
             college. I taught myself Python and used it to create web scrapers
             and programs for both my previous job and personal projects that
-            can be viewed on my GitHub.
+            can be viewed on my <a href="https://github.com/rendlny" target="_blank">GitHub</a>.
           </p>
         </div>
       </div>
@@ -34,6 +38,26 @@
   <div class="card card-body mt-6 card-body-big wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
     <h3 class="text-center fw-500 mb-6">Experience</h3>
     <ul class="ms-timeline-left">
+    <li class="ms-timeline-left-item wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+        <h4>Bynaric</h4>
+        <div class="ms-timeline-left-left">
+          <h4 class="color-primary">Junior Software Developer</h4>
+          <time class="ms-timeline-left-time">2021</time>
+        </div>
+        <span class="ms-timeline-left-city">Dublin, Ireland</span>
+        <div class="row">
+          <div class="col-sm-3">
+            <img src="web/assets/images/about/bynaric.jpg" alt="Bynaric Logo" class="img-fluid" >
+          </div>
+          <div class="col-sm-9">
+            <p>
+              I am currently working as a software engineer with Bynaric where we are creating social housing management solutions.
+            </p>
+          </div>
+        </div>
+
+
+      </li>
       <li class="ms-timeline-left-item wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
         <h4>Inkerman Technologies</h4>
         <div class="ms-timeline-left-left">
@@ -130,7 +154,7 @@
         <div class="col-md-4">
           <div class="text-center mt-4">
             <h4 class="text-center">PHP</h4>
-            <p class="small-font">2+ Years Industry Experience</p>
+            <p class="small-font">3+ Years Industry Experience</p>
           </div>
         </div>
         <div class="col-md-4">
@@ -174,6 +198,7 @@
         <span class="ms-tag ms-tag-light color-primary">MVC</span>
         <span class="ms-tag ms-tag-light color-primary">OOP</span>
         <span class="ms-tag ms-tag-light color-primary">Laravel</span>
+        <span class="ms-tag ms-tag-light color-primary">React JS</span>
 
       </div>
     </div>

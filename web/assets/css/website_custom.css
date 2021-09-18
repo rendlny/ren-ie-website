@@ -6,6 +6,7 @@
   --royal-colour-dark: rgb(87, 33, 113);
   --royal-colour-translucent: rgba(68, 1, 103, 0.8);
   --grey-colour-translucent:  rgb(69, 74, 90, 0.85);
+  --dark-colour-translucent:  rgba(47, 45, 43, 0.59);
 }
 
 .ms-thumbnail .ms-thumbnail-caption {
@@ -95,6 +96,10 @@ body .ms-site-container {
 
 .ms-hero-bg-light:after {
   background-color: var(--grey-colour-translucent);
+}
+
+.ms-hero-bg-dark::after {
+  background-color: var(--dark-colour-translucent);
 }
 
 .ms-hero-img-airplane {
