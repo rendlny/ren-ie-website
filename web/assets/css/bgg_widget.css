@@ -1,0 +1,37 @@
+.BGGtitle {
+    font-size: 12px;
+}
+
+.BGGheader {
+    font-size: 14px;
+}
+
+.BGGwrapper {
+    max-width: 100%;
+}
+
+.BGGitem {
+    display: inline-flex;
+}
+
+.BGGitem img {
+    max-height: 110px;
+}
+
+@media only screen and (min-width: 900px) {
+    .BGGitem img {
+        max-height: 130px;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    .BGGitem img {
+        max-height: 160px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .BGGitem img {
+        max-height: 175px;
+    }
+}
