@@ -1,0 +1,193 @@
+/* TBR Widget ID 1632261392 */
+
+.gr_custom_container_1632261392 center a{
+    display: none;
+}
+
+.gr_custom_container_1632261392 {
+    text-align: center;
+}
+
+.gr_custom_header_1632261392 {
+    display: none;
+}
+
+.gr_custom_each_container_1632261392 {
+    display: inline-flex !important;
+}
+
+.gr_custom_book_container_1632261392 img {
+    height: 130px;
+    float: right;
+    margin-left: 4px;
+}
+
+@media only screen and (min-width: 900px) {
+    .gr_custom_book_container_1632261392 img {
+        /* customize your book covers here */
+        height: 130px;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    .gr_custom_book_container_1632261392 img {
+        /* customize your book covers here */
+        height: 140px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .gr_custom_book_container_1632261392 img {
+        /* customize your book covers here */
+        height: 150px;
+    }
+}
+
+/* Currently Reading Widget ID 1632256474 */
+
+.gr_custom_container_1632256474 center a{
+    display: none;
+}
+
+.gr_custom_container_1632256474 {
+    text-align: center;
+}
+
+.gr_custom_header_1632256474 {
+    display: none;
+}
+
+.gr_custom_each_container_1632256474 {
+    display: inline-flex !important;
+}
+
+.gr_custom_book_container_1632256474 img {
+    height: 130px;
+    float: right;
+    margin-left: 4px;
+}
+
+@media only screen and (min-width: 900px) {
+    .gr_custom_book_container_1632256474 img {
+        /* customize your book covers here */
+        height: 130px;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    .gr_custom_book_container_1632256474 img {
+        /* customize your book covers here */
+        height: 140px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .gr_custom_book_container_1632256474 img {
+        /* customize your book covers here */
+        height: 150px;
+    }
+}
+
+/* Latest Read Widget ID 1632259749 */
+
+.gr_custom_container_1632259749 {
+    border: none !important;
+    border-radius: 0px !important;
+    padding: 0px !important;
+    background-color: transparent !important;
+}
+
+.gr_custom_container_1632259749 center a{
+    display: none;
+}
+
+.gr_custom_container_1632259749 {
+    text-align: center;
+}
+
+.gr_custom_header_1632259749 {
+    display: none;
+}
+
+.gr_custom_each_container_1632259749 {
+    display: inline-flex !important;
+}
+
+.gr_custom_book_container_1632259749 img {
+    height: 130px;
+    float: right;
+    margin-left: 4px;
+}
+
+@media only screen and (min-width: 900px) {
+    .gr_custom_book_container_1632259749 img {
+        /* customize your book covers here */
+        height: 130px;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    .gr_custom_book_container_1632259749 img {
+        /* customize your book covers here */
+        height: 140px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .gr_custom_book_container_1632259749 img {
+        /* customize your book covers here */
+        height: 150px;
+    }
+}
+
+/* Wish-List Widget ID 1632262181 */
+
+.gr_custom_container_1632262181 {
+    border: none !important;
+    border-radius: 0px !important;
+    padding: 0px !important;
+    background-color: transparent !important;
+}
+
+.gr_custom_container_1632262181 center a{
+    display: none;
+}
+
+.gr_custom_container_1632262181 {
+    text-align: center;
+}
+
+.gr_custom_header_1632262181 {
+    display: none;
+}
+
+.gr_custom_each_container_1632262181 {
+    display: inline-flex !important;
+}
+
+.gr_custom_book_container_1632262181 img {
+    height: 130px;
+    float: right;
+    margin-left: 4px;
+}
+
+@media only screen and (min-width: 900px) {
+    .gr_custom_book_container_1632262181 img {
+        /* customize your book covers here */
+        height: 130px;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    .gr_custom_book_container_1632262181 img {
+        /* customize your book covers here */
+        height: 140px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .gr_custom_book_container_1632262181 img {
+        /* customize your book covers here */
+        height: 150px;
+    }
+}
