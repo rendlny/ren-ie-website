@@ -1,3 +1,52 @@
+/* Reading Challenge */
+.challengePic {
+    display: none;
+}
+
+#gr_challenge_container {
+    /* background-color: #131313bf !important; */
+
+}
+
+#gr_challenge_11650 {
+    max-width: 350px !important;
+    border-radius: 1px !important;
+    border: 0px solid #DDD !important;
+    padding: 10px 15px !important;
+    background-color: #131313bf !important;
+    display: inline-flex;
+}
+
+#gr_challenge_progress_body_11650 > h3 {
+    display: none;
+}
+
+#gr_challenge_progress_body_11650 > div {
+    border: none !important;
+    width: 100% !important;
+    font-size: 1.5rem !important;
+}
+
+#gr_challenge_progress_body_11650 > div > div {
+    background-color: #22c38e !important;
+}
+
+#gr_challenge_progress_body_11650 > div > a {
+    font-size: 1.5rem !important;
+}
+
+#gr_challenge_progress_body_11650 {
+    text-decoration: none;
+    font-family: Roboto,Noto Sans,Helvetica Neue,Helvetica,Arial,sans-serif !important;
+    font-style: normal !important;
+}
+
+#gr_challenge_progress_body_11650 > h3 > a {
+    text-decoration: none;
+    font-family: Roboto,Noto Sans,Helvetica Neue,Helvetica,Arial,sans-serif !important;
+    font-style: normal !important;
+}
+
 /* TBR Widget ID 1632261392 */
 
 .gr_custom_container_1632261392 center a{

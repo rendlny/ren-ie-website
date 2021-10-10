@@ -16,17 +16,9 @@
         </div>
         <div class="card-body">
         
-          <div class="row">
-            <div class="col-md-5 offset-md-1">
-              <p class="text-center">
-                I enjoy reading fiction and fantasy books with the Stormlight
-                Archive series being my current favourite. I'm also reading through some manga - I'm enjoying
-                The Promised Neverland and Land of The Lustrous.
-              </p>
-            </div>
-            <div class="col-md-3 offset-md-2">
-              <?php include '../widgets/goodreads_reading_challenge.php'; ?>
-            </div>
+      
+          <div>
+            <?php include '../widgets/goodreads_reading_challenge.php'; ?>
           </div>
 
           <hr>
