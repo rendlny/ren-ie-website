@@ -29,6 +29,12 @@ if(isset($_GET['page'])){
       $meta_desc = '';
       break;
 
+    case 'warhammer':
+      $current_page = 'warhammer.php';
+      $page_title = 'Warhammer';
+      $page_cover_img = 'hobbies';
+      break;
+
     case 'boardgames':
       $current_page = 'boardgames.php';
       $page_title = 'Board Games';
