@@ -18,17 +18,17 @@
         
       
           <div>
-            <?php include '../widgets/goodreads_reading_challenge.php'; ?>
+            <?php include '../widgets/goodreads/goodreads_reading_challenge.php'; ?>
           </div>
 
           <hr>
-          <?php include '../widgets/goodreads_reading.php'; ?>
+          <?php include '../widgets/goodreads/goodreads_reading.php'; ?>
           <hr>
-          <?php include '../widgets/goodreads_tbr.php'; ?>
+          <?php include '../widgets/goodreads/goodreads_tbr.php'; ?>
           <hr>
-          <?php include '../widgets/goodreads_read_grid.php'; ?>
+          <?php include '../widgets/goodreads/goodreads_read_grid.php'; ?>
           <hr>
-          <?php include '../widgets/goodreads_wishlist.php'; ?>
+          <?php include '../widgets/goodreads/goodreads_wishlist.php'; ?>
         </div>
       </div>
     </div>

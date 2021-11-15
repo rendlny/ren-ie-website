@@ -21,7 +21,7 @@
         </div>
       </div>
 
-      <?php include '../widgets/soundcloud_playlist.php'; ?>
+      <?php include '../widgets/soundcloud/soundcloud_playlist.php'; ?>
 
     </div>
   </div>

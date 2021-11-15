@@ -33,11 +33,11 @@
           </p>
 
           <hr>
-          <?php include '../widgets/bgg_last_plays.php'; ?>
+          <?php include '../widgets/bgg/bgg_last_plays.php'; ?>
           <hr/>
-          <?php include '../widgets/bgg_top_ten.php'; ?>
+          <?php include '../widgets/bgg/bgg_top_ten.php'; ?>
           <hr/>
-          <?php include '../widgets/bgg_wishlist.php'; ?>
+          <?php include '../widgets/bgg/bgg_wishlist.php'; ?>
         </div>
       </div>
     </div>
