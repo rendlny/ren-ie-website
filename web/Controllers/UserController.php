@@ -4,7 +4,7 @@ namespace Controllers;
 use Models\User;
 use Models\UserFocal;
 use Models\Token;
-use Models\UserActivity;
+// use Models\UserActivity;
 use Exception;
 use Illuminate\Database\Capsule\Manager as DB;
 use PHPMailer\PHPMailer\PHPMailer;
@@ -133,7 +133,7 @@ class UserController {
       'link'          => '/edit-admin/'.$user->usercode,
       'link_title'    => $user->firstname.' '.$user->lastname,
     ];
-    static::addUserActivity($data);
+    // static::addUserActivity($data);
 
     return true;
   }

@@ -34,7 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
   			$message = '<div class="alert alert-info text-center">It appears that your password has not been set. Please click on the \'Forgot Your Password?\' link below and follow the instructions to set or reset your password.</div>';
 
       }	elseif (password_verify($_POST['password'], $focal)){
-  			updateactivity($usercode,'1',$usercode,'',$connection);
+  			// updateactivity($usercode,'1',$usercode,'',$connection);
   			$_SESSION['userCode'] = $usercode;
   			$_SESSION['userLevel'] = $access;
 
@@ -79,7 +79,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
       else
       {
         ##send recovery email
-        sendAdminPortalNotification($email,5,$connection);
+        // sendAdminPortalNotification($email,5,$connection);
         $message = '<div class="alert alert-success">A recovery link has been sent to your email.</div>';
       }
     }
