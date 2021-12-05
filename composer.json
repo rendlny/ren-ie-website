@@ -11,12 +11,24 @@
     "laravel/installer": "^3.2"
   },
   "require-dev": {
-    "robmorgan/phinx": "^0.11.1"
+    "robmorgan/phinx": "^0.11.1",
+    "phpstan/phpstan": "^1.2"
   },
   "autoload": {
     "psr-4": {
       "Controllers\\": "web/Controllers/",
       "Models\\": "web/Models/"
     }
+  },
+  "scripts": {
+    "test": [
+      "vendor/bin/phpstan analyse -c phpstan.neon"
+    ],
+    "phinx": [
+      "vendor/bin/phinx"
+    ],
+    "docker image": [
+      "docker build ."
+    ]
   }
 }
