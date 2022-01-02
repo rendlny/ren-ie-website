@@ -3,3 +3,29 @@ db_host     = 'localhost'
 db_user     = 'root'
 db_password = ''
 db_name     = ''
+
+[mail]
+smtp_host = ''
+smtp_user = ''
+smtp_pass = ''
+smtp_port = 587
+smtp_secure = 'TLS'
+display_name = ''
+admin_email = ''
+
+[other]
+font_awesome_code = 
+
+[filemanager]
+filemanager_link = '/web/assets/responsive_filemanager/filemanager/dialog.php'
+filemanager_key = ''
+
+[analytics]
+analytics_id = ''
+
+[recaptcha]
+recaptcha_site_key = 
+recaptcha_secret_key = 
+
+[site]
+site_url = 'http://127.0.0.1/'
