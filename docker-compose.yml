@@ -1,0 +1,32 @@
+version: '3.1'
+
+services:
+  php:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 80:80
+    volumes:
+      - ./:/var/www/html/
+
+  db:
+    image: mysql
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+
+  # dbeaver:
+  #   image: dbeaver/cloudbeaver
+  #   restart: always
+  #   ports:
+  #     - 8081:8978
+  #   volumes:
+  #     - ./src/dbeaver:/opt/cloudbeaver/workspace
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080

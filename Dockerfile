@@ -1,13 +1,16 @@
-# Docker image to use
-# FROM [--platform=<platform>] <image>[:<tag>] [AS <name>]
-FROM php:7-apache AS apache-server
+FROM php:7.4-apache
 
-# COPY 000-default.conf /etc/apache2/sites-available/000-default.conf
-# COPY start-apache /usr/local/bin
+# Update the repository sources list
+RUN apt-get update
+RUN docker-php-ext-install mysqli
+RUN docker-php-ext-install pdo pdo_mysql
+
+# enable apache rewrite mod for htaccess
 RUN a2enmod rewrite
+RUN sed -i '/<Directory \/var\/www\/>/,/<\/Directory>/ s/AllowOverride None/AllowOverride All/' /etc/apache2/apache2.conf
 
-# Copy application source
-# COPY src /var/www/
-RUN chown -R www-data:www-data /var/www
+# use local php.ini
+COPY ./docker-files/php.ini /usr/local/etc/php/php.ini-production
+COPY ./docker-files/php.ini /usr/local/etc/php/php.ini-development
 
-CMD ["start-apache"]
+
