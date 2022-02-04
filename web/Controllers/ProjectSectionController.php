@@ -54,13 +54,13 @@ class ProjectSectionController {
     return ProjectSection::where('project_id', $projectId)->get();
   }
 
-  static function getActiveSectionsByProjectId($projectId){
-    return ProjectSection::where('project_id', $projectId)->where('active', 1)->get();
+  static function getActiveSectionsByProjectId($projectId, $order){
+    return ProjectSection::where('project_id', $projectId)->where('active', 1)->orderBy('created', $order)->get();
   }
 
-  static function getActiveSectionsByProjectSlug($projectSlug){
+  static function getActiveSectionsByProjectSlug($projectSlug, $order='ASC'){
     $project = ProjectController::getProjectBySlug($projectSlug);
-    $sections = ProjectSectionController::getActiveSectionsByProjectId($project->id);
+    $sections = ProjectSectionController::getActiveSectionsByProjectId($project->id, $order);
     return $sections;
   }
 
