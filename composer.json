@@ -6,7 +6,7 @@
       "slim/slim": "^4.2",
       "slim/psr7": "^0.5.0",
       "tinymce/tinymce": "^5.0",
-    "laravel/framework": "6.20.26",
+    "laravel/framework": "6.20.42",
     "php": "^7.3",
     "laravel/installer": "^3.2"
   },
