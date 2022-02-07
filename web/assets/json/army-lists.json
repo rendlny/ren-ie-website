@@ -1,0 +1,84 @@
+{
+    "Death Korps of Krieg": {
+        "img_folder": "dkok",
+        "units": [
+            {
+                "name": "Severina Raine",
+                "section": "HQ",
+                "count": 1,
+                "img": "severina_raine"
+            },
+            {
+                "name": "Marshal",
+                "section": "HQ",
+                "count": 1,
+                "img": "marshal"
+            },
+            {
+                "name": "Guardsman",
+                "section": "HQ",
+                "count": 2,
+                "img": "guardsman"
+            },
+            {
+                "name": "Troops",
+                "section": "Troops",
+                "count": 10,
+                "img": "troop"
+            }
+        ]
+    },
+    "Space Wolves": {
+        "img_folder": "sw",
+        "units": [
+            {
+                "name": "Lieutenant in Phobos Armour",
+                "section": "HQ",
+                "count": 5,
+                "img": ""
+            },
+            {
+                "name": "Infiltrators",
+                "section": "Troops",
+                "count": 10,
+                "img": ""
+            },
+            {
+                "name": "Fenrisian Wolves",
+                "section": "Fast Attack",
+                "count": 5,
+                "img": ""
+            },
+            {
+                "name": "Suppressor Squad",
+                "section": "Fast Attack",
+                "count": 3,
+                "img": ""
+            },
+            {
+                "name": "Thunderwolf Cavalry",
+                "section": "Fast Attack",
+                "count": 3,
+                "img": ""
+            },
+            {
+                "name": "Eliminator Squad",
+                "section": "Heavy Support",
+                "count": 3,
+                "img": ""
+            },
+            {
+                "name": "Long Fangs",
+                "section": "Heavy Support",
+                "count": 5,
+                "img": ""
+            },
+            {
+                "name": "Impulsor",
+                "section": "HQ",
+                "count": 1,
+                "img": ""
+            }
+        ]
+    }
+}

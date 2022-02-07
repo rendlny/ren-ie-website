@@ -48,3 +48,11 @@ To just compile the Sass files to css run `gulp css`.
 
 #### Website Data
 Duplicate the `website_data.ini.example` file and name it `website_data.ini` and fill in your data.
+
+### Docker
+This project contains the files required to run as a Docker container.
+ - docker-compose up -d
+ - docker-compose exec php composer install
+ - Copy IP of mysql container and paste into phinx.yml as host
+ - Copy IP of mysql container and paste into config.ini as db_host
+ - docker-compose exec php vendor/bin/phinx migrate

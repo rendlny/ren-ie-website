@@ -9,7 +9,7 @@ use Illuminate\Database\Capsule\Manager as Capsule;
 
 class Database {
     function __construct() {
-        $config = parse_ini_file($_SERVER['DOCUMENT_ROOT'].'/web/assets/php/config.ini');
+        $config = parse_ini_file($_SERVER['DOCUMENT_ROOT'].'/config.ini');
         $capsule = new Capsule;
         $capsule->addConnection([
             'driver' => 'mysql',

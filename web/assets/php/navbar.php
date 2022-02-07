@@ -9,7 +9,11 @@ for($i = 1; $i <= sizeof($web_data["navbar_links"]); $i++){
   $navActive = ($web_data["navbar"][$i] == 'Store' && $activePage == 'Item_order') ? 'active' : $navActive;
 
   if ($web_data["navbar"][$i] == 'Hobbies') {
-    $navActive = ('Gallery' == $activePage || 'Projects' == $activePage || 'Music' == $activePage || 'Reading' == $activePage || 'Boardgames' == $activePage) ? 'active' : NULL;
+    $navActive = (
+      'Gallery' == $activePage || 'Projects' == $activePage || 
+      'Music' == $activePage || 'Reading' == $activePage || 
+      'Boardgames' == $activePage || 'Warhammer' == $activePage  
+      ) ? 'active' : NULL;
     $navbar .= '
     <li class="nav-item dropdown '.$navActive.'">
       <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Hobbies <i class="zmdi zmdi-chevron-down"></i></a>
@@ -17,6 +21,7 @@ for($i = 1; $i <= sizeof($web_data["navbar_links"]); $i++){
         <li><a class="dropdown-item" href="/gallery"><i class="fa fa-images"></i> Gallery</a></li>
         <li><a class="dropdown-item" href="/projects"><i class="fa fa-tasks"></i> Projects</a></li>
         <li><a class="dropdown-item" href="/music"><i class="fa fa-music"></i> Music</a></li>
+        <li><a class="dropdown-item" href="/warhammer"><i class="fa fa-skull"></i> Warhammer 40K</a></li>
         <li><a class="dropdown-item" href="/boardgames"><i class="fa fa-chess"></i> Board games</a></li>
         <li><a class="dropdown-item" href="/reading"><i class="fa fa-book"></i> Reading</a></li>
       </ul>
