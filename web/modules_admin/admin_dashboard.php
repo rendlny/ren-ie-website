@@ -84,4 +84,10 @@ foreach ($recentSales as $sale) {
     </div>
 
   </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <?php include 'bgg_api.php'; ?>
+    </div>
+  </div>
 </div>
