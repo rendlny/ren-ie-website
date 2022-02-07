@@ -2,7 +2,6 @@
 /vendor
 /web/assets/images/*
 /web/assets/thumbs/*
-/src
 
 config.ini
 *.env
