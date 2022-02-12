@@ -1,1194 +1,1194 @@
 <?xml version="1.0" encoding="utf-8"?>
 <plays username="RendlyTheFriendly" userid="2612986" total="216" page="1" termsofuse="https://boardgamegeek.com/xmlapi/termsofuse">
-<play id="58123081" date="2022-02-06" quantity="1" length="30" incomplete="0" nowinstats="1" location="TTS">
-			<item name="Agropolis" objecttype="thing" objectid="314088">
-				<subtypes>
-										<subtype value="boardgame"/>
-										<subtype value="boardgameintegration"/>
-									</subtypes>
-			</item>
-						<comments>32/33 points</comments>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="" new="0" rating="0" win="0"/>
-						<player username="" userid="0" name="Hannah" startposition="" color="" score="" new="0" rating="0" win="0"/>
-						</players>
-					</play>
+	<play id="58123081" date="2022-02-06" quantity="1" length="30" incomplete="0" nowinstats="1" location="TTS">
+		<item name="Agropolis" objecttype="thing" objectid="314088">
+			<subtypes>
+				<subtype value="boardgame" />
+				<subtype value="boardgameintegration" />
+			</subtypes>
+		</item>
+		<comments>32/33 points</comments>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="" new="0" rating="0" win="0" />
+			<player username="" userid="0" name="Hannah" startposition="" color="" score="" new="0" rating="0" win="0" />
+		</players>
+	</play>
 	<play id="58123034" date="2022-02-06" quantity="1" length="30" incomplete="0" nowinstats="0" location="TTS">
-			<item name="Air, Land &amp; Sea" objecttype="thing" objectid="247367">
-				<subtypes>
-										<subtype value="boardgame"/>
-										<subtype value="boardgameintegration"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="0" new="0" rating="0" win="0"/>
-						<player username="" userid="0" name="Hannah" startposition="" color="" score="16" new="0" rating="0" win="1"/>
-						</players>
-					</play>
+		<item name="Air, Land &amp; Sea" objecttype="thing" objectid="247367">
+			<subtypes>
+				<subtype value="boardgame" />
+				<subtype value="boardgameintegration" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="0" new="0" rating="0" win="0" />
+			<player username="" userid="0" name="Hannah" startposition="" color="" score="16" new="0" rating="0" win="1" />
+		</players>
+	</play>
 	<play id="58123049" date="2022-02-06" quantity="1" length="20" incomplete="0" nowinstats="1" location="TTS">
-			<item name="Codenames: Duet" objecttype="thing" objectid="224037">
-				<subtypes>
-										<subtype value="boardgame"/>
-										<subtype value="boardgameintegration"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="" new="0" rating="0" win="0"/>
-						<player username="" userid="0" name="Hannah" startposition="" color="" score="" new="0" rating="0" win="0"/>
-						</players>
-					</play>
+		<item name="Codenames: Duet" objecttype="thing" objectid="224037">
+			<subtypes>
+				<subtype value="boardgame" />
+				<subtype value="boardgameintegration" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="" new="0" rating="0" win="0" />
+			<player username="" userid="0" name="Hannah" startposition="" color="" score="" new="0" rating="0" win="0" />
+		</players>
+	</play>
 	<play id="58123130" date="2022-02-06" quantity="1" length="40" incomplete="0" nowinstats="1" location="TTS">
-			<item name="Marvel United: X-Men" objecttype="thing" objectid="336382">
-				<subtypes>
-										<subtype value="boardgame"/>
-										<subtype value="boardgameintegration"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="Captain Marvel" score="" new="0" rating="0" win="1"/>
-						<player username="" userid="0" name="Hannah" startposition="" color="Beta Ray Bill" score="" new="0" rating="0" win="1"/>
-						</players>
-					</play>
+		<item name="Marvel United: X-Men" objecttype="thing" objectid="336382">
+			<subtypes>
+				<subtype value="boardgame" />
+				<subtype value="boardgameintegration" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="Captain Marvel" score="" new="0" rating="0" win="1" />
+			<player username="" userid="0" name="Hannah" startposition="" color="Beta Ray Bill" score="" new="0" rating="0" win="1" />
+		</players>
+	</play>
 	<play id="58123001" date="2022-02-06" quantity="1" length="60" incomplete="0" nowinstats="0" location="Steam App">
-			<item name="Root" objecttype="thing" objectid="237182">
-				<subtypes>
-										<subtype value="boardgame"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="Vagabond" score="30" new="0" rating="0" win="1"/>
-						<player username="" userid="0" name="Hannah" startposition="" color="Marquise" score="25" new="0" rating="0" win="0"/>
-						<player username="" userid="0" name="Alliance AI (Medium)" startposition="" color="Alliance" score="26" new="0" rating="0" win="0"/>
-						</players>
-					</play>
+		<item name="Root" objecttype="thing" objectid="237182">
+			<subtypes>
+				<subtype value="boardgame" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="Vagabond" score="30" new="0" rating="0" win="1" />
+			<player username="" userid="0" name="Hannah" startposition="" color="Marquise" score="25" new="0" rating="0" win="0" />
+			<player username="" userid="0" name="Alliance AI (Medium)" startposition="" color="Alliance" score="26" new="0" rating="0" win="0" />
+		</players>
+	</play>
 	<play id="58123167" date="2022-02-06" quantity="1" length="40" incomplete="0" nowinstats="0" location="Steam App">
-			<item name="Root" objecttype="thing" objectid="237182">
-				<subtypes>
-										<subtype value="boardgame"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="Vagabond" score="17" new="0" rating="0" win="0"/>
-						<player username="" userid="0" name="Hannah" startposition="" color="Marquise" score="32" new="0" rating="0" win="1"/>
-						<player username="" userid="0" name="Eyrie AI (Medium)" startposition="" color="Eyrie" score="9" new="0" rating="0" win="0"/>
-						</players>
-					</play>
+		<item name="Root" objecttype="thing" objectid="237182">
+			<subtypes>
+				<subtype value="boardgame" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="Vagabond" score="17" new="0" rating="0" win="0" />
+			<player username="" userid="0" name="Hannah" startposition="" color="Marquise" score="32" new="0" rating="0" win="1" />
+			<player username="" userid="0" name="Eyrie AI (Medium)" startposition="" color="Eyrie" score="9" new="0" rating="0" win="0" />
+		</players>
+	</play>
 	<play id="58139817" date="2022-02-06" quantity="1" length="30" incomplete="0" nowinstats="0" location="Steam App">
-			<item name="Root" objecttype="thing" objectid="237182">
-				<subtypes>
-										<subtype value="boardgame"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="Marquise" score="31" new="0" rating="0" win="1"/>
-						<player username="" userid="0" name="Elliot" startposition="" color="Riverfolk" score="6" new="1" rating="0" win="0"/>
-						<player username="" userid="0" name="Vagabond AI (Medium)" startposition="" color="Vagabond" score="17" new="0" rating="0" win="0"/>
-						</players>
-					</play>
+		<item name="Root" objecttype="thing" objectid="237182">
+			<subtypes>
+				<subtype value="boardgame" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="Marquise" score="31" new="0" rating="0" win="1" />
+			<player username="" userid="0" name="Elliot" startposition="" color="Riverfolk" score="6" new="1" rating="0" win="0" />
+			<player username="" userid="0" name="Vagabond AI (Medium)" startposition="" color="Vagabond" score="17" new="0" rating="0" win="0" />
+		</players>
+	</play>
 	<play id="58140937" date="2022-02-06" quantity="1" length="50" incomplete="0" nowinstats="0" location="Steam App">
-			<item name="Root" objecttype="thing" objectid="237182">
-				<subtypes>
-										<subtype value="boardgame"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="Eyrie" score="31" new="0" rating="0" win="1"/>
-						<player username="" userid="0" name="Elliot" startposition="" color="Marquise" score="20" new="0" rating="0" win="0"/>
-						<player username="" userid="0" name="Alliance AI (Medium)" startposition="" color="Alliance" score="17" new="0" rating="0" win="0"/>
-						</players>
-					</play>
+		<item name="Root" objecttype="thing" objectid="237182">
+			<subtypes>
+				<subtype value="boardgame" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="Eyrie" score="31" new="0" rating="0" win="1" />
+			<player username="" userid="0" name="Elliot" startposition="" color="Marquise" score="20" new="0" rating="0" win="0" />
+			<player username="" userid="0" name="Alliance AI (Medium)" startposition="" color="Alliance" score="17" new="0" rating="0" win="0" />
+		</players>
+	</play>
 	<play id="58082554" date="2022-02-05" quantity="1" length="40" incomplete="0" nowinstats="0" location="App">
-			<item name="Root" objecttype="thing" objectid="237182">
-				<subtypes>
-										<subtype value="boardgame"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="Eyrie" score="33" new="0" rating="0" win="1"/>
-						<player username="" userid="0" name="Marquise AI (Medium)" startposition="" color="Marquise" score="12" new="0" rating="0" win="0"/>
-						</players>
-					</play>
+		<item name="Root" objecttype="thing" objectid="237182">
+			<subtypes>
+				<subtype value="boardgame" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="Eyrie" score="33" new="0" rating="0" win="1" />
+			<player username="" userid="0" name="Marquise AI (Medium)" startposition="" color="Marquise" score="12" new="0" rating="0" win="0" />
+		</players>
+	</play>
 	<play id="58086392" date="2022-02-05" quantity="1" length="50" incomplete="0" nowinstats="0" location="Steam App">
-			<item name="Root" objecttype="thing" objectid="237182">
-				<subtypes>
-										<subtype value="boardgame"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="Eyrie" score="30" new="0" rating="0" win="1"/>
-						<player username="" userid="0" name="Michael" startposition="" color="Marquise" score="19" new="1" rating="0" win="0"/>
-						</players>
-					</play>
+		<item name="Root" objecttype="thing" objectid="237182">
+			<subtypes>
+				<subtype value="boardgame" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="Eyrie" score="30" new="0" rating="0" win="1" />
+			<player username="" userid="0" name="Michael" startposition="" color="Marquise" score="19" new="1" rating="0" win="0" />
+		</players>
+	</play>
 	<play id="58017464" date="2022-02-03" quantity="1" length="30" incomplete="0" nowinstats="0" location="App">
-			<item name="Sagrada" objecttype="thing" objectid="199561">
-				<subtypes>
-										<subtype value="boardgame"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="50" new="0" rating="0" win="1"/>
-						<player username="" userid="0" name="Hannah" startposition="" color="" score="40" new="0" rating="0" win="0"/>
-						</players>
-					</play>
+		<item name="Sagrada" objecttype="thing" objectid="199561">
+			<subtypes>
+				<subtype value="boardgame" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="50" new="0" rating="0" win="1" />
+			<player username="" userid="0" name="Hannah" startposition="" color="" score="40" new="0" rating="0" win="0" />
+		</players>
+	</play>
 	<play id="57993664" date="2022-02-02" quantity="1" length="30" incomplete="0" nowinstats="0" location="TTS">
-			<item name="Air, Land &amp; Sea" objecttype="thing" objectid="247367">
-				<subtypes>
-										<subtype value="boardgame"/>
-										<subtype value="boardgameintegration"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="12" new="0" rating="0" win="1"/>
-						<player username="" userid="0" name="Michael" startposition="" color="" score="0" new="0" rating="0" win="0"/>
-						</players>
-					</play>
+		<item name="Air, Land &amp; Sea" objecttype="thing" objectid="247367">
+			<subtypes>
+				<subtype value="boardgame" />
+				<subtype value="boardgameintegration" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="12" new="0" rating="0" win="1" />
+			<player username="" userid="0" name="Michael" startposition="" color="" score="0" new="0" rating="0" win="0" />
+		</players>
+	</play>
 	<play id="58017496" date="2022-02-02" quantity="1" length="40" incomplete="0" nowinstats="0" location="App">
-			<item name="Root" objecttype="thing" objectid="237182">
-				<subtypes>
-										<subtype value="boardgame"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="Vagabond" score="14" new="0" rating="0" win="0"/>
-						<player username="" userid="0" name="Marquise AI (Medium)" startposition="" color="Marquise" score="21" new="0" rating="0" win="0"/>
-						<player username="" userid="0" name="Eyrie AI (Medium)" startposition="" color="Eyrie" score="9" new="0" rating="0" win="0"/>
-						<player username="" userid="0" name="Alliance AI (Medium)" startposition="" color="Alliance" score="31" new="0" rating="0" win="1"/>
-						</players>
-					</play>
+		<item name="Root" objecttype="thing" objectid="237182">
+			<subtypes>
+				<subtype value="boardgame" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="Vagabond" score="14" new="0" rating="0" win="0" />
+			<player username="" userid="0" name="Marquise AI (Medium)" startposition="" color="Marquise" score="21" new="0" rating="0" win="0" />
+			<player username="" userid="0" name="Eyrie AI (Medium)" startposition="" color="Eyrie" score="9" new="0" rating="0" win="0" />
+			<player username="" userid="0" name="Alliance AI (Medium)" startposition="" color="Alliance" score="31" new="0" rating="0" win="1" />
+		</players>
+	</play>
 	<play id="58017460" date="2022-02-02" quantity="1" length="30" incomplete="0" nowinstats="0" location="App">
-			<item name="Sagrada" objecttype="thing" objectid="199561">
-				<subtypes>
-										<subtype value="boardgame"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="43" new="0" rating="0" win="1"/>
-						<player username="" userid="0" name="Hannah" startposition="" color="" score="35" new="0" rating="0" win="0"/>
-						</players>
-					</play>
+		<item name="Sagrada" objecttype="thing" objectid="199561">
+			<subtypes>
+				<subtype value="boardgame" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="43" new="0" rating="0" win="1" />
+			<player username="" userid="0" name="Hannah" startposition="" color="" score="35" new="0" rating="0" win="0" />
+		</players>
+	</play>
 	<play id="57916545" date="2022-01-30" quantity="1" length="50" incomplete="0" nowinstats="0" location="Home">
-			<item name="Disney Villainous" objecttype="thing" objectid="256382">
-				<subtypes>
-										<subtype value="boardgame"/>
-										<subtype value="boardgameintegration"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="Prince John" score="" new="1" rating="0" win="0"/>
-						<player username="" userid="0" name="Hannah" startposition="" color="Ursula" score="" new="0" rating="0" win="1"/>
-						</players>
-					</play>
+		<item name="Disney Villainous" objecttype="thing" objectid="256382">
+			<subtypes>
+				<subtype value="boardgame" />
+				<subtype value="boardgameintegration" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="Prince John" score="" new="1" rating="0" win="0" />
+			<player username="" userid="0" name="Hannah" startposition="" color="Ursula" score="" new="0" rating="0" win="1" />
+		</players>
+	</play>
 	<play id="57916345" date="2022-01-30" quantity="1" length="40" incomplete="0" nowinstats="0" location="Home">
-			<item name="Fort" objecttype="thing" objectid="296912">
-				<subtypes>
-										<subtype value="boardgame"/>
-										<subtype value="boardgameimplementation"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="22" new="0" rating="0" win="0"/>
-						<player username="" userid="0" name="Hannah" startposition="" color="" score="48" new="0" rating="0" win="1"/>
-						</players>
-					</play>
+		<item name="Fort" objecttype="thing" objectid="296912">
+			<subtypes>
+				<subtype value="boardgame" />
+				<subtype value="boardgameimplementation" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="22" new="0" rating="0" win="0" />
+			<player username="" userid="0" name="Hannah" startposition="" color="" score="48" new="0" rating="0" win="1" />
+		</players>
+	</play>
 	<play id="57916469" date="2022-01-30" quantity="1" length="40" incomplete="0" nowinstats="1" location="Home">
-			<item name="Marvel United: X-Men" objecttype="thing" objectid="336382">
-				<subtypes>
-										<subtype value="boardgame"/>
-										<subtype value="boardgameintegration"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="Storm" score="" new="0" rating="0" win="1"/>
-						<player username="" userid="0" name="Hannah" startposition="" color="Wolverine" score="" new="0" rating="0" win="1"/>
-						<player username="" userid="0" name="Elliot" startposition="" color="Jean Grey" score="" new="0" rating="0" win="1"/>
-						</players>
-					</play>
+		<item name="Marvel United: X-Men" objecttype="thing" objectid="336382">
+			<subtypes>
+				<subtype value="boardgame" />
+				<subtype value="boardgameintegration" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="Storm" score="" new="0" rating="0" win="1" />
+			<player username="" userid="0" name="Hannah" startposition="" color="Wolverine" score="" new="0" rating="0" win="1" />
+			<player username="" userid="0" name="Elliot" startposition="" color="Jean Grey" score="" new="0" rating="0" win="1" />
+		</players>
+	</play>
 	<play id="57916639" date="2022-01-30" quantity="1" length="30" incomplete="0" nowinstats="0" location="Home">
-			<item name="That's Pretty Clever!" objecttype="thing" objectid="244522">
-				<subtypes>
-										<subtype value="boardgame"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="167" new="0" rating="0" win="0"/>
-						<player username="" userid="0" name="Hannah" startposition="" color="" score="209" new="0" rating="0" win="1"/>
-						</players>
-					</play>
+		<item name="That's Pretty Clever!" objecttype="thing" objectid="244522">
+			<subtypes>
+				<subtype value="boardgame" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="167" new="0" rating="0" win="0" />
+			<player username="" userid="0" name="Hannah" startposition="" color="" score="209" new="0" rating="0" win="1" />
+		</players>
+	</play>
 	<play id="57825062" date="2022-01-27" quantity="1" length="90" incomplete="0" nowinstats="1" location="Home">
-			<item name="Under Falling Skies" objecttype="thing" objectid="306735">
-				<subtypes>
-										<subtype value="boardgame"/>
-										<subtype value="boardgameimplementation"/>
-									</subtypes>
-			</item>
-						<comments>Johannesburg
+		<item name="Under Falling Skies" objecttype="thing" objectid="306735">
+			<subtypes>
+				<subtype value="boardgame" />
+				<subtype value="boardgameimplementation" />
+			</subtypes>
+		</item>
+		<comments>Johannesburg
 Dangerous Research
 Shanti Aumann
 Samantha Legrand*
 Difficulty 2</comments>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="" new="0" rating="0" win="0"/>
-						</players>
-					</play>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="" new="0" rating="0" win="0" />
+		</players>
+	</play>
 	<play id="57825088" date="2022-01-27" quantity="1" length="40" incomplete="0" nowinstats="1" location="Home">
-			<item name="Under Falling Skies" objecttype="thing" objectid="306735">
-				<subtypes>
-										<subtype value="boardgame"/>
-										<subtype value="boardgameimplementation"/>
-									</subtypes>
-			</item>
-						<comments>Johannesburg - damaged
+		<item name="Under Falling Skies" objecttype="thing" objectid="306735">
+			<subtypes>
+				<subtype value="boardgame" />
+				<subtype value="boardgameimplementation" />
+			</subtypes>
+		</item>
+		<comments>Johannesburg - damaged
 Dangerous Research
 Shanti Aumann
 Samantha Legrand*
 Difficulty 1</comments>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="" new="0" rating="0" win="1"/>
-						</players>
-					</play>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="" new="0" rating="0" win="1" />
+		</players>
+	</play>
 	<play id="57757736" date="2022-01-24" quantity="1" length="30" incomplete="0" nowinstats="0" location="Steam App">
-			<item name="Root" objecttype="thing" objectid="237182">
-				<subtypes>
-										<subtype value="boardgame"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="Vagabond" score="30" new="0" rating="0" win="1"/>
-						<player username="" userid="0" name="Eyrie AI (Medium)" startposition="" color="Eyrie" score="14" new="0" rating="0" win="0"/>
-						<player username="" userid="0" name="Marquise AI (Medium)" startposition="" color="Marquise" score="26" new="0" rating="0" win="0"/>
-						</players>
-					</play>
+		<item name="Root" objecttype="thing" objectid="237182">
+			<subtypes>
+				<subtype value="boardgame" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="Vagabond" score="30" new="0" rating="0" win="1" />
+			<player username="" userid="0" name="Eyrie AI (Medium)" startposition="" color="Eyrie" score="14" new="0" rating="0" win="0" />
+			<player username="" userid="0" name="Marquise AI (Medium)" startposition="" color="Marquise" score="26" new="0" rating="0" win="0" />
+		</players>
+	</play>
 	<play id="57708232" date="2022-01-23" quantity="1" length="60" incomplete="0" nowinstats="0" location="TTS">
-			<item name="Fort" objecttype="thing" objectid="296912">
-				<subtypes>
-										<subtype value="boardgame"/>
-										<subtype value="boardgameimplementation"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="53" new="0" rating="0" win="1"/>
-						<player username="" userid="0" name="Hannah" startposition="" color="" score="42" new="0" rating="0" win="0"/>
-						</players>
-					</play>
+		<item name="Fort" objecttype="thing" objectid="296912">
+			<subtypes>
+				<subtype value="boardgame" />
+				<subtype value="boardgameimplementation" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="53" new="0" rating="0" win="1" />
+			<player username="" userid="0" name="Hannah" startposition="" color="" score="42" new="0" rating="0" win="0" />
+		</players>
+	</play>
 	<play id="57710518" date="2022-01-23" quantity="1" length="40" incomplete="0" nowinstats="1" location="TTS">
-			<item name="Marvel United: X-Men" objecttype="thing" objectid="336382">
-				<subtypes>
-										<subtype value="boardgame"/>
-										<subtype value="boardgameintegration"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="Moon Knight" score="" new="0" rating="0" win="1"/>
-						<player username="" userid="0" name="Hannah" startposition="" color="Hulk" score="" new="0" rating="0" win="1"/>
-						</players>
-					</play>
+		<item name="Marvel United: X-Men" objecttype="thing" objectid="336382">
+			<subtypes>
+				<subtype value="boardgame" />
+				<subtype value="boardgameintegration" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="Moon Knight" score="" new="0" rating="0" win="1" />
+			<player username="" userid="0" name="Hannah" startposition="" color="Hulk" score="" new="0" rating="0" win="1" />
+		</players>
+	</play>
 	<play id="57720921" date="2022-01-23" quantity="1" length="20" incomplete="0" nowinstats="0" location="Home">
-			<item name="Project L" objecttype="thing" objectid="260180">
-				<subtypes>
-										<subtype value="boardgame"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="17" new="0" rating="0" win="1"/>
-						<player username="" userid="0" name="Elliot" startposition="" color="" score="15" new="1" rating="0" win="0"/>
-						</players>
-					</play>
+		<item name="Project L" objecttype="thing" objectid="260180">
+			<subtypes>
+				<subtype value="boardgame" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="17" new="0" rating="0" win="1" />
+			<player username="" userid="0" name="Elliot" startposition="" color="" score="15" new="1" rating="0" win="0" />
+		</players>
+	</play>
 	<play id="57706144" date="2022-01-23" quantity="1" length="40" incomplete="0" nowinstats="0" location="Steam App">
-			<item name="Root" objecttype="thing" objectid="237182">
-				<subtypes>
-										<subtype value="boardgame"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="Marquise" score="31" new="0" rating="0" win="1"/>
-						<player username="" userid="0" name="Hannah" startposition="" color="Eyrie" score="23" new="1" rating="0" win="0"/>
-						</players>
-					</play>
+		<item name="Root" objecttype="thing" objectid="237182">
+			<subtypes>
+				<subtype value="boardgame" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="Marquise" score="31" new="0" rating="0" win="1" />
+			<player username="" userid="0" name="Hannah" startposition="" color="Eyrie" score="23" new="1" rating="0" win="0" />
+		</players>
+	</play>
 	<play id="57602880" date="2022-01-20" quantity="1" length="20" incomplete="0" nowinstats="0" location="App">
-			<item name="Root" objecttype="thing" objectid="237182">
-				<subtypes>
-										<subtype value="boardgame"/>
-									</subtypes>
-			</item>
-						<comments>Challenge - Total Domination - Easy</comments>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="Marquise" score="11" new="0" rating="0" win="1"/>
-						<player username="" userid="0" name="Vagabond AI (Easy)" startposition="" color="Vagabond" score="9" new="0" rating="0" win="0"/>
-						<player username="" userid="0" name="Alliance AI (Easy)" startposition="" color="Alliance" score="12" new="0" rating="0" win="0"/>
-						</players>
-					</play>
+		<item name="Root" objecttype="thing" objectid="237182">
+			<subtypes>
+				<subtype value="boardgame" />
+			</subtypes>
+		</item>
+		<comments>Challenge - Total Domination - Easy</comments>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="Marquise" score="11" new="0" rating="0" win="1" />
+			<player username="" userid="0" name="Vagabond AI (Easy)" startposition="" color="Vagabond" score="9" new="0" rating="0" win="0" />
+			<player username="" userid="0" name="Alliance AI (Easy)" startposition="" color="Alliance" score="12" new="0" rating="0" win="0" />
+		</players>
+	</play>
 	<play id="57610045" date="2022-01-20" quantity="1" length="40" incomplete="0" nowinstats="0" location="Steam App">
-			<item name="Root" objecttype="thing" objectid="237182">
-				<subtypes>
-										<subtype value="boardgame"/>
-									</subtypes>
-			</item>
-						<comments>Challenges - Total Domination - Heroic</comments>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="Eyrie" score="0" new="0" rating="0" win="0"/>
-						<player username="" userid="0" name="Marquise AI (Medium)" startposition="" color="Marquise" score="26" new="0" rating="0" win="0"/>
-						<player username="" userid="0" name="Alliance AI (Medium)" startposition="" color="Alliance" score="30" new="0" rating="0" win="1"/>
-						</players>
-					</play>
+		<item name="Root" objecttype="thing" objectid="237182">
+			<subtypes>
+				<subtype value="boardgame" />
+			</subtypes>
+		</item>
+		<comments>Challenges - Total Domination - Heroic</comments>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="Eyrie" score="0" new="0" rating="0" win="0" />
+			<player username="" userid="0" name="Marquise AI (Medium)" startposition="" color="Marquise" score="26" new="0" rating="0" win="0" />
+			<player username="" userid="0" name="Alliance AI (Medium)" startposition="" color="Alliance" score="30" new="0" rating="0" win="1" />
+		</players>
+	</play>
 	<play id="57614605" date="2022-01-20" quantity="1" length="60" incomplete="0" nowinstats="0" location="Steam App">
-			<item name="Root" objecttype="thing" objectid="237182">
-				<subtypes>
-										<subtype value="boardgame"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="Vagabond" score="24" new="0" rating="0" win="0"/>
-						<player username="" userid="0" name="Connor" startposition="" color="Marquise" score="-" new="1" rating="0" win="1"/>
-						<player username="" userid="0" name="Eyrie AI (Medium)" startposition="" color="Eyrie" score="10" new="0" rating="0" win="0"/>
-						</players>
-					</play>
+		<item name="Root" objecttype="thing" objectid="237182">
+			<subtypes>
+				<subtype value="boardgame" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="Vagabond" score="24" new="0" rating="0" win="0" />
+			<player username="" userid="0" name="Connor" startposition="" color="Marquise" score="-" new="1" rating="0" win="1" />
+			<player username="" userid="0" name="Eyrie AI (Medium)" startposition="" color="Eyrie" score="10" new="0" rating="0" win="0" />
+		</players>
+	</play>
 	<play id="57482705" date="2022-01-16" quantity="1" length="40" incomplete="0" nowinstats="0" location="TTS">
-			<item name="Project L" objecttype="thing" objectid="260180">
-				<subtypes>
-										<subtype value="boardgame"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="28" new="0" rating="0" win="1"/>
-						<player username="" userid="0" name="Hannah" startposition="" color="" score="27" new="0" rating="0" win="0"/>
-						</players>
-					</play>
+		<item name="Project L" objecttype="thing" objectid="260180">
+			<subtypes>
+				<subtype value="boardgame" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="28" new="0" rating="0" win="1" />
+			<player username="" userid="0" name="Hannah" startposition="" color="" score="27" new="0" rating="0" win="0" />
+		</players>
+	</play>
 	<play id="57490604" date="2022-01-16" quantity="1" length="40" incomplete="0" nowinstats="0" location="Steam App">
-			<item name="Root" objecttype="thing" objectid="237182">
-				<subtypes>
-										<subtype value="boardgame"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="Vagabond" score="32" new="0" rating="0" win="1"/>
-						<player username="" userid="0" name="Marquise AI (Medium)" startposition="" color="Marquise" score="24" new="0" rating="0" win="0"/>
-						<player username="" userid="0" name="Eyrie AI (Medium)" startposition="" color="Eyrie" score="22" new="0" rating="0" win="0"/>
-						</players>
-					</play>
+		<item name="Root" objecttype="thing" objectid="237182">
+			<subtypes>
+				<subtype value="boardgame" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="Vagabond" score="32" new="0" rating="0" win="1" />
+			<player username="" userid="0" name="Marquise AI (Medium)" startposition="" color="Marquise" score="24" new="0" rating="0" win="0" />
+			<player username="" userid="0" name="Eyrie AI (Medium)" startposition="" color="Eyrie" score="22" new="0" rating="0" win="0" />
+		</players>
+	</play>
 	<play id="57482683" date="2022-01-16" quantity="1" length="100" incomplete="0" nowinstats="0" location="TTS">
-			<item name="Shadow Kingdoms of Valeria" objecttype="thing" objectid="285036">
-				<subtypes>
-										<subtype value="boardgame"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="Skeletons" score="80" new="0" rating="0" win="0"/>
-						<player username="" userid="0" name="Hannah" startposition="" color="Orcs" score="106" new="0" rating="0" win="1"/>
-						</players>
-					</play>
+		<item name="Shadow Kingdoms of Valeria" objecttype="thing" objectid="285036">
+			<subtypes>
+				<subtype value="boardgame" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="Skeletons" score="80" new="0" rating="0" win="0" />
+			<player username="" userid="0" name="Hannah" startposition="" color="Orcs" score="106" new="0" rating="0" win="1" />
+		</players>
+	</play>
 	<play id="57497106" date="2022-01-16" quantity="1" length="80" incomplete="0" nowinstats="0" location="Home">
-			<item name="Shadow Kingdoms of Valeria" objecttype="thing" objectid="285036">
-				<subtypes>
-										<subtype value="boardgame"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="Goblins" score="70" new="0" rating="0" win="0"/>
-						<player username="" userid="0" name="Elliot" startposition="" color="Skeletons" score="96" new="0" rating="0" win="1"/>
-						</players>
-					</play>
+		<item name="Shadow Kingdoms of Valeria" objecttype="thing" objectid="285036">
+			<subtypes>
+				<subtype value="boardgame" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="Goblins" score="70" new="0" rating="0" win="0" />
+			<player username="" userid="0" name="Elliot" startposition="" color="Skeletons" score="96" new="0" rating="0" win="1" />
+		</players>
+	</play>
 	<play id="57458045" date="2022-01-15" quantity="1" length="40" incomplete="0" nowinstats="0" location="App">
-			<item name="Root" objecttype="thing" objectid="237182">
-				<subtypes>
-										<subtype value="boardgame"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="Vagabond" score="15" new="0" rating="0" win="1"/>
-						<player username="" userid="0" name="AI" startposition="" color="Alliance" score="11" new="0" rating="0" win="0"/>
-						<player username="" userid="0" name="AI 2" startposition="" color="Marquise" score="10" new="0" rating="0" win="0"/>
-						</players>
-					</play>
+		<item name="Root" objecttype="thing" objectid="237182">
+			<subtypes>
+				<subtype value="boardgame" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="Vagabond" score="15" new="0" rating="0" win="1" />
+			<player username="" userid="0" name="AI" startposition="" color="Alliance" score="11" new="0" rating="0" win="0" />
+			<player username="" userid="0" name="AI 2" startposition="" color="Marquise" score="10" new="0" rating="0" win="0" />
+		</players>
+	</play>
 	<play id="57458119" date="2022-01-15" quantity="1" length="20" incomplete="0" nowinstats="0" location="App">
-			<item name="Root" objecttype="thing" objectid="237182">
-				<subtypes>
-										<subtype value="boardgame"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="Alliance" score="15" new="0" rating="0" win="1"/>
-						<player username="" userid="0" name="AI" startposition="" color="Marquise" score="11" new="0" rating="0" win="0"/>
-						</players>
-					</play>
+		<item name="Root" objecttype="thing" objectid="237182">
+			<subtypes>
+				<subtype value="boardgame" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="Alliance" score="15" new="0" rating="0" win="1" />
+			<player username="" userid="0" name="AI" startposition="" color="Marquise" score="11" new="0" rating="0" win="0" />
+		</players>
+	</play>
 	<play id="57458224" date="2022-01-15" quantity="1" length="10" incomplete="0" nowinstats="0" location="Steam App">
-			<item name="Root" objecttype="thing" objectid="237182">
-				<subtypes>
-										<subtype value="boardgame"/>
-									</subtypes>
-			</item>
-						<comments>Dominance Victory</comments>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="Marquise" score="10" new="0" rating="0" win="0"/>
-						<player username="" userid="0" name="AI" startposition="" color="Vagabond" score="8" new="0" rating="0" win="0"/>
-						<player username="" userid="0" name="AI 2" startposition="" color="Alliance" score="6" new="0" rating="0" win="0"/>
-						</players>
-					</play>
+		<item name="Root" objecttype="thing" objectid="237182">
+			<subtypes>
+				<subtype value="boardgame" />
+			</subtypes>
+		</item>
+		<comments>Dominance Victory</comments>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="Marquise" score="10" new="0" rating="0" win="0" />
+			<player username="" userid="0" name="AI" startposition="" color="Vagabond" score="8" new="0" rating="0" win="0" />
+			<player username="" userid="0" name="AI 2" startposition="" color="Alliance" score="6" new="0" rating="0" win="0" />
+		</players>
+	</play>
 	<play id="57458278" date="2022-01-15" quantity="1" length="30" incomplete="0" nowinstats="0" location="Steam App">
-			<item name="Root" objecttype="thing" objectid="237182">
-				<subtypes>
-										<subtype value="boardgame"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="Marquise" score="20" new="0" rating="0" win="0"/>
-						<player username="" userid="0" name="AI" startposition="" color="Alliance" score="33" new="0" rating="0" win="1"/>
-						<player username="" userid="0" name="AI 2" startposition="" color="Eyrie" score="14" new="0" rating="0" win="0"/>
-						</players>
-					</play>
+		<item name="Root" objecttype="thing" objectid="237182">
+			<subtypes>
+				<subtype value="boardgame" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="Marquise" score="20" new="0" rating="0" win="0" />
+			<player username="" userid="0" name="AI" startposition="" color="Alliance" score="33" new="0" rating="0" win="1" />
+			<player username="" userid="0" name="AI 2" startposition="" color="Eyrie" score="14" new="0" rating="0" win="0" />
+		</players>
+	</play>
 	<play id="57380049" date="2022-01-13" quantity="1" length="40" incomplete="0" nowinstats="0" location="Steam App">
-			<item name="Root" objecttype="thing" objectid="237182">
-				<subtypes>
-										<subtype value="boardgame"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="Eyrie" score="32" new="0" rating="0" win="1"/>
-						<player username="" userid="0" name="AI" startposition="" color="Marquise" score="12" new="0" rating="0" win="0"/>
-						</players>
-					</play>
+		<item name="Root" objecttype="thing" objectid="237182">
+			<subtypes>
+				<subtype value="boardgame" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="Eyrie" score="32" new="0" rating="0" win="1" />
+			<player username="" userid="0" name="AI" startposition="" color="Marquise" score="12" new="0" rating="0" win="0" />
+		</players>
+	</play>
 	<play id="57365245" date="2022-01-12" quantity="1" length="40" incomplete="0" nowinstats="0" location="Steam App">
-			<item name="Root" objecttype="thing" objectid="237182">
-				<subtypes>
-										<subtype value="boardgame"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="Marquise" score="32" new="0" rating="0" win="1"/>
-						<player username="" userid="0" name="AI" startposition="" color="Eyrie" score="23" new="0" rating="0" win="0"/>
-						</players>
-					</play>
+		<item name="Root" objecttype="thing" objectid="237182">
+			<subtypes>
+				<subtype value="boardgame" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="Marquise" score="32" new="0" rating="0" win="1" />
+			<player username="" userid="0" name="AI" startposition="" color="Eyrie" score="23" new="0" rating="0" win="0" />
+		</players>
+	</play>
 	<play id="57318345" date="2022-01-10" quantity="1" length="40" incomplete="0" nowinstats="0" location="App">
-			<item name="Root" objecttype="thing" objectid="237182">
-				<subtypes>
-										<subtype value="boardgame"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="Marquise" score="30" new="0" rating="0" win="1"/>
-						<player username="" userid="0" name="AI" startposition="" color="Eyrie" score="0" new="0" rating="0" win="0"/>
-						</players>
-					</play>
+		<item name="Root" objecttype="thing" objectid="237182">
+			<subtypes>
+				<subtype value="boardgame" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="Marquise" score="30" new="0" rating="0" win="1" />
+			<player username="" userid="0" name="AI" startposition="" color="Eyrie" score="0" new="0" rating="0" win="0" />
+		</players>
+	</play>
 	<play id="57318363" date="2022-01-10" quantity="1" length="30" incomplete="0" nowinstats="0" location="App">
-			<item name="Root" objecttype="thing" objectid="237182">
-				<subtypes>
-										<subtype value="boardgame"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="Marquise" score="35" new="0" rating="0" win="1"/>
-						<player username="" userid="0" name="AI" startposition="" color="Eyrie" score="0" new="0" rating="0" win="0"/>
-						</players>
-					</play>
+		<item name="Root" objecttype="thing" objectid="237182">
+			<subtypes>
+				<subtype value="boardgame" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="Marquise" score="35" new="0" rating="0" win="1" />
+			<player username="" userid="0" name="AI" startposition="" color="Eyrie" score="0" new="0" rating="0" win="0" />
+		</players>
+	</play>
 	<play id="57276244" date="2022-01-09" quantity="1" length="60" incomplete="0" nowinstats="0" location="TTS">
-			<item name="Everdell" objecttype="thing" objectid="199792">
-				<subtypes>
-										<subtype value="boardgame"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="47" new="0" rating="0" win="0"/>
-						<player username="" userid="0" name="Hannah" startposition="" color="" score="65" new="0" rating="0" win="1"/>
-						</players>
-					</play>
+		<item name="Everdell" objecttype="thing" objectid="199792">
+			<subtypes>
+				<subtype value="boardgame" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="47" new="0" rating="0" win="0" />
+			<player username="" userid="0" name="Hannah" startposition="" color="" score="65" new="0" rating="0" win="1" />
+		</players>
+	</play>
 	<play id="57276485" date="2022-01-09" quantity="1" length="30" incomplete="0" nowinstats="0" location="TTS">
-			<item name="Overboss: A Boss Monster Adventure" objecttype="thing" objectid="310192">
-				<subtypes>
-										<subtype value="boardgame"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="55" new="0" rating="0" win="0"/>
-						<player username="" userid="0" name="Hannah" startposition="" color="" score="53" new="0" rating="0" win="0"/>
-						<player username="" userid="0" name="Elliot" startposition="" color="" score="59" new="0" rating="0" win="1"/>
-						</players>
-					</play>
+		<item name="Overboss: A Boss Monster Adventure" objecttype="thing" objectid="310192">
+			<subtypes>
+				<subtype value="boardgame" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="55" new="0" rating="0" win="0" />
+			<player username="" userid="0" name="Hannah" startposition="" color="" score="53" new="0" rating="0" win="0" />
+			<player username="" userid="0" name="Elliot" startposition="" color="" score="59" new="0" rating="0" win="1" />
+		</players>
+	</play>
 	<play id="57276548" date="2022-01-09" quantity="1" length="40" incomplete="0" nowinstats="1" location="Steam App">
-			<item name="Pandemic" objecttype="thing" objectid="30549">
-				<subtypes>
-										<subtype value="boardgame"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="" new="0" rating="0" win="1"/>
-						<player username="" userid="0" name="Hannah" startposition="" color="" score="" new="0" rating="0" win="1"/>
-						</players>
-					</play>
+		<item name="Pandemic" objecttype="thing" objectid="30549">
+			<subtypes>
+				<subtype value="boardgame" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="" new="0" rating="0" win="1" />
+			<player username="" userid="0" name="Hannah" startposition="" color="" score="" new="0" rating="0" win="1" />
+		</players>
+	</play>
 	<play id="57295434" date="2022-01-09" quantity="1" length="30" incomplete="0" nowinstats="0" location="Steam App">
-			<item name="Root" objecttype="thing" objectid="237182">
-				<subtypes>
-										<subtype value="boardgame"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="Marquise" score="25" new="1" rating="0" win="0"/>
-						<player username="" userid="0" name="AI" startposition="" color="Eyrie" score="30" new="0" rating="0" win="1"/>
-						</players>
-					</play>
+		<item name="Root" objecttype="thing" objectid="237182">
+			<subtypes>
+				<subtype value="boardgame" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="Marquise" score="25" new="1" rating="0" win="0" />
+			<player username="" userid="0" name="AI" startposition="" color="Eyrie" score="30" new="0" rating="0" win="1" />
+		</players>
+	</play>
 	<play id="57276424" date="2022-01-09" quantity="1" length="60" incomplete="0" nowinstats="0" location="TTS">
-			<item name="That's Pretty Clever!" objecttype="thing" objectid="244522">
-				<subtypes>
-										<subtype value="boardgame"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="197" new="0" rating="0" win="0"/>
-						<player username="" userid="0" name="Hannah" startposition="" color="" score="226" new="0" rating="0" win="1"/>
-						<player username="" userid="0" name="Elliot" startposition="" color="" score="191" new="0" rating="0" win="0"/>
-						</players>
-					</play>
+		<item name="That's Pretty Clever!" objecttype="thing" objectid="244522">
+			<subtypes>
+				<subtype value="boardgame" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="197" new="0" rating="0" win="0" />
+			<player username="" userid="0" name="Hannah" startposition="" color="" score="226" new="0" rating="0" win="1" />
+			<player username="" userid="0" name="Elliot" startposition="" color="" score="191" new="0" rating="0" win="0" />
+		</players>
+	</play>
 	<play id="57201043" date="2022-01-07" quantity="1" length="30" incomplete="0" nowinstats="1" location="Steam App">
-			<item name="Railroad Ink Challenge: Lush Green Edition" objecttype="thing" objectid="306881">
-				<subtypes>
-										<subtype value="boardgame"/>
-										<subtype value="boardgameintegration"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="35" new="0" rating="0" win="1"/>
-						</players>
-					</play>
+		<item name="Railroad Ink Challenge: Lush Green Edition" objecttype="thing" objectid="306881">
+			<subtypes>
+				<subtype value="boardgame" />
+				<subtype value="boardgameintegration" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="35" new="0" rating="0" win="1" />
+		</players>
+	</play>
 	<play id="57201505" date="2022-01-07" quantity="1" length="20" incomplete="0" nowinstats="1" location="Steam App">
-			<item name="Railroad Ink Challenge: Lush Green Edition" objecttype="thing" objectid="306881">
-				<subtypes>
-										<subtype value="boardgame"/>
-										<subtype value="boardgameintegration"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="55" new="0" rating="0" win="1"/>
-						</players>
-					</play>
+		<item name="Railroad Ink Challenge: Lush Green Edition" objecttype="thing" objectid="306881">
+			<subtypes>
+				<subtype value="boardgame" />
+				<subtype value="boardgameintegration" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="55" new="0" rating="0" win="1" />
+		</players>
+	</play>
 	<play id="57168926" date="2022-01-06" quantity="1" length="60" incomplete="0" nowinstats="1" location="Home">
-			<item name="Under Falling Skies" objecttype="thing" objectid="306735">
-				<subtypes>
-										<subtype value="boardgame"/>
-										<subtype value="boardgameimplementation"/>
-									</subtypes>
-			</item>
-						<comments>Montreal
+		<item name="Under Falling Skies" objecttype="thing" objectid="306735">
+			<subtypes>
+				<subtype value="boardgame" />
+				<subtype value="boardgameimplementation" />
+			</subtypes>
+		</item>
+		<comments>Montreal
 Battle for The Sky
 Jackson Moss
 loss</comments>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="" new="0" rating="0" win="0"/>
-						</players>
-					</play>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="" new="0" rating="0" win="0" />
+		</players>
+	</play>
 	<play id="57168967" date="2022-01-06" quantity="1" length="50" incomplete="0" nowinstats="1" location="Home">
-			<item name="Under Falling Skies" objecttype="thing" objectid="306735">
-				<subtypes>
-										<subtype value="boardgame"/>
-										<subtype value="boardgameimplementation"/>
-									</subtypes>
-			</item>
-						<comments>Montreal - damaged
+		<item name="Under Falling Skies" objecttype="thing" objectid="306735">
+			<subtypes>
+				<subtype value="boardgame" />
+				<subtype value="boardgameimplementation" />
+			</subtypes>
+		</item>
+		<comments>Montreal - damaged
 Battle for The Sky
 Jackson Moss</comments>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="" new="0" rating="0" win="1"/>
-						</players>
-					</play>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="" new="0" rating="0" win="1" />
+		</players>
+	</play>
 	<play id="57066925" date="2022-01-03" quantity="1" length="60" incomplete="0" nowinstats="1" location="Home">
-			<item name="Under Falling Skies" objecttype="thing" objectid="306735">
-				<subtypes>
-										<subtype value="boardgame"/>
-										<subtype value="boardgameimplementation"/>
-									</subtypes>
-			</item>
-						<comments>Campaign Mission 1
+		<item name="Under Falling Skies" objecttype="thing" objectid="306735">
+			<subtypes>
+				<subtype value="boardgame" />
+				<subtype value="boardgameimplementation" />
+			</subtypes>
+		</item>
+		<comments>Campaign Mission 1
 Mexico City
 Reinforcements
 Samantha Legrand
 Threat Level 1</comments>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="" new="0" rating="0" win="1"/>
-						</players>
-					</play>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="" new="0" rating="0" win="1" />
+		</players>
+	</play>
 	<play id="56937413" date="2022-01-01" quantity="1" length="40" incomplete="0" nowinstats="0" location="TTS">
-			<item name="Fort" objecttype="thing" objectid="296912">
-				<subtypes>
-										<subtype value="boardgame"/>
-										<subtype value="boardgameimplementation"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="42" new="1" rating="0" win="1"/>
-						<player username="" userid="0" name="Hannah" startposition="" color="" score="37" new="0" rating="0" win="0"/>
-						</players>
-					</play>
+		<item name="Fort" objecttype="thing" objectid="296912">
+			<subtypes>
+				<subtype value="boardgame" />
+				<subtype value="boardgameimplementation" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="42" new="1" rating="0" win="1" />
+			<player username="" userid="0" name="Hannah" startposition="" color="" score="37" new="0" rating="0" win="0" />
+		</players>
+	</play>
 	<play id="56944855" date="2022-01-01" quantity="1" length="30" incomplete="0" nowinstats="0" location="TTS">
-			<item name="That's Pretty Clever!" objecttype="thing" objectid="244522">
-				<subtypes>
-										<subtype value="boardgame"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="167" new="0" rating="0" win="0"/>
-						<player username="" userid="0" name="Hannah" startposition="" color="" score="170" new="0" rating="0" win="1"/>
-						</players>
-					</play>
+		<item name="That's Pretty Clever!" objecttype="thing" objectid="244522">
+			<subtypes>
+				<subtype value="boardgame" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="167" new="0" rating="0" win="0" />
+			<player username="" userid="0" name="Hannah" startposition="" color="" score="170" new="0" rating="0" win="1" />
+		</players>
+	</play>
 	<play id="56944956" date="2022-01-01" quantity="1" length="50" incomplete="0" nowinstats="0" location="Steam App">
-			<item name="Wingspan" objecttype="thing" objectid="266192">
-				<subtypes>
-										<subtype value="boardgame"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="53" new="0" rating="0" win="0"/>
-						<player username="" userid="0" name="Hannah" startposition="" color="" score="69" new="0" rating="0" win="1"/>
-						</players>
-					</play>
+		<item name="Wingspan" objecttype="thing" objectid="266192">
+			<subtypes>
+				<subtype value="boardgame" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="53" new="0" rating="0" win="0" />
+			<player username="" userid="0" name="Hannah" startposition="" color="" score="69" new="0" rating="0" win="1" />
+		</players>
+	</play>
 	<play id="56880444" date="2021-12-31" quantity="1" length="90" incomplete="0" nowinstats="0" location="TTS">
-			<item name="Everdell" objecttype="thing" objectid="199792">
-				<subtypes>
-										<subtype value="boardgame"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="66" new="0" rating="0" win="1"/>
-						<player username="" userid="0" name="Hannah" startposition="" color="" score="55" new="0" rating="0" win="0"/>
-						</players>
-					</play>
+		<item name="Everdell" objecttype="thing" objectid="199792">
+			<subtypes>
+				<subtype value="boardgame" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="66" new="0" rating="0" win="1" />
+			<player username="" userid="0" name="Hannah" startposition="" color="" score="55" new="0" rating="0" win="0" />
+		</players>
+	</play>
 	<play id="56880412" date="2021-12-31" quantity="1" length="40" incomplete="0" nowinstats="1" location="TTS">
-			<item name="Marvel United: X-Men" objecttype="thing" objectid="336382">
-				<subtypes>
-										<subtype value="boardgame"/>
-										<subtype value="boardgameintegration"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="" new="0" rating="0" win="1"/>
-						<player username="" userid="0" name="Hannah" startposition="" color="" score="" new="1" rating="0" win="1"/>
-						</players>
-					</play>
+		<item name="Marvel United: X-Men" objecttype="thing" objectid="336382">
+			<subtypes>
+				<subtype value="boardgame" />
+				<subtype value="boardgameintegration" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="" new="0" rating="0" win="1" />
+			<player username="" userid="0" name="Hannah" startposition="" color="" score="" new="1" rating="0" win="1" />
+		</players>
+	</play>
 	<play id="56876211" date="2021-12-31" quantity="1" length="60" incomplete="0" nowinstats="0" location="TTS">
-			<item name="That's Pretty Clever!" objecttype="thing" objectid="244522">
-				<subtypes>
-										<subtype value="boardgame"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="135" new="0" rating="0" win="0"/>
-						<player username="" userid="0" name="Hannah" startposition="" color="" score="281" new="1" rating="0" win="1"/>
-						</players>
-					</play>
+		<item name="That's Pretty Clever!" objecttype="thing" objectid="244522">
+			<subtypes>
+				<subtype value="boardgame" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="135" new="0" rating="0" win="0" />
+			<player username="" userid="0" name="Hannah" startposition="" color="" score="281" new="1" rating="0" win="1" />
+		</players>
+	</play>
 	<play id="56728867" date="2021-12-27" quantity="1" length="60" incomplete="0" nowinstats="0" location="Home">
-			<item name="That's Pretty Clever!" objecttype="thing" objectid="244522">
-				<subtypes>
-										<subtype value="boardgame"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="117" new="0" rating="0" win="0"/>
-						<player username="" userid="0" name="Elliot" startposition="" color="" score="164" new="0" rating="0" win="1"/>
-						<player username="" userid="0" name="Karen" startposition="" color="" score="128" new="1" rating="0" win="0"/>
-						</players>
-					</play>
+		<item name="That's Pretty Clever!" objecttype="thing" objectid="244522">
+			<subtypes>
+				<subtype value="boardgame" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="117" new="0" rating="0" win="0" />
+			<player username="" userid="0" name="Elliot" startposition="" color="" score="164" new="0" rating="0" win="1" />
+			<player username="" userid="0" name="Karen" startposition="" color="" score="128" new="1" rating="0" win="0" />
+		</players>
+	</play>
 	<play id="56696259" date="2021-12-26" quantity="1" length="80" incomplete="0" nowinstats="1" location="Home">
-			<item name="Under Falling Skies" objecttype="thing" objectid="306735">
-				<subtypes>
-										<subtype value="boardgame"/>
-										<subtype value="boardgameimplementation"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="" new="0" rating="0" win="0"/>
-						</players>
-					</play>
+		<item name="Under Falling Skies" objecttype="thing" objectid="306735">
+			<subtypes>
+				<subtype value="boardgame" />
+				<subtype value="boardgameimplementation" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="" new="0" rating="0" win="0" />
+		</players>
+	</play>
 	<play id="56696298" date="2021-12-26" quantity="1" length="30" incomplete="0" nowinstats="1" location="Home">
-			<item name="Under Falling Skies" objecttype="thing" objectid="306735">
-				<subtypes>
-										<subtype value="boardgame"/>
-										<subtype value="boardgameimplementation"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="" new="0" rating="0" win="1"/>
-						</players>
-					</play>
+		<item name="Under Falling Skies" objecttype="thing" objectid="306735">
+			<subtypes>
+				<subtype value="boardgame" />
+				<subtype value="boardgameimplementation" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="" new="0" rating="0" win="1" />
+		</players>
+	</play>
 	<play id="56629740" date="2021-12-25" quantity="1" length="30" incomplete="0" nowinstats="0" location="Home">
-			<item name="That's Pretty Clever!" objecttype="thing" objectid="244522">
-				<subtypes>
-										<subtype value="boardgame"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="75" new="1" rating="0" win="0"/>
-						<player username="" userid="0" name="Elliot" startposition="" color="" score="117" new="1" rating="0" win="1"/>
-						</players>
-					</play>
+		<item name="That's Pretty Clever!" objecttype="thing" objectid="244522">
+			<subtypes>
+				<subtype value="boardgame" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="75" new="1" rating="0" win="0" />
+			<player username="" userid="0" name="Elliot" startposition="" color="" score="117" new="1" rating="0" win="1" />
+		</players>
+	</play>
 	<play id="56644214" date="2021-12-25" quantity="1" length="30" incomplete="0" nowinstats="1" location="Home">
-			<item name="That's Pretty Clever!" objecttype="thing" objectid="244522">
-				<subtypes>
-										<subtype value="boardgame"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="179" new="0" rating="0" win="1"/>
-						</players>
-					</play>
+		<item name="That's Pretty Clever!" objecttype="thing" objectid="244522">
+			<subtypes>
+				<subtype value="boardgame" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="179" new="0" rating="0" win="1" />
+		</players>
+	</play>
 	<play id="56079391" date="2021-12-02" quantity="1" length="60" incomplete="0" nowinstats="1" location="Home">
-			<item name="Call to Adventure: The Stormlight Archive" objecttype="thing" objectid="266993">
-				<subtypes>
-										<subtype value="boardgame"/>
-										<subtype value="boardgameintegration"/>
-									</subtypes>
-			</item>
-						<comments>solo game vs odium, not entirely sure I played correctly</comments>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="" new="0" rating="0" win="1"/>
-						</players>
-					</play>
+		<item name="Call to Adventure: The Stormlight Archive" objecttype="thing" objectid="266993">
+			<subtypes>
+				<subtype value="boardgame" />
+				<subtype value="boardgameintegration" />
+			</subtypes>
+		</item>
+		<comments>solo game vs odium, not entirely sure I played correctly</comments>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="" new="0" rating="0" win="1" />
+		</players>
+	</play>
 	<play id="55999391" date="2021-11-28" quantity="1" length="30" incomplete="0" nowinstats="1" location="Home">
-			<item name="Marvel United: X-Men" objecttype="thing" objectid="336382">
-				<subtypes>
-										<subtype value="boardgame"/>
-										<subtype value="boardgameintegration"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="Storm" score="" new="0" rating="0" win="0"/>
-						<player username="" userid="0" name="Elliot" startposition="" color="Cyclops" score="" new="0" rating="0" win="1"/>
-						</players>
-					</play>
+		<item name="Marvel United: X-Men" objecttype="thing" objectid="336382">
+			<subtypes>
+				<subtype value="boardgame" />
+				<subtype value="boardgameintegration" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="Storm" score="" new="0" rating="0" win="0" />
+			<player username="" userid="0" name="Elliot" startposition="" color="Cyclops" score="" new="0" rating="0" win="1" />
+		</players>
+	</play>
 	<play id="55999431" date="2021-11-28" quantity="1" length="35" incomplete="0" nowinstats="1" location="Home">
-			<item name="Marvel United: X-Men" objecttype="thing" objectid="336382">
-				<subtypes>
-										<subtype value="boardgame"/>
-										<subtype value="boardgameintegration"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="Wolverine" score="" new="0" rating="0" win="1"/>
-						<player username="" userid="0" name="Elliot" startposition="" color="Professor X" score="" new="0" rating="0" win="1"/>
-						</players>
-					</play>
+		<item name="Marvel United: X-Men" objecttype="thing" objectid="336382">
+			<subtypes>
+				<subtype value="boardgame" />
+				<subtype value="boardgameintegration" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="Wolverine" score="" new="0" rating="0" win="1" />
+			<player username="" userid="0" name="Elliot" startposition="" color="Professor X" score="" new="0" rating="0" win="1" />
+		</players>
+	</play>
 	<play id="55823561" date="2021-11-21" quantity="1" length="30" incomplete="0" nowinstats="1" location="Home">
-			<item name="Marvel United: X-Men" objecttype="thing" objectid="336382">
-				<subtypes>
-										<subtype value="boardgame"/>
-										<subtype value="boardgameintegration"/>
-									</subtypes>
-			</item>
-						<comments>Storm, Magneto &amp; Wolverine vs Sabretooth
+		<item name="Marvel United: X-Men" objecttype="thing" objectid="336382">
+			<subtypes>
+				<subtype value="boardgame" />
+				<subtype value="boardgameintegration" />
+			</subtypes>
+		</item>
+		<comments>Storm, Magneto &amp; Wolverine vs Sabretooth
 Solo game with 2 lives
 Got Sabretooth down to half-health but took 4 damage in one round on last life and lost.</comments>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="" new="0" rating="0" win="0"/>
-						</players>
-					</play>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="" new="0" rating="0" win="0" />
+		</players>
+	</play>
 	<play id="55825028" date="2021-11-21" quantity="1" length="30" incomplete="0" nowinstats="1" location="Home">
-			<item name="Marvel United: X-Men" objecttype="thing" objectid="336382">
-				<subtypes>
-										<subtype value="boardgame"/>
-										<subtype value="boardgameintegration"/>
-									</subtypes>
-			</item>
-						<comments>Storm, Magneto &amp; Wolverine vs Sabretooth
+		<item name="Marvel United: X-Men" objecttype="thing" objectid="336382">
+			<subtypes>
+				<subtype value="boardgame" />
+				<subtype value="boardgameintegration" />
+			</subtypes>
+		</item>
+		<comments>Storm, Magneto &amp; Wolverine vs Sabretooth
 Solo game with 3 lives
 Knocked-out twice but managed to take out all of Sabretooth's health in one round with some awesome cards.</comments>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="" new="0" rating="0" win="1"/>
-						</players>
-					</play>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="" new="0" rating="0" win="1" />
+		</players>
+	</play>
 	<play id="55776458" date="2021-11-20" quantity="1" length="45" incomplete="0" nowinstats="1" location="Home">
-			<item name="Marvel United: X-Men" objecttype="thing" objectid="336382">
-				<subtypes>
-										<subtype value="boardgame"/>
-										<subtype value="boardgameintegration"/>
-									</subtypes>
-			</item>
-						<comments>Storm, Jean Grey and Beast VS Sabretooth on solo mode</comments>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="" new="0" rating="0" win="1"/>
-						</players>
-					</play>
+		<item name="Marvel United: X-Men" objecttype="thing" objectid="336382">
+			<subtypes>
+				<subtype value="boardgame" />
+				<subtype value="boardgameintegration" />
+			</subtypes>
+		</item>
+		<comments>Storm, Jean Grey and Beast VS Sabretooth on solo mode</comments>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="" new="0" rating="0" win="1" />
+		</players>
+	</play>
 	<play id="55714931" date="2021-11-17" quantity="1" length="20" incomplete="0" nowinstats="0" location="Work">
-			<item name="Air, Land &amp; Sea" objecttype="thing" objectid="247367">
-				<subtypes>
-										<subtype value="boardgame"/>
-										<subtype value="boardgameintegration"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="0" new="0" rating="0" win="0"/>
-						<player username="" userid="0" name="Micheal" startposition="" color="" score="14" new="0" rating="0" win="1"/>
-						</players>
-					</play>
+		<item name="Air, Land &amp; Sea" objecttype="thing" objectid="247367">
+			<subtypes>
+				<subtype value="boardgame" />
+				<subtype value="boardgameintegration" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="0" new="0" rating="0" win="0" />
+			<player username="" userid="0" name="Micheal" startposition="" color="" score="14" new="0" rating="0" win="1" />
+		</players>
+	</play>
 	<play id="55714935" date="2021-11-17" quantity="1" length="20" incomplete="1" nowinstats="0" location="Work">
-			<item name="Air, Land &amp; Sea" objecttype="thing" objectid="247367">
-				<subtypes>
-										<subtype value="boardgame"/>
-										<subtype value="boardgameintegration"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="9" new="0" rating="0" win="0"/>
-						<player username="" userid="0" name="Micheal" startposition="" color="" score="9" new="0" rating="0" win="0"/>
-						</players>
-					</play>
+		<item name="Air, Land &amp; Sea" objecttype="thing" objectid="247367">
+			<subtypes>
+				<subtype value="boardgame" />
+				<subtype value="boardgameintegration" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="9" new="0" rating="0" win="0" />
+			<player username="" userid="0" name="Micheal" startposition="" color="" score="9" new="0" rating="0" win="0" />
+		</players>
+	</play>
 	<play id="55696194" date="2021-11-16" quantity="1" length="25" incomplete="0" nowinstats="0" location="Work">
-			<item name="Air, Land &amp; Sea" objecttype="thing" objectid="247367">
-				<subtypes>
-										<subtype value="boardgame"/>
-										<subtype value="boardgameintegration"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="" new="0" rating="10" win="0"/>
-						<player username="" userid="0" name="Michael" startposition="" color="" score="13" new="0" rating="0" win="1"/>
-						</players>
-					</play>
+		<item name="Air, Land &amp; Sea" objecttype="thing" objectid="247367">
+			<subtypes>
+				<subtype value="boardgame" />
+				<subtype value="boardgameintegration" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="" new="0" rating="10" win="0" />
+			<player username="" userid="0" name="Michael" startposition="" color="" score="13" new="0" rating="0" win="1" />
+		</players>
+	</play>
 	<play id="55696203" date="2021-11-16" quantity="1" length="25" incomplete="0" nowinstats="0" location="Work">
-			<item name="Air, Land &amp; Sea" objecttype="thing" objectid="247367">
-				<subtypes>
-										<subtype value="boardgame"/>
-										<subtype value="boardgameintegration"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="2" new="0" rating="0" win="0"/>
-						<player username="" userid="0" name="Michael" startposition="" color="" score="14" new="0" rating="0" win="1"/>
-						</players>
-					</play>
+		<item name="Air, Land &amp; Sea" objecttype="thing" objectid="247367">
+			<subtypes>
+				<subtype value="boardgame" />
+				<subtype value="boardgameintegration" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="2" new="0" rating="0" win="0" />
+			<player username="" userid="0" name="Michael" startposition="" color="" score="14" new="0" rating="0" win="1" />
+		</players>
+	</play>
 	<play id="55629941" date="2021-11-13" quantity="1" length="85" incomplete="0" nowinstats="0" location="Chaplins Bar, Dublin">
-			<item name="Warhammer 40,000 (Ninth Edition)" objecttype="thing" objectid="314243">
-				<subtypes>
-										<subtype value="boardgame"/>
-										<subtype value="boardgameimplementation"/>
-									</subtypes>
-			</item>
-						<comments>200pt armies</comments>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="Death Korps of Krieg" score="" new="0" rating="0" win="0"/>
-						<player username="" userid="0" name="Ciara" startposition="" color="Battle Sisters" score="" new="0" rating="0" win="1"/>
-						</players>
-					</play>
+		<item name="Warhammer 40,000 (Ninth Edition)" objecttype="thing" objectid="314243">
+			<subtypes>
+				<subtype value="boardgame" />
+				<subtype value="boardgameimplementation" />
+			</subtypes>
+		</item>
+		<comments>200pt armies</comments>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="Death Korps of Krieg" score="" new="0" rating="0" win="0" />
+			<player username="" userid="0" name="Ciara" startposition="" color="Battle Sisters" score="" new="0" rating="0" win="1" />
+		</players>
+	</play>
 	<play id="55584995" date="2021-11-12" quantity="1" length="30" incomplete="0" nowinstats="0" location="Work">
-			<item name="Air, Land &amp; Sea" objecttype="thing" objectid="247367">
-				<subtypes>
-										<subtype value="boardgame"/>
-										<subtype value="boardgameintegration"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="" userid="0" name="Michael" startposition="" color="" score="6" new="0" rating="0" win="0"/>
-						<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="16" new="0" rating="0" win="1"/>
-						</players>
-					</play>
+		<item name="Air, Land &amp; Sea" objecttype="thing" objectid="247367">
+			<subtypes>
+				<subtype value="boardgame" />
+				<subtype value="boardgameintegration" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="" userid="0" name="Michael" startposition="" color="" score="6" new="0" rating="0" win="0" />
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="16" new="0" rating="0" win="1" />
+		</players>
+	</play>
 	<play id="55585007" date="2021-11-12" quantity="1" length="20" incomplete="0" nowinstats="0" location="Work">
-			<item name="Air, Land &amp; Sea" objecttype="thing" objectid="247367">
-				<subtypes>
-										<subtype value="boardgame"/>
-										<subtype value="boardgameintegration"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="12" new="0" rating="0" win="1"/>
-						<player username="" userid="0" name="Michael" startposition="" color="" score="6" new="0" rating="0" win="0"/>
-						</players>
-					</play>
+		<item name="Air, Land &amp; Sea" objecttype="thing" objectid="247367">
+			<subtypes>
+				<subtype value="boardgame" />
+				<subtype value="boardgameintegration" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="12" new="0" rating="0" win="1" />
+			<player username="" userid="0" name="Michael" startposition="" color="" score="6" new="0" rating="0" win="0" />
+		</players>
+	</play>
 	<play id="55563171" date="2021-11-11" quantity="1" length="30" incomplete="0" nowinstats="0" location="Work">
-			<item name="Air, Land &amp; Sea" objecttype="thing" objectid="247367">
-				<subtypes>
-										<subtype value="boardgame"/>
-										<subtype value="boardgameintegration"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="12" new="0" rating="0" win="1"/>
-						<player username="" userid="0" name="Michael" startposition="" color="" score="6" new="1" rating="0" win="0"/>
-						</players>
-					</play>
+		<item name="Air, Land &amp; Sea" objecttype="thing" objectid="247367">
+			<subtypes>
+				<subtype value="boardgame" />
+				<subtype value="boardgameintegration" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="12" new="0" rating="0" win="1" />
+			<player username="" userid="0" name="Michael" startposition="" color="" score="6" new="1" rating="0" win="0" />
+		</players>
+	</play>
 	<play id="55263745" date="2021-10-29" quantity="1" length="20" incomplete="0" nowinstats="0" location="App">
-			<item name="Sagrada" objecttype="thing" objectid="199561">
-				<subtypes>
-										<subtype value="boardgame"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="41" new="0" rating="0" win="1"/>
-						<player username="" userid="0" name="Hannah" startposition="" color="" score="40" new="1" rating="0" win="0"/>
-						</players>
-					</play>
+		<item name="Sagrada" objecttype="thing" objectid="199561">
+			<subtypes>
+				<subtype value="boardgame" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="41" new="0" rating="0" win="1" />
+			<player username="" userid="0" name="Hannah" startposition="" color="" score="40" new="1" rating="0" win="0" />
+		</players>
+	</play>
 	<play id="55263823" date="2021-10-29" quantity="1" length="20" incomplete="0" nowinstats="0" location="App">
-			<item name="Sagrada" objecttype="thing" objectid="199561">
-				<subtypes>
-										<subtype value="boardgame"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="51" new="0" rating="0" win="1"/>
-						<player username="" userid="0" name="Hannah" startposition="" color="" score="34" new="0" rating="0" win="0"/>
-						</players>
-					</play>
+		<item name="Sagrada" objecttype="thing" objectid="199561">
+			<subtypes>
+				<subtype value="boardgame" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="51" new="0" rating="0" win="1" />
+			<player username="" userid="0" name="Hannah" startposition="" color="" score="34" new="0" rating="0" win="0" />
+		</players>
+	</play>
 	<play id="55231602" date="2021-10-27" quantity="1" length="25" incomplete="0" nowinstats="0" location="App">
-			<item name="Sagrada" objecttype="thing" objectid="199561">
-				<subtypes>
-										<subtype value="boardgame"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="26" new="0" rating="0" win="0"/>
-						<player username="" userid="0" name="Michael" startposition="" color="" score="46" new="1" rating="0" win="1"/>
-						</players>
-					</play>
+		<item name="Sagrada" objecttype="thing" objectid="199561">
+			<subtypes>
+				<subtype value="boardgame" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="26" new="0" rating="0" win="0" />
+			<player username="" userid="0" name="Michael" startposition="" color="" score="46" new="1" rating="0" win="1" />
+		</players>
+	</play>
 	<play id="54926154" date="2021-10-14" quantity="1" length="90" incomplete="0" nowinstats="0" location="Home">
-			<item name="Santa Maria" objecttype="thing" objectid="229220">
-				<subtypes>
-										<subtype value="boardgame"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="Green" score="50" new="1" rating="0" win="1"/>
-						<player username="" userid="0" name="Elliot" startposition="" color="Red" score="35" new="1" rating="0" win="0"/>
-						</players>
-					</play>
+		<item name="Santa Maria" objecttype="thing" objectid="229220">
+			<subtypes>
+				<subtype value="boardgame" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="Green" score="50" new="1" rating="0" win="1" />
+			<player username="" userid="0" name="Elliot" startposition="" color="Red" score="35" new="1" rating="0" win="0" />
+		</players>
+	</play>
 	<play id="54651617" date="2021-10-02" quantity="1" length="30" incomplete="0" nowinstats="0" location="Hannah's House">
-			<item name="Air, Land &amp; Sea" objecttype="thing" objectid="247367">
-				<subtypes>
-										<subtype value="boardgame"/>
-										<subtype value="boardgameintegration"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="16" new="0" rating="0" win="1"/>
-						<player username="" userid="0" name="Hannah" startposition="" color="" score="4" new="0" rating="0" win="0"/>
-						</players>
-					</play>
+		<item name="Air, Land &amp; Sea" objecttype="thing" objectid="247367">
+			<subtypes>
+				<subtype value="boardgame" />
+				<subtype value="boardgameintegration" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="16" new="0" rating="0" win="1" />
+			<player username="" userid="0" name="Hannah" startposition="" color="" score="4" new="0" rating="0" win="0" />
+		</players>
+	</play>
 	<play id="54651644" date="2021-10-02" quantity="1" length="20" incomplete="0" nowinstats="0" location="Hannah's House">
-			<item name="Air, Land &amp; Sea" objecttype="thing" objectid="247367">
-				<subtypes>
-										<subtype value="boardgame"/>
-										<subtype value="boardgameintegration"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="" new="0" rating="0" win="0"/>
-						<player username="" userid="0" name="Hannah" startposition="" color="" score="12" new="0" rating="0" win="1"/>
-						</players>
-					</play>
+		<item name="Air, Land &amp; Sea" objecttype="thing" objectid="247367">
+			<subtypes>
+				<subtype value="boardgame" />
+				<subtype value="boardgameintegration" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="" new="0" rating="0" win="0" />
+			<player username="" userid="0" name="Hannah" startposition="" color="" score="12" new="0" rating="0" win="1" />
+		</players>
+	</play>
 	<play id="54651736" date="2021-10-02" quantity="1" length="60" incomplete="0" nowinstats="0" location="Hannah's House">
-			<item name="Everdell" objecttype="thing" objectid="199792">
-				<subtypes>
-										<subtype value="boardgame"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="41" new="0" rating="0" win="0"/>
-						<player username="" userid="0" name="Hannah" startposition="" color="" score="51" new="0" rating="0" win="1"/>
-						</players>
-					</play>
+		<item name="Everdell" objecttype="thing" objectid="199792">
+			<subtypes>
+				<subtype value="boardgame" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="41" new="0" rating="0" win="0" />
+			<player username="" userid="0" name="Hannah" startposition="" color="" score="51" new="0" rating="0" win="1" />
+		</players>
+	</play>
 	<play id="54651705" date="2021-10-02" quantity="1" length="80" incomplete="0" nowinstats="1" location="Hannah's House">
-			<item name="Mini Rogue" objecttype="thing" objectid="311715">
-				<subtypes>
-										<subtype value="boardgame"/>
-										<subtype value="boardgameimplementation"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="" new="0" rating="0" win="1"/>
-						<player username="" userid="0" name="Hannah" startposition="" color="" score="" new="0" rating="0" win="1"/>
-						</players>
-					</play>
+		<item name="Mini Rogue" objecttype="thing" objectid="311715">
+			<subtypes>
+				<subtype value="boardgame" />
+				<subtype value="boardgameimplementation" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="" new="0" rating="0" win="1" />
+			<player username="" userid="0" name="Hannah" startposition="" color="" score="" new="0" rating="0" win="1" />
+		</players>
+	</play>
 	<play id="54581756" date="2021-09-29" quantity="2" length="15" incomplete="0" nowinstats="1" location="Doolin">
-			<item name="Agropolis" objecttype="thing" objectid="314088">
-				<subtypes>
-										<subtype value="boardgame"/>
-										<subtype value="boardgameintegration"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="" new="0" rating="0" win="0"/>
-						<player username="" userid="0" name="Hannah" startposition="" color="" score="" new="0" rating="0" win="0"/>
-						</players>
-					</play>
+		<item name="Agropolis" objecttype="thing" objectid="314088">
+			<subtypes>
+				<subtype value="boardgame" />
+				<subtype value="boardgameintegration" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="" new="0" rating="0" win="0" />
+			<player username="" userid="0" name="Hannah" startposition="" color="" score="" new="0" rating="0" win="0" />
+		</players>
+	</play>
 	<play id="54581733" date="2021-09-28" quantity="2" length="20" incomplete="0" nowinstats="1" location="Doolin">
-			<item name="Agropolis" objecttype="thing" objectid="314088">
-				<subtypes>
-										<subtype value="boardgame"/>
-										<subtype value="boardgameintegration"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="" new="0" rating="0" win="1"/>
-						<player username="" userid="0" name="Hannah" startposition="" color="" score="" new="0" rating="0" win="1"/>
-						</players>
-					</play>
+		<item name="Agropolis" objecttype="thing" objectid="314088">
+			<subtypes>
+				<subtype value="boardgame" />
+				<subtype value="boardgameintegration" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="" new="0" rating="0" win="1" />
+			<player username="" userid="0" name="Hannah" startposition="" color="" score="" new="0" rating="0" win="1" />
+		</players>
+	</play>
 	<play id="54581746" date="2021-09-28" quantity="3" length="10" incomplete="0" nowinstats="1" location="Doolin">
-			<item name="Codenames: Duet" objecttype="thing" objectid="224037">
-				<subtypes>
-										<subtype value="boardgame"/>
-										<subtype value="boardgameintegration"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="" new="0" rating="0" win="0"/>
-						<player username="" userid="0" name="Hannah" startposition="" color="" score="" new="0" rating="0" win="0"/>
-						</players>
-					</play>
+		<item name="Codenames: Duet" objecttype="thing" objectid="224037">
+			<subtypes>
+				<subtype value="boardgame" />
+				<subtype value="boardgameintegration" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="" new="0" rating="0" win="0" />
+			<player username="" userid="0" name="Hannah" startposition="" color="" score="" new="0" rating="0" win="0" />
+		</players>
+	</play>
 	<play id="54586642" date="2021-09-28" quantity="1" length="40" incomplete="0" nowinstats="0" location="Doolin">
-			<item name="Railroad Ink Challenge: Shining Yellow Edition" objecttype="thing" objectid="306882">
-				<subtypes>
-										<subtype value="boardgame"/>
-										<subtype value="boardgameintegration"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="" new="0" rating="0" win="0"/>
-						<player username="" userid="0" name="Hannah" startposition="" color="" score="" new="0" rating="0" win="1"/>
-						</players>
-					</play>
+		<item name="Railroad Ink Challenge: Shining Yellow Edition" objecttype="thing" objectid="306882">
+			<subtypes>
+				<subtype value="boardgame" />
+				<subtype value="boardgameintegration" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="" new="0" rating="0" win="0" />
+			<player username="" userid="0" name="Hannah" startposition="" color="" score="" new="0" rating="0" win="1" />
+		</players>
+	</play>
 	<play id="54531974" date="2021-09-26" quantity="1" length="10" incomplete="0" nowinstats="0" location="Galway">
-			<item name="Codenames: Duet" objecttype="thing" objectid="224037">
-				<subtypes>
-										<subtype value="boardgame"/>
-										<subtype value="boardgameintegration"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="" new="0" rating="0" win="0"/>
-						<player username="" userid="0" name="Hannah" startposition="" color="" score="" new="0" rating="0" win="0"/>
-						</players>
-					</play>
+		<item name="Codenames: Duet" objecttype="thing" objectid="224037">
+			<subtypes>
+				<subtype value="boardgame" />
+				<subtype value="boardgameintegration" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="" new="0" rating="0" win="0" />
+			<player username="" userid="0" name="Hannah" startposition="" color="" score="" new="0" rating="0" win="0" />
+		</players>
+	</play>
 	<play id="54531978" date="2021-09-26" quantity="1" length="10" incomplete="0" nowinstats="1" location="Galway">
-			<item name="Codenames: Duet" objecttype="thing" objectid="224037">
-				<subtypes>
-										<subtype value="boardgame"/>
-										<subtype value="boardgameintegration"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="" new="0" rating="0" win="0"/>
-						<player username="" userid="0" name="Hannah" startposition="" color="" score="" new="0" rating="0" win="0"/>
-						</players>
-					</play>
+		<item name="Codenames: Duet" objecttype="thing" objectid="224037">
+			<subtypes>
+				<subtype value="boardgame" />
+				<subtype value="boardgameintegration" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="" new="0" rating="0" win="0" />
+			<player username="" userid="0" name="Hannah" startposition="" color="" score="" new="0" rating="0" win="0" />
+		</players>
+	</play>
 	<play id="54532005" date="2021-09-26" quantity="1" length="15" incomplete="0" nowinstats="1" location="Galway">
-			<item name="Codenames: Duet" objecttype="thing" objectid="224037">
-				<subtypes>
-										<subtype value="boardgame"/>
-										<subtype value="boardgameintegration"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="" new="0" rating="0" win="1"/>
-						<player username="" userid="0" name="Hannah" startposition="" color="" score="" new="0" rating="0" win="1"/>
-						</players>
-					</play>
+		<item name="Codenames: Duet" objecttype="thing" objectid="224037">
+			<subtypes>
+				<subtype value="boardgame" />
+				<subtype value="boardgameintegration" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="" new="0" rating="0" win="1" />
+			<player username="" userid="0" name="Hannah" startposition="" color="" score="" new="0" rating="0" win="1" />
+		</players>
+	</play>
 	<play id="54532047" date="2021-09-26" quantity="1" length="2" incomplete="0" nowinstats="1" location="Galway">
-			<item name="Codenames: Duet" objecttype="thing" objectid="224037">
-				<subtypes>
-										<subtype value="boardgame"/>
-										<subtype value="boardgameintegration"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="" userid="0" name="Hannah" startposition="" color="" score="" new="0" rating="0" win="0"/>
-						<player username="" userid="0" name="Ren" startposition="" color="" score="" new="0" rating="0" win="0"/>
-						</players>
-					</play>
+		<item name="Codenames: Duet" objecttype="thing" objectid="224037">
+			<subtypes>
+				<subtype value="boardgame" />
+				<subtype value="boardgameintegration" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="" userid="0" name="Hannah" startposition="" color="" score="" new="0" rating="0" win="0" />
+			<player username="" userid="0" name="Ren" startposition="" color="" score="" new="0" rating="0" win="0" />
+		</players>
+	</play>
 	<play id="54532066" date="2021-09-26" quantity="1" length="1" incomplete="0" nowinstats="1" location="Galway">
-			<item name="Codenames: Duet" objecttype="thing" objectid="224037">
-				<subtypes>
-										<subtype value="boardgame"/>
-										<subtype value="boardgameintegration"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="" new="0" rating="0" win="0"/>
-						<player username="" userid="0" name="Hannah" startposition="" color="" score="" new="0" rating="0" win="0"/>
-						</players>
-					</play>
+		<item name="Codenames: Duet" objecttype="thing" objectid="224037">
+			<subtypes>
+				<subtype value="boardgame" />
+				<subtype value="boardgameintegration" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="" new="0" rating="0" win="0" />
+			<player username="" userid="0" name="Hannah" startposition="" color="" score="" new="0" rating="0" win="0" />
+		</players>
+	</play>
 	<play id="54229446" date="2021-09-12" quantity="1" length="70" incomplete="0" nowinstats="0" location="Hannah's House">
-			<item name="Everdell" objecttype="thing" objectid="199792">
-				<subtypes>
-										<subtype value="boardgame"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="51" new="0" rating="0" win="0"/>
-						<player username="" userid="0" name="Hannah" startposition="" color="" score="62" new="0" rating="0" win="1"/>
-						</players>
-					</play>
+		<item name="Everdell" objecttype="thing" objectid="199792">
+			<subtypes>
+				<subtype value="boardgame" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="51" new="0" rating="0" win="0" />
+			<player username="" userid="0" name="Hannah" startposition="" color="" score="62" new="0" rating="0" win="1" />
+		</players>
+	</play>
 	<play id="54229528" date="2021-09-12" quantity="1" length="40" incomplete="0" nowinstats="0" location="Hannah's House">
-			<item name="Railroad Ink Challenge: Shining Yellow Edition" objecttype="thing" objectid="306882">
-				<subtypes>
-										<subtype value="boardgame"/>
-										<subtype value="boardgameintegration"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="62" new="0" rating="0" win="0"/>
-						<player username="" userid="0" name="Hannah" startposition="" color="" score="67" new="0" rating="0" win="1"/>
-						</players>
-					</play>
+		<item name="Railroad Ink Challenge: Shining Yellow Edition" objecttype="thing" objectid="306882">
+			<subtypes>
+				<subtype value="boardgame" />
+				<subtype value="boardgameintegration" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="62" new="0" rating="0" win="0" />
+			<player username="" userid="0" name="Hannah" startposition="" color="" score="67" new="0" rating="0" win="1" />
+		</players>
+	</play>
 	<play id="54226884" date="2021-09-12" quantity="1" length="50" incomplete="0" nowinstats="0" location="Hannah's House">
-			<item name="Wingspan" objecttype="thing" objectid="266192">
-				<subtypes>
-										<subtype value="boardgame"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="57" new="0" rating="0" win="0"/>
-						<player username="" userid="0" name="Hannah" startposition="" color="" score="76" new="0" rating="0" win="1"/>
-						</players>
-					</play>
+		<item name="Wingspan" objecttype="thing" objectid="266192">
+			<subtypes>
+				<subtype value="boardgame" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="57" new="0" rating="0" win="0" />
+			<player username="" userid="0" name="Hannah" startposition="" color="" score="76" new="0" rating="0" win="1" />
+		</players>
+	</play>
 	<play id="54229391" date="2021-09-12" quantity="1" length="45" incomplete="0" nowinstats="0" location="Hannah's House">
-			<item name="Wingspan" objecttype="thing" objectid="266192">
-				<subtypes>
-										<subtype value="boardgame"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="57" new="0" rating="0" win="0"/>
-						<player username="" userid="0" name="Hannah" startposition="" color="" score="72" new="0" rating="0" win="1"/>
-						</players>
-					</play>
+		<item name="Wingspan" objecttype="thing" objectid="266192">
+			<subtypes>
+				<subtype value="boardgame" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="57" new="0" rating="0" win="0" />
+			<player username="" userid="0" name="Hannah" startposition="" color="" score="72" new="0" rating="0" win="1" />
+		</players>
+	</play>
 	<play id="56055410" date="2021-09-11" quantity="1" length="130" incomplete="0" nowinstats="1" location="Home">
-			<item name="The 7th Continent: Classic Edition" objecttype="thing" objectid="283317">
-				<subtypes>
-										<subtype value="boardgame"/>
-										<subtype value="boardgameimplementation"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="" new="0" rating="0" win="1"/>
-						<player username="" userid="0" name="Hannah" startposition="" color="" score="" new="0" rating="0" win="1"/>
-						</players>
-					</play>
+		<item name="The 7th Continent: Classic Edition" objecttype="thing" objectid="283317">
+			<subtypes>
+				<subtype value="boardgame" />
+				<subtype value="boardgameimplementation" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="" new="0" rating="0" win="1" />
+			<player username="" userid="0" name="Hannah" startposition="" color="" score="" new="0" rating="0" win="1" />
+		</players>
+	</play>
 	<play id="54196207" date="2021-09-11" quantity="1" length="20" incomplete="0" nowinstats="1" location="Home">
-			<item name="Codenames: Duet" objecttype="thing" objectid="224037">
-				<subtypes>
-										<subtype value="boardgame"/>
-										<subtype value="boardgameintegration"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="" new="0" rating="0" win="1"/>
-						<player username="" userid="0" name="Hannah" startposition="" color="" score="" new="1" rating="0" win="1"/>
-						</players>
-					</play>
+		<item name="Codenames: Duet" objecttype="thing" objectid="224037">
+			<subtypes>
+				<subtype value="boardgame" />
+				<subtype value="boardgameintegration" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="" new="0" rating="0" win="1" />
+			<player username="" userid="0" name="Hannah" startposition="" color="" score="" new="1" rating="0" win="1" />
+		</players>
+	</play>
 	<play id="54196246" date="2021-09-11" quantity="1" length="15" incomplete="0" nowinstats="1" location="Home">
-			<item name="Codenames: Duet" objecttype="thing" objectid="224037">
-				<subtypes>
-										<subtype value="boardgame"/>
-										<subtype value="boardgameintegration"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="" new="0" rating="0" win="0"/>
-						<player username="" userid="0" name="Hannah" startposition="" color="" score="" new="0" rating="0" win="0"/>
-						</players>
-					</play>
+		<item name="Codenames: Duet" objecttype="thing" objectid="224037">
+			<subtypes>
+				<subtype value="boardgame" />
+				<subtype value="boardgameintegration" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="" new="0" rating="0" win="0" />
+			<player username="" userid="0" name="Hannah" startposition="" color="" score="" new="0" rating="0" win="0" />
+		</players>
+	</play>
 	<play id="54196317" date="2021-09-11" quantity="1" length="25" incomplete="0" nowinstats="1" location="Home">
-			<item name="Mini Rogue" objecttype="thing" objectid="311715">
-				<subtypes>
-										<subtype value="boardgame"/>
-										<subtype value="boardgameimplementation"/>
-									</subtypes>
-			</item>
-									<players>
-									<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="" new="0" rating="0" win="0"/>
-						<player username="" userid="0" name="Hannah" startposition="" color="" score="" new="0" rating="0" win="0"/>
-						</players>
-					</play>
-	</plays>
+		<item name="Mini Rogue" objecttype="thing" objectid="311715">
+			<subtypes>
+				<subtype value="boardgame" />
+				<subtype value="boardgameimplementation" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="RendlyTheFriendly" userid="2612986" name="Ren" startposition="" color="" score="" new="0" rating="0" win="0" />
+			<player username="" userid="0" name="Hannah" startposition="" color="" score="" new="0" rating="0" win="0" />
+		</players>
+	</play>
+</plays>
