@@ -32,7 +32,8 @@
   <link rel="stylesheet" href="/web/assets/css/bgg_widget.css">
   <link rel="stylesheet" href="/web/assets/css/army_list.css">
   <link rel="stylesheet" href="/web/assets/css/goodreads_widget.css">
-  <link href="/web/assets/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/web/assets/css/all.min.css">
+  <link rel="stylesheet" href="/node_modules/@pqina/flip/dist/flip.min.css">
   <!--[if lt IE 9]>
     <script src="/web/assets/js/html5shiv.min.js"></script>
     <script src="/web/assets/js/respond.min.js"></script>
@@ -77,4 +78,5 @@
   <meta name="theme-color" content="#ffffff">
 
   <script src="https://kit.fontawesome.com/<?=$config["font_awesome_code"]?>.js" crossorigin="anonymous"></script>
+  <script src="/node_modules/@pqina/flip/dist/flip.min.js"></script>
 </head>
