@@ -38,7 +38,7 @@
         <h4>Bynaric</h4>
         <div class="ms-timeline-left-left">
           <h4 class="color-primary">Backend Lead Developer</h4>
-          <time class="ms-timeline-left-time">2021</time>
+          <time class="ms-timeline-left-time">2021 - present</time>
         </div>
         <span class="ms-timeline-left-city">Dublin, Ireland</span>
         <div class="row">
