@@ -21,11 +21,11 @@ for($i = 1; $i <= sizeof($web_data["navbar_links"]); $i++){
         <li><a class="dropdown-item" href="/gallery"><i class="fa fa-images"></i> Gallery</a></li>
         <li><a class="dropdown-item" href="/projects"><i class="fa fa-tasks"></i> Projects</a></li>
         <li><a class="dropdown-item" href="/music"><i class="fa fa-music"></i> Music</a></li>
-        <li><a class="dropdown-item" href="/warhammer"><i class="fa fa-skull"></i> Warhammer 40K</a></li>
         <li><a class="dropdown-item" href="/boardgames"><i class="fa fa-chess"></i> Board games</a></li>
         <li><a class="dropdown-item" href="/reading"><i class="fa fa-book"></i> Reading</a></li>
       </ul>
     </li>';
+    // <li><a class="dropdown-item" href="/warhammer"><i class="fa fa-skull"></i> Warhammer 40K</a></li>
   }
   else{
     $navbar .= '
