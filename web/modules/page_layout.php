@@ -124,7 +124,7 @@ if(isset($_GET['page'])){
 
     case 'gallery':
       $current_page = (isset($_GET['code']) && $_GET['code'] != NULL) ? 'gallery_folder.php' : 'gallery.php';
-      $galleryFolders = (isset($_GET['code']) && $_GET['code'] != NULL) ? ProjectSectionController::getActiveSectionsByProjectSlug($_GET['code']) : ProjectController::getAllActiveProjectGalleryFolders();
+      $galleryFolders = (isset($_GET['code']) && $_GET['code'] != NULL) ? ProjectSectionController::getActiveSectionsByProjectSlug($_GET['code'], 'DESC') : ProjectController::getAllActiveProjectGalleryFolders();
       $project = (isset($_GET['code']) && $_GET['code'] != NULL) ? ProjectController::getProjectBySlug($_GET['code']) : NULL;
       $page_title = (isset($_GET['code']) && $_GET['code'] != NULL) ? $project->title : 'Gallery';
       $custom_cover_img = ($project != NULL)? $project->image : NULL;
