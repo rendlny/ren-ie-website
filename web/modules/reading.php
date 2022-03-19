@@ -29,6 +29,8 @@
           <?php include '../widgets/goodreads/goodreads_read_grid.php'; ?>
           <hr>
           <?php include '../widgets/goodreads/goodreads_wishlist.php'; ?>
+          <hr>
+          <?php include '../widgets/goodreads/goodreads_previous_reading_challenge.php'; ?>
         </div>
       </div>
     </div>
