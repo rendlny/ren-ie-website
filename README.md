@@ -56,3 +56,6 @@ This project contains the files required to run as a Docker container.
  - Copy IP of mysql container and paste into phinx.yml as host
  - Copy IP of mysql container and paste into config.ini as db_host
  - docker-compose exec php vendor/bin/phinx migrate
+
+To run any new migrations
+ - docker-compose exec php composer phinx migrate
