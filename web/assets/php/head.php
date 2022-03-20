@@ -30,6 +30,7 @@
   <link rel="stylesheet" href="/web/assets/css/style.light-blue-500.min.css">
   <link rel="stylesheet" href="/web/assets/css/website_custom.css">
   <link rel="stylesheet" href="/web/assets/css/bgg_widget.css">
+  <link rel="stylesheet" href="/web/assets/css/bgg_plays.css">
   <link rel="stylesheet" href="/web/assets/css/army_list.css">
   <link rel="stylesheet" href="/web/assets/css/goodreads_widget.css">
   <link rel="stylesheet" href="/web/assets/css/all.min.css">
