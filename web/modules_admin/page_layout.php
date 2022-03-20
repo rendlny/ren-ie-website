@@ -19,6 +19,18 @@ if(isset($_GET['page'])){
       $current_page = 'system_logout.php';
       break;
 
+    case 'bgg-api':
+      $current_page = 'bgg_api.php';
+      break;
+
+    case 'bgg-refresh':
+      $current_page = 'bgg_api_refresh.php';
+      break;
+    
+    case 'bgg-plays':
+      $current_page = 'bgg_plays.php';
+      break;
+
     default:
       $current_page = pageDirect($_GET['page'], $_GET['action'], $_GET['code']);
       break;
