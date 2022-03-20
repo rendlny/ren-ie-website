@@ -30,7 +30,7 @@ class BggXml extends Model
 
     public function fileName()
     {
-        return '../assets/xml/bgg_plays_' . $this->page . '.xml';
+        return $_SERVER['DOCUMENT_ROOT'].'/web/assets/xml/bgg_plays_' . $this->page . '.xml';
     }
 
     public function saveXmlFile()
