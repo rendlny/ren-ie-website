@@ -42,14 +42,17 @@ class BggXml extends Model
 
     public function getXmlDataFromFile()
     {
-        return simplexml_load_file($this->fileName());
+        if(file_exists($this->fileName())) {
+            return simplexml_load_file($this->fileName());
+        }
+        return null;
     }
 
     public function doesXmlContainData()
     {
         $containsData = false;
         $data = $this->getXmlDataFromFile();
-        if ($data->count() > 0) {
+        if ($data && $data->count() > 0) {
             $containsData = true;
         }
         return $containsData;
