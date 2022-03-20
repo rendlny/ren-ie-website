@@ -1,0 +1,29 @@
+.bgg-play-card {
+    border: 3px solid #131313;
+    width: 350px;
+    background-color: #282828;
+    margin: 5px 10px;
+    border-radius: 10px;
+    padding: 5px 10px;
+    display: inline-block;
+}
+
+.bgg-play-player {
+    border: 1px solid black;
+    width: 100%;
+    margin: 2px;
+    background-color: #131313;
+    padding: 1px 4px;
+}
+
+.bgg-play-time {
+    text-align: right;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.align-center {
+    text-align: center;
+}
