@@ -11,7 +11,6 @@ $players = Player::where('on_leader_board', true)->orderBy('wins', 'DESC')->get(
         <div class="col-md-12">
             <?
                 foreach($players as $player) {
-                    echo $player->name;
                     include $_SERVER['DOCUMENT_ROOT'].'/web/widgets/bgg/bgg_player_score_row.php';
                 }
             ?>
