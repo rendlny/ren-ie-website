@@ -38,6 +38,8 @@
           <?php include '../widgets/bgg/bgg_top_ten.php'; ?>
           <hr/>
           <?php include '../widgets/bgg/bgg_wishlist.php'; ?>
+          <hr/>
+          <?php include '../widgets/bgg/bgg_leader_board.php'; ?>
         </div>
       </div>
     </div>
