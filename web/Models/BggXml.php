@@ -11,7 +11,7 @@ class BggXml extends Model
 {
     protected $url = 'https://boardgamegeek.com/xmlapi2/plays?';
     protected $username = 'RendlyTheFriendly';
-    protected $page = 0;
+    protected $page = 1;
 
     public function setUsername($username)
     {
@@ -30,7 +30,13 @@ class BggXml extends Model
 
     public function fileName()
     {
-        return '../assets/xml/bgg_plays_' . $this->page . '.xml';
+        return $_SERVER['DOCUMENT_ROOT'].'/web/assets/xml/bgg_plays_' . $this->page . '.xml';
+    }
+
+    public function checkOrCreateDirectory() {
+        if(!file_exists($_SERVER['DOCUMENT_ROOT'].'/web/assets/xml')) {
+            mkdir($_SERVER['DOCUMENT_ROOT'].'/web/assets/xml', 0777);
+        }
     }
 
     public function saveXmlFile()
@@ -42,14 +48,17 @@ class BggXml extends Model
 
     public function getXmlDataFromFile()
     {
-        return simplexml_load_file($this->fileName());
+        if(file_exists($this->fileName())) {
+            return simplexml_load_file($this->fileName());
+        }
+        return null;
     }
 
     public function doesXmlContainData()
     {
         $containsData = false;
         $data = $this->getXmlDataFromFile();
-        if ($data->count() > 0) {
+        if ($data && $data->count() > 0) {
             $containsData = true;
         }
         return $containsData;
@@ -57,11 +66,14 @@ class BggXml extends Model
 
     public function fetchLatestData()
     {
+        $this->checkOrCreateDirectory();
         Player::query()->update(['wins' => 0]);
         $pageNotEmpty = true;
         $pageCount = 1;
         while ($pageNotEmpty) {
             $this->setPage($pageCount);
+            $this->saveXmlFile();
+
             $pageNotEmpty = $this->doesXmlContainData();
 
             if ($pageNotEmpty) {
