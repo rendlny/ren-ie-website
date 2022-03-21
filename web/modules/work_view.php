@@ -20,6 +20,7 @@ foreach($images as $image){
   $carouselCount = $carouselCount + 1;
 }
 
+$carouselColDisplay = '';
 if($imageCarousel == NULL){ //work project has no images attached, hide carousel
   $carouselColDisplay = "d-none";
   $projectDescColSize = "col-lg-12";
