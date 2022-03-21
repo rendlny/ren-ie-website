@@ -15,6 +15,7 @@ class Play extends Model
 
     protected $fillable = [
         'bgg_id',
+        'game_id',
         'date',
         'quantity',
         'length',
@@ -22,5 +23,9 @@ class Play extends Model
         'no_win_stats',
         'location',
     ];
+
+    protected function game() {
+        return $this->belongsTo(Game::class);
+    }
 
 }
