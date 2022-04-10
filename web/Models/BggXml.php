@@ -6,6 +6,8 @@ use DOMDocument;
 use \Illuminate\Database\Eloquent\Model;
 use Models\Player;
 use Models\Play;
+use Models\Game;
+use Models\PlayPlayer;
 
 class BggXml extends Model
 {
@@ -87,32 +89,81 @@ class BggXml extends Model
     {
         $plays = $this->getXmlDataFromFile();
         foreach ($plays->children() as $play) {
+            $dbPlay = $this->createOrUpdatePlay($play);
+
             foreach ($play->children() as $playData) {
 
-                if ($playData->getName() == 'item') {
-                    $dbPlay = Play::firstOrCreate(['bgg_id' => $play['id']], [
-                        'date' => $play['date'],
-                        'quantity' => $play['quantity'],
-                        'length' => $play['length'],
-                        'incomplete' => $play['incomplete'],
-                        'no_win_stats' => $play['nowinstats'],
-                        'location' => $play['location'],
-                    ]);
-                } elseif ($playData->getName() == 'players') {
-                    foreach ($playData->children() as $player) {
-                        $dbPlayer = Player::firstOrCreate(['name' => $player['name']], [
-                            'bgg_id' => ($player['userid'] != 0 ? $player['userid'] : null),
-                            'username' => ($player['username'] != '' ? $player['username'] : null),
-                        ]);
+                switch($playData->getName()) {
+                    case 'item':
+                        $this->createOrUpdateGame($playData, $dbPlay);
+                        break;
 
-                        if ($play['nowinstats'] == 0 && $player['win'] == 1) {
-                            $winCount = $dbPlayer->wins;
-                            $dbPlayer->wins = $winCount + 1;
-                            $dbPlayer->save();
-                        }
-                    }
+                    case 'players':
+                        $this->createOrUpdatePlayers($playData, $play, $dbPlay);
+                        break;
+
+                    case 'comments':
+                        $dbPlay = $this->applyCommentToPlay($playData, $dbPlay);
+                        break;
+
+                    default:
+                        echo 'no case found ['.$playData->getName().']<br/>';
                 }
             }
         }
+    }
+
+    public function createOrUpdatePlay($play) {
+        return Play::updateOrCreate(['bgg_id' => $play['id']], [
+            'date' => $play['date'],
+            'quantity' => $play['quantity'],
+            'length' => $play['length'],
+            'incomplete' => $play['incomplete'],
+            'no_win_stats' => $play['nowinstats'],
+            'location' => $play['location'],
+        ]);
+    }
+
+    public function createOrUpdateGame($playData, $dbPlay) {
+        $game = Game::updateOrCreate(['bgg_id' => $playData['objectid']], [
+            'name' => $playData['name']
+        ]);
+        $dbPlay->game_id = $game->id;
+        $dbPlay->save();
+        return $game;
+    }
+
+    public function createOrUpdatePlayers($playData, $play, $dbPlay) {
+        foreach ($playData->children() as $player) {
+            $dbPlayer = Player::updateOrCreate(['name' => $player['name']], [
+                'bgg_id' => ($player['userid'] != 0 ? $player['userid'] : null),
+                'username' => ($player['username'] != '' ? $player['username'] : null),
+            ]);
+
+            PlayPlayer::updateOrCreate([
+                'play_id' => $dbPlay->id,
+                'player_id' => $dbPlayer->id,
+            ], [
+                'start_position' => $player['startposition'],
+                'color' => $player['color'],
+                'score' => $player['score'],
+                'new' => $player['new'],
+                'rating' => $player['rating'],
+                'win' => $player['win'],
+            ]);
+
+            if ($play['nowinstats'] == 0 && $player['win'] == 1) {
+                $winCount = $dbPlayer->wins;
+                $dbPlayer->wins = $winCount + 1;
+                $dbPlayer->save();
+            }
+
+        }
+    }
+
+    public function applyCommentToPlay($playData, $dbPlay) {
+        $dbPlay->comment = $playData->__toString();
+        $dbPlay->save();
+        return $dbPlay;
     }
 }
