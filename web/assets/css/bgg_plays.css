@@ -9,6 +9,12 @@
   margin: auto;
 }
 
+.bgg-play-card .headers {
+  font-size: 23px;
+  padding: 13px 0 7px 0px;
+  text-transform: uppercase;
+}
+
 .bgg-play-player {
   border: 1px solid black;
   width: 100%;
@@ -27,6 +33,16 @@
 
 .align-center {
   text-align: center;
+}
+
+@media only screen and (min-width: 500px) {
+  .bgg-play-card {
+    width: 100%;
+  }
+
+  .bgg-play-card .headers {
+    font-size: 19px;
+  }
 }
 
 @media only screen and (min-width: 900px) {
