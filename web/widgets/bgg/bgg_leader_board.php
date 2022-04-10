@@ -9,15 +9,15 @@ $players = Player::where('on_leader_board', true)->orderBy('wins', 'DESC')->get(
     <div class="row">
         <div class="col-md-12">
             <div class="row">
-                <div class="col-md-4 align-right">
+                <div class="col-md-4 col-sm-3 align-right">
                     Player
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-4 col-sm-4 align-center">
                     Plays
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-4 col-sm-4">
                     Win Ratio %
                 </div>
             </div>
