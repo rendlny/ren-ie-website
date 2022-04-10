@@ -19,4 +19,18 @@ class Player extends Model
         'on_leader_board',
     ];
 
+    protected function playerPlays()
+    {
+        return $this->hasMany(PlayPlayer::class);
+    }
+
+    public function winAverage()
+    {
+        return ($this->wins / $this->playCount()) * 100;
+    }
+
+    public function playCount()
+    {
+        return $this->playerPlays()->count();
+    }
 }
