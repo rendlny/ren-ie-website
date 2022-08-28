@@ -10,11 +10,11 @@
         <div class="col-lg-6 mt-2">
           <p>
             I am a Software Engineer with over 3 years of industry experience.
-            I am currently working as the Backend Lead Developer at Bynaric 
-            where we are creating social housing management solutions using 
+            I am currently working as the Backend Lead Developer at Bynaric
+            where we are creating social housing management solutions using
             React JS and PHP with Laravel.
           </p>
-          <hr/>
+          <hr />
           <p>
             I had previously been working as a main Software Engineer at
             Inkerman Technologies where I had been using PHP with the Laravel
@@ -22,7 +22,7 @@
             websites with CMS and web-based bespoke systems such as inventory
             management, ticketing and sales systems.
           </p>
-          <hr/>
+          <hr />
           <p>
             I graduated from Dundalk Institute of Technology in 2018 with a Bachelors of
             Science in Computing and a Higher Bachelors in Cloud Computing.
@@ -43,7 +43,7 @@
         <span class="ms-timeline-left-city">Dublin, Ireland</span>
         <div class="row">
           <div class="col-sm-3">
-            <img src="web/assets/images/about/bynaric.jpg" alt="Bynaric Logo" class="img-fluid" >
+            <img src="web/assets/images/about/bynaric.jpg" alt="Bynaric Logo" class="img-fluid">
           </div>
           <div class="col-sm-9">
             <p>
@@ -68,20 +68,20 @@
           also built custom websites for clients along with a CMS to allow
           clients to add blog-posts, gallery images, event listings etc. to
           their website. I would use PHP with Bootstrap, JS, Ajax, jQuery, MySQL
-           and the Laravel framework to build these systems and websites. I've
-           set up Linux cloud machines, prepared their databases and deployed
-           the systems onto them. I've also built Python web scrapers to collect
-           data to be put onto new systems.
+          and the Laravel framework to build these systems and websites. I've
+          set up Linux cloud machines, prepared their databases and deployed
+          the systems onto them. I've also built Python web scrapers to collect
+          data to be put onto new systems.
         </p>
         <div class="col-sm-6 offset-sm-3">
           <img src="web/assets/images/about/inkerman.jpg" alt="Inkerman Team" class="img-fluid">
         </div>
         <p class="pt-2">
           I worked on both the front and back-end of major projects with my team
-           by following Scrum and Agile methodologies using Jira Kanban boards
-           to deliver projects in a timely and efficient manner. In my 2 years
-           of working at Inkerman Technologies, I grew more confident in my
-           coding abilities and increased my skill set a great deal.
+          by following Scrum and Agile methodologies using Jira Kanban boards
+          to deliver projects in a timely and efficient manner. In my 2 years
+          of working at Inkerman Technologies, I grew more confident in my
+          coding abilities and increased my skill set a great deal.
         </p>
 
       </li>
@@ -147,18 +147,21 @@
       <div class="row">
         <div class="col-md-4">
           <div class="text-center mt-4">
+            <i class="fa-brands fa-php fa-5x" style="color:#292929"></i>
             <h4 class="text-center">PHP</h4>
             <p class="small-font">3+ Years Industry Experience</p>
           </div>
         </div>
         <div class="col-md-4">
           <div class="text-center mt-4">
+            <i class="fa-brands fa-react fa-5x" style="color:#292929"></i>
             <h4 class="text-center">ReactJS</h4>
             <p class="small-font">1 Year Industry Experience</p>
           </div>
         </div>
         <div class="col-md-4">
           <div class="text-center mt-4">
+            <i class="fa-brands fa-java fa-5x" style="color:#292929"></i>
             <h4 class="text-center">Java</h4>
             <p class="small-font">Used throughout my 4 years at college</p>
           </div>
