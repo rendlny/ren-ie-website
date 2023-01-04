@@ -9,14 +9,14 @@
         </div>
         <div class="col-lg-6 mt-2">
           <p>
-            I am a Software Engineer with over 3 years of industry experience.
+            I am a Software Engineer with over 4 years of industry experience.
             I am currently working as the Backend Lead Developer at Bynaric
             where we are creating social housing management solutions using
             React JS and PHP with Laravel.
           </p>
           <hr />
           <p>
-            I had previously been working as a main Software Engineer at
+            I had previously been working as a Software Engineer at
             Inkerman Technologies where I had been using PHP with the Laravel
             framework, along with JavaScript, HTML, CSS, Ajax & jQuery to build
             websites with CMS and web-based bespoke systems such as inventory
@@ -149,21 +149,21 @@
           <div class="text-center mt-4">
             <i class="fa-brands fa-php fa-5x" style="color:#292929"></i>
             <h4 class="text-center">PHP</h4>
-            <p class="small-font">3+ Years Industry Experience</p>
+            <p class="small-font">4 Years Industry Experience</p>
           </div>
         </div>
         <div class="col-md-4">
           <div class="text-center mt-4">
             <i class="fa-brands fa-react fa-5x" style="color:#292929"></i>
             <h4 class="text-center">ReactJS</h4>
-            <p class="small-font">1 Year Industry Experience</p>
+            <p class="small-font">2 Years Industry Experience</p>
           </div>
         </div>
         <div class="col-md-4">
           <div class="text-center mt-4">
             <i class="fa-brands fa-java fa-5x" style="color:#292929"></i>
             <h4 class="text-center">Java</h4>
-            <p class="small-font">Used throughout my 4 years at college</p>
+            <p class="small-font">4 Years College Experience</p>
           </div>
         </div>
       </div>
