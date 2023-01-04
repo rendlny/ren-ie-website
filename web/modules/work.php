@@ -1,16 +1,16 @@
 <?php
-  $projectGrid = NULL;
-  foreach($projects as $project){
-    $projectGrid .= '
+$projectGrid = NULL;
+foreach ($projects as $project) {
+  $projectGrid .= '
     <div class="col-sm-4 col-md-3 col-lg-2 col-xl-2">
-      <a href="/work/'.$project->slug.'" class="img-thumbnail withripple">
+      <a href="/work/' . $project->slug . '" class="img-thumbnail withripple">
         <div class="thumbnail-container">
-          <img src="/web/assets/images/'.$project->image.'" alt="'.$project->title.'" class="img-fluid"/>
+          <img src="/web/assets/images/' . $project->image . '" alt="' . $project->title . '" class="img-fluid"/>
         </div>
       </a>
     </div>';
-  }
- ?>
+}
+?>
 <div class="container pt-6">
   <div class="row">
     <div class="col-md-12">
@@ -20,7 +20,7 @@
           <h1 class="card-title"><i class="zmdi zmdi-code"></i>&nbsp; PHP</h1>
         </div>
         <div class="card-sub-header">
-          <h4 class="card-title">2+ Years Industry Experience</h4>
+          <h4 class="card-title">4 Years Industry Experience</h4>
         </div>
         <div class="card-body">
           <p class="text-center">
@@ -33,7 +33,7 @@
             <br><br>
             I worked on both the front and back-end of major projects with my
             team by following Scrum and Agile methodologies using Jira Kanban
-            boards to deliver projects in a timely & efficient manner.  In my
+            boards to deliver projects in a timely & efficient manner. In my
             2 years of working at Inkerman Technologies, I grew more confident
             in my coding abilities and increased my skill set a great deal.
           </p>
@@ -42,7 +42,7 @@
           <h2 class="text-center">Websites & Systems I've Worked On:</h2>
           <div class="row">
 
-            <?=$projectGrid?>
+            <?= $projectGrid ?>
 
           </div>
         </div>
@@ -59,7 +59,7 @@
           <p class="text-center">
             I have built webscrapers in python, including one for the open source
             project <a href="https://yokaidex.netlify.app/" target="_blank">YokaiDex</a>,
-             which is a handy web app for guides and info on the
+            which is a handy web app for guides and info on the
             Yokai Watch video games. For this webscraper, I used the beautifulSoup
             package to pull the websites code and search through it to grab the required data
             which I build an object for and then print into a json file to be used
@@ -77,14 +77,14 @@
             with their price data already set. Everytime they set a price,
             the bot will update the link with their new pricing.
             <br><br>
-            <div class="card wow zoomIn">
-              <div class="card-body p-05 ">
-                <div class="withripple">
-                  <a href="https://ren.ie/web/assets/images/github/rapuli-bot/rapuli-bot-example.png" data-lightbox="gallery" data-title="Image of Rapuli-Bot in action, returning custom links to two users" c><img src="https://ren.ie/web/assets/images/github/rapuli-bot/rapuli-bot-example.png" alt="" class="img-fluid"></a>
-                </div>
-                <small class="color-dark">Image of Rapuli-Bot in action, returning custom links to two users</small>
+          <div class="card wow zoomIn">
+            <div class="card-body p-05 ">
+              <div class="withripple">
+                <a href="https://ren.ie/web/assets/images/github/rapuli-bot/rapuli-bot-example.png" data-lightbox="gallery" data-title="Image of Rapuli-Bot in action, returning custom links to two users" c><img src="https://ren.ie/web/assets/images/github/rapuli-bot/rapuli-bot-example.png" alt="" class="img-fluid"></a>
               </div>
+              <small class="color-dark">Image of Rapuli-Bot in action, returning custom links to two users</small>
             </div>
+          </div>
           </p>
         </div>
       </div>
@@ -107,23 +107,23 @@
             the latest cards in the Pokemon Trading Card Game and provides users
             with tools to help them play.
             <br><br>
-            <div class="card wow zoomIn">
-              <div class="card-body p-05 ">
-                <div class="withripple">
-                  <a href="https://ren.ie/web/assets/images/github/PokeTools-TCG/poster-cc4-2018-ren-delaney.jpg" data-lightbox="gallery" data-title="PokeTools-TCG Project Poster" c><img src="https://ren.ie/web/assets/images/github/PokeTools-TCG/poster-cc4-2018-ren-delaney.jpg" alt="" class="img-fluid"></a>
-                </div>
-                <small class="color-dark">PokeTools-TCG Project Poster</small>
+          <div class="card wow zoomIn">
+            <div class="card-body p-05 ">
+              <div class="withripple">
+                <a href="https://ren.ie/web/assets/images/github/PokeTools-TCG/poster-cc4-2018-ren-delaney.jpg" data-lightbox="gallery" data-title="PokeTools-TCG Project Poster" c><img src="https://ren.ie/web/assets/images/github/PokeTools-TCG/poster-cc4-2018-ren-delaney.jpg" alt="" class="img-fluid"></a>
               </div>
+              <small class="color-dark">PokeTools-TCG Project Poster</small>
             </div>
+          </div>
 
-            <div class="card wow zoomIn">
-              <div class="card-body p-05 ">
-                <div class="withripple">
-                  <iframe class="content-center yt-iframe" width="650" height="405" src="https://www.youtube.com/embed/o2_NAiDsNbA?start=685" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                <small class="color-dark">Footage of PokeTools-TCG app functioning</small>
+          <div class="card wow zoomIn">
+            <div class="card-body p-05 ">
+              <div class="withripple">
+                <iframe class="content-center yt-iframe" width="650" height="405" src="https://www.youtube.com/embed/o2_NAiDsNbA?start=685" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
+              <small class="color-dark">Footage of PokeTools-TCG app functioning</small>
             </div>
+          </div>
 
           </p>
         </div>

@@ -1,25 +1,25 @@
 <?php
 $footerLinks = $footerEmail = NULL;
 
-if($links != NULL){
+if ($links != NULL) {
   foreach ($links as $link) {
-    if($link->footer){
+    if ($link->footer) {
       $footerLinks .= '
-        <a href="'.$link["url"].'" target="_blank" class="btn-circle btn-royal"
+        <a href="' . $link["url"] . '" target="_blank" class="btn-circle btn-royal"
         >
-          <i class="'.$link["icon"].'"></i>
+          <i class="' . $link["icon"] . '"></i>
         </a>
       ';
     }
   }
 }
 
-if($web_data["site"]["email"] != NULL){
+if ($web_data["site"]["email"] != NULL) {
   $footerEmail = '
     <div class="ms-footbar-block-top-padding-only">
       <div class="ms-footbar-social">
-        <a href="mailto:'.$web_data["site"]["email"].'" style="background: none;">
-          <i class="fa fa-envelope"></i>&nbsp; '.$web_data["site"]["email"].'
+        <a href="mailto:' . $web_data["site"]["email"] . '" style="background: none;">
+          <i class="fa fa-envelope"></i>&nbsp; ' . $web_data["site"]["email"] . '
         </a>
       </div>
     </div>
@@ -27,19 +27,19 @@ if($web_data["site"]["email"] != NULL){
 }
 ?>
 
-<div id="footer" >
+<div id="footer">
   <aside class="ms-footbar">
     <div class="container">
       <div class="row">
 
         <div class="col-lg-3 col-md-4 col-sm-12 ms-footer-col text-center">
-          <?=$footerEmail?>
+          <?= $footerEmail ?>
         </div>
 
         <div class="col-lg-9 col-md-8 col-sm-12 ms-footer-col ms-footer-text-right">
           <div class="ms-footbar-block">
             <div class="ms-footbar-social">
-              <?=$footerLinks?>
+              <?= $footerLinks ?>
             </div>
           </div>
         </div>
@@ -48,7 +48,7 @@ if($web_data["site"]["email"] != NULL){
   </aside>
   <footer class="ms-footer">
     <div class="container">
-      <p><?=$web_data["footer"]["copyright_txt"]?></p>
+      <p>Copyright &copy; 2019 - <?= date("Y") ?> Ren Delaney</p>
     </div>
   </footer>
   <div class="btn-back-top">
