@@ -17,14 +17,26 @@ foreach ($projects as $project) {
 
       <div class="card card-primary bg-dark">
         <div class="card-header">
-          <h1 class="card-title"><i class="zmdi zmdi-code"></i>&nbsp; PHP</h1>
+          <h1 class="card-title"><i class="fa-brands fa-php"></i>&nbsp; PHP</h1>
         </div>
         <div class="card-sub-header">
           <h4 class="card-title">4 Years Industry Experience</h4>
         </div>
         <div class="card-body">
-          <p class="text-center">
-            I have 2 years of experience as a main software engineer at Inkerman
+          <h3>2021 - present</h3>
+          <p>
+            I am currently working as Lead Backend Developer at Bynaric, where my core focus
+            is working on our REST API built on PHP withLaravel. I create API requests and
+            functionality for new features and improving our existing API requests,
+            through bug fixes and updating queries to greatly improve the API response time.
+            <br><br>
+            I also work with project managers to plan Database changes using ERDs and
+            implementing these updates by creating Laravel migrations.
+          </p>
+          <hr>
+          <h3>2018 - 2020</h3>
+          <p>
+            I gained 2 years of experience as a main software engineer at Inkerman
             Technologies where I worked on over 15
             different bespoke systems for clients in various industries, such as
             ticket booking systems, dance school systems and e-commerce systems,
@@ -50,7 +62,24 @@ foreach ($projects as $project) {
 
       <div class="card card-primary bg-dark">
         <div class="card-header">
-          <h1 class="card-title"><i class="zmdi zmdi-language-python"></i>&nbsp; Python</h1>
+          <h1 class="card-title"><i class="fa-brands fa-react"></i>&nbsp; ReactJS</h1>
+        </div>
+        <div class="card-sub-header">
+          <h4 class="card-title">2 Years Industry Experience</h4>
+        </div>
+        <div class="card-body">
+          <p class="text-center">
+            I have used ReactJS while working at Bynaric where I have built front-end
+            components that would display data taken from REST API request responses.
+            I built components such as searchable
+            tables, forms for editing data & form builders.
+          </p>
+        </div>
+      </div>
+
+      <div class="card card-primary bg-dark">
+        <div class="card-header">
+          <h1 class="card-title"><i class="fa-brands fa-python"></i>&nbsp; Python</h1>
         </div>
         <div class="card-sub-header">
           <h4 class="card-title">Experience creating small web-scraper projects and bots</h4>
@@ -91,7 +120,7 @@ foreach ($projects as $project) {
 
       <div class="card card-primary bg-dark">
         <div class="card-header">
-          <h1 class="card-title"><i class="zmdi zmdi-code"></i>&nbsp; Java</h1>
+          <h1 class="card-title"><i class="fa-brands fa-java"></i>&nbsp; Java</h1>
         </div>
         <div class="card-sub-header">
           <h4 class="card-title">Used throughout my 4 years at college</h4>
