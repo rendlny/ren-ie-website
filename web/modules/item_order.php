@@ -1,14 +1,15 @@
 <?php
+
 use Controllers\ItemController;
 use Controllers\SaleController;
 
 $warning = $itemTrade = $preorderAgreement = $error = $tradeOffer = NULL;
 
-if(!$item->quantity > 0){
-  echo '<meta http-equiv="refresh" content="0;url=/store/'.$_GET['code'].'">';
+if (!$item->quantity > 0) {
+  echo '<meta http-equiv="refresh" content="0;url=/store/' . $_GET['code'] . '">';
 }
 
-if($item->trade){
+if ($item->trade) {
   $tradeOffer = '
   <div class="row form-group">
     <label for="inputPassword2" class="col-md-2 control-label">Trade Offer<br>(if trading)</label>
@@ -18,7 +19,7 @@ if($item->trade){
   </div>';
 }
 
-if($item->preorder){
+if ($item->preorder) {
   $preorderAgreement = '
     <div class="checkbox">
       <label>
@@ -31,18 +32,20 @@ if($item->preorder){
 <div class="container pt-6">
   <div class="card card-primary card-hero animated fadeInUp animation-delay-7">
     <div class="card-body">
-      <?=$warning?>
+      <?= $warning ?>
       <form class="form-horizontal" name="item-order-form" id="item-order-form" method="post" action="/order-processing/">
         <fieldset>
 
           <div class="row">
             <div class="col-md-4">
               <div class="img-thumbnail" data-mh="top-cards">
-                <a href="/store/<?=$item->slug?>" target="_blank"><img src="<?=$item->image_1?>" alt="..." class="img-fluid"></a>
+                <a href="/store/<?= $item->slug ?>" target="_blank"><img src="<?= $item->image_1 ?>" alt="..." class="img-fluid"></a>
                 <div class="caption">
-                  <a href="/store/<?=$item->slug?>" target="_blank"><h3 class="color-success"><?=$item->title?></h3></a>
-                  <h4>€<?=($item->price/100)?></h4>
-                  <p><?=$item->description?></p>
+                  <a href="/store/<?= $item->slug ?>" target="_blank">
+                    <h3 class="color-success"><?= $item->title ?></h3>
+                  </a>
+                  <h4>€<?= ($item->price / 100) ?></h4>
+                  <p><?= $item->description ?></p>
                 </div>
               </div>
             </div>
@@ -52,25 +55,25 @@ if($item->preorder){
                   <h3 class="color-success">Order Information</h3>
                   <p>
                     After you submit this form I will send you an invoice via PayPal using the email you have provided.<br>
-                  <!--  For Pre-Orders, I won't send the invoice until I have the pins in-hand.<br>-->
+                    <!--  For Pre-Orders, I won't send the invoice until I have the pins in-hand.<br>-->
                     For Trades, you can see my <a target="_blank" href="https://trello.com/b/4sPgYiti/rendlys-fursona-pins-collection-trading-eu">pin list here <i class="fa fa-link"></i><a>
                   </p>
                   <h3 class="color-success">Multiple Pins</h3>
                   <p>
-                    If you are looking to order multiple pins, you don't need to complete multiple forms. 
+                    If you are looking to order multiple pins, you don't need to complete multiple forms.
                     Simply list the other pins in the comment section at the bottom of this form
                   </p>
                   <h3 class="color-success">Shipping</h3>
                   <p>
                     Pins will be sent in a bubble mailer. Shipping costs are listed below.
                   </p>
-                  <?php include $_SERVER['DOCUMENT_ROOT'].'/web/includes/shipping_table.php'; ?>
+                  <?php include $_SERVER['DOCUMENT_ROOT'] . '/web/includes/shipping_table.php'; ?>
                 </div>
               </div>
             </div>
           </div>
 
-          <input name="itemCode" type="hidden" class="form-control" id="itemCode" value="<?=$item->code?>">
+          <input name="itemCode" type="hidden" class="form-control" id="itemCode" value="<?= $item->code ?>">
 
           <div class="row form-group">
             <label for="inputName" class="col-md-2 control-label">Quantity</label>
@@ -91,14 +94,14 @@ if($item->preorder){
               <textarea required class="form-control" rows="3" id="address" name="address"></textarea>
             </div>
           </div>
-          <div class="row form-group">
+          <!-- <div class="row form-group">
             <label for="inputPassword" class="col-md-2 control-label">PayPal Email</label>
             <div class="col-md-9">
               <input required name="email" type="email" class="form-control" id="email" placeholder="PayPal Email">
             </div>
-          </div>
+          </div> -->
 
-          <?=$tradeOffer?>
+          <?= $tradeOffer ?>
 
           <div class="row form-group">
             <label for="contactOption" class="col-md-2 control-label">Contact Option</label>
@@ -119,7 +122,7 @@ if($item->preorder){
                   <i style="color: #179cde;" class="fab fa-twitter-square fa-2x"></i>&nbsp; Twitter
                 </label>
               </div>
-<!--
+              <!--
               <div class="radio radio-primary">
                 <label>
                   <input type="radio" name="contactOption" id="contactOption2" value="discord">
@@ -186,25 +189,24 @@ if($item->preorder){
 
           <div class="row mt-2">
             <div class="offset-lg-2 col-lg-4">
-              <?=$preorderAgreement?>
+              <?= $preorderAgreement ?>
             </div>
             <div class="col-lg-5">
-              <button class="btn btn-raised btn-primary btn-block g-recaptcha"
-                data-sitekey="<?=$config['recaptcha_site_key']?>"
-                data-callback='onSubmit'
-                data-action='submit'
-              >
+              <button class="btn btn-raised btn-primary btn-block g-recaptcha" data-sitekey="<?= $config['recaptcha_site_key'] ?>" data-callback='onSubmit' data-action='submit'>
                 Submit
               </button>
             </div>
           </div>
         </fieldset>
       </form>
+      <form action="/stripe-checkout.php" method="POST">
+        <button type="submit" id="checkout-button">Checkout</button>
+      </form>
     </div>
   </div>
 </div> <!-- container -->
 <script src="/web/assets/js/jquery.min.js"></script>
-<script src="https://www.google.com/recaptcha/api.js?render=<?=$config['recaptcha_site_key']?>"></script>
+<script src="https://www.google.com/recaptcha/api.js?render=<?= $config['recaptcha_site_key'] ?>"></script>
 <script src="/web/assets/js/jquery.matchHeight.js"></script>
 <script src="https://www.google.com/recaptcha/api.js"></script>
 <script>
@@ -213,18 +215,18 @@ if($item->preorder){
   }
 </script>
 <script>
-  $('input[type=radio][name=contactOption]').on('change', function(){
+  $('input[type=radio][name=contactOption]').on('change', function() {
     let option = $(this).val();
-    if(option == 'paypal'){
+    if (option == 'paypal') {
       $('#username-row').css('display', 'none');
-    }else{
+    } else {
       $('#username-row').css('display', 'flex');
-      if(option == 'email'){
+      if (option == 'email') {
         $('#username-row label').html('Contact Email');
-        $('#username-row input').attr('placeholder','Your Contact Email');
-      }else{
+        $('#username-row input').attr('placeholder', 'Your Contact Email');
+      } else {
         $('#username-row label').html('Contact Username');
-        $('#username-row input').attr('placeholder','Your Contact Username');
+        $('#username-row input').attr('placeholder', 'Your Contact Username');
       }
     }
   });

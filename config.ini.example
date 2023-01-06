@@ -4,6 +4,10 @@ db_user     = 'root'
 db_password = ''
 db_name     = ''
 
+[stripe]
+stripe_public_key = ''
+stripe_secret_key = ''
+
 [mail]
 smtp_host = ''
 smtp_user = ''

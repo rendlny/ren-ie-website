@@ -47,10 +47,10 @@ To run this task simply run the command `gulp`. This will open the index page in
 
 #### From local apache server
 
-If you are running a local apache server (e.g with XAMPP) and wish to use this instead, you can override this with an environment variable. For example, if you created a virtual host at http://cropreport.local/ that points to this projects root directory, you will need to create a `.env` file in the projects root directory containing the following
+If you are running a local apache server (e.g with XAMPP) and wish to use this instead, you can override this with an environment variable. For example, if you created a virtual host at http://crop-report.local/ that points to this projects root directory, you will need to create a `.env` file in the projects root directory containing the following
 
 ```
-BROWSER_SYNC_PROXY=cropreport.local
+BROWSER_SYNC_PROXY=crop-report.local
 ```
 
 Running the `gulp` command now will cause it to skip starting the basic php server and instead proxy the browser-sync requests to the domain specified.
