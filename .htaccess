@@ -20,7 +20,10 @@ RewriteRule ^admin/?([A-Za-z0-9-]+)?/?([A-Za-z0-9-]+)?/?([A-Za-z0-9]+)?/?$ ./web
 ## WEB ##
 RewriteRule ^store/view-cart/?$ ./web/modules/cart_view.php
 RewriteRule ^store/add-to-cart/?([A-Za-z0-9]+)?/?$ ./web/modules/cart_add.php?code=$1
-RewriteRule ^/?([A-Za-z0-9]+)?/?([A-Za-z0-9]+)?/?$ ./web/modules/page_layout.php?page=$1&code=$2
+
+RewriteRule ^store/checkout-start/?([A-Za-z0-9]+)?/?$ ./web/modules/stripe/new_checkout_session.php?code=$1
+
+RewriteRule ^/?([A-Za-z0-9-]+)?/?([A-Za-z0-9-]+)?/?$ ./web/modules/page_layout.php?page=$1&code=$2
 #RewriteRule ^login/? ./web/modules/system_login.php
 #RewriteRule ^logout/? ./web/modules/system_logout.php
 #RewriteRule ^activate/?([A-Za-z0-9]+)?/?$  ./web/modules/system_activate.php?tcode=$1

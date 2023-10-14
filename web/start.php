@@ -4,6 +4,7 @@ require $_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php';
 use Models\Database;
 //Initialize Illuminate Database Connection
 new Database();
+
 if (!isset($_SESSION)) {
   session_start();
 }
@@ -14,6 +15,3 @@ error_reporting(E_ALL);
 
 $config = parse_ini_file($_SERVER['DOCUMENT_ROOT'] . '/config.ini');
 $web_data = parse_ini_file($_SERVER['DOCUMENT_ROOT'] . '/website_data.ini', true);
-
-
-\Stripe\Stripe::setApiKey($config['stripe_secret_key']);

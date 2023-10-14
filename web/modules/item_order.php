@@ -199,7 +199,7 @@ if ($item->preorder) {
           </div>
         </fieldset>
       </form>
-      <form action="/stripe-checkout.php" method="POST">
+      <form action="/store/checkout-start/" method="POST">
         <button type="submit" id="checkout-button">Checkout</button>
       </form>
     </div>
