@@ -9,10 +9,10 @@
         </div>
         <div class="col-lg-6 mt-2">
           <p>
-            I am a Software Engineer with over 4 years of industry experience.
-            I am currently working as the Backend Lead Developer at Bynaric
-            where we are creating social housing management solutions using
-            React JS and PHP with Laravel.
+            I am a Software Engineer with over 5 years of industry experience.
+            I am currently working as the Software Engineer at Smartbox in Dublin
+            where I am contributing to creating availability APIs using
+            PHP & Symfony. These APIS enable our customers easy gift box redemption.
           </p>
           <hr />
           <p>
@@ -34,11 +34,31 @@
   <div class="card card-body mt-6 card-body-big wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
     <h3 class="text-center fw-500 mb-6">Experience</h3>
     <ul class="ms-timeline-left">
+
+      <li class="ms-timeline-left-item wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+        <h4>Smartbox</h4>
+        <div class="ms-timeline-left-left">
+          <h4 class="color-primary">Software Engineer</h4>
+          <time class="ms-timeline-left-time">2024 - present</time>
+        </div>
+        <span class="ms-timeline-left-city">Dublin, Ireland</span>
+        <div class="row">
+          <div class="col-sm-3">
+            <img src="web/assets/images/about/smartbox.jpg" alt="Smartbox Logo" class="img-fluid">
+          </div>
+          <div class="col-sm-9">
+            <p>
+              I am currently working at Smartbox as a Software Engineer contributing to our availability APIS using PHP with Symfony.
+            </p>
+          </div>
+        </div>
+      </li>
+      
       <li class="ms-timeline-left-item wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
         <h4>Bynaric</h4>
         <div class="ms-timeline-left-left">
           <h4 class="color-primary">Backend Lead Developer</h4>
-          <time class="ms-timeline-left-time">2021 - present</time>
+          <time class="ms-timeline-left-time">2021 - 2024</time>
         </div>
         <span class="ms-timeline-left-city">Dublin, Ireland</span>
         <div class="row">
@@ -47,11 +67,15 @@
           </div>
           <div class="col-sm-9">
             <p>
-              I am currently working as the Backend Lead Developer at Bynaric where we are creating social housing management solutions using React JS and PHP with Laravel.
+              While at Bynaric I was working as the Backend Lead Developer contributing to creating social housing management solutions using React JS and PHP with Laravel.
             </p>
+            <div class="col-sm-6 offset-sm-3">
+              <img src="web/assets/images/about/bynaric-team.png" alt="Bynaric Team" class="img-fluid">
+            </div>
           </div>
         </div>
       </li>
+
       <li class="ms-timeline-left-item wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
         <h4>Inkerman Technologies</h4>
         <div class="ms-timeline-left-left">
